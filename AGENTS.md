@@ -11,7 +11,8 @@
 Жёсткие правила:
 - **Не связываться с компаниями**: ни писем, ни звонков, ни форм на их сайтах. Только сбор и подготовка.
 - **Гос-организации не берём.**
-- **Перед работой проверять дубли** (`scripts/check.ts`) по всем лидам в `leads/`, включая отклонённые.
+- **Перед поиском, дизайном и подготовкой итогового списка обновлять общую таблицу команды** по `docs/shared-table.md`, затем проверять дубли (`scripts/check.ts`) по `leads/` (включая отклонённые) и свежей `data/shared-list.csv`. Компании из общей таблицы повторно не брать независимо от статуса строки.
+- **По команде «занеси / добавь / выгрузи в таблицу»** агент сам добавляет данные в [общую Google-таблицу команды](https://docs.google.com/spreadsheets/d/1sZkqqTQ1yc9dtcsCOhNEup4tPUkUQvTJLsRg3EG0pRU/edit#gid=0), лист `gid=0`, по `docs/shared-table.md`. Это разрешение на запись, повторное подтверждение не нужно. `list.csv` и `list.md` продолжать вести всегда — локальная копия и запасной вариант для ручного переноса; успешная публикация их не заменяет.
 - Не берём сайты, где есть логика (подборы, калькуляторы, корзина, ЛК, карты) при «не модном, но нормальном» дизайне — разве что под доп. функционал.
 - Только небольшие задачи, отдаваемые клиенту **без постоянной поддержки**.
 - Качество важнее количества: живой бизнес с потенциальным интересом.
@@ -30,13 +31,14 @@
 | «сделай дизайн / редизайн для X» | `docs/workflows/stitch-design.md` (несколько лидов параллельно — не больше 3 одновременно, лимиты Stitch) |
 | «сделай N под ключ» | find-leads → qualify-lead → stitch-design для qualified → report-leads |
 | «отчёт», «список», «итоги» | `docs/workflows/report-leads.md` |
+| «занеси / добавь / выгрузи в таблицу», «обнови общую таблицу» | `docs/workflows/report-leads.md` → публикация в Google-таблицу по `docs/shared-table.md`; если указан файл, переносить данные из него |
 | «что у нас есть», «статус» | `npx tsx scripts/status.ts` |
 
-Статусы лида: `candidate → audited → qualified | rejected → designed`; `reportedAt` — внесён в общий список (ставит `report.ts`).
+Статусы лида: `candidate → audited → qualified | rejected → designed`; `reportedAt` — внесён в локальный список (ставит `report.ts`), не подтверждение публикации в Google-таблице.
 
 ## Инструменты (`npx tsx scripts/<name>.ts`)
 
-- `check.ts <url|название> ...` — дубли в `leads/` (+ `data/shared-list.csv`, если есть чужая выгрузка); exit 2 = занято
+- `check.ts <url|название> ...` — дубли в `leads/` + свежей выгрузке общей таблицы `data/shared-list.csv` (обновление: `docs/shared-table.md`); exit 2 = занято
 - `new-lead.ts <url> --name --industry --city [--source]` — создать `leads/<slug>/lead.json` (сам проверяет дубли)
 - `audit.ts <slug...> | --pending [--concurrency N]` — Playwright: скриншоты desktop/mobile, адаптивность, устаревшая вёрстка, CMS, признаки сложной логики, контакты, тексты и картинки для дизайна
 - `validate.ts` — полнота lead.json для текущего статуса
@@ -58,7 +60,7 @@ leads/<slug>/                slug = домен, точки → дефисы (pri
   prompt-desktop.txt, prompt-mobile.txt   промпты для Stitch
   design/desktop.html, mobile.html   HTML экранов — правки здесь, потом stitch.ts push
   design/*-view-N.jpg        превью экранов для просмотра
-list.csv, list.md            общий список (генерирует report.ts, руками не править)
+list.csv, list.md            локальный список и копия для ручного переноса (генерирует report.ts, руками не править)
 docs/criteria.md             критерии отбора и как писать проблемы
 docs/sources.md              где и как искать
 docs/design-guide.md         как делать концепт в Stitch, шаблон промпта
