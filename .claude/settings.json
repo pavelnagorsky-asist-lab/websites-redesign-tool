@@ -1,0 +1,17 @@
+{
+  "enabledMcpjsonServers": ["stitch"],
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "mcp__stitch",
+      "Bash(npx tsx:*)",
+      "Bash(curl:*)",
+      "Read",
+      "Edit(leads/**)",
+      "Write(leads/**)",
+      "Edit(data/**)",
+      "Write(data/**)"
+    ]
+  }
+}

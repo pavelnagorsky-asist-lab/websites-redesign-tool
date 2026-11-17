@@ -1,0 +1,17 @@
+{
+  "name": "websites-redesign",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Рабочее пространство Claude: поиск компаний с устаревшими сайтами, аудит, концепт редизайна в Google Stitch, отчёт",
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "playwright": "^1.65.1",
+    "prettier": "^3.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.2.2"
+  }
+}

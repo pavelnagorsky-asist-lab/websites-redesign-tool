@@ -1,0 +1,16 @@
+node_modules
+*.log
+.DS_Store
+.idea
+.vscode/*
+
+# секреты
+.env
+.env.*
+!.env.example
+
+# локальная копия общего списка (скачивается заново)
+data/shared-list.csv
+
+# сгенерированные отчёты
+reports/
