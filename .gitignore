@@ -14,3 +14,9 @@ data/shared-list.csv
 
 # сгенерированные отчёты
 reports/
+
+# личные результаты работы агента
+/leads/
+/list.csv
+/list.md
+/tmp/

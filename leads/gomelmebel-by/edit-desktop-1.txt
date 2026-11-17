@@ -1,5 +1,0 @@
-Fix only these points, keep the layout, colors, fonts and all other texts exactly as is:
-
-1) Catalog card "Кухни": the photo repeats the hero kitchen. Replace it with a different real-looking bright kitchen photo: L-shaped kitchen with matte light grey handleless fronts, white countertop and graphite tall cabinets, daylight, no red backsplash, no text.
-
-2) Map illustration in "Контакты": remove the small labels "ГОМЕЛЬ · ЦЕНТРАЛЬНЫЙ РАЙОН" and "УЛ. ДОБРОЛЮБОВА" from the map; keep only the red pin with the tag "ул. Добролюбова, 8".

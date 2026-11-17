@@ -46,6 +46,8 @@
 
 ## Данные
 
+Лиды и результаты работы принадлежат пользователю: `leads/`, `list.csv`, `list.md`, `reports/`, `tmp/` и `data/shared-list.csv` хранятся локально и не включаются в Git. Каждый пользователь собирает свою базу; не добавлять эти пути принудительно через `git add -f`.
+
 ```
 leads/<slug>/                slug = домен, точки → дефисы (printex.by → printex-by)
   lead.json                  карточка лида (схема: scripts/lib/leads.ts → interface Lead)

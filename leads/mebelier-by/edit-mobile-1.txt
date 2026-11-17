@@ -1,5 +1,0 @@
-Fix only images, keep the layout, colors, fonts and ALL texts exactly as is. Photos must not repeat on the page. Replace with new distinct real-looking bright daylight interior photos (no text, no logos, no screenshots):
-1) Catalog tile "Мебель для кухни": L-shaped kitchen with matte sand-beige handleless fronts, oak open shelves and light stone countertop (different from the hero kitchen).
-2) Catalog tile "Прихожие": compact hallway with built-in oak wardrobe, bench with shoe storage and a round mirror (not the sliding wardrobe photo).
-3) Catalog tile "Корпусная мебель": bright modern office with light oak desks, cabinets and shelving (no workshop, no machines).
-4) "Только наши работы" carousel: first photo — kitchen with aluminium-frame glass wall cabinets and warm grey fronts; second photo — kids' room with built-in light wardrobe and desk.
