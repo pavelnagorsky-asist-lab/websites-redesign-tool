@@ -1,0 +1,30 @@
+Mobile version (390px wide) of the same homepage for "Мебельер" (furniture made to order with own production, Gomel, Belarus). Same visual style, colors and fonts as the desktop screen: warm travertine background #F4EFE8, light stone #E9E2D7, light oak #C9A27A, espresso #2B241F text and dark sections, caramel accent #B5784A buttons and labels, Lora serif headings, Golos Text body, thin hairlines, 6px corners, bright natural-daylight interior photos.
+
+STRICT CONTENT RULE: use ONLY the Russian texts below, word for word. Do NOT add prices, years, guarantees, delivery terms, discounts, counts of projects, reviews, ratings, names or extra addresses. If an item has no description below, show no description.
+
+Header: wordmark "МЕБЕЛЬЕР" (Lora, letter-spaced) with caption "мебель на заказ · Гомель", phone icon button, hamburger menu icon.
+
+Hero: tall real photo of a modern light kitchen with oak and matte beige fronts in daylight. Caramel label "Собственное производство в Гомеле". H1 "Кухни и мебель на заказ от производителя в Гомеле". Subtitle "Замер с выездом, дизайн-проект, изготовление и монтаж — без посредников". Full-width buttons "Заказать замер" (caramel) and "Написать в Viber" (outline). Below: three stacked thin-bordered rows: "Более десяти лет в производстве корпусной мебели", "Свои участки алюминиевых фасадов и дверей-купе", "Изделия подтверждены сертификатами".
+
+Label "Каталог", heading "Что мы делаем": 2-column grid of real photo tiles with captions only: "Мебель для кухни", "Шкафы и двери-купе", "Мебель для спальни", "Прихожие", "Корпусная мебель", "Мебель из дерева".
+
+Dark espresso block, heading "Заказывать мебель выгодно у производителя", list with caramel numbers:
+ 01 "Без посредников" — "Экономите деньги и время"
+ 02 "Точность исполнения" — "Заказ передаётся напрямую на производство"
+ 03 "Модель под вас" — "Корректируем модель под ваши потребности"
+ 04 "Короче сроки" — "Нет промежуточных звеньев"
+
+Heading "Как мы работаем": vertical timeline with thin oak line, titles only: "1. Замер с выездом на объект", "2. Интерьерное решение и подбор материалов", "3. Дизайн-проект мебели", "4. Изготовление на своём производстве", "5. Монтаж и авторский контроль".
+
+Heading "Только наши работы", small text "Реальные кухни и шкафы наших клиентов — без фото из салонов". Horizontal carousel of 3 bright real interior photos (kitchen, sliding wardrobe, bedroom), no captions, no text in photos. Button "Смотреть все работы".
+
+Block "Своё производство": photo of furniture workshop with oak boards (no faces), heading "Полный цикл — от доски до монтажа", tags "Сушка древесины", "Мебельные фасады", "Комплектующие".
+
+Form card, heading "Рассчитаем вашу кухню или шкаф": fields "Имя", "Телефон", select "Что нужно", upload "Фото или план помещения (необязательно)", checkbox "Нужен дизайн-проект", button "Отправить заявку" (caramel), note "Заявка сразу придёт менеджеру в Telegram".
+
+Heading "Контакты": "г. Гомель, ул. Войсковая, 7"; phone rows "+375 (29) 620-67-69 — кухни и мебель", "+375 (232) 42-94-93 — офис"; "info@mebelier.by"; light stylized map illustration in stone tones with a caramel pin (not a photo, not a screenshot).
+
+Footer (espresso): "МЕБЕЛЬЕР", links "Кухни", "Шкафы-купе", "Производство", "Контакты", "© 2026 ООО «Мебельер», г. Гомель".
+
+Sticky bottom bar (fixed, espresso): three buttons "Позвонить" (caramel filled), "Viber", "Telegram".
+Real-looking photos only, no text, logos or screenshots inside images.

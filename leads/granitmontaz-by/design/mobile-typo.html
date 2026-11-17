@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Гранит-Монтаж — Памятники в Бресте</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed-variant": "#51452a",
+            "on-background": "#e5e2e3",
+            "inverse-on-surface": "#313031",
+            "on-tertiary-fixed-variant": "#47464a",
+            "error-container": "#93000a",
+            "primary-fixed": "#ffdeaa",
+            "primary": "#e7c182",
+            "tertiary-container": "#9b9a9e",
+            "on-tertiary-fixed": "#1b1b1e",
+            "surface-container-lowest": "#0e0e0f",
+            "surface-tint": "#e7c182",
+            "surface-container-low": "#1c1b1c",
+            "on-surface": "#e5e2e3",
+            "primary-fixed-dim": "#e7c182",
+            "on-error-container": "#ffdad6",
+            "surface-container": "#201f20",
+            "on-error": "#690005",
+            "surface-container-highest": "#353436",
+            "on-primary-fixed-variant": "#5c420e",
+            "on-tertiary-container": "#323235",
+            "outline": "#9a8f81",
+            "tertiary-fixed": "#e4e1e5",
+            "on-primary": "#422c00",
+            "on-secondary-container": "#c8b793",
+            "primary-container": "#b8955a",
+            "on-primary-fixed": "#271900",
+            "tertiary-fixed-dim": "#c8c6c9",
+            "secondary-fixed": "#f3e0bb",
+            "background": "#131314",
+            "error": "#ffb4ab",
+            "on-tertiary": "#303033",
+            "inverse-primary": "#775a25",
+            "surface": "#131314",
+            "secondary": "#d6c5a1",
+            "tertiary": "#c8c6c9",
+            "outline-variant": "#4e463a",
+            "on-surface-variant": "#d1c5b5",
+            "on-secondary": "#3a2f16",
+            "on-secondary-fixed": "#231a04",
+            "inverse-surface": "#e5e2e3",
+            "secondary-fixed-dim": "#d6c5a1",
+            "secondary-container": "#54482c",
+            "surface-bright": "#39393a",
+            "surface-variant": "#353436",
+            "on-primary-container": "#452e00",
+            "surface-dim": "#131314",
+            "surface-container-high": "#2a2a2b"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            sm: "0.125rem",
+            md: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.375rem",
+            full: "9999px"
+          },
+          spacing: {
+            "margin": "4rem",
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.75rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            "headline-sm": ["EB Garamond", "serif"],
+            "label-lg": ["Manrope", "sans-serif"],
+            "headline-xl-mobile": ["EB Garamond", "serif"],
+            "headline-md": ["EB Garamond", "serif"],
+            "label-sm": ["Manrope", "sans-serif"],
+            "display-lg": ["EB Garamond", "serif"],
+            "display-lg-mobile": ["EB Garamond", "serif"],
+            "headline-xl": ["EB Garamond", "serif"],
+            "label-md": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"]
+          },
+          fontSize: {
+            "headline-sm": ["22px", { lineHeight: "30px", letterSpacing: "0.02em", fontWeight: "500" }],
+            "label-lg": ["13px", { lineHeight: "18px", letterSpacing: "0.14em", fontWeight: "600" }],
+            "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "0.01em", fontWeight: "400" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "0.01em", fontWeight: "400" }],
+            "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.22em", fontWeight: "700" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-md": ["11px", { lineHeight: "16px", letterSpacing: "0.18em", fontWeight: "600" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "400" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      background-color: #0e0e0f;
+      color: #e5e2e3;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased pb-28">
+<!-- Mobile Viewport Wrapper (390px locked representation or responsive mobile view) -->
+<div class="w-full max-w-[430px] mx-auto bg-surface-container-lowest min-h-screen relative shadow-2xl">
+<!-- 1. Header / TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 max-w-[430px] left-1/2 -translate-x-1/2">
+<!-- Monogram and Brand -->
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 border border-primary-container/40 flex items-center justify-center bg-surface-container">
+<span class="font-headline-sm text-label-md text-primary font-bold">ГМ</span>
+</div>
+<span class="text-headline-sm font-headline-sm tracking-widest uppercase text-on-surface">Гранит-Монтаж</span>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-1.5">
+<a class="w-10 h-10 flex items-center justify-center text-primary active:opacity-80 transition-opacity" href="tel:+375336224411">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</a>
+<button aria-label="Меню" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Content Spacer for Fixed Header -->
+<div class="h-16"></div>
+<!-- 2. Hero Section -->
+<section class="relative w-full pt-6 pb-10 px-margin-mobile flex flex-col justify-end min-h-[580px] border-b border-outline-variant/20 overflow-hidden">
+<!-- Hero Background Image with Atmospheric Darkness Gradient -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center scale-105" data-alt="Dusk photograph of a solitary, highly polished jet-black granite tombstone monument standing with quiet elegance in an autumn cemetery. The monumental stone reflects subtle warm golden light from a low-setting sun, with delicate hand-carved floral vine embellishments framing a centered cross. Low-key dramatic lighting, pure black stone reflections, solemn memorial architecture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsX1lfTW6sphdPwYOi8OKf_u2kB6qjs00rqm9AxZGAEklGksLAAHka3dv8p041EOkjVv7s23HmiFHnjz2CJZzXZhdxFFL1E2nzaFeYvT_lwOfTQ5uiMJmnn7wH81YXDksBPI7qXyerF_uvCh4kVi5qGf2VTiuw00eGsOi7L10pXjjeCVBH07uxyTXlkjo5pSsvHS-Jr7D-vIiiCc0Gl74K_Z46B-5Yq-1X4U-6BElH7MhPCeNkkAURhwgOxF2NuQOA4JgoBBn9m-I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/85 to-surface-container-lowest/40"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/30"></div>
+</div>
+<!-- Hero Overlay Content -->
+<div class="relative z-10 flex flex-col mt-auto">
+<!-- Region Tag -->
+<div class="inline-flex items-center gap-1.5 self-start px-2 py-0.5 bg-surface-container-low/90 border border-primary-container/30 mb-3">
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Брест и Брестская область</span>
+</div>
+<!-- H1 Headline -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface mb-3 tracking-wide">
+          Памятники из гранита и мрамора с установкой под ключ
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+          Бесплатный выезд дизайнера на дом и бесплатный 3D-проект памятника
+        </p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-col gap-2.5 w-full mb-8">
+<a class="w-full py-3.5 px-4 bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider text-center font-semibold hover:bg-primary transition-colors duration-150 rounded-none shadow-[0_4px_20px_rgba(184,149,90,0.15)]" href="#calculate">
+            Вызвать дизайнера бесплатно
+          </a>
+<a class="w-full py-3.5 px-4 bg-transparent border border-primary-container/40 text-on-surface font-label-lg text-label-lg uppercase tracking-wider text-center hover:border-primary-container hover:bg-primary-container/5 transition-colors duration-150 rounded-none" href="tel:+375336224411">
+            Позвонить
+          </a>
+</div>
+<!-- Stacked 3 Information Rows -->
+<div class="flex flex-col border-t border-outline-variant/30 divide-y divide-outline-variant/30 w-full bg-surface-container-lowest/70 backdrop-blur-sm">
+<div class="py-2.5 px-2 flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Рассрочка до 6 месяцев</span>
+</div>
+<div class="py-2.5 px-2 flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Памятники от 840 руб.</span>
+</div>
+<div class="py-2.5 px-2 flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Официальный подрядчик Брестского специализированного предприятия</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Section 'Акции' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-1">Акции</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Предложения</h2>
+</div>
+<!-- Horizontal Scrollable Carousel -->
+<div class="flex gap-4 overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile pb-2">
+<!-- Card 1 -->
+<div class="min-w-[260px] w-[260px] flex-shrink-0 bg-surface-container-low border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container-lowest">
+<img alt="Памятники из натурального гранита" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrA9LVB1y1jdRHOEUwdjo3zAV_BlOoqXzzB4tHIyhqRenVkUdF_qZpzmLunC2ZRjAc0N9iBcDAZgYPUiPJbjfTz1PwbPzw5N9nVwFnRiamY_TpGQZeovkj0TtS7HQ-gVQN6Te7KVG1a9znvo9qXWB1V5mZVFi6k3Y6n6DIzDDCwO_JKopoXCPimTnChDthdA26r3d93D02WrtWSpcZNW0SUa2kNYKhoWrWQsHiRWA02c7L5kQQhYJAvLYw"/>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<h3 class="font-headline-sm text-body-lg text-on-surface">Памятники из натурального гранита</h3>
+<span class="font-headline-sm text-headline-sm text-primary">от 840 руб.</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[260px] w-[260px] flex-shrink-0 bg-surface-container-low border border-primary-container/40 flex flex-col relative">
+<div class="absolute top-2.5 left-2.5 z-10 px-2 py-0.5 bg-surface-container-lowest/90 border border-primary-container/50">
+<span class="font-label-sm text-label-sm text-primary uppercase">Ваза в подарок</span>
+</div>
+<div class="relative w-full h-48 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Artisanal black granite stele standing upright under soft diffused lighting, featuring refined bespoke stone engraving, polished stone surface, dark charcoal atmosphere, no letters or numbers, quiet reverent memorial masonry in high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7d7vi4z69p2WvHi0N11thJdgiQd-CCroluSzgmHatt3-Sco4v9d_I2udp5I8CIhQ-prtsd0zIa4NYqPZF4mh8EBV3HoEWV2y87Y-GajTY-eQpuJrWxXjgJhubiqNvZzF9oUWIXgYags5g6Ip5LqFAmPC9y1PBLM8O-C8UB8svY-pLTAy_XlM2VVgNUfdhpDcTPP4wA3Q8wACS78_ylJ5fxvFQWKHsThsjaNCvReN1kY1tHJBR_xRmaGrvB1lHJtGAUTGLW1yXwAg"/>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<h3 class="font-headline-sm text-body-lg text-on-surface">Памятник с художественным оформлением стелы</h3>
+<span class="font-headline-sm text-headline-sm text-primary">от 3890 руб.</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[260px] w-[260px] flex-shrink-0 bg-surface-container-low border border-outline-variant/30 flex flex-col">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container-lowest">
+<img alt="Бюджетный памятник" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAO9pX_6iPfTCd_cH3zC5GddWBtlML2XbCiEmlmWc_6NPuXJLs4I2U-u_BJiBGghDhlowtbwvpiM4JDwpZweI95tkbRCpxy2mEDHqPNKVpMC1w9FYp4BB7VPfVqnLM95vSBbAe-ZRoIDdBggTq7Q8U7ZxOmYF3MihAvzVjYKnIwTmpbz_QOQjCaiyEu6SZ6j-TXv5Rxb80e_6Hz0JQh4GK3wJCbi0td27230vP8v1tqcir_0zm0ifQsuyg"/>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<h3 class="font-headline-sm text-body-lg text-on-surface">Бюджетный памятник</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Нержавеющая сталь и натуральный гранит</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">830 руб.</span>
+</div>
+</div>
+</div>
+<!-- Muted Note -->
+<p class="font-body-sm text-body-sm text-outline mt-3">
+        Точную стоимость рассчитаем после выбора модели и камня
+      </p>
+</section>
+<!-- 4. Section 'Выберите памятник' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Выберите памятник</h2>
+</div>
+<!-- 2-Column Grid -->
+<div class="grid grid-cols-2 gap-3 mb-6">
+<!-- Tile 1 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img alt="Вертикальные памятники" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrA9LVB1y1jdRHOEUwdjo3zAV_BlOoqXzzB4tHIyhqRenVkUdF_qZpzmLunC2ZRjAc0N9iBcDAZgYPUiPJbjfTz1PwbPzw5N9nVwFnRiamY_TpGQZeovkj0TtS7HQ-gVQN6Te7KVG1a9znvo9qXWB1V5mZVFi6k3Y6n6DIzDDCwO_JKopoXCPimTnChDthdA26r3d93D02WrtWSpcZNW0SUa2kNYKhoWrWQsHiRWA02c7L5kQQhYJAvLYw"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Вертикальные</span>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A low horizontal polished black granite memorial stone monument set horizontally across lush landscaped cemetery lawn, bordered by low granite kerbing and subtle bronze urn accessories. Overcast quiet day, timeless stone memorial architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4pxiEEKpVqr0M7xW5lfASmh6qJzW4anEa2ZTLZgExmpaiGUYFFqQRBW7H3Qr1eB4EqCZ2rtZ-4J4mH0QlxJeWv4sgmGYqJG2_1K2k03yQWlf0GegqJOq6GBDCPrqDtszotU0ds1qSrJP_mbUtzs6K9ueEcFG4_UM2Y2UkcPq4WBZbOrk6Kz84y59LaQZ653eqdOrLSjj2Kk1XthW71cIl1F0MSmFIfWxtOCeB1BgAwW-gdh59tH7ahAaXEGV107TgMvQdW3Tj9EY"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Горизонтальные</span>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img alt="Дизайнерские памятники" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrAO9pX_6iPfTCd_cH3zC5GddWBtlML2XbCiEmlmWc_6NPuXJLs4I2U-u_BJiBGghDhlowtbwvpiM4JDwpZweI95tkbRCpxy2mEDHqPNKVpMC1w9FYp4BB7VPfVqnLM95vSBbAe-ZRoIDdBggTq7Q8U7ZxOmYF3MihAvzVjYKnIwTmpbz_QOQjCaiyEu6SZ6j-TXv5Rxb80e_6Hz0JQh4GK3wJCbi0td27230vP8v1tqcir_0zm0ifQsuyg"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Дизайнерские</span>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Solid double grave monument crafted from lustrous dark gabbro stone with twin vertical arched steles in misty forest setting, dignified solemn architectural composition, precise hand-cut corners, moody damp atmospheric day." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFrATQqy0XsSR6GeML4UrF0GKklGv4CqyYvgjtbGOrrho1OyjUAPbEbsP-DHGPOuQqb2-mOFJOuecej-mWjLFulG7VkEc2uvx0bwI76pjz6c31a1R12bdusqTGi4VIlNKW3Ku-XcEFL2DPrYKP_jPs-IApfr-UuYs2xzR7IH99RUC9jo8zs6YbHnaVDn7roPzNNzFSns2AbAsA4aLwuAQSq2HKk4rJxeSnm70KVHBfHJy-0WnHGX5PJUJYKI9ZwUNSiesn-qhbARc"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Двойные</span>
+</div>
+</div>
+<!-- Tile 5 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Sculpted cross memorial headstone carved from massive monolithic solid black granite, standing gracefully on a raised stone plinth in an autumn cemetery background, warm metallic sun rays reflecting off beveled edges, no lettering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAugeVvwYeuIfoQtBcNmHd2DiJh_VJJ2KicBalZTCoJcYA_KXVTjrDJkfjv-PMGxs6O_TENNGxl1x7AM14ZIK3lI8ddf4qIJH8Y7U3WkGuXvGLPwB2yNWatbeuG_IOEl3njYTyAthb3r0LYKmYK-kbWNZGAqUoojYkA6BkfQiKH7UMHYavRu1h4EEAUiMuCTFF6RNLn-Os5__FOjVriqIP99F01SjDLXw8GfQiQiOjjE2X9UwnbwUg-M8tQLdvblZA9nSfPX-EIyLI"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">В виде креста</span>
+</div>
+</div>
+<!-- Tile 6 -->
+<div class="bg-surface-container-low border border-outline-variant/30 overflow-hidden flex flex-col group">
+<div class="w-full aspect-[4/5] overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Granite fencing and corner post perimeter memorial base enclosure surrounding polished stone floor slab, minimal geometric posts carved from natural stone in outdoor park setting, overcast moody morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtI0BYUbEgTUzjg-O3qSa3veDvlh-JUSmTJD0t8QV-7AthwxLX5aE1dfKw11TdivBfwECWWPTptN-3nMbL5e76YxXTZ6-ES-E8qiUz5SlU2MdXsHntwVRoEbatjY26QZBPFtX_qD7P3eRczwRiKPQy10AXbwz1kMp5zH0LQDu1yDOsMGQMSn-KkrZ6TU6HHOvq3cwSZPBICS52-JZHaLHbVujeXJD3PKDWRQinIybR_El1s7Oi4zGS9mMwSioPmePApItZ4sVnVnI"/>
+</div>
+<div class="p-2.5 text-center bg-surface-container-low border-t border-outline-variant/20">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Ограды</span>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<a class="block w-full py-3.5 border border-primary-container/40 text-on-surface font-label-lg text-label-lg uppercase tracking-wider text-center hover:border-primary-container hover:bg-primary-container/5 transition-colors" href="#calculate">
+        Весь каталог
+      </a>
+</section>
+<!-- 5. Feature Block (Home designer visit) -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20 bg-surface-container-low">
+<div class="w-full aspect-[16/10] overflow-hidden mb-5 border border-outline-variant/30 bg-surface-container-lowest">
+<img alt="Дизайнер на дом" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAjnGQZup44bxJ4WannGzX976_NE_fcpBF1TUDwzDakrz2Q4Qk572SfELtGWmZtFfL_cT6JP_xQpP2tqibJvjuvlKlMZkT_lxVDZ-Z0eyqEFmiQ17gVePdymj4_J30FbBU7mfwDOdfQ3VlpZ2ZOe_ctzdrat3rhaI_YT9xS0BEWc722irOkd36i08ffkWRukbjAS3ZNQXolSA6Z0KRRj0PNrrj_XCeJYxdHzhqlA2tD5uE_kcjYlDdkUIQ"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-3">
+        Впервые в Бресте — бесплатный выезд дизайнера на дом
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Поможет выбрать материал и оформление, по желанию поедет с вами к месту захоронения, бесплатно сделает 3D-проект и будет сопровождать заказ до установки.
+      </p>
+<a class="block w-full py-3.5 px-4 bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider text-center font-semibold hover:bg-primary transition-colors" href="#calculate">
+        Записаться на встречу
+      </a>
+</section>
+<!-- 6. Section 'Наши услуги' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Наши услуги</h2>
+</div>
+<div class="flex flex-col divide-y divide-outline-variant/25">
+<!-- Service 01 -->
+<div class="py-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-sm text-primary font-serif">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Изготовление памятников</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Из гранита, мрамора и гранитной крошки</p>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="py-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-sm text-primary font-serif">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Художественное оформление</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Портреты, орнаменты и декор стелы</p>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="py-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-sm text-primary font-serif">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Надписи на памятнике</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Имена, даты и эпитафии</p>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="py-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-sm text-primary font-serif">04</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Установка и благоустройство</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Монтаж, плитка, площадка, ограда</p>
+</div>
+</div>
+<!-- Service 05 -->
+<div class="py-4 flex gap-4 items-start">
+<span class="font-headline-md text-headline-sm text-primary font-serif">05</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Реконструкция старого захоронения</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Замена деталей, плитка, новая площадка</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Section 'Как мы работаем' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">Как мы работаем</h2>
+</div>
+<!-- Vertical Timeline with connected line -->
+<div class="relative pl-6 space-y-6 before:content-[''] before:absolute before:left-3 before:top-2 before:bottom-3 before:w-[1px] before:bg-primary-container/40">
+<!-- Node 1 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">1</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Заявка или звонок</span>
+</div>
+<!-- Node 2 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">2</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Дизайнер и 3D-макет</span>
+</div>
+<!-- Node 3 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">3</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Расчёт стоимости и договор</span>
+</div>
+<!-- Node 4 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">4</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Фото стелы на одобрение</span>
+</div>
+<!-- Node 5 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">5</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Монтаж и фото готового памятника</span>
+</div>
+<!-- Node 6 -->
+<div class="relative flex items-center">
+<div class="absolute -left-6 w-6 h-6 rounded-none bg-surface-container border border-primary-container flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary">6</span>
+</div>
+<span class="font-body-lg text-body-lg text-on-surface pl-3">Окончательный расчёт после установки</span>
+</div>
+</div>
+</section>
+<!-- 8. Section 'Наши работы' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Наши работы</h2>
+</div>
+<!-- Pure Photos Carousel, no text on photos -->
+<div class="flex gap-3 overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile pb-3">
+<!-- Photo 1 -->
+<div class="min-w-[280px] w-[280px] flex-shrink-0 aspect-[4/3] bg-surface-container-low border border-outline-variant/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Spacious finished black granite memorial complex featuring raised platform with grey granite tiles and black boundary stone borders, outdoor installation on green cemetery grass, authentic craftsmanship photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS7W66eBcc61NtBRG4Ldoo6TNrD3Lk0DVjq0n7MKjIiLMpyO9diaav4yJMPDcCMz81wkQRkNlxksxrYRlI6B9aYK7uMxFBOxvSqPrHvuqoe7Uk3xCzkQuJRUmI3-wHoWpOFdp5RFs5TEgp7KS_2n9Nv9oqXOKkPmRbCMP5Yo3lIjjJKYhIfcRiRpKeWVcW3qK85IGa8aFOfb7zfz-VxueESyFdE4ptuPzF3tLGVxaWvukWNRTQI_bRPDK2US-qKqQqsKFQMyFslso"/>
+</div>
+<!-- Photo 2 -->
+<div class="min-w-[280px] w-[280px] flex-shrink-0 aspect-[4/3] bg-surface-container-low border border-outline-variant/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Completed monumental stone memorial with granite fence columns and decorative pebble filling in center, misty birch tree cemetery backdrop, pristine craftsmanship, no text or overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZeZ0QitYSTw6PnIrECNc0LuNITAbmlGNu4Krdc0Fo3e-4nNqD9siwXbDfnwQsxRykNLsSPedQoFFVUNtz2IhBbHyzhyxo5dTpRpUdzfGpoJXDuaNzhH_V7D6W0CRup1c1g50bkQ6xxjDSIefGGi0t-AUuoGnaVIZOGa3S-pTgaPM8hu8ycUUqVHDX8mNnxWOLsJS5SXY7DOG_grPIha4BBtN8UnG-BVIKS8pXGMG3-MV2PDIAnBfY4Tv7LAJmMBZ4ffHxc7Eq64"/>
+</div>
+<!-- Photo 3 -->
+<div class="min-w-[280px] w-[280px] flex-shrink-0 aspect-[4/3] bg-surface-container-low border border-outline-variant/30 overflow-hidden">
+<img alt="Обработка камня мастером" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAYmMeFZ7JJC98nZsj2hPDtfiq-9LHgnBsfgnj3kvI470EDTVqoNJejRosGHSRk5y10tmudSw7pjf0k6vnOrs88_Gjxc290dgM8D76BL92fXp4LA-iObgunHuSpXqlOncG_8RZt2oj49fB4XS_zOlH4Yo_54oQszTZ0F3uuBl9RdqmkNSwe71eDLMqp7y3z4O3cS7EcPaxdyAxzsLqZxtq2klOGS_iw-zK6X1QxI7G7P2E4mtMLpqcOTg0"/>
+</div>
+</div>
+<!-- Social Account Link -->
+<div class="mt-4 text-center">
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-fixed underline underline-offset-4 decoration-primary-container/40 transition-colors" href="https://instagram.com" rel="noopener" target="_blank">
+<span>Мы в Instagram @granitmontaz</span>
+</a>
+</div>
+</section>
+<!-- 9. Form Card -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20" id="calculate">
+<div class="bg-surface-container-low border border-outline-variant/30 p-5">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-5 text-center">
+          Рассчитать стоимость памятника
+        </h2>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<!-- Имя -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-outline mb-1.5">Имя</label>
+<input class="w-full bg-[#141416] border border-outline-variant/40 text-on-surface px-3.5 py-3 font-body-md text-body-md focus:border-primary-container focus:ring-0 rounded-none placeholder-outline/60" placeholder="Ваше имя" type="text"/>
+</div>
+<!-- Телефон -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-outline mb-1.5">Телефон</label>
+<input class="w-full bg-[#141416] border border-outline-variant/40 text-on-surface px-3.5 py-3 font-body-md text-body-md focus:border-primary-container focus:ring-0 rounded-none placeholder-outline/60" placeholder="+375 (__) ___-__-__" type="tel"/>
+</div>
+<!-- Тип памятника -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-outline mb-1.5">Тип памятника</label>
+<select class="w-full bg-[#141416] border border-outline-variant/40 text-on-surface px-3.5 py-3 font-body-md text-body-md focus:border-primary-container focus:ring-0 rounded-none">
+<option value="single">Одиночный памятник</option>
+<option value="double">Двойной памятник</option>
+<option value="complex">Мемориальный комплекс</option>
+</select>
+</div>
+<!-- Фото или эскиз (необязательно) -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-outline mb-1.5">Фото или эскиз (необязательно)</label>
+<label class="w-full border border-dashed border-outline-variant/60 bg-[#141416] px-3.5 py-3 flex items-center justify-between cursor-pointer hover:border-primary-container transition-colors">
+<span class="font-body-sm text-body-sm text-outline">Выберите файл</span>
+<span class="material-symbols-outlined text-outline" data-icon="attach_file">attach_file</span>
+<input class="hidden" type="file"/>
+</label>
+</div>
+<!-- Нужен выезд дизайнера -->
+<div class="pt-1">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 bg-surface-container border-primary-container/60 text-primary-container focus:ring-0 rounded-none" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Нужен выезд дизайнера</span>
+</label>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full py-3.5 px-4 bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider text-center font-semibold hover:bg-primary transition-colors" type="submit">
+              Отправить заявку
+            </button>
+</div>
+<!-- Note -->
+<p class="font-body-sm text-body-sm text-outline text-center pt-1">
+            Заявка сразу приходит мастеру в Viber
+          </p>
+</form>
+</div>
+</section>
+<!-- 10. Section 'Контакты' -->
+<section class="py-10 px-margin-mobile border-b border-outline-variant/20">
+<div class="mb-5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Контакты</h2>
+</div>
+<div class="space-y-4">
+<!-- Address -->
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="location_on">location_on</span>
+<div>
+<span class="block font-label-md text-label-md text-outline uppercase">Адрес</span>
+<span class="font-body-md text-body-md text-on-surface">Брестский р-н, аг. Каменица-Жировецкая, ул. Советская 21/1</span>
+</div>
+</div>
+<!-- Working hours -->
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="schedule">schedule</span>
+<div>
+<span class="block font-label-md text-label-md text-outline uppercase">Режим работы</span>
+<span class="font-body-md text-body-md text-on-surface">ПН–ПТ 10:00–19:00, СБ 10:00–15:00, ВС — выходной</span>
+</div>
+</div>
+<!-- Alert Note with Gold Border -->
+<div class="p-3 bg-surface-container-low border border-primary-container/40 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+<span class="font-body-sm text-body-sm text-primary">Перед приездом обязательно позвоните</span>
+</div>
+<!-- Phone numbers (stacked, clean) -->
+<div class="pt-2 space-y-2">
+<a class="flex items-center gap-3 p-3 bg-surface-container-low border border-outline-variant/30 hover:border-primary-container transition-colors" href="tel:+375336224411">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="font-headline-sm text-headline-sm text-on-surface"><span style="white-space:nowrap">+375 (33) 622-44-11</span></span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-surface-container-low border border-outline-variant/30 hover:border-primary-container transition-colors" href="tel:+375298039999">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="font-headline-sm text-headline-sm text-on-surface"><span style="white-space:nowrap">+375 (29) 803-99-99</span></span>
+</a>
+</div>
+<!-- Email -->
+<div class="flex items-center gap-3 pt-1">
+<span class="material-symbols-outlined text-outline" data-icon="mail">mail</span>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="mailto:granitmontaz3@gmail.com">
+            granitmontaz3@gmail.com
+          </a>
+</div>
+<!-- Stylized Dark Map Illustration Box (Not a screenshot) -->
+<div class="relative w-full h-44 bg-surface-container border border-outline-variant/30 overflow-hidden mt-4 flex items-center justify-center">
+<!-- Subtle geometric map lines -->
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="absolute w-full h-[1px] bg-outline top-1/4"></div>
+<div class="absolute w-full h-[1px] bg-outline top-2/3"></div>
+<div class="absolute h-full w-[1px] bg-outline left-1/3"></div>
+<div class="absolute h-full w-[1px] bg-outline left-3/4"></div>
+<div class="absolute w-full h-full border-2 border-outline-variant/40 rotate-12 scale-125"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-1.5 text-center">
+<div class="w-9 h-9 border border-primary-container bg-surface-container-lowest flex items-center justify-center text-primary shadow-lg">
+<span class="material-symbols-outlined" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Каменица-Жировецкая</span>
+</div>
+</div>
+<!-- Map Route CTA -->
+<a class="block w-full py-3.5 px-4 bg-transparent border border-outline-variant/40 text-on-surface font-label-lg text-label-lg uppercase tracking-wider text-center hover:border-primary-container hover:bg-surface-container-low transition-colors" href="https://yandex.ru/maps" rel="noopener" target="_blank">
+          Маршрут в Яндекс Навигаторе
+        </a>
+</div>
+</section>
+<!-- 11. Footer -->
+<footer class="w-full px-margin-mobile py-8 flex flex-col gap-6 items-center text-center border-t border-outline-variant/30 bg-surface-container-lowest">
+<!-- Brand mark -->
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 border border-primary-container/40 flex items-center justify-center bg-surface-container">
+<span class="font-headline-sm text-label-sm text-primary font-bold">ГМ</span>
+</div>
+<span class="text-headline-sm font-headline-sm tracking-widest uppercase text-on-surface">Гранит-Монтаж</span>
+</div>
+<!-- Navigation links -->
+<nav class="flex flex-wrap justify-center gap-x-5 gap-y-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md uppercase" href="#catalog">Памятники</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md uppercase" href="#fences">Ограды</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md uppercase" href="#services">Услуги</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md uppercase" href="#contacts">Контакты</a>
+</nav>
+<!-- Social Icons -->
+<div class="flex items-center gap-4">
+<a aria-label="Viber" class="w-9 h-9 border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary-container transition-colors" href="viber://chat">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+</a>
+<a aria-label="Instagram" class="w-9 h-9 border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary-container transition-colors" href="https://instagram.com">
+<span class="material-symbols-outlined text-lg" data-icon="photo_camera">photo_camera</span>
+</a>
+</div>
+<!-- Copyright -->
+<div class="pt-2 border-t border-outline-variant/20 w-full">
+<span class="text-body-sm font-body-sm text-outline">© 2026 Гранит-Монтаж</span>
+</div>
+</footer>
+<!-- 12. Sticky Bottom Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 bg-surface-container-lowest/95 backdrop-blur-md border-t border-primary-container/30 max-w-[430px] left-1/2 -translate-x-1/2 shadow-[0_-8px_24px_rgba(0,0,0,0.85)]">
+<!-- 1: Позвонить (Gold filled button) -->
+<a class="flex-1 mx-1 py-2 px-1 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-1.5 active:opacity-80 transition-opacity" href="tel:+375336224411">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+<span>Позвонить</span>
+</a>
+<!-- 2: Viber (Dark button with subtle border) -->
+<a class="flex-1 mx-1 py-2 px-1 bg-surface-container border border-outline-variant/40 text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-1.5 hover:border-primary-container active:bg-surface-container-high transition-colors" href="viber://chat">
+<span class="material-symbols-outlined text-base text-primary" data-icon="chat">chat</span>
+<span>Viber</span>
+</a>
+<!-- 3: Заявка (Dark button with subtle border) -->
+<a class="flex-1 mx-1 py-2 px-1 bg-surface-container border border-outline-variant/40 text-on-surface font-label-sm text-label-sm uppercase tracking-wider flex items-center justify-center gap-1.5 hover:border-primary-container active:bg-surface-container-high transition-colors" href="#calculate">
+<span class="material-symbols-outlined text-base text-primary" data-icon="edit_note">edit_note</span>
+<span>Заявка</span>
+</a>
+</nav>
+</div>
+</body></html>

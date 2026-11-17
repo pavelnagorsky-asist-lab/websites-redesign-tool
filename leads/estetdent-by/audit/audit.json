@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "http://www.estetdent.by",
+  "finalUrl": "http://www.estetdent.by/",
+  "httpStatus": 200,
+  "lastModified": "Tue, 17 Nov 2026 09:04:46 GMT",
+  "server": "BitNinja-Waf3\nnginx",
+  "loadMs": 11075,
+  "bytes": 6132614,
+  "requests": 781,
+  "viewportMeta": "",
+  "generator": "CITYNET",
+  "cms": [
+    "Joomla"
+  ],
+  "jquery": "1.3.2",
+  "legacy": {
+    "tables": 4,
+    "nestedTables": 1,
+    "layoutTables": 0,
+    "fontTags": 0,
+    "centerTags": 0,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 109
+  },
+  "copyrightYears": [
+    2011
+  ],
+  "contentWidth": 1000,
+  "docHeight": 2990,
+  "bodyFont": "Arial, Helvetica, sans-serif",
+  "mobile": {
+    "viewportMeta": "",
+    "innerWidth": 1274,
+    "screenWidth": 390,
+    "scrollWidth": 1274,
+    "scale": 0.30612244897959184,
+    "smallTextRatio": 1,
+    "smallTapRatio": 0.8823529411764706,
+    "overflow": [],
+    "brokenImages": 3,
+    "docHeight": 2990
+  },
+  "brokenImages": 6,
+  "consoleErrors": [
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 400 ()",
+    "Failed to load resource: the server responded with a status of 400 ()",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Framing 'https://developers.google.com/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://codeassist.google.com https://code-assist-free-tier.corp.google.com h",
+    "Failed to load resource: the server responded with a status of 424 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR",
+    "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+    "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: the server responded with a status of 403 ()"
+  ],
+  "complexity": [
+    "поиск по сайту",
+    "многоязычность"
+  ],
+  "score": 91,
+  "reasons": [
+    "Нет мобильной версии: сайт на телефоне показывается уменьшенной копией десктопа",
+    "На телефоне 100% текста мельче 12px — читать невозможно без зума",
+    "Мелкие ссылки и кнопки — по ним сложно попасть пальцем",
+    "Нет HTTPS — браузер помечает сайт как «Не защищён»",
+    "Узкая фиксированная вёрстка 1000px — на современных мониторах по бокам пустота",
+    "В подвале © 2011 — сайт выглядит заброшенным",
+    "Очень старый jQuery 1.3.2",
+    "Тяжёлая главная страница: 6.1 МБ",
+    "Медленная загрузка: 11.1 с",
+    "Битые изображения: 6",
+    "Ошибки JavaScript в консоли: 61"
+  ]
+}

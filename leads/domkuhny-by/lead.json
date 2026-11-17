@@ -1,0 +1,66 @@
+{
+  "slug": "domkuhny-by",
+  "company": "Дом кухни",
+  "industry": "Мебель на заказ / кухни",
+  "city": "Гомель",
+  "country": "BY",
+  "site": "http://domkuhny.by",
+  "domain": "domkuhny.by",
+  "contacts": {
+    "emails": [
+      "gomelkuhni@tut.by"
+    ],
+    "phones": [
+      "+375 (44) 584-22-33",
+      "+375 (29) 373-84-85"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/gomel_kuhni/"
+    ],
+    "vk": [],
+    "facebook": [],
+    "address": "г. Гомель, пр-т Ленина, 30"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 5,
+    "potential": 6,
+    "complexity": 4
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [
+    "Почта gomelkuhni@tut.by — вероятно, тот же владелец, что и у мёртвого gomelkuhni.by"
+  ],
+  "rejectReason": "Квиз-лендинг 2019 года, но нормальный адаптив и понятный CTA — визуально не устарел настолько, чтобы продать редизайн",
+  "activitySignals": [
+    "Instagram gomel_kuhni"
+  ],
+  "design": null,
+  "source": "поиск: кухни на заказ Гомель (WebSearch)",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 30,
+    "reasons": [
+      "Нет HTTPS — браузер помечает сайт как «Не защищён»",
+      "В подвале © 2019 — сайт выглядит заброшенным",
+      "Тяжёлая главная страница: 21.6 МБ",
+      "Медленная загрузка: 7.4 с"
+    ],
+    "complexity": "medium",
+    "complexitySignals": [
+      "карта",
+      "каталог с ценами (~75 цен на главной)"
+    ],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

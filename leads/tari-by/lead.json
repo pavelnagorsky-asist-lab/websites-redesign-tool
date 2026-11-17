@@ -1,0 +1,67 @@
+{
+  "slug": "tari-by",
+  "company": "Медицинский центр «Тари»",
+  "industry": "Медицинский центр",
+  "city": "Бобруйск",
+  "country": "BY",
+  "site": "https://tari.by",
+  "domain": "tari.by",
+  "contacts": {
+    "emails": [
+      "info@tari.by",
+      "dimly201@gmail.com"
+    ],
+    "phones": [
+      "+375 (22) 568-06-20",
+      "+375 (29) 117-22-72",
+      "+375 (33) 686-22-72"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/tari_bobr/"
+    ],
+    "vk": [
+      "https://vk.com/tariby"
+    ],
+    "facebook": [],
+    "address": "Г. БОБРУЙСК, УЛ. СОЦИАЛИСТИЧЕСКАЯ 92"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 3,
+    "potential": 7,
+    "complexity": 6
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Современный сайт с приложением онлайн-записи и разделом врачей — редизайн не продать.",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch: медицинский центр Бобруйск",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 7,
+    "reasons": [
+      "Тяжёлая главная страница: 10.0 МБ",
+      "Нет meta description — хуже выглядит в поиске"
+    ],
+    "complexity": "low",
+    "complexitySignals": [
+      "карта"
+    ],
+    "cms": [
+      "MODX"
+    ],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

@@ -1,0 +1,10 @@
+Fix factual text only. Keep the layout, colors, fonts (Manrope headings, Inter body), photos and style exactly as is.
+
+1. Header: remove the small caption "Мастер-приёмщик" under the phone number.
+2. Hero trust row: "63 отзыва клиентов" → "63 отзыва на avservice.by".
+3. Section "Популярные услуги": subtitle → "Кузовной ремонт, покраска, обслуживание и ремонт автомобилей на двух адресах в Полоцке". On the second card photo remove the badge "Камера R-M" (replace with "Покрасочная камера").
+4. Booking section left list: "Ответ мастера в течение 10 минут" → "Подтверждение в Telegram или Viber"; "Фиксация времени без очереди" → "Два адреса на выбор".
+5. Section "Стоимость работ": subtitle "Прозрачное ценообразование без скрытых переплат" → "Цены на основные работы".
+6. "Как мы работаем" step 04 text → "Ремонт, проверка и передача автомобиля владельцу".
+7. Contacts map: remove the subtitles "Кузовной цех & ТО" and "3D Bosch & Диагностика" under the pins (keep only the street names), remove "Двина / Центр" and the bottom note "Удобный заезд с главных магистралей Полоцка и Новополоцка".
+8. Footer: description → "СТО «R-M СЕРВИС» в Полоцке: кузовной ремонт и покраска, обслуживание и ремонт автомобилей."; in column "Клиентам" replace "Регламент ТО" with "Статьи" and remove "Гарантийные обязательства"; bottom line → "© 2026 СТО «R-M СЕРВИС», г. Полоцк. Все права защищены." (remove "Сертифицированный центр технического обслуживания.").

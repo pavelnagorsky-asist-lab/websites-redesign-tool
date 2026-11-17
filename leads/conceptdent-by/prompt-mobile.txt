@@ -1,0 +1,35 @@
+Mobile version (390px wide) of the same homepage for "Concept Dent — Стоматология на Крыленко" (private dental clinic, Mogilev, Belarus). Same visual style, colors and fonts as the desktop screen: white #FFFFFF and light mist #F3F7F6 backgrounds, sage surface #E3EFEA, deep ink-teal text #12302B, fresh clinical green accent #23A26D for buttons and labels, Manrope headings, Inter body, 20px rounded corners, pill buttons, thin #DDE7E3 borders.
+
+STRICT CONTENT RULE: use ONLY the Russian texts below, word for word. Do NOT add prices, years, guarantees, licenses, numbers of patients, extra doctor names, reviews or any other facts.
+
+Header (white): green tooth mark + "Concept Dent" with caption "Стоматология на Крыленко", phone icon button, hamburger menu icon.
+
+Hero: green label "Частная стоматологическая клиника · Могилёв". H1 "Стоматология в Могилёве: имплантация, протезирование и лечение зубов". Subtitle "Сохраняем нерв, корень и здоровые зубы, если это возможно." Rounded photo of a smiling adult woman in a bright modern dental clinic, small white rating chip on the photo: green star "4,6 · 11 отзывов на LocalGo.by". Full-width buttons "Записаться на консультацию" (green) and "Написать в Viber" (outline). Three stacked rows with green check icons: "Бесплатный мультимедийный план лечения", "Пн–Сб 9:00–20:00", "ул. Крыленко, 7".
+
+Card "Онлайн-запись": select "Услуга", date "17.11.2026", select "Время", "Телефон", full-width button "Записаться", note "Подтвердим звонком или в Viber/Telegram".
+
+Heading "Что мы делаем": single-column cards with small rounded photo, title and one line:
+ - "Протезирование на имплантах" — "Восстановление одного или всех зубов"
+ - "Протезирование" — "Коронки и протезы с точной эстетикой"
+ - "Лечение зубов" — "Сохраняем нерв и корень, если возможно"
+ - "Отбеливание" — "Светлая улыбка без вреда для эмали"
+Sage note: "Стоимость рассчитаем на бесплатной консультации — с мультимедийным планом лечения." Button "Узнать стоимость".
+
+Section "Концепция": quote "Мелочи создают совершенство, а совершенство — не мелочь", then list 01–04: "Не удаляем нерв у здорового зуба", "Не удаляем корень, если можно восстановить", "Не обтачиваем здоровые зубы", "Не лечим то, что не прослужит долго".
+
+Block "Главный врач": rounded portrait photo of a friendly male dentist in a white coat, name "Жигалов Михаил Александрович", text "Профессиональный подход, порядочное и деликатное отношение к работе и к миссии врача." Link "Наша команда →".
+
+Sage block "Для иностранных пациентов": heading "Стоматологический туризм в Могилёве", text "Лечение в разы дешевле, чем за границей. Пациенты приезжают к нам целыми семьями." Three rows with icons: "Полное сопровождение", "План лечения и стоимость до приезда", "Связь в Viber и Telegram". Button "Получить план лечения".
+
+Heading "Галерея улыбок": horizontal carousel of 3 rounded photos of natural healthy smiles (no text).
+
+Heading "Как проходит лечение": vertical steps 1–4 with green circles: "Заявка онлайн или звонок", "Бесплатная консультация", "План лечения и стоимость", "Лечение без лишнего вмешательства".
+
+Form card "Оставить заявку": "Имя", "Телефон", select "Услуга", button "Отправить заявку" (green), note "Заявка сразу приходит администратору в Telegram".
+
+Contacts: light stylized map illustration with green pin, "г. Могилёв, ул. Крыленко, 7", "Пн–Сб 9:00–20:00, Вс — выходной", "+375 (29) 196-61-93", "+375 (29) 304-61-93", "info@conceptdent.by".
+
+Footer (deep ink-teal #12302B): "Concept Dent", "© 2026 Concept Dent. Стоматология в Могилёве".
+
+Sticky bottom bar (fixed, white with top border): three buttons "Позвонить" (green filled), "Viber", "Telegram".
+Real-looking photos only, no text or screenshots inside images.

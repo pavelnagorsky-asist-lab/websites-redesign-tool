@@ -21,7 +21,7 @@ const warnings: string[] = [];
 const ready: Lead[] = [];
 for (const l of all.filter((l) => l.status === 'designed')) {
   const errs = validateLead(l);
-  if (l.design && !l.design.shared) errs.push('проект Stitch не публичный (scripts/stitch.ts publish)');
+  if (l.design && !l.design.shared) errs.push('проект Stitch не публичный (scripts/stitch.ts verify)');
   if (errs.length) warnings.push(`⚠ ${l.slug} не внесён: ${errs.join('; ')}`);
   else ready.push(l);
 }

@@ -1,0 +1,71 @@
+{
+  "slug": "mega-mebel-by",
+  "company": "МЕГАмебель",
+  "industry": "Мебель на заказ / кухни",
+  "city": "Гомель",
+  "country": "BY",
+  "site": "https://mega-mebel.by",
+  "domain": "mega-mebel.by",
+  "contacts": {
+    "emails": [
+      "1654421@mail.ru",
+      "artmebel2004@mail.ru"
+    ],
+    "phones": [
+      "+375 (29) 165-44-21",
+      "+375 (29) 336-59-81",
+      "+375 (29) 333-93-65",
+      "+375 (29) 812-33-84"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/mega_mebel.by/"
+    ],
+    "vk": [],
+    "facebook": [],
+    "address": "ул. Комсомольская, 1, г.Гомель"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 5,
+    "potential": 6,
+    "complexity": 4
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Свежий WordPress-шаблон с нормальной мобильной версией — сайт «не модный, но нормальный»",
+  "activitySignals": [
+    "Салон на ул. Комсомольская, 1 и производство на ул. Калинина, 22; Instagram"
+  ],
+  "design": null,
+  "source": "поиск: кухни на заказ Гомель (WebSearch)",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 15,
+    "reasons": [
+      "Тяжёлая главная страница: 12.3 МБ",
+      "Медленная загрузка: 7.2 с",
+      "Ошибки JavaScript в консоли: 4",
+      "Нет meta description — хуже выглядит в поиске"
+    ],
+    "complexity": "medium",
+    "complexitySignals": [
+      "карта",
+      "многоязычность"
+    ],
+    "cms": [
+      "WordPress",
+      "Joomla",
+      "MODX"
+    ],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

@@ -1,0 +1,31 @@
+Mobile version (390px wide) of the same homepage for "GomelMebel" (furniture made to order since 2005, Gomel, Belarus). Same visual style, colors and fonts as the desktop screen: white #FFFFFF background, light grey surface #F2F2F0, graphite #1E1F22 text and dark sections, grey #6B6E73 secondary text, thin hairlines #E2E2DF, one accent brand red #D72631 for buttons, labels and numbers; Unbounded headings, Inter body; 4px corners; bright daylight interior photos with white and graphite handleless furniture.
+
+STRICT CONTENT RULE: use ONLY the Russian texts below, word for word. Do NOT add prices, guarantees, production terms, counts of projects, reviews, ratings, names, emails or extra addresses. If an item has no description below, show no description. No text line may start with a dash.
+
+Header: wordmark "GomelMebel" (Unbounded, small red square before it), caption "Мебель под заказ в Гомеле", phone icon button, hamburger menu icon.
+
+Hero: tall real photo of a modern kitchen with matte white and graphite handleless fronts and a red glass backsplash, daylight. Red label "С 2005 года · Гомель". H1 "Мебель под заказ в Гомеле". Subtitle "Кухни, шкафы-купе, гостиные и детские по индивидуальному проекту. Бесплатный выезд мастера и дизайнера, 3D-проект, доставка и установка." Full-width buttons "Вызвать замерщика" (red) and "Перезвонить мне" (graphite outline). Below: two thin-bordered chips "Рассрочка до 8 месяцев" and "Скидка 5% при 100% предоплате".
+
+Red label "Каталог", heading "Что мы делаем": 2-column grid of real photo tiles with captions only: "Кухни", "Шкафы-купе", "Гостиные", "Спальни", "Прихожие", "Детские", "Комоды", "Столы компьютерные". Every tile has a different photo.
+
+Graphite block, white heading "Наше мастерство для вас", list with big red numbers:
+ 01 "Бесплатный выезд мастера и дизайнера"
+ 02 "Проект в 3D"
+ 03 "Экологичные материалы"
+ 04 "Доставка и установка"
+ 05 "Оптимальные цены"
+
+Heading "Как мы работаем": vertical timeline with thin red line: "1. Заявка на сайте или звонок", "2. Бесплатный выезд и замер", "3. 3D-проект и выбор фасадов", "4. Изготовление и установка".
+
+Heading "Удобная оплата": two stacked light grey cards: card with big red "до 8 месяцев", title "Рассрочка", text "При заказе от 1000 руб. рассрочка от 3 до 8 месяцев."; card with big red "5%", title "Скидка на мебель", text "При 100% предоплате."
+
+Block "О компании": photo of a bright living room with a white and graphite media wall, red label "С 2005 года", heading "Для нас нет сложных задач", text "Реализуем проекты, которые создают сами клиенты или наши дизайнеры."
+
+Form card, graphite heading "Рассчитаем стоимость вашей мебели": fields "Имя", "Телефон", select "Что нужно", field "Комментарий (необязательно)", button "Отправить заявку" (red), small note "Заявка сразу придёт менеджеру в Telegram".
+
+Heading "Контакты": "г. Гомель, ул. Добролюбова, 8"; "+375 (29) 604-18-04"; "Пн–Пт 9:00–18:00"; light grey stylized map illustration with a red pin (not a screenshot).
+
+Footer (graphite): "GomelMebel", links "Каталог", "Рассрочка", "Акции", "Контакты", "© 2026 GomelMebel.by · г. Гомель".
+
+Sticky bottom bar (fixed, graphite): two buttons "Позвонить" (red filled) and "Заказать замер" (white outline).
+Real-looking photos only, no text, logos or screenshots inside images, photos must not repeat.

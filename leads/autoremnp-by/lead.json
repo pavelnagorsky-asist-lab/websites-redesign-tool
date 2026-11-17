@@ -1,0 +1,49 @@
+{
+  "slug": "autoremnp-by",
+  "company": "СТО Автоклуб",
+  "industry": "СТО / ремонт авто",
+  "city": "Новополоцк",
+  "country": "BY",
+  "site": "https://autoremnp.by",
+  "domain": "autoremnp.by",
+  "contacts": {
+    "emails": [],
+    "phones": [],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": ""
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": null,
+    "potential": null,
+    "complexity": null
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Сайт не работает (домен не резолвится)",
+  "activitySignals": [],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [
+      "Сайт не открывается: page.goto: net::ERR_NAME_NOT_RESOLVED at http://autoremnp.by/"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": false
+  },
+  "notes": ""
+}

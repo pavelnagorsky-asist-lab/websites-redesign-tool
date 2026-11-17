@@ -1,0 +1,12 @@
+Fix factual text only. Keep the layout, colors, fonts, photos and style exactly as is.
+
+1. Header caption under "ВСЕ ВОРОТА": "МИНСК • ЗАВОД" → "ВОРОТА ПОД КЛЮЧ".
+2. Hero photo: remove the badge "ГОСТ 31174-2017" (keep "5000 × 2000 мм").
+3. Hero 2×2 fact cards: remove the small grey subtitles ("Бригада из 2 инженеров", "По официальному договору", "Цех в Минском районе", "Прямые поставки металла") — keep only the titles with icons.
+4. "Что мы делаем": "Заборы" description → "Профнастил, штакетник, кирпич, поликарбонат, сетка-рабица". "Навесы и калитки" description → "Навесы из поликарбоната, калитки с электромеханическим замком". Remove "[04 ТИПА]".
+5. "Выполненные работы": remove "2024" near the heading and remove the badge "СДАНО ЗА 1 ДЕНЬ" (keep "ПОД КЛЮЧ" only on the second card).
+6. "Как мы работаем" step descriptions: 01 "Звонок, форма на сайте, Viber или Telegram"; 02 "Выезд замерщика и консультация — бесплатно"; 03 "Расчёт стоимости за 15 минут"; 04 "На собственном производстве"; 05 "Установка ворот за 1 день".
+7. Reviews: heading "Оценка нашей работы" → "Отзывы клиентов"; remove the stars and "д. Тарасово" under "Антон Романович".
+8. Form: text under "Вызовите замерщика бесплатно" → "Заявка сразу приходит менеджеру в Viber и Telegram. Перезвоним и поможем с выбором."
+9. Contacts: "Телефоны отдела продаж" → "Телефоны"; map label "ул. Уманская 54 · ст.м. Михалово" → "ул. Уманская 54".
+10. Footer: remove "УНП 193000000" — the line should read "© 2026 Все ворота. Производство и установка ворот по всей РБ · ТЦ Globo, ул. Уманская 54"; remove "ИНДУСТРИАЛЬНЫЙ СТАНДАРТ".

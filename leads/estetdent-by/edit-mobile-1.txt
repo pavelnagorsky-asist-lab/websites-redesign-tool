@@ -1,0 +1,3 @@
+Fix only this point, keep the layout, colors, fonts, photos, sticky bottom bar and all other content exactly as is:
+
+In the "Карта проезда" card (under Contacts) replace the white text box "Кабинет расположен в историческом центре, в 200 метрах от площади Орджоникидзе. Вход во внутренний двор, офис 12 на 1 этаже." with a light warm-toned stylized map illustration (beige streets on cream, a bordeaux pin in the centre), and under the map one line of text exactly: "Центр города, 2 минуты пешком от площади Орджоникидзе". Do not add any other text, coordinates, floors or distances.

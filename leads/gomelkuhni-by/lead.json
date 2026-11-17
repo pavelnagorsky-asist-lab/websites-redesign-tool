@@ -1,0 +1,53 @@
+{
+  "slug": "gomelkuhni-by",
+  "company": "Кухни Гомель (мастерская Ю. Михрячёва)",
+  "industry": "Мебель на заказ / кухни",
+  "city": "Гомель",
+  "country": "BY",
+  "site": "https://gomelkuhni.by",
+  "domain": "gomelkuhni.by",
+  "contacts": {
+    "emails": [],
+    "phones": [
+      "+375 (29) 671-85-00"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": "г. Гомель, ул. Гагарина, 46Б"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 0,
+    "potential": 3,
+    "complexity": 0
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [
+    "В выдаче ещё висит сниппет (ул. Гагарина, 46Б, тел. 8 029 671-85-00); почта gomelkuhni@tut.by указана на domkuhny.by — возможно, бизнес переехал туда"
+  ],
+  "rejectReason": "Сайт не работает — домен не резолвится (ERR_NAME_NOT_RESOLVED, проверено и через WebFetch)",
+  "activitySignals": [],
+  "design": null,
+  "source": "поиск: мебель на заказ Гомель (WebSearch)",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [
+      "Сайт не открывается: page.goto: net::ERR_NAME_NOT_RESOLVED at http://gomelkuhni.by/"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": false
+  },
+  "notes": ""
+}

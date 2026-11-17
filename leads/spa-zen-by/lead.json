@@ -1,0 +1,59 @@
+{
+  "slug": "spa-zen-by",
+  "company": "СПА-салон «ДЗЕН»",
+  "industry": "СПА / косметология / массаж",
+  "city": "Бобруйск",
+  "country": "BY",
+  "site": "https://spa-zen.by",
+  "domain": "spa-zen.by",
+  "contacts": {
+    "emails": [
+      "1140033@bk.ru",
+      "spadzenmail@gmail.com"
+    ],
+    "phones": [
+      "+375 (29) 114-00-33",
+      "+375 (22) 572-75-00"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": "ул. Комсомольская, 25"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 2,
+    "potential": 6,
+    "complexity": 3
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Уже современный сайт с онлайн-записью и нормальной мобильной версией.",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch: косметология Бобруйск",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [],
+    "complexity": "low",
+    "complexitySignals": [
+      "онлайн-запись / бронирование"
+    ],
+    "cms": [
+      "Joomla"
+    ],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

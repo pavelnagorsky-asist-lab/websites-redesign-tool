@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>GomelMebel — Мебель под заказ в Гомеле</title>
+<!-- Google Fonts: Unbounded & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Unbounded:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#e0e2e8",
+            "secondary-fixed": "#e3e2e6",
+            "on-secondary-fixed": "#1a1b1e",
+            "surface-container-highest": "#e2e3e1",
+            "surface-container-high": "#e8e8e6",
+            "tertiary-fixed-dim": "#c4c6cc",
+            "on-surface": "#1E1F22",
+            "on-secondary-fixed-variant": "#46474a",
+            "secondary": "#6B6E73",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f1f1ef",
+            "on-primary-fixed": "#410005",
+            "surface-variant": "#e2e3e1",
+            "on-tertiary-fixed-variant": "#44474c",
+            "surface-tint": "#bd0c22",
+            "primary-fixed-dim": "#ffb3ae",
+            "outline-variant": "#E2E2DF",
+            "on-secondary-container": "#646468",
+            "primary-container": "#D72631",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#ffdad7",
+            "on-surface-variant": "#5c403e",
+            "surface": "#FFFFFF",
+            "tertiary": "#55585c",
+            "secondary-fixed-dim": "#c7c6ca",
+            "surface-bright": "#f9f9f7",
+            "inverse-primary": "#ffb3ae",
+            "inverse-surface": "#1E1F22",
+            "on-background": "#1E1F22",
+            "error": "#ba1a1a",
+            "outline": "#906f6d",
+            "primary": "#D72631",
+            "surface-container-low": "#F2F2F0",
+            "surface-dim": "#dadad8",
+            "on-primary-container": "#ffffff",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#930016",
+            "background": "#FFFFFF",
+            "on-tertiary-fixed": "#181c20",
+            "secondary-container": "#e3e2e6",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#f3f5fa",
+            "surface-container": "#eeeeec",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#6d7075",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "4px",
+            "lg": "4px",
+            "xl": "4px",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin": "3rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Unbounded", "sans-serif"],
+            "headline-xl-mobile": ["Unbounded", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "display-lg": ["Unbounded", "sans-serif"],
+            "headline-xl": ["Unbounded", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display-lg-mobile": ["Unbounded", "sans-serif"],
+            "headline-sm": ["Unbounded", "sans-serif"],
+            "label-caps": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "headline-lg": ["Unbounded", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #FFFFFF;
+      color: #1E1F22;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body class="w-full max-w-[390px] mx-auto min-h-screen bg-surface text-on-surface flex flex-col font-body-md text-body-md relative overflow-x-hidden border-x border-outline-variant/40">
+<!-- 1. Header (Exact wordmark, red square, caption, phone button, menu icon) -->
+<header class="sticky top-0 z-40 bg-surface/95 backdrop-blur-sm border-b border-outline-variant px-margin-mobile py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 bg-primary rounded-none flex-shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[19px] leading-tight font-bold tracking-tight text-on-surface">GomelMebel</span>
+<span class="font-body-sm text-[10px] leading-none text-secondary">Мебель под заказ в Гомеле</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<a aria-label="+375 29 604-18-04" class="w-9 h-9 flex items-center justify-center rounded text-on-surface hover:text-primary active:opacity-80 transition-colors" href="tel:+375296041804">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+<button aria-label="Меню" class="w-9 h-9 flex items-center justify-center rounded text-on-surface hover:text-primary active:opacity-80 transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full">
+<!-- 2. Hero Section -->
+<section class="px-margin-mobile pt-space-md pb-space-xl flex flex-col gap-4">
+<div class="relative w-full aspect-[4/5] rounded overflow-hidden border border-outline-variant bg-surface-container-low">
+<img alt="Кухня GomelMebel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrB7CNnhoH1Yp0H0rfiPSadUZyShAB5rKNAY_KuGIEzpSA5uuofXqcXXCD0ZLuDtDOx_3kf-trRSmsORKqpp9roEm2ps8SEs2i3WaKl42otcMI-B5WuoVClDnTgeWua6UeYrXFC1jYJ0ur6kpDG2Fgn0fmBxtCSQUybnBwfYzY3Ttdk5Ei5OYV5s9dUJXQtG2B0I7zKB5duUNkvP4F87SzKxSEoZRUZejM40RNb7S6Y8w5fcmr2U2k3J7ec"/>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="inline-flex self-start items-center px-2 py-0.5 rounded border border-outline-variant bg-surface-container-low font-label-caps text-label-caps uppercase tracking-wider text-primary">
+          С 2005 года · Гомель
+        </div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">
+          Мебель под заказ в Гомеле
+        </h1>
+<p class="font-body-md text-body-md text-secondary">
+          Кухни, шкафы-купе, гостиные и детские по индивидуальному проекту. Бесплатный выезд мастера и дизайнера, 3D-проект, доставка и установка.
+        </p>
+</div>
+<div class="flex flex-col gap-2.5 pt-1">
+<a class="w-full flex items-center justify-center h-12 px-6 rounded bg-primary text-on-primary font-label-md text-label-md font-medium hover:bg-primary-container active:scale-[0.99] transition-all" href="#order-form">
+          Вызвать замерщика
+        </a>
+<a class="w-full flex items-center justify-center h-12 px-6 rounded border border-on-surface text-on-surface font-label-md text-label-md font-medium hover:bg-on-surface hover:text-surface active:scale-[0.99] transition-all" href="#order-form">
+          Перезвонить мне
+        </a>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="w-full py-2 px-3 rounded border border-outline-variant bg-surface text-on-surface font-label-sm text-label-sm text-center">
+          Рассрочка до 8 месяцев
+        </div>
+<div class="w-full py-2 px-3 rounded border border-outline-variant bg-surface text-on-surface font-label-sm text-label-sm text-center">
+          Скидка 5% при 100% предоплате
+        </div>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full border-t border-outline-variant"></div>
+<!-- 3. Catalog Section -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Каталог</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Что мы делаем</h2>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-1">
+<!-- 1. Кухни -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Кухни" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdZ0bg3vKnQIy-dKShWAEvnkY-3n0YPLFhTW89sC4aXXMvh6S2zKAtXHn9rLe56VXD_IpevNWGyJH7omfmivvhKvxwEFNfk5v7x12w-tdVo4gL6NszsvgUXN8uRTFpyb5IK1DiZBoZkhd9YX27j5fRTZQq0IWA-4JQi-eVRTYJsQsHqIdqLU4MLWBm5_xo8z6BJr4s8bh4MpOHhm4Wq6M07DEz4u1ZxByh3hVN1kI3Or2cwDLc1RHQ5j0NYMtA4QKGQcrGAUVJBDM"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Кухни</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 2. Шкафы-купе -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Шкафы-купе" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrDWtTSz_4G87AyV3qrLCeiCRSwJAjsObinXxJnQ-RJiw9dkB9hBTCR7103PI3AkKxxoUGnBQ_FraO8vXdigPKjaGhBr5k6R5euELUuhs5w8dPXJ94MdWhhvG3CR2N5YHySls6RTNnB1NooLbCKs49kEkVc6twPUmOWGiGobb0-8DpXMBdjsxo5utSXD0joO7ZCd4YEhH3L5MdX1jU8IQRLuoPKCGQndGb0HmGEJZwaxrCZmgpILUa_mPIw"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Шкафы-купе</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 3. Гостиные -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Гостиные" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrBgC13Q65WCc8IWPOG6rzPR1rtIJ02Rim_8OMu4EL4b7-Khao9PGPI-Oy48oEDtZ1qswuynbVnnuz5pElY4uknE25RcNgWnvlFQh3ToetvVuEFch1GKLYjNnchUOuzU2i3RKN-RU6db2HGGdNEFDHKrbjIUCByiLLEkkZ0sFQrb0Vp8bwgDTK7M1yER78EF8re2_JTuMUpXq0bcLwmDCRrxllMDeOHIJEsLV6HA8lQBWZjFn3cw-cPVsak"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Гостиные</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 4. Спальни -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Спальни" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCj9OhHeID92LMjwUso2js7S4GBPo8nPbqqdpEuiviJABmTXQ_RZMQJt60ZvM3QiVKCXV45RMckJduEF4D2W5wkLh7S4fFWrpQagDqjmb_wg8pPjCmDQJM57gOzYxkqJKBOdkIIfnzeZcS55DPVFOXnzhm3nYYjIivlitqY1NNW0fcT-nnThIrse2vhbdCFCj2lQa_TlfPNz34_hEHUHQ8NnKEtEAw-5SuymkKS4QrnxZ9nvtMazo_gmhk"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Спальни</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 5. Прихожие -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Прихожие" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrBVHoltzHSef72yy3NwEh4t1Ct0zutmrRbQ1WoT8m0U_4uDwVmiWvNUz7-UYOf_kDICxeznRW3UCkyOyutVf-2veZeB24jDX2-VKVK0DjEUNCZOchkEMA-c_XtBwTs_dtdFV50OUw4c3ghnPlGoZFOPxdQ3LQaHBafA9hwWxqt6NA7RzGxcNohuwChqfImclOF4hPA6HSr-11mPyJzjgoUzB3IMIqHcSQpA989JE7xVlA3rlZLdGiMuJFQ"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Прихожие</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 6. Детские -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Детские" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCd23BYVn1ADSh0f0-fzAwchYEXNL-qjG21UX0W3gA3QtpyQaZQIAFN3gRu3Rz7Zo3Ee9J5CRqQdMiBtTpr6Bc8a_85PdF-ASx6PPVeo8dN0WOd-3vVA5FxVIKjqFe-mcC8uiAQmLbF_bKGcY950-G30_sSHtS7lRBBBaFLpAmWD02cBJ8oollJtUDZ5PT0ZujLqJN4CxSXDX57rEj2_SD4wf1_w8YP6XnoOJ2wS9fV6f8Y1N6x5M17zo0"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Детские</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 7. Комоды -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Комоды" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrBYM4IaBNOkIxLg47qJxSkTxNasY5QZUx2xPbDj30Yjm5sREndWUdScQurjJ1OwqP_tHFPDvlGTsBJ9MbER32sS2trkDgTy5xzGk9CfOfoNuZ_L_DcYbOR0V0LVLae-VOieyK9ok-BZe3_7ZGxPj3PEe8Yx-vkz0SE40gJmHLJBrSIHdHMM2zMxGRajB3hSKJmsT5GxCVdUtXVYXMqhD5pBCSADX6BE8Pze6AyMLpanoqoQSvptOk2bqg"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Комоды</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+<!-- 8. Столы компьютерные -->
+<a class="group flex flex-col border border-outline-variant rounded bg-surface p-2 hover:border-on-surface transition-colors" href="#order-form">
+<div class="w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low mb-2">
+<img alt="Столы компьютерные" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/ALJJyrCxHXf7zC5GbAbjSkE-tgWoX0lfSdiZMu0kUAU9KlzVrauzKK410SHIqDZPlI8NHlXs6hncSL5eb5Aan2usJttKY62fKE3JpC1wjJDyofO-T_IIivKHu0nJr-3O5oO06nRlMK1AN1FJz-411vdRXorlSQ1N1ZarEZZgNHLqi_0yOgqnnEA9Uwhm9E0A4aOLZbkErUN-Ldibf9zOu-yXncseIXa_4OXI909rtRMxBDRSGj6SRxfA3u-AQyo"/>
+</div>
+<div class="flex items-center justify-between pt-1 px-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Столы компьютерные</span>
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+<!-- 4. Dark Graphite Block -->
+<section class="bg-inverse-surface text-inverse-on-surface px-margin-mobile py-space-xl flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md text-surface">
+        Наше мастерство для вас
+      </h2>
+<div class="flex flex-col divide-y divide-white/10">
+<div class="py-4 flex items-baseline gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary flex-shrink-0 w-16">01</span>
+<span class="font-body-lg text-body-lg font-medium text-surface">Бесплатный выезд мастера и дизайнера</span>
+</div>
+<div class="py-4 flex items-baseline gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary flex-shrink-0 w-16">02</span>
+<span class="font-body-lg text-body-lg font-medium text-surface">Проект в 3D</span>
+</div>
+<div class="py-4 flex items-baseline gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary flex-shrink-0 w-16">03</span>
+<span class="font-body-lg text-body-lg font-medium text-surface">Экологичные материалы</span>
+</div>
+<div class="py-4 flex items-baseline gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary flex-shrink-0 w-16">04</span>
+<span class="font-body-lg text-body-lg font-medium text-surface">Доставка и установка</span>
+</div>
+<div class="py-4 flex items-baseline gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-primary flex-shrink-0 w-16">05</span>
+<span class="font-body-lg text-body-lg font-medium text-surface">Оптимальные цены</span>
+</div>
+</div>
+</section>
+<!-- 5. Process Section -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">Как мы работаем</h2>
+<div class="relative pl-6 flex flex-col gap-6">
+<!-- Thin red vertical accent line -->
+<div class="absolute left-[7px] top-2 bottom-3 w-[1px] bg-primary"></div>
+<div class="relative flex items-start gap-3">
+<div class="w-3.5 h-3.5 rounded-full border-2 border-primary bg-surface -ml-[23px] mt-1 flex-shrink-0"></div>
+<span class="font-body-md text-body-md text-on-surface font-medium">1. Заявка на сайте или звонок</span>
+</div>
+<div class="relative flex items-start gap-3">
+<div class="w-3.5 h-3.5 rounded-full border-2 border-primary bg-surface -ml-[23px] mt-1 flex-shrink-0"></div>
+<span class="font-body-md text-body-md text-on-surface font-medium">2. Бесплатный выезд и замер</span>
+</div>
+<div class="relative flex items-start gap-3">
+<div class="w-3.5 h-3.5 rounded-full border-2 border-primary bg-surface -ml-[23px] mt-1 flex-shrink-0"></div>
+<span class="font-body-md text-body-md text-on-surface font-medium">3. 3D-проект и выбор фасадов</span>
+</div>
+<div class="relative flex items-start gap-3">
+<div class="w-3.5 h-3.5 rounded-full border-2 border-primary bg-surface -ml-[23px] mt-1 flex-shrink-0"></div>
+<span class="font-body-md text-body-md text-on-surface font-medium">4. Изготовление и установка</span>
+</div>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full border-t border-outline-variant"></div>
+<!-- 6. Payment Section -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Удобная оплата</h2>
+<div class="flex flex-col gap-3">
+<!-- Card 1 -->
+<div class="p-4 rounded bg-surface-container-low border border-outline-variant flex flex-col gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">до 8 месяцев</span>
+<h3 class="font-headline-sm text-[18px] leading-snug font-semibold text-on-surface">Рассрочка</h3>
+<p class="font-body-sm text-body-sm text-secondary">При заказе от 1000 руб. рассрочка от 3 до 8 месяцев.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded bg-surface-container-low border border-outline-variant flex flex-col gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">5%</span>
+<h3 class="font-headline-sm text-[18px] leading-snug font-semibold text-on-surface">Скидка на мебель</h3>
+<p class="font-body-sm text-body-sm text-secondary">При 100% предоплате.</p>
+</div>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full border-t border-outline-variant"></div>
+<!-- 7. About Section -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-4">
+<div class="w-full aspect-[4/3] rounded overflow-hidden border border-outline-variant bg-surface-container-low">
+<img alt="О компании GomelMebel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrBgC13Q65WCc8IWPOG6rzPR1rtIJ02Rim_8OMu4EL4b7-Khao9PGPI-Oy48oEDtZ1qswuynbVnnuz5pElY4uknE25RcNgWnvlFQh3ToetvVuEFch1GKLYjNnchUOuzU2i3RKN-RU6db2HGGdNEFDHKrbjIUCByiLLEkkZ0sFQrb0Vp8bwgDTK7M1yER78EF8re2_JTuMUpXq0bcLwmDCRrxllMDeOHIJEsLV6HA8lQBWZjFn3cw-cPVsak"/>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="inline-flex self-start items-center px-2 py-0.5 rounded border border-outline-variant bg-surface-container-low font-label-caps text-label-caps uppercase tracking-wider text-primary">
+          С 2005 года
+        </div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+          Для нас нет сложных задач
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          Реализуем проекты, которые создают сами клиенты или наши дизайнеры.
+        </p>
+</div>
+</section>
+<!-- 8. Form Card Section -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low border-y border-outline-variant" id="order-form">
+<div class="rounded border border-outline-variant bg-surface p-5 flex flex-col gap-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+          Рассчитаем стоимость вашей мебели
+        </h2>
+<form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-1">
+<input class="w-full h-11 px-4 rounded border border-outline-variant bg-surface font-body-md text-body-md text-on-surface placeholder:text-secondary focus:border-on-surface focus:ring-0 outline-none transition-colors" placeholder="Имя" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<input class="w-full h-11 px-4 rounded border border-outline-variant bg-surface font-body-md text-body-md text-on-surface placeholder:text-secondary focus:border-on-surface focus:ring-0 outline-none transition-colors" placeholder="Телефон" type="tel"/>
+</div>
+<div class="flex flex-col gap-1">
+<select class="w-full h-11 px-4 rounded border border-outline-variant bg-surface font-body-md text-body-md text-on-surface focus:border-on-surface focus:ring-0 outline-none transition-colors">
+<option disabled="" selected="" value="">Что нужно</option>
+<option value="kitchen">Кухня</option>
+<option value="wardrobe">Шкаф-купе</option>
+<option value="living">Гостиная</option>
+<option value="bedroom">Спальня</option>
+<option value="hallway">Прихожая</option>
+<option value="kids">Детская</option>
+<option value="dresser">Комод</option>
+<option value="desk">Стол компьютерный</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<textarea class="w-full p-4 rounded border border-outline-variant bg-surface font-body-md text-body-md text-on-surface placeholder:text-secondary focus:border-on-surface focus:ring-0 outline-none transition-colors resize-none" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+</div>
+<button class="w-full h-12 flex items-center justify-center rounded bg-primary text-on-primary font-label-md text-label-md font-medium hover:bg-primary-container active:scale-[0.99] transition-all mt-1" type="submit">
+            Отправить заявку
+          </button>
+<span class="font-body-sm text-body-sm text-secondary text-center">
+            Заявка сразу придёт менеджеру в Telegram
+          </span>
+</form>
+</div>
+</section>
+<!-- 9. Contacts Section -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Контакты</h2>
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">location_on</span>
+<span class="font-body-md text-body-md text-on-surface">г. Гомель, ул. Добролюбова, 8</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">call</span>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+375296041804"><span style="white-space:nowrap">+375 (29) 604-18-04</span></a>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">schedule</span>
+<span class="font-body-md text-body-md text-on-surface">Пн–Пт 9:00–18:00</span>
+</div>
+</div>
+<!-- Stylized Light Grey SVG Map -->
+<div class="w-full aspect-[16/9] rounded border border-outline-variant bg-surface-container-low overflow-hidden relative mt-2 flex items-center justify-center">
+<svg class="w-full h-full" fill="none" viewbox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Background grid lines -->
+<line stroke="#E2E2DF" stroke-width="1" x1="0" x2="350" y1="40" y2="40"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="0" x2="350" y1="80" y2="80"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="0" x2="350" y1="120" y2="120"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="0" x2="350" y1="160" y2="160"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="70" x2="70" y1="0" y2="200"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="140" x2="140" y1="0" y2="200"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="210" x2="210" y1="0" y2="200"></line>
+<line stroke="#E2E2DF" stroke-width="1" x1="280" x2="280" y1="0" y2="200"></line>
+<!-- Road lines -->
+<path d="M-10 130 L160 110 L360 140" stroke="#FFFFFF" stroke-width="8"></path>
+<path d="M-10 130 L160 110 L360 140" stroke="#DCDCDA" stroke-width="4"></path>
+<path d="M160 0 L160 200" stroke="#FFFFFF" stroke-width="6"></path>
+<path d="M160 0 L160 200" stroke="#DCDCDA" stroke-width="3"></path>
+<path d="M70 70 L260 180" stroke="#E8E8E6" stroke-width="3"></path>
+<!-- Red Location Pin -->
+<g transform="translate(160, 110)">
+<circle cx="0" cy="0" fill="#D72631" fill-opacity="0.18" r="14"></circle>
+<circle cx="0" cy="0" fill="#D72631" r="6"></circle>
+<circle cx="0" cy="0" fill="#FFFFFF" r="2.5"></circle>
+</g>
+</svg>
+<!-- Pure Label Badge on Map -->
+<div class="absolute bottom-3 left-3 bg-surface border border-outline-variant px-2.5 py-1 rounded shadow-none flex items-center gap-1.5">
+<div class="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
+<span class="font-label-caps text-label-caps text-on-surface">ул. Добролюбова, 8</span>
+</div>
+</div>
+</section>
+<!-- 10. Footer (Dark Graphite #1E1F22) -->
+<footer class="bg-inverse-surface text-inverse-on-surface px-margin-mobile pt-space-lg pb-space-lg flex flex-col gap-6 border-t border-white/10">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 bg-primary rounded-none flex-shrink-0"></div>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-surface">GomelMebel</span>
+</div>
+</div>
+<nav class="flex flex-wrap gap-x-5 gap-y-2">
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-surface/80 hover:text-primary transition-colors" href="#order-form">Каталог</a>
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-surface/80 hover:text-primary transition-colors" href="#order-form">Рассрочка</a>
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-surface/80 hover:text-primary transition-colors" href="#order-form">Акции</a>
+<a class="font-label-caps text-label-caps uppercase tracking-wider text-surface/80 hover:text-primary transition-colors" href="#order-form">Контакты</a>
+</nav>
+<div class="border-t border-white/10 pt-4">
+<span class="font-body-sm text-[12px] text-surface/60">
+          © 2026 GomelMebel.by · г. Гомель
+        </span>
+</div>
+</footer>
+</main>
+<!-- 11. Sticky bottom bar (Graphite #1E1F22, fixed at bottom, z-50) -->
+<div class="relative w-full max-w-[390px] mx-auto z-50 bg-[#1E1F22] border-t border-white/10 px-margin-mobile py-space-sm pb-[max(0.75rem,env(safe-area-inset-bottom))] flex items-center gap-2.5">
+<a class="flex-1 flex items-center justify-center gap-1.5 h-11 rounded bg-primary text-on-primary font-label-md text-label-md font-medium hover:bg-primary-container active:scale-[0.99] transition-all" href="tel:+375296041804">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Позвонить</span>
+</a>
+<a class="flex-1 flex items-center justify-center gap-1.5 h-11 rounded border border-white text-white font-label-md text-label-md font-medium hover:bg-white hover:text-inverse-surface active:scale-[0.99] transition-all" href="#order-form">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Заказать замер</span>
+</a>
+</div>
+</body></html>

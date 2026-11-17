@@ -1,0 +1,49 @@
+{
+  "slug": "mogilev-massage-by",
+  "company": "Студия массажа",
+  "industry": "Массаж",
+  "city": "Могилёв",
+  "country": "BY",
+  "site": "https://www.mogilev-massage.by",
+  "domain": "mogilev-massage.by",
+  "contacts": {
+    "emails": [],
+    "phones": [],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": ""
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": null,
+    "potential": null,
+    "complexity": null
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Сайт не работает: домен не резолвится (ERR_NAME_NOT_RESOLVED).",
+  "activitySignals": [],
+  "design": null,
+  "source": "WebSearch: массажный кабинет Могилев",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [
+      "Сайт не открывается: page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.mogilev-massage.by/"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": false
+  },
+  "notes": ""
+}

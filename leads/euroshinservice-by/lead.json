@@ -1,0 +1,55 @@
+{
+  "slug": "euroshinservice-by",
+  "company": "ЕвроШинСервис",
+  "industry": "Шиномонтаж",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "https://euroshinservice.by",
+  "domain": "euroshinservice.by",
+  "contacts": {
+    "emails": [
+      "euroshinservice@mail.ru"
+    ],
+    "phones": [
+      "+375 (21) 268-80-00",
+      "+375 (33) 645-80-00",
+      "+375 (29) 645-80-00"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": "ЧТПУП «ЕвроШинСервис» УНП 390289041 Витебск, ул. Терешковой, 11В Свидетельство No 390289041, от 02.09.2003 г. Зарегистрирован в Торговом реестре Республики Беларусь 02.04.2018 №410583"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 3,
+    "potential": 6,
+    "complexity": 3
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Современный сайт с иллюстрациями и онлайн-записью",
+  "activitySignals": [],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 10,
+    "reasons": [
+      "В подвале © 2022 — сайт выглядит заброшенным"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

@@ -1,0 +1,621 @@
+{
+  "outputComponents": [
+    {
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Warm Editorial Apothecary",
+          "styleGuidelines": "## Brand & Style\n\nThis design system expresses the visual identity of a distinguished private dental clinic. It translates the sanctuary of an intellectual, trusted medical study into digital form: tranquil, deeply personal, and quietly luxurious. It deliberately rejects sterile clinical tropes—banishing cold teals, abrasive whites, and generic corporate geometry—in favor of an architectural, editorial rhythm reminiscent of bespoke private care.\n\nThe emotional arc is reassuring, composed, and discreet. Patients encounter a space that feels curated rather than transactional, balancing academic rigor with domestic warmth. The design language marries classic editorial publishing principles with tactile refinement: deliberate line weights, generous reading room whitespace, and an absence of ungrounded digital elevation.\n\n## Layout & Spacing\n\nThe structural layout utilizes a classic 12-column system configured with deliberate, generous whitespace.\n\n- **Desktop (≥ 1024px)**: 12-column layout with max-width constrained to `1280px` to mirror the proportions of an open editorial spread. Outer margin is `3rem`, and gutters are `1.5rem`.\n- **Tablet (768px – 1023px)**: 8-column system with `2rem` outer margins. Content reflows horizontally rather than stacking abruptly.\n- **Mobile (< 768px)**: 4-column system with `1.25rem` margins and `1rem` gutters. Density remains breathable; elements must never press against the glass edge.\n- **Section Cadence**: Long-form clinic information alternates vertically between Neutral Cream (`#F7F1E8`) and Sand (`#EADFCF`) blocks, creating physical chapter-like boundaries without artificial divider lines.\n\n## Elevation & Depth\n\nThis system avoids floating digital illusions, dramatic blurs, and saturated drop shadows. Depth is achieved via **tonal layering and low-contrast borders**:\n\n- **Surface Tiers**: Base depth is established by resting high-luminance Ivory (`#FFFDF8`) cards upon the matte Neutral Cream (`#F7F1E8`) or Sand (`#EADFCF`) ground.\n- **Border Definition**: All cards, inputs, and container blocks are bounded by a crisp `1px solid #D9CBB5` rule. This simulates the subtle, tangible edge of archival paper stock.\n- **Elevation Shadow Policy**: Default containers feature no drop shadow (`box-shadow: none`). On interactive card hover, an exceptionally soft, warm shadow is permitted: `0 4px 20px -2px rgba(107, 98, 89, 0.08)`. Aggressive blur or pure black shadow casts are strictly prohibited.\n\n## Components\n\n### Buttons\n- **Primary**: Background `#8C2F39`, text `#FFFDF8`, radius `8px`, border `1px solid #8C2F39`. Padding: `0.75rem 1.5rem`. On hover, deepen background to `#74262E`.\n- **Secondary / Consultation**: Background transparent, text `#1E2F4F`, radius `8px`, border `1px solid #1E2F4F`. On hover, background shifts to `rgba(30, 47, 79, 0.04)`.\n- **Tertiary / Link**: Plain text `#8C2F39`, underline offset of `4px` with a subtle `#D9CBB5` underline that shifts to `#8C2F39` on interaction.\n\n### Cards & Panels\n- **Structure**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `12px`, padding `1.75rem`.\n- **Treatment Overview Card**: Features a small bordeaux category label (`label-sm`), seriffed title (`headline-sm` in `#1E2F4F`), concise body copy (`#6B6259`), and a refined border accent.\n\n### Chips & Badges\n- **Specification**: Background `#EADFCF`, text `#1E2F4F`, font token `label-sm`, uppercase tracking, border `1px solid #D9CBB5`, radius `4px`. Padding: `0.25rem 0.625rem`.\n\n### Input Fields & Selects\n- **Form Controls**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `8px`, padding `0.75rem 1rem`. Typography uses `body-md` in `#1E2F4F`. Placeholder in `#6B6259` at 60% opacity. Focused state transitions border to `#8C2F39` without harsh outer glow rings.\n\n### Checkboxes & Radios\n- **Selection Components**: `18px` square or circle, background `#FFFDF8`, border `1.5px solid #D9CBB5`. Active state fills with `#8C2F39` displaying a `#FFFDF8` checkmark.\n\n### Doctor's Signature Credential Block\n- Specialized component featuring an understated ivory background, subtle inset padding, an archival portrait frame, a formal title lockup in `Noto Serif`, and a vector render of the medical director's personal endorsement.",
+          "theme": {
+            "bodyFont": "INTER",
+            "bodyFontFamily": "Inter",
+            "colorMode": "LIGHT",
+            "colorVariant": "FIDELITY",
+            "customColor": "#8c2f39",
+            "designMd": "---\nname: Warm Editorial Apothecary\ncolors:\n  surface: '#fff9ef'\n  surface-dim: '#dfd9d1'\n  surface-bright: '#fff9ef'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f9f3ea'\n  surface-container: '#f3ede4'\n  surface-container-high: '#ede7df'\n  surface-container-highest: '#e7e2d9'\n  on-surface: '#1d1b16'\n  on-surface-variant: '#564242'\n  inverse-surface: '#32302a'\n  inverse-on-surface: '#f6f0e7'\n  outline: '#897272'\n  outline-variant: '#dcc0c0'\n  surface-tint: '#9f3e47'\n  primary: '#6d1824'\n  on-primary: '#ffffff'\n  primary-container: '#8c2f39'\n  on-primary-container: '#ffacaf'\n  inverse-primary: '#ffb3b5'\n  secondary: '#4e5e81'\n  on-secondary: '#ffffff'\n  secondary-container: '#c4d4fd'\n  on-secondary-container: '#4b5b7e'\n  tertiary: '#3f372f'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#564e45'\n  on-tertiary-container: '#cbc0b5'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdada'\n  primary-fixed-dim: '#ffb3b5'\n  on-primary-fixed: '#40000c'\n  on-primary-fixed-variant: '#802631'\n  secondary-fixed: '#d8e2ff'\n  secondary-fixed-dim: '#b6c6ee'\n  on-secondary-fixed: '#071b3a'\n  on-secondary-fixed-variant: '#364768'\n  tertiary-fixed: '#ede0d5'\n  tertiary-fixed-dim: '#d1c4b9'\n  on-tertiary-fixed: '#211b14'\n  on-tertiary-fixed-variant: '#4d453d'\n  background: '#fff9ef'\n  on-background: '#1d1b16'\n  surface-variant: '#e7e2d9'\ntypography:\n  display-lg:\n    fontFamily: Noto Serif\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Noto Serif\n    fontSize: 36px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Noto Serif\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Noto Serif\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0em\n  headline-md:\n    fontFamily: Noto Serif\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n  headline-sm:\n    fontFamily: Noto Serif\n    fontSize: 22px\n    fontWeight: '500'\n    lineHeight: 30px\n  title-lg:\n    fontFamily: Noto Serif\n    fontSize: 19px\n    fontWeight: '500'\n    lineHeight: 26px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-md:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.04em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.06em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system expresses the visual identity of a distinguished private dental clinic. It translates the sanctuary of an intellectual, trusted medical study into digital form: tranquil, deeply personal, and quietly luxurious. It deliberately rejects sterile clinical tropes—banishing cold teals, abrasive whites, and generic corporate geometry—in favor of an architectural, editorial rhythm reminiscent of bespoke private care.\n\nThe emotional arc is reassuring, composed, and discreet. Patients encounter a space that feels curated rather than transactional, balancing academic rigor with domestic warmth. The design language marries classic editorial publishing principles with tactile refinement: deliberate line weights, generous reading room whitespace, and an absence of ungrounded digital elevation.\n\n## Colors\n\nThe palette is anchored by organic warmth and scholarly authority. It eschews pure digital blacks and synthetic whites entirely.\n\n- **Primary (`#8C2F39`)**: A restrained, historical bordeaux. Reserved strictly for vital interactive states, primary conversion targets, and focal typographic markers.\n- **Secondary (`#1E2F4F`)**: Deep academic navy. Used for authoritative headline typography, strong structural anchors, and rare dark-toned moments of quiet distinction.\n- **Tertiary (`#6B6259`)**: Grounded warm grey. Serves supportive UI labels, metadata, captions, and body secondary hierarchy.\n- **Neutral (`#F7F1E8`)**: Canvas warm cream. Forms the root atmospheric ground across all viewports.\n- **Section Alternate (`#EADFCF`)**: Rich sand. Applied to alternate horizontal rhythmic bands to visually compartmentalize procedures and historical credentials.\n- **Surface Cards (`#FFFDF8`)**: Luminous ivory. Renders interactive panels, consultation schedules, and treatment cards as crisp, physical paper resting against the warm linen background.\n- **Structural Dividing Line (`#D9CBB5`)**: Muted parchment border. A delicate 1px perimeter that defines forms without digital drop-shadow reliance.\n\n## Typography\n\nThe typographical pairing relies on the interplay between classical literary discipline and modern functional legibility:\n\n- **Headlines & Numerals (`Noto Serif`)**: Communicates generational medical heritage, academic precision, and bespoke consultation. Display titles should use standard sentence casing. Numbers denoting experience, clinical metrics, or pricing schedules carry a timeless literary cadence.\n- **Body & Controls (`Inter`)**: Serves technical legibility across appointment slots, clinical descriptions, consent documentation, and system wayfinding. Set slightly relaxed line-heights to support an unhurried, calm reading experience.\n- Maintain a clear division: never apply serif styling to form controls, buttons, or small navigational labels.\n\n## Layout & Spacing\n\nThe structural layout utilizes a classic 12-column system configured with deliberate, generous whitespace.\n\n- **Desktop (≥ 1024px)**: 12-column layout with max-width constrained to `1280px` to mirror the proportions of an open editorial spread. Outer margin is `3rem`, and gutters are `1.5rem`.\n- **Tablet (768px – 1023px)**: 8-column system with `2rem` outer margins. Content reflows horizontally rather than stacking abruptly.\n- **Mobile (< 768px)**: 4-column system with `1.25rem` margins and `1rem` gutters. Density remains breathable; elements must never press against the glass edge.\n- **Section Cadence**: Long-form clinic information alternates vertically between Neutral Cream (`#F7F1E8`) and Sand (`#EADFCF`) blocks, creating physical chapter-like boundaries without artificial divider lines.\n\n## Elevation & Depth\n\nThis system avoids floating digital illusions, dramatic blurs, and saturated drop shadows. Depth is achieved via **tonal layering and low-contrast borders**:\n\n- **Surface Tiers**: Base depth is established by resting high-luminance Ivory (`#FFFDF8`) cards upon the matte Neutral Cream (`#F7F1E8`) or Sand (`#EADFCF`) ground.\n- **Border Definition**: All cards, inputs, and container blocks are bounded by a crisp `1px solid #D9CBB5` rule. This simulates the subtle, tangible edge of archival paper stock.\n- **Elevation Shadow Policy**: Default containers feature no drop shadow (`box-shadow: none`). On interactive card hover, an exceptionally soft, warm shadow is permitted: `0 4px 20px -2px rgba(107, 98, 89, 0.08)`. Aggressive blur or pure black shadow casts are strictly prohibited.\n\n## Shapes\n\nThe geometric architecture balances tailored discipline with human warmth:\n\n- **Cards & Enclosures**: Exactly `12px` border radius (`rounded-lg` equivalent in this system). Soft enough to eliminate harshness while maintaining formal stability.\n- **Buttons & Interactive Fields**: Exactly `8px` (`0.5rem`). Conveys utility, tactile feedback, and structural precision.\n- **Avatars & Badges**: Small status badges use subtle soft curves (`4px`). Portraiture for Dr. Margarita Igorevna uses architectural rounded rectangles (`16px`) or an arched top curve, never circular cutouts.\n\n## Components\n\n### Buttons\n- **Primary**: Background `#8C2F39`, text `#FFFDF8`, radius `8px`, border `1px solid #8C2F39`. Padding: `0.75rem 1.5rem`. On hover, deepen background to `#74262E`.\n- **Secondary / Consultation**: Background transparent, text `#1E2F4F`, radius `8px`, border `1px solid #1E2F4F`. On hover, background shifts to `rgba(30, 47, 79, 0.04)`.\n- **Tertiary / Link**: Plain text `#8C2F39`, underline offset of `4px` with a subtle `#D9CBB5` underline that shifts to `#8C2F39` on interaction.\n\n### Cards & Panels\n- **Structure**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `12px`, padding `1.75rem`.\n- **Treatment Overview Card**: Features a small bordeaux category label (`label-sm`), seriffed title (`headline-sm` in `#1E2F4F`), concise body copy (`#6B6259`), and a refined border accent.\n\n### Chips & Badges\n- **Specification**: Background `#EADFCF`, text `#1E2F4F`, font token `label-sm`, uppercase tracking, border `1px solid #D9CBB5`, radius `4px`. Padding: `0.25rem 0.625rem`.\n\n### Input Fields & Selects\n- **Form Controls**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `8px`, padding `0.75rem 1rem`. Typography uses `body-md` in `#1E2F4F`. Placeholder in `#6B6259` at 60% opacity. Focused state transitions border to `#8C2F39` without harsh outer glow rings.\n\n### Checkboxes & Radios\n- **Selection Components**: `18px` square or circle, background `#FFFDF8`, border `1.5px solid #D9CBB5`. Active state fills with `#8C2F39` displaying a `#FFFDF8` checkmark.\n\n### Doctor's Signature Credential Block\n- Specialized component featuring an understated ivory background, subtle inset padding, an archival portrait frame, a formal title lockup in `Noto Serif`, and a vector render of the medical director's personal endorsement.",
+            "font": "NOTO_SERIF",
+            "headlineFont": "NOTO_SERIF",
+            "headlineFontFamily": "Noto Serif",
+            "labelFont": "INTER",
+            "labelFontFamily": "Inter",
+            "namedColors": {
+              "background": "#fff9ef",
+              "error": "#ba1a1a",
+              "error_container": "#ffdad6",
+              "inverse_on_surface": "#f6f0e7",
+              "inverse_primary": "#ffb3b5",
+              "inverse_surface": "#32302a",
+              "on_background": "#1d1b16",
+              "on_error": "#ffffff",
+              "on_error_container": "#93000a",
+              "on_primary": "#ffffff",
+              "on_primary_container": "#ffacaf",
+              "on_primary_fixed": "#40000c",
+              "on_primary_fixed_variant": "#802631",
+              "on_secondary": "#ffffff",
+              "on_secondary_container": "#4b5b7e",
+              "on_secondary_fixed": "#071b3a",
+              "on_secondary_fixed_variant": "#364768",
+              "on_surface": "#1d1b16",
+              "on_surface_variant": "#564242",
+              "on_tertiary": "#ffffff",
+              "on_tertiary_container": "#cbc0b5",
+              "on_tertiary_fixed": "#211b14",
+              "on_tertiary_fixed_variant": "#4d453d",
+              "outline": "#897272",
+              "outline_variant": "#dcc0c0",
+              "primary": "#6d1824",
+              "primary_container": "#8c2f39",
+              "primary_fixed": "#ffdada",
+              "primary_fixed_dim": "#ffb3b5",
+              "secondary": "#4e5e81",
+              "secondary_container": "#c4d4fd",
+              "secondary_fixed": "#d8e2ff",
+              "secondary_fixed_dim": "#b6c6ee",
+              "surface": "#fff9ef",
+              "surface_bright": "#fff9ef",
+              "surface_container": "#f3ede4",
+              "surface_container_high": "#ede7df",
+              "surface_container_highest": "#e7e2d9",
+              "surface_container_low": "#f9f3ea",
+              "surface_container_lowest": "#ffffff",
+              "surface_dim": "#dfd9d1",
+              "surface_tint": "#9f3e47",
+              "surface_variant": "#e7e2d9",
+              "tertiary": "#3f372f",
+              "tertiary_container": "#564e45",
+              "tertiary_fixed": "#ede0d5",
+              "tertiary_fixed_dim": "#d1c4b9"
+            },
+            "overrideNeutralColor": "#f7f1e8",
+            "overridePrimaryColor": "#8c2f39",
+            "overrideSecondaryColor": "#1e2f4f",
+            "overrideTertiaryColor": "#6b6259",
+            "roundness": "ROUND_EIGHT",
+            "spacing": {
+              "gutter": "1.5rem",
+              "gutter-mobile": "1rem",
+              "margin": "3rem",
+              "margin-mobile": "1.25rem",
+              "space-lg": "1.5rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+              "space-xl": "2.5rem",
+              "space-xs": "0.25rem"
+            },
+            "spacingScale": 2,
+            "typography": {
+              "body-lg": {
+                "fontFamily": "Inter",
+                "fontSize": "18px",
+                "fontWeight": "400",
+                "lineHeight": "28px"
+              },
+              "body-md": {
+                "fontFamily": "Inter",
+                "fontSize": "15px",
+                "fontWeight": "400",
+                "lineHeight": "24px"
+              },
+              "body-sm": {
+                "fontFamily": "Inter",
+                "fontSize": "13px",
+                "fontWeight": "400",
+                "lineHeight": "20px"
+              },
+              "display-lg": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "56px",
+                "fontWeight": "400",
+                "letterSpacing": "-0.02em",
+                "lineHeight": "64px"
+              },
+              "display-lg-mobile": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "36px",
+                "fontWeight": "400",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "44px"
+              },
+              "headline-lg": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "40px",
+                "fontWeight": "400",
+                "letterSpacing": "-0.015em",
+                "lineHeight": "48px"
+              },
+              "headline-lg-mobile": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "28px",
+                "fontWeight": "400",
+                "letterSpacing": "0em",
+                "lineHeight": "36px"
+              },
+              "headline-md": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "28px",
+                "fontWeight": "400",
+                "lineHeight": "36px"
+              },
+              "headline-sm": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "22px",
+                "fontWeight": "500",
+                "lineHeight": "30px"
+              },
+              "label-lg": {
+                "fontFamily": "Inter",
+                "fontSize": "14px",
+                "fontWeight": "500",
+                "letterSpacing": "0.02em",
+                "lineHeight": "20px"
+              },
+              "label-md": {
+                "fontFamily": "Inter",
+                "fontSize": "12px",
+                "fontWeight": "600",
+                "letterSpacing": "0.04em",
+                "lineHeight": "16px"
+              },
+              "label-sm": {
+                "fontFamily": "Inter",
+                "fontSize": "11px",
+                "fontWeight": "600",
+                "letterSpacing": "0.06em",
+                "lineHeight": "14px"
+              },
+              "title-lg": {
+                "fontFamily": "Noto Serif",
+                "fontSize": "19px",
+                "fontWeight": "500",
+                "lineHeight": "26px"
+              }
+            }
+          }
+        },
+        "name": "assets/d59f9e4c08ec4a10b605db68018c1ec5",
+        "version": "1"
+      }
+    },
+    {
+      "design": {
+        "screens": [
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "705bf0272be142c4887e64af44aaf63f",
+            "name": "projects/12029174694432103141/screens/705bf0272be142c4887e64af44aaf63f",
+            "prompt": "Warm editorial photography of a confident, friendly female dentist around 55 years old with short light-blond hair, wearing a neat white medical coat and subtle warm beige blouse underneath, warm sincere welcoming smile, seated in a warm, cosy modern private dental consultation office with warm daylight through sheer curtains, wooden accents, cream walls. Photorealistic, warm tones, natural lighting, no medical tools in mouth, no text, no logos.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/12029174694432103141/files/e2ac019f736f46a09277dab55a7fd877:download",
+              "name": "projects/12029174694432103141/files/e2ac019f736f46a09277dab55a7fd877"
+            },
+            "theme": {},
+            "title": "Warm editorial photography of a confident, friendly female dentist around 55 years old with short light-blond hair, wearing a neat white medical coat and subtle warm beige blouse underneath, warm sincere welcoming smile, seated in a warm, cosy modern private dental consultation office with warm daylight through sheer curtains, wooden accents, cream walls. Photorealistic, warm tones, natural lighting, no medical tools in mouth, no text, no logos.",
+            "width": "1200"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "cd360612135247af9d8e7c127e2c5773",
+            "name": "projects/12029174694432103141/screens/cd360612135247af9d8e7c127e2c5773",
+            "prompt": "Realistic warm photography of the same female dentist around 55 years old with short light-blond hair and white coat having a warm consultation conversation with an adult patient in a cosy, calm modern dental clinic room. Gentle smile, attentive posture, natural warm daylight, high-end private medical practice atmosphere. No instruments in mouth, photorealistic, no text.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/12029174694432103141/files/cbb93d3a644742acb6be3b21d5303c3b:download",
+              "name": "projects/12029174694432103141/files/cbb93d3a644742acb6be3b21d5303c3b"
+            },
+            "theme": {},
+            "title": "Realistic warm photography of the same female dentist around 55 years old with short light-blond hair and white coat having a warm consultation conversation with an adult patient in a cosy, calm modern dental clinic room. Gentle smile, attentive posture, natural warm daylight, high-end private medical practice atmosphere. No instruments in mouth, photorealistic, no text.",
+            "width": "1200"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "9d07dd3719a942cdb1d56592cb877760",
+            "name": "projects/12029174694432103141/screens/9d07dd3719a942cdb1d56592cb877760",
+            "prompt": "Photorealistic warm close-up of a neat, organized dental technician workbench in a dental laboratory: ceramic tooth crowns and precision dental restorations on small stone models, precision instruments neatly placed, warm wooden desk, soft focused natural warm sunlight. Clean, craftsmanship, aesthetic dental laboratory, no text, no logos.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/12029174694432103141/files/5c8f4926551d468abc34b70c82e242f4:download",
+              "name": "projects/12029174694432103141/files/5c8f4926551d468abc34b70c82e242f4"
+            },
+            "theme": {},
+            "title": "Photorealistic warm close-up of a neat, organized dental technician workbench in a dental laboratory: ceramic tooth crowns and precision dental restorations on small stone models, precision instruments neatly placed, warm wooden desk, soft focused natural warm sunlight. Clean, craftsmanship, aesthetic dental laboratory, no text, no logos.",
+            "width": "1200"
+          },
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "Warm Editorial Apothecary",
+                "styleGuidelines": "## Brand & Style\n\nThis design system expresses the visual identity of a distinguished private dental clinic. It translates the sanctuary of an intellectual, trusted medical study into digital form: tranquil, deeply personal, and quietly luxurious. It deliberately rejects sterile clinical tropes—banishing cold teals, abrasive whites, and generic corporate geometry—in favor of an architectural, editorial rhythm reminiscent of bespoke private care.\n\nThe emotional arc is reassuring, composed, and discreet. Patients encounter a space that feels curated rather than transactional, balancing academic rigor with domestic warmth. The design language marries classic editorial publishing principles with tactile refinement: deliberate line weights, generous reading room whitespace, and an absence of ungrounded digital elevation.\n\n## Layout & Spacing\n\nThe structural layout utilizes a classic 12-column system configured with deliberate, generous whitespace.\n\n- **Desktop (≥ 1024px)**: 12-column layout with max-width constrained to `1280px` to mirror the proportions of an open editorial spread. Outer margin is `3rem`, and gutters are `1.5rem`.\n- **Tablet (768px – 1023px)**: 8-column system with `2rem` outer margins. Content reflows horizontally rather than stacking abruptly.\n- **Mobile (< 768px)**: 4-column system with `1.25rem` margins and `1rem` gutters. Density remains breathable; elements must never press against the glass edge.\n- **Section Cadence**: Long-form clinic information alternates vertically between Neutral Cream (`#F7F1E8`) and Sand (`#EADFCF`) blocks, creating physical chapter-like boundaries without artificial divider lines.\n\n## Elevation & Depth\n\nThis system avoids floating digital illusions, dramatic blurs, and saturated drop shadows. Depth is achieved via **tonal layering and low-contrast borders**:\n\n- **Surface Tiers**: Base depth is established by resting high-luminance Ivory (`#FFFDF8`) cards upon the matte Neutral Cream (`#F7F1E8`) or Sand (`#EADFCF`) ground.\n- **Border Definition**: All cards, inputs, and container blocks are bounded by a crisp `1px solid #D9CBB5` rule. This simulates the subtle, tangible edge of archival paper stock.\n- **Elevation Shadow Policy**: Default containers feature no drop shadow (`box-shadow: none`). On interactive card hover, an exceptionally soft, warm shadow is permitted: `0 4px 20px -2px rgba(107, 98, 89, 0.08)`. Aggressive blur or pure black shadow casts are strictly prohibited.\n\n## Components\n\n### Buttons\n- **Primary**: Background `#8C2F39`, text `#FFFDF8`, radius `8px`, border `1px solid #8C2F39`. Padding: `0.75rem 1.5rem`. On hover, deepen background to `#74262E`.\n- **Secondary / Consultation**: Background transparent, text `#1E2F4F`, radius `8px`, border `1px solid #1E2F4F`. On hover, background shifts to `rgba(30, 47, 79, 0.04)`.\n- **Tertiary / Link**: Plain text `#8C2F39`, underline offset of `4px` with a subtle `#D9CBB5` underline that shifts to `#8C2F39` on interaction.\n\n### Cards & Panels\n- **Structure**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `12px`, padding `1.75rem`.\n- **Treatment Overview Card**: Features a small bordeaux category label (`label-sm`), seriffed title (`headline-sm` in `#1E2F4F`), concise body copy (`#6B6259`), and a refined border accent.\n\n### Chips & Badges\n- **Specification**: Background `#EADFCF`, text `#1E2F4F`, font token `label-sm`, uppercase tracking, border `1px solid #D9CBB5`, radius `4px`. Padding: `0.25rem 0.625rem`.\n\n### Input Fields & Selects\n- **Form Controls**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `8px`, padding `0.75rem 1rem`. Typography uses `body-md` in `#1E2F4F`. Placeholder in `#6B6259` at 60% opacity. Focused state transitions border to `#8C2F39` without harsh outer glow rings.\n\n### Checkboxes & Radios\n- **Selection Components**: `18px` square or circle, background `#FFFDF8`, border `1.5px solid #D9CBB5`. Active state fills with `#8C2F39` displaying a `#FFFDF8` checkmark.\n\n### Doctor's Signature Credential Block\n- Specialized component featuring an understated ivory background, subtle inset padding, an archival portrait frame, a formal title lockup in `Noto Serif`, and a vector render of the medical director's personal endorsement.",
+                "theme": {
+                  "bodyFont": "INTER",
+                  "bodyFontFamily": "Inter",
+                  "colorMode": "LIGHT",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#8c2f39",
+                  "designMd": "---\nname: Warm Editorial Apothecary\ncolors:\n  surface: '#fff9ef'\n  surface-dim: '#dfd9d1'\n  surface-bright: '#fff9ef'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f9f3ea'\n  surface-container: '#f3ede4'\n  surface-container-high: '#ede7df'\n  surface-container-highest: '#e7e2d9'\n  on-surface: '#1d1b16'\n  on-surface-variant: '#564242'\n  inverse-surface: '#32302a'\n  inverse-on-surface: '#f6f0e7'\n  outline: '#897272'\n  outline-variant: '#dcc0c0'\n  surface-tint: '#9f3e47'\n  primary: '#6d1824'\n  on-primary: '#ffffff'\n  primary-container: '#8c2f39'\n  on-primary-container: '#ffacaf'\n  inverse-primary: '#ffb3b5'\n  secondary: '#4e5e81'\n  on-secondary: '#ffffff'\n  secondary-container: '#c4d4fd'\n  on-secondary-container: '#4b5b7e'\n  tertiary: '#3f372f'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#564e45'\n  on-tertiary-container: '#cbc0b5'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdada'\n  primary-fixed-dim: '#ffb3b5'\n  on-primary-fixed: '#40000c'\n  on-primary-fixed-variant: '#802631'\n  secondary-fixed: '#d8e2ff'\n  secondary-fixed-dim: '#b6c6ee'\n  on-secondary-fixed: '#071b3a'\n  on-secondary-fixed-variant: '#364768'\n  tertiary-fixed: '#ede0d5'\n  tertiary-fixed-dim: '#d1c4b9'\n  on-tertiary-fixed: '#211b14'\n  on-tertiary-fixed-variant: '#4d453d'\n  background: '#fff9ef'\n  on-background: '#1d1b16'\n  surface-variant: '#e7e2d9'\ntypography:\n  display-lg:\n    fontFamily: Noto Serif\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Noto Serif\n    fontSize: 36px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Noto Serif\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Noto Serif\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0em\n  headline-md:\n    fontFamily: Noto Serif\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n  headline-sm:\n    fontFamily: Noto Serif\n    fontSize: 22px\n    fontWeight: '500'\n    lineHeight: 30px\n  title-lg:\n    fontFamily: Noto Serif\n    fontSize: 19px\n    fontWeight: '500'\n    lineHeight: 26px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-md:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.04em\n  label-sm:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.06em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system expresses the visual identity of a distinguished private dental clinic. It translates the sanctuary of an intellectual, trusted medical study into digital form: tranquil, deeply personal, and quietly luxurious. It deliberately rejects sterile clinical tropes—banishing cold teals, abrasive whites, and generic corporate geometry—in favor of an architectural, editorial rhythm reminiscent of bespoke private care.\n\nThe emotional arc is reassuring, composed, and discreet. Patients encounter a space that feels curated rather than transactional, balancing academic rigor with domestic warmth. The design language marries classic editorial publishing principles with tactile refinement: deliberate line weights, generous reading room whitespace, and an absence of ungrounded digital elevation.\n\n## Colors\n\nThe palette is anchored by organic warmth and scholarly authority. It eschews pure digital blacks and synthetic whites entirely.\n\n- **Primary (`#8C2F39`)**: A restrained, historical bordeaux. Reserved strictly for vital interactive states, primary conversion targets, and focal typographic markers.\n- **Secondary (`#1E2F4F`)**: Deep academic navy. Used for authoritative headline typography, strong structural anchors, and rare dark-toned moments of quiet distinction.\n- **Tertiary (`#6B6259`)**: Grounded warm grey. Serves supportive UI labels, metadata, captions, and body secondary hierarchy.\n- **Neutral (`#F7F1E8`)**: Canvas warm cream. Forms the root atmospheric ground across all viewports.\n- **Section Alternate (`#EADFCF`)**: Rich sand. Applied to alternate horizontal rhythmic bands to visually compartmentalize procedures and historical credentials.\n- **Surface Cards (`#FFFDF8`)**: Luminous ivory. Renders interactive panels, consultation schedules, and treatment cards as crisp, physical paper resting against the warm linen background.\n- **Structural Dividing Line (`#D9CBB5`)**: Muted parchment border. A delicate 1px perimeter that defines forms without digital drop-shadow reliance.\n\n## Typography\n\nThe typographical pairing relies on the interplay between classical literary discipline and modern functional legibility:\n\n- **Headlines & Numerals (`Noto Serif`)**: Communicates generational medical heritage, academic precision, and bespoke consultation. Display titles should use standard sentence casing. Numbers denoting experience, clinical metrics, or pricing schedules carry a timeless literary cadence.\n- **Body & Controls (`Inter`)**: Serves technical legibility across appointment slots, clinical descriptions, consent documentation, and system wayfinding. Set slightly relaxed line-heights to support an unhurried, calm reading experience.\n- Maintain a clear division: never apply serif styling to form controls, buttons, or small navigational labels.\n\n## Layout & Spacing\n\nThe structural layout utilizes a classic 12-column system configured with deliberate, generous whitespace.\n\n- **Desktop (≥ 1024px)**: 12-column layout with max-width constrained to `1280px` to mirror the proportions of an open editorial spread. Outer margin is `3rem`, and gutters are `1.5rem`.\n- **Tablet (768px – 1023px)**: 8-column system with `2rem` outer margins. Content reflows horizontally rather than stacking abruptly.\n- **Mobile (< 768px)**: 4-column system with `1.25rem` margins and `1rem` gutters. Density remains breathable; elements must never press against the glass edge.\n- **Section Cadence**: Long-form clinic information alternates vertically between Neutral Cream (`#F7F1E8`) and Sand (`#EADFCF`) blocks, creating physical chapter-like boundaries without artificial divider lines.\n\n## Elevation & Depth\n\nThis system avoids floating digital illusions, dramatic blurs, and saturated drop shadows. Depth is achieved via **tonal layering and low-contrast borders**:\n\n- **Surface Tiers**: Base depth is established by resting high-luminance Ivory (`#FFFDF8`) cards upon the matte Neutral Cream (`#F7F1E8`) or Sand (`#EADFCF`) ground.\n- **Border Definition**: All cards, inputs, and container blocks are bounded by a crisp `1px solid #D9CBB5` rule. This simulates the subtle, tangible edge of archival paper stock.\n- **Elevation Shadow Policy**: Default containers feature no drop shadow (`box-shadow: none`). On interactive card hover, an exceptionally soft, warm shadow is permitted: `0 4px 20px -2px rgba(107, 98, 89, 0.08)`. Aggressive blur or pure black shadow casts are strictly prohibited.\n\n## Shapes\n\nThe geometric architecture balances tailored discipline with human warmth:\n\n- **Cards & Enclosures**: Exactly `12px` border radius (`rounded-lg` equivalent in this system). Soft enough to eliminate harshness while maintaining formal stability.\n- **Buttons & Interactive Fields**: Exactly `8px` (`0.5rem`). Conveys utility, tactile feedback, and structural precision.\n- **Avatars & Badges**: Small status badges use subtle soft curves (`4px`). Portraiture for Dr. Margarita Igorevna uses architectural rounded rectangles (`16px`) or an arched top curve, never circular cutouts.\n\n## Components\n\n### Buttons\n- **Primary**: Background `#8C2F39`, text `#FFFDF8`, radius `8px`, border `1px solid #8C2F39`. Padding: `0.75rem 1.5rem`. On hover, deepen background to `#74262E`.\n- **Secondary / Consultation**: Background transparent, text `#1E2F4F`, radius `8px`, border `1px solid #1E2F4F`. On hover, background shifts to `rgba(30, 47, 79, 0.04)`.\n- **Tertiary / Link**: Plain text `#8C2F39`, underline offset of `4px` with a subtle `#D9CBB5` underline that shifts to `#8C2F39` on interaction.\n\n### Cards & Panels\n- **Structure**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `12px`, padding `1.75rem`.\n- **Treatment Overview Card**: Features a small bordeaux category label (`label-sm`), seriffed title (`headline-sm` in `#1E2F4F`), concise body copy (`#6B6259`), and a refined border accent.\n\n### Chips & Badges\n- **Specification**: Background `#EADFCF`, text `#1E2F4F`, font token `label-sm`, uppercase tracking, border `1px solid #D9CBB5`, radius `4px`. Padding: `0.25rem 0.625rem`.\n\n### Input Fields & Selects\n- **Form Controls**: Background `#FFFDF8`, border `1px solid #D9CBB5`, radius `8px`, padding `0.75rem 1rem`. Typography uses `body-md` in `#1E2F4F`. Placeholder in `#6B6259` at 60% opacity. Focused state transitions border to `#8C2F39` without harsh outer glow rings.\n\n### Checkboxes & Radios\n- **Selection Components**: `18px` square or circle, background `#FFFDF8`, border `1.5px solid #D9CBB5`. Active state fills with `#8C2F39` displaying a `#FFFDF8` checkmark.\n\n### Doctor's Signature Credential Block\n- Specialized component featuring an understated ivory background, subtle inset padding, an archival portrait frame, a formal title lockup in `Noto Serif`, and a vector render of the medical director's personal endorsement.",
+                  "font": "NOTO_SERIF",
+                  "headlineFont": "NOTO_SERIF",
+                  "headlineFontFamily": "Noto Serif",
+                  "labelFont": "INTER",
+                  "labelFontFamily": "Inter",
+                  "namedColors": {
+                    "background": "#fff9ef",
+                    "error": "#ba1a1a",
+                    "error_container": "#ffdad6",
+                    "inverse_on_surface": "#f6f0e7",
+                    "inverse_primary": "#ffb3b5",
+                    "inverse_surface": "#32302a",
+                    "on_background": "#1d1b16",
+                    "on_error": "#ffffff",
+                    "on_error_container": "#93000a",
+                    "on_primary": "#ffffff",
+                    "on_primary_container": "#ffacaf",
+                    "on_primary_fixed": "#40000c",
+                    "on_primary_fixed_variant": "#802631",
+                    "on_secondary": "#ffffff",
+                    "on_secondary_container": "#4b5b7e",
+                    "on_secondary_fixed": "#071b3a",
+                    "on_secondary_fixed_variant": "#364768",
+                    "on_surface": "#1d1b16",
+                    "on_surface_variant": "#564242",
+                    "on_tertiary": "#ffffff",
+                    "on_tertiary_container": "#cbc0b5",
+                    "on_tertiary_fixed": "#211b14",
+                    "on_tertiary_fixed_variant": "#4d453d",
+                    "outline": "#897272",
+                    "outline_variant": "#dcc0c0",
+                    "primary": "#6d1824",
+                    "primary_container": "#8c2f39",
+                    "primary_fixed": "#ffdada",
+                    "primary_fixed_dim": "#ffb3b5",
+                    "secondary": "#4e5e81",
+                    "secondary_container": "#c4d4fd",
+                    "secondary_fixed": "#d8e2ff",
+                    "secondary_fixed_dim": "#b6c6ee",
+                    "surface": "#fff9ef",
+                    "surface_bright": "#fff9ef",
+                    "surface_container": "#f3ede4",
+                    "surface_container_high": "#ede7df",
+                    "surface_container_highest": "#e7e2d9",
+                    "surface_container_low": "#f9f3ea",
+                    "surface_container_lowest": "#ffffff",
+                    "surface_dim": "#dfd9d1",
+                    "surface_tint": "#9f3e47",
+                    "surface_variant": "#e7e2d9",
+                    "tertiary": "#3f372f",
+                    "tertiary_container": "#564e45",
+                    "tertiary_fixed": "#ede0d5",
+                    "tertiary_fixed_dim": "#d1c4b9"
+                  },
+                  "overrideNeutralColor": "#f7f1e8",
+                  "overridePrimaryColor": "#8c2f39",
+                  "overrideSecondaryColor": "#1e2f4f",
+                  "overrideTertiaryColor": "#6b6259",
+                  "roundness": "ROUND_EIGHT",
+                  "spacing": {
+                    "gutter": "1.5rem",
+                    "gutter-mobile": "1rem",
+                    "margin": "3rem",
+                    "margin-mobile": "1.25rem",
+                    "space-lg": "1.5rem",
+                    "space-md": "1rem",
+                    "space-sm": "0.5rem",
+                    "space-xl": "2.5rem",
+                    "space-xs": "0.25rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "18px",
+                      "fontWeight": "400",
+                      "lineHeight": "28px"
+                    },
+                    "body-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "15px",
+                      "fontWeight": "400",
+                      "lineHeight": "24px"
+                    },
+                    "body-sm": {
+                      "fontFamily": "Inter",
+                      "fontSize": "13px",
+                      "fontWeight": "400",
+                      "lineHeight": "20px"
+                    },
+                    "display-lg": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "56px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "64px"
+                    },
+                    "display-lg-mobile": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "36px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "44px"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "40px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.015em",
+                      "lineHeight": "48px"
+                    },
+                    "headline-lg-mobile": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "28px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-md": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "28px",
+                      "fontWeight": "400",
+                      "lineHeight": "36px"
+                    },
+                    "headline-sm": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "22px",
+                      "fontWeight": "500",
+                      "lineHeight": "30px"
+                    },
+                    "label-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "14px",
+                      "fontWeight": "500",
+                      "letterSpacing": "0.02em",
+                      "lineHeight": "20px"
+                    },
+                    "label-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "12px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.04em",
+                      "lineHeight": "16px"
+                    },
+                    "label-sm": {
+                      "fontFamily": "Inter",
+                      "fontSize": "11px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.06em",
+                      "lineHeight": "14px"
+                    },
+                    "title-lg": {
+                      "fontFamily": "Noto Serif",
+                      "fontSize": "19px",
+                      "fontWeight": "500",
+                      "lineHeight": "26px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/d59f9e4c08ec4a10b605db68018c1ec5",
+              "version": "1"
+            },
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "11518",
+            "htmlCode": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/12029174694432103141/files/30d26aa5a5184bd396931a8bc21d43d9:download",
+              "mimeType": "text/html",
+              "name": "projects/12029174694432103141/files/30d26aa5a5184bd396931a8bc21d43d9"
+            },
+            "id": "decb36f9eec041d9906739f67d59888a",
+            "name": "projects/12029174694432103141/screens/decb36f9eec041d9906739f67d59888a",
+            "prompt": "Design the complete desktop homepage redesign for \"Эстетдент\", a private dental practice in Mogilev, Belarus.\n\nVisual style and aesthetics:\n\"Doctor's private practice, warm\" — calm study of a respected family doctor, personal, trustworthy, quietly premium, editorial. NOT clinical mint or cold white.\nPalette:\n- Background: warm cream #F7F1E8\n- Alternating sections & cards: sand #EADFCF\n- Form cards & service cards: ivory #FFFDF8\n- Headings, text, dark containers: deep navy #1E2F4F\n- Secondary text: warm grey #6B6259\n- Accent: muted bordeaux #8C2F39 (primary buttons, small badges/labels, numerals, thin accent lines)\n- Thin borders: 1px #D9CBB5\n- Typography: PT Serif for headings and numerals (large, elegant serif), Golos Text / Inter for body and UI.\n- Rounded corners: 12px on cards and photos, 8px on buttons. Almost no shadows, generous whitespace.\n- NO purple, NO lilac, NO gradients, NO glassmorphism, NO emojis, NO clinical mint/green.\n\nImages to embed:\n- Hero portrait of the doctor: {{DATA:IMAGE:IMAGE_1}}\n- Doctor consultation with patient: {{DATA:IMAGE:IMAGE_3}}\n- Dental laboratory workbench: {{DATA:IMAGE:IMAGE_2}}\n\nAll 12 sections must be fully rendered in Russian with EXACT verbatim content (do NOT invent prices, years other than given, reviews, ratings, other doctors or addresses):\n\n1. Header (cream background, sticky top-0, thin bottom border #D9CBB5):\n- Wordmark \"Эстетдент\" in PT Serif navy, caption below \"стоматологический кабинет · Могилёв\"\n- Navigation menu: \"О кабинете\", \"Врач\", \"Услуги\", \"Лаборатория\", \"Цены\", \"Контакты\"\n- Phone: \"+375 (29) 655-23-57\" on one line with subtle phone icon\n- Button: \"Записаться\" (bordeaux #8C2F39 bg, text-white, 8px radius)\n\n2. Hero section (warm cream #F7F1E8 background):\n- Left column:\n  - Small bordeaux label/tag: \"Частный кабинет в центре Могилёва\"\n  - H1 in very large PT Serif navy: \"Стоматолог, которому доверяют больше 20 лет\"\n  - Subtitle: \"Лечение, протезирование и имплантация зубов в кабинете врача Бородавченко Маргариты Игоревны. Безболезненно, без очередей — только по предварительной записи.\"\n  - CTAs row:\n    - Primary button: \"Записаться на приём\" (bordeaux filled #8C2F39, text-white, 8px radius)\n    - Secondary button: \"Написать в Viber\" (navy #1E2F4F outline with Viber icon)\n  - Under buttons: row of 3 small facts separated by thin vertical lines #D9CBB5:\n    - \"Своя зуботехническая лаборатория\"\n    - \"Пн–Пт 9:00–18:00\"\n    - \"ул. Пионерская, 12/25\"\n- Right column:\n  - Large portrait photo of doctor Margarita Igorevna: {{DATA:IMAGE:IMAGE_1}} with 12px rounded corners and subtle border.\n\n3. Online booking card (overlaps bottom of hero):\n- Wide ivory #FFFDF8 card with 1px #D9CBB5 border and 12px corners.\n- Title in PT Serif: \"Онлайн-запись\"\n- Fields in one row (or neat multi-column grid):\n  - Select \"Услуга\" (options: Консультация, Лечение, Протезирование, Имплантация, Отбеливание, Гигиена)\n  - Date input \"Дата\" with placeholder \"ДД.ММ.ГГГГ\"\n  - Select \"Время\" (options: 09:00, 10:30, 12:00, 14:00, 15:30, 17:00)\n  - Input \"Телефон\" (placeholder \"+375 (__) ___-__-__\")\n  - Button \"Записаться\" (bordeaux #8C2F39)\n- Small note beneath: \"Заявка придёт в кабинет в Viber/Telegram — мы перезвоним и подтвердим время\"\n\n4. Section \"Врач\" (sand #EADFCF background):\n- Split layout:\n  - Left: photo {{DATA:IMAGE:IMAGE_3}} (doctor consulting adult patient, 12px corners)\n  - Right:\n    - Small bordeaux label: \"Основатель кабинета\"\n    - Name in large PT Serif: \"Бородавченко Маргарита Игоревна\"\n    - Role: \"Врач-стоматолог\"\n    - Text: \"Стоматологический кабинет «Эстетдент» основала врач-стоматолог Маргарита Игоревна. Главное для нас — выполнить все пожелания пациента и по эстетике, и по функциональности реставраций.\"\n    - Two rows with thin bordeaux line marker on the left:\n      1) \"Победитель конкурса «Лучший предприниматель года»\"\n      2) \"Более 20 лет помогаем пациентам Могилёва\"\n    - Link: \"Сертификаты врача →\" (bordeaux hover)\n\n5. Section \"Услуги\" (warm cream #F7F1E8 background):\n- Heading in PT Serif: \"Чем мы поможем\"\n- 4 cards grid (ivory #FFFDF8, thin border #D9CBB5, 12px corners, small line icon in bordeaux, title in PT Serif, list of sub-items in Golos Text / Inter, link \"Подробнее →\"):\n  - Card 1: \"Терапия\" -> items: \"Лечебное и эстетическое пломбирование\", \"Восстановление зубов\", \"Лечение каналов X-Smart\"\n  - Card 2: \"Протезирование\" -> items: \"Несъёмное и съёмное протезирование\", \"Микропротезирование\", \"Металлокерамика\"\n  - Card 3: \"Имплантация\" -> items: \"Имплантация зубов\", \"Уход за имплантатами\"\n  - Card 4: \"Эстетика и гигиена\" -> items: \"Отбеливание зубов\", \"Удаление зубного камня\", \"Художественная реставрация\"\n\n6. Section \"Почему к нам приходят\" (warm cream #F7F1E8 background):\n- 4 columns with thin top line #D9CBB5 and large bordeaux serif numerals 01–04:\n  - 01 \"Без боли\" — \"Современная анестезия на любом этапе лечения\"\n  - 02 \"Без очередей\" — \"Приём только по предварительной записи, уютная приёмная\"\n  - 03 \"Своя лаборатория\" — \"Зуботехническая лаборатория с литейной установкой\"\n  - 04 \"Центр города\" — \"2 минуты пешком от площади Орджоникидзе\"\n\n7. Section \"Зуботехническая лаборатория\" (sand #EADFCF background):\n- Split layout:\n  - Left: Photo {{DATA:IMAGE:IMAGE_2}} (dental technician workbench with ceramic crowns, 12px corners)\n  - Right:\n    - Label: \"Своё производство\" (bordeaux)\n    - Heading in PT Serif: \"Протезы делаем у себя — надёжно и красиво\"\n    - Text: \"Собственная лаборатория с литейной установкой обеспечивает надёжность и высокий косметический эффект протезирования. Выполняем даже сложные работы: безметалловую керамику Cercon, бюгельные протезы на аттачменах, адгезивное протезирование.\"\n\n8. Two offer cards side by side (sand #EADFCF background, thin border #D9CBB5, 12px corners, ivory background or sand cards):\n  - Card 1: small bordeaux label \"Финансовый комфорт\", title in PT Serif \"Лечение в кредит\", description \"Оформите кредит на медицинские услуги от Приорбанка прямо в кабинете.\", link \"Узнать условия →\"\n  - Card 2: small bordeaux label \"Забота о близких\", title in PT Serif \"Подарочный сертификат\", description \"Бесплатный осмотр и консультация врача-стоматолога. Подарите сертификат родным, коллегам, друзьям.\", link \"Получить сертификат →\"\n\n9. Section \"Как проходит приём\" (warm cream #F7F1E8 background):\n- Heading in PT Serif: \"Как проходит приём\"\n- 4 steps arranged horizontally with bordeaux serif numbers 1, 2, 3, 4 and a thin connecting line:\n  1. \"Заявка онлайн или звонок\"\n  2. \"Осмотр и консультация\"\n  3. \"План лечения и стоимость\"\n  4. \"Лечение без боли\"\n\n10. Section \"Запись на приём\" (deep navy #1E2F4F block with cream #F7F1E8 text):\n- Left column:\n  - Heading in PT Serif: \"Запишитесь на удобное время\"\n  - Text: \"Оставьте заявку — она сразу придёт в кабинет в Viber или Telegram. Мы перезвоним и подберём время.\"\n  - Phones with icons:\n    - \"+375 (29) 655-23-57\"\n    - \"+375 (29) 652-14-28\"\n    - \"+375 (222) 76-70-02\"\n- Right column:\n  - Ivory #FFFDF8 card with dark navy text, 12px corners, thin border:\n    - Inputs: \"Имя\", \"Телефон\", select \"Услуга\", date \"Желаемая дата\" (placeholder: ДД.ММ.ГГГГ), textarea \"Комментарий\"\n    - Button: \"Отправить заявку\" (bordeaux filled #8C2F39, text-white, 8px radius)\n    - Below: row of small buttons \"Viber\" and \"Telegram\"\n\n11. Section \"Контакты\":\n- Left card (sand #EADFCF or ivory #FFFDF8 with 12px radius and 1px border):\n  - Address: \"г. Могилёв, ул. Пионерская, 12/25, офис 12\"\n  - Note: \"Центр города, 2 минуты от площади Орджоникидзе\"\n  - Working hours: \"Пн–Пт 9:00–18:00, обед 13:00–14:00\", \"Сб, Вс — выходные\"\n  - Phones: \"+375 (29) 655-23-57\", \"+375 (29) 652-14-28\", \"+375 (222) 76-70-02\"\n  - Email: \"estetdentby@mail.ru\"\n  - Action buttons: \"Позвонить\" (bordeaux), \"Viber\", \"Telegram\", \"Как нас найти\"\n- Right:\n  - Light warm-toned stylized map illustration of central Mogilev with a prominent bordeaux pin on Pionerskaya st.\n\n12. Footer (navy #1E2F4F background, cream text):\n- Wordmark \"Эстетдент\" in PT Serif with caption \"Стоматологический кабинет в Могилёве\"\n- Menu links matching header: \"О кабинете\", \"Врач\", \"Услуги\", \"Лаборатория\", \"Цены\", \"Контакты\"\n- Contact info: phones \"+375 (29) 655-23-57\", \"+375 (29) 652-14-28\", \"+375 (222) 76-70-02\", email \"estetdentby@mail.ru\"\n- Bottom line: \"© 2026 Стоматологический кабинет «Эстетдент»\"\n\nEnsure the entire page has generous whitespace, strict adherence to the defined colors (#F7F1E8 cream, #EADFCF sand, #FFFDF8 ivory, #1E2F4F navy, #8C2F39 bordeaux, #6B6259 grey, #D9CBB5 borders), 12px corners on cards/photos, 8px on buttons, and no hallucinations or unrequested elements.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/12029174694432103141/files/4a09bb1557ee4dd7b93ae1eda53a6ddd:download",
+              "name": "projects/12029174694432103141/files/4a09bb1557ee4dd7b93ae1eda53a6ddd"
+            },
+            "theme": {
+              "bodyFont": "INTER",
+              "bodyFontFamily": "Inter",
+              "colorMode": "LIGHT",
+              "colorVariant": "FIDELITY",
+              "customColor": "#8c2f39",
+              "font": "NOTO_SERIF",
+              "headlineFont": "NOTO_SERIF",
+              "headlineFontFamily": "Noto Serif",
+              "labelFont": "INTER",
+              "labelFontFamily": "Inter",
+              "namedColors": {
+                "background": "#fff9ef",
+                "error": "#ba1a1a",
+                "error_container": "#ffdad6",
+                "inverse_on_surface": "#f6f0e7",
+                "inverse_primary": "#ffb3b5",
+                "inverse_surface": "#32302a",
+                "on_background": "#1d1b16",
+                "on_error": "#ffffff",
+                "on_error_container": "#93000a",
+                "on_primary": "#ffffff",
+                "on_primary_container": "#ffacaf",
+                "on_primary_fixed": "#40000c",
+                "on_primary_fixed_variant": "#802631",
+                "on_secondary": "#ffffff",
+                "on_secondary_container": "#4b5b7e",
+                "on_secondary_fixed": "#071b3a",
+                "on_secondary_fixed_variant": "#364768",
+                "on_surface": "#1d1b16",
+                "on_surface_variant": "#564242",
+                "on_tertiary": "#ffffff",
+                "on_tertiary_container": "#cbc0b5",
+                "on_tertiary_fixed": "#211b14",
+                "on_tertiary_fixed_variant": "#4d453d",
+                "outline": "#897272",
+                "outline_variant": "#dcc0c0",
+                "primary": "#6d1824",
+                "primary_container": "#8c2f39",
+                "primary_fixed": "#ffdada",
+                "primary_fixed_dim": "#ffb3b5",
+                "secondary": "#4e5e81",
+                "secondary_container": "#c4d4fd",
+                "secondary_fixed": "#d8e2ff",
+                "secondary_fixed_dim": "#b6c6ee",
+                "surface": "#fff9ef",
+                "surface_bright": "#fff9ef",
+                "surface_container": "#f3ede4",
+                "surface_container_high": "#ede7df",
+                "surface_container_highest": "#e7e2d9",
+                "surface_container_low": "#f9f3ea",
+                "surface_container_lowest": "#ffffff",
+                "surface_dim": "#dfd9d1",
+                "surface_tint": "#9f3e47",
+                "surface_variant": "#e7e2d9",
+                "tertiary": "#3f372f",
+                "tertiary_container": "#564e45",
+                "tertiary_fixed": "#ede0d5",
+                "tertiary_fixed_dim": "#d1c4b9"
+              },
+              "overrideNeutralColor": "#f7f1e8",
+              "overridePrimaryColor": "#8c2f39",
+              "overrideSecondaryColor": "#1e2f4f",
+              "overrideTertiaryColor": "#6b6259",
+              "roundness": "ROUND_EIGHT",
+              "spacing": {
+                "gutter": "1.5rem",
+                "gutter-mobile": "1rem",
+                "margin": "3rem",
+                "margin-mobile": "1.25rem",
+                "space-lg": "1.5rem",
+                "space-md": "1rem",
+                "space-sm": "0.5rem",
+                "space-xl": "2.5rem",
+                "space-xs": "0.25rem"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "28px"
+                },
+                "body-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "15px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px"
+                },
+                "body-sm": {
+                  "fontFamily": "Inter",
+                  "fontSize": "13px",
+                  "fontWeight": "400",
+                  "lineHeight": "20px"
+                },
+                "display-lg": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "56px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "64px"
+                },
+                "display-lg-mobile": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "36px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "44px"
+                },
+                "headline-lg": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "40px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.015em",
+                  "lineHeight": "48px"
+                },
+                "headline-lg-mobile": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "28px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0em",
+                  "lineHeight": "36px"
+                },
+                "headline-md": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "28px",
+                  "fontWeight": "400",
+                  "lineHeight": "36px"
+                },
+                "headline-sm": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "22px",
+                  "fontWeight": "500",
+                  "lineHeight": "30px"
+                },
+                "label-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "500",
+                  "letterSpacing": "0.02em",
+                  "lineHeight": "20px"
+                },
+                "label-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "12px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.04em",
+                  "lineHeight": "16px"
+                },
+                "label-sm": {
+                  "fontFamily": "Inter",
+                  "fontSize": "11px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.06em",
+                  "lineHeight": "14px"
+                },
+                "title-lg": {
+                  "fontFamily": "Noto Serif",
+                  "fontSize": "19px",
+                  "fontWeight": "500",
+                  "lineHeight": "26px"
+                }
+              }
+            },
+            "title": "Эстетдент — Стоматологический кабинет в Могилёве",
+            "width": "2560"
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "Спроектирована и свёрстана главная страница частного стоматологического кабинета **«Эстетдент»** (врач Бородавченко Маргарита Игоревна, Могилёв).\n\n### Реализация и ключевые дизайн-решения:\n1. **Эстетика и атмосфера**:\n   - Воплощён стиль «тёплого частного докторского кабинета» без холодного клинического белого или мятного глянца.\n   - Базовый фон — тёплый кремовый (`#F7F1E8`), чередующиеся блоки и карточки — песочный (`#EADFCF`), формы и сервисные карточки — цвет слоновой кости (`#FFFDF8`).\n   - Типографика: благородная антиква **PT Serif** для заголовков и акцентных цифр, чистый гротеск **Golos Text** для чтения и интерфейсных элементов.\n   - Глубокий тёмно-синий (`#1E2F4F`) для текстов, контрастных блоков и футера; единый благородный акцент — приглушённый бордовый (`#8C2F39`) для кнопок, меток, маркеров и шагов.\n   - Скругления 12px на карточках и фото, 8px на кнопках, аккуратные тонкие рамки 1px (`#D9CBB5`), воздух и отсутствие визуального шума.\n\n2. **Все 12 обязательных разделов**:\n   1. **Шапка**: логотип-вордмарк «Эстетдент» с подписью, аккуратное меню, телефон на одной строке и бордовая кнопка «Записаться».\n   2. **Hero-блок**: метка «Частный кабинет в центре Могилёва», крупный заголовок с 20-летним доверием, кнопки записи и Viber, тройка фактов и тёплый портрет доктора Маргариты Игоревны.\n   3. **Интерактивная плашка онлайн-записи**: компактная строка параметров (услуга, дата ДД.ММ.ГГГГ, время, телефон) и подтверждающая подпись.\n   4. **Блок основателя**: фото консультации с пациенткой, статус победителя конкурса «Лучший предприниматель года», 20 лет практики и ссылка на сертификаты.\n   5. **Услуги («Чем мы поможем»)**: 4 карточки (Терапия, Протезирование, Имплантация, Эстетика и гигиена) с подпунктами и тонкими бордовыми иконками.\n   6. **Преимущества («Почему к нам приходят»)**: 4 колонки с крупной нумерацией 01–04 шрифтом с засечками.\n   7. **Зуботехническая лаборатория**: фото рабочего места зубного техника с керамическими коронками и блок об оборудовании и безметалловой керамике.\n   8. **Два спецпредложения**: карточки «Лечение в кредит» (Приорбанк) и «Подарочный сертификат».\n   9. **Этапы приёма**: горизонтальный 4-шаговый маршрут от онлайн-заявки до лечения без боли.\n   10. **Фокусный блок записи**: контрастный тёмно-синий фон, 3 контактных номера и форма заявки с полями и мессенджерами.\n   11. **Контакты**: подробные часы с обедом, адрес, быстрые действия и тёплая стилизованная карта с геометкой.\n   12. **Футер**: тёмно-синий блок в самом низу с навигацией, реквизитами и копирайтом 2026 года.\n\nВесь контент полностью на русском языке и строго соответствует заданным данным."
+    },
+    {
+      "suggestion": "Показать мобильную версию этой страницы"
+    },
+    {
+      "suggestion": "Детализировать модальное окно онлайн-записи с выбором времени"
+    },
+    {
+      "suggestion": "Подготовить страницу подробного описания услуг и лаборатории"
+    }
+  ],
+  "projectId": "12029174694432103141",
+  "sessionId": "15929578355891144335"
+}

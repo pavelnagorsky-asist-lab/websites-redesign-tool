@@ -1,0 +1,72 @@
+{
+  "slug": "stoapeks-by",
+  "company": "СТО Апекс",
+  "industry": "СТО / ремонт авто",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "https://stoapeks.by",
+  "domain": "stoapeks.by",
+  "contacts": {
+    "emails": [
+      "stoapeks@gmail.com"
+    ],
+    "phones": [
+      "+375 (44) 511-44-88",
+      "+375 (29) 500-10-20",
+      "+375 (44) 595-51-55"
+    ],
+    "telegram": [
+      "https://t.me/Stoapeks"
+    ],
+    "viber": [
+      "viber://add?number=375445114488",
+      "viber://chat?number=375445114488"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/stoapeks.by"
+    ],
+    "vk": [
+      "https://vk.com/stoapeks"
+    ],
+    "facebook": [],
+    "address": "г. Витебск, ул. Фрунзе 81, к20, помещение 5"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 2,
+    "potential": 7,
+    "complexity": 5
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Свежий сайт на Битрикс (Аспро) с формой записи и ценами",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 8,
+    "reasons": [
+      "Медленная загрузка: 41.9 с",
+      "Ошибки JavaScript в консоли: 6"
+    ],
+    "complexity": "medium",
+    "complexitySignals": [
+      "поиск по сайту",
+      "фильтры / подбор"
+    ],
+    "cms": [
+      "1С-Битрикс"
+    ],
+    "mobileFriendly": false
+  },
+  "notes": ""
+}

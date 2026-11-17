@@ -1,0 +1,53 @@
+{
+  "slug": "kolesoprav-by",
+  "company": "Шиномонтаж на Зеленогурской",
+  "industry": "Шиномонтаж",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "https://kolesoprav.by",
+  "domain": "kolesoprav.by",
+  "contacts": {
+    "emails": [],
+    "phones": [
+      "+375 (33) 377-57-34"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": "Зеленогурская ул., 62"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 3,
+    "potential": 4,
+    "complexity": 1
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Свежий современный сайт (© 2026), небольшой шиномонтаж",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 5,
+    "reasons": [
+      "Битые изображения: 2"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

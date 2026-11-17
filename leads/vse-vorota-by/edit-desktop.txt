@@ -1,0 +1,9 @@
+Keep the layout, colors, photos and overall style exactly as is. Make only these fixes:
+
+1. Typography: change all headings (H1, H2, card titles) from the serif font to "Unbounded" (bold, geometric sans) — the engineering look. Body text stays Inter.
+2. Section "Что мы делаем": replace the number badges "01–04" with real photos on top of each of the 4 cards (16:10, 6px corners): "Откатные ворота" — modern dark-grey sliding gate of corrugated metal sheet at a private house; "Заборы" — long dark-grey metal picket fence along a private plot; "Автоматика" — close-up of a sliding gate electric drive with gear rack; "Навесы и калитки" — polycarbonate carport over a car next to a metal wicket gate. Replace the subtitle text under the heading with: "Изготавливаем ворота, заборы и навесы на собственном производстве и устанавливаем под ключ по всей Беларуси."
+3. Quiz section left list: replace the three items with "Бесплатный выезд замерщика", "Гарантия лучшей цены", "Расчёт стоимости за 15 минут".
+4. Section "Выполненные работы": badges "ПРОЕКТ #241", "ПРОЕКТ #238", "ПРОЕКТ #235" → just "ПРОЕКТ". Remove the link "Архив сверок ОТК". The third card photo (welding workshop) → replace with a real photo of a dark sliding gate finished with horizontal wooden boards at a private house.
+5. Form section: label "Прямая связь с цехом:" → "Телефоны:".
+6. Contacts: card title "Главный офис продаж" → "Офис в Минске"; remove the coordinates line "53.8897° N, 27.4984° E" (keep only "Минск, Уманская 54" label on the map).
+7. Footer: remove "УНП 193000000" — the right part should read only "ТЦ Globo, ул. Уманская 54".

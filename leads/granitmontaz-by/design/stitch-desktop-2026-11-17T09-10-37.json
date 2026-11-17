@@ -1,0 +1,634 @@
+{
+  "outputComponents": [
+    {
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Monolithic Elegance",
+          "styleGuidelines": "## Brand & Style\n\nThis design system embodies the solemnity, architectural weight, and timeless permanence of an elite stone atelier. It communicates absolute craftsmanship, reverence, and understated luxury for memorial architecture. The emotional resonance is quiet, stoic, and profoundly dignified—eschewing commercial flash or decorative excess in favor of monumental geometry, polished stone surfaces, and delicate artisanal metallic accents.\n\n### Target Audience & Tone\n- **Audience:** Discerning clients seeking bespoke, enduring memorial complexes, family crypts, and refined stonework across Belarus and Eastern Europe.\n- **Tone:** Architectural, solemn, reverent, uncompromisingly precise.\n- **Visual Style:** High-end atelier minimalism blended with tactile materiality. Pure black polished granite, brushed antique bronze, and warm champagne leafing under controlled, low-key lighting.\n- **Strict Guidelines:** Strictly zero whimsical micro-interactions, zero emojis, zero saturated primary hues, and no soft consumer-tech \"bubble\" geometry.\n\n## Layout & Spacing\n\nThe layout philosophy mirrors classical architectural compositions: symmetry, disciplined proportions, and deliberate negative space that lets imagery of monolithic stonework breathe.\n\n### Grid & Composition\n- **Desktop (1200px+):** 12-column symmetrical grid, 4rem canvas margins, 1.5rem gutters. Max-width container restricted to 1320px for controlled editorial pacing.\n- **Tablet (768px - 1199px):** 8-column layout, 2.5rem margins, 1.25rem gutters.\n- **Mobile (< 768px):** 4-column layout, 1.25rem margins, 1rem gutters. Columns collapse linearly; image galleries default to full-bleed or rigid card pairings.\n\n### Rhythm\nWhitespace is generous by design. Sections use large breathing zones (`space-xl` and higher) to evoke the quiet grandeur of a gallery. Components maintain compact internal vertical padding to keep information tightly bound while external separations remain expansive.\n\n## Elevation & Depth\n\nIn keeping with dense, opaque stone surfaces, depth is established through **tonal layering** and **delicate metallic edge illumination**, rather than diffuse drop shadows.\n\n- **Surface Stack:** \n  - Base: `#0F0F10` (Polished slab bedrock)\n  - Resting panels: `#1A1A1C` (Honed granite surface)\n  - Hovered/Active panels: `#232326` (Cut stone elevation)\n- **Separation Technique:** Boundaries are demarcated using crisp 1px borders:\n  - Standard structural partitions: `1px solid rgba(255, 255, 255, 0.08)`\n  - Featured / Selected states: `1px solid rgba(184, 149, 90, 0.25)`\n  - Focused interactive elements: `1px solid #B8955A` with an ambient glow of `box-shadow: 0 0 12px rgba(184, 149, 90, 0.15)`\n- **Shadow Philosophy:** Diffuse grey shadows are strictly forbidden. When spatial separation is required for modals or popovers, use pure deep black occlusion shadows (`box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85)`) coupled with a hairline border in soft gold.\n\n## Components\n\n### Buttons\n- **Primary:** Background `#B8955A`, text `#0F0F10`, weight 600, uppercase letter-spaced label. Sharp corners (0px). Hover shifts background to `#D9C7A3` with zero lag or smooth linear ease (150ms).\n- **Secondary / Ghost:** Background transparent, 1px border `rgba(184, 149, 90, 0.4)`, text `#EDE7DC`. Hover state fills with `rgba(184, 149, 90, 0.08)` and border transitions to full `#B8955A`.\n- **Text Links:** Color `#D9C7A3`, subtle bottom border offset by 4px in `rgba(217, 199, 163, 0.3)`, transitioning to solid gold on hover.\n\n### Cards & Granite Portfolio Items\n- **Card Base:** Background `#1A1A1C`, 1px border `rgba(255, 255, 255, 0.08)`. Zero border radius.\n- **Image Treatment:** Aspect ratios strictly 4:5 (vertical monument proportion) or 16:9 (full memorial complex). Images carry a subtle dark vignette. Hover triggers a slow, refined zoom (1.02 scale over 500ms) with border shifting to `rgba(184, 149, 90, 0.35)`.\n- **Meta Badges:** Monospace or tracking-heavy sans (`label-sm`), background `#232326`, border `1px solid rgba(184, 149, 90, 0.2)`, text `#D9C7A3`.\n\n### Input Fields & Selectors\n- **Input Canvas:** Background `#141416`, 1px border `rgba(255, 255, 255, 0.12)`, text `#EDE7DC`, placeholder `#9A958C`. Sharp edges.\n- **Focus State:** Border shifts directly to `#B8955A` with an inner 1px hairline or subtle ambient gold aura. No thick outline rings.\n- **Labels:** Positioned strictly above fields in `label-md` uppercase stone grey (`#9A958C`).\n\n### Checkboxes, Radios & Toggles\n- **Checkboxes:** Square 18px box, border 1px `rgba(184, 149, 90, 0.4)`, background `#1A1A1C`. Checked state fills with `#B8955A` displaying a sharp geometric check in `#0F0F10`.\n- **Radio Buttons:** Diamond or square inset indicator rather than soft circles where feasible, or strict sharp concentric square markers.\n\n### Lists & Spec Sheets\n- **Granite Variety Tables:** Alternating rows using subtle `#1A1A1C` and transparent stripes, separated by `1px solid rgba(255, 255, 255, 0.05)`.\n- **Metric Pairings:** Left-aligned parameter in `#9A958C`, dotted horizontal hairline guide, right-aligned value in `#EDE7DC`.\n\n### Modal & Ceremonial Dialogs\n- Backdropped by `rgba(15, 15, 16, 0.85)` with light backdrop blur (`4px`). Container framed in solid `#1A1A1C` with an outer hairline border of `rgba(184, 149, 90, 0.3)`. Header centered with display antiqua typography and a centered 40px gold separator rule.",
+          "theme": {
+            "bodyFont": "MANROPE",
+            "bodyFontFamily": "Manrope",
+            "colorMode": "DARK",
+            "colorVariant": "FIDELITY",
+            "customColor": "#b8955a",
+            "designMd": "---\nname: Monolithic Elegance\ncolors:\n  surface: '#131314'\n  surface-dim: '#131314'\n  surface-bright: '#39393a'\n  surface-container-lowest: '#0e0e0f'\n  surface-container-low: '#1c1b1c'\n  surface-container: '#201f20'\n  surface-container-high: '#2a2a2b'\n  surface-container-highest: '#353436'\n  on-surface: '#e5e2e3'\n  on-surface-variant: '#d1c5b5'\n  inverse-surface: '#e5e2e3'\n  inverse-on-surface: '#313031'\n  outline: '#9a8f81'\n  outline-variant: '#4e463a'\n  surface-tint: '#e7c182'\n  primary: '#e7c182'\n  on-primary: '#422c00'\n  primary-container: '#b8955a'\n  on-primary-container: '#452e00'\n  inverse-primary: '#775a25'\n  secondary: '#d6c5a1'\n  on-secondary: '#3a2f16'\n  secondary-container: '#54482c'\n  on-secondary-container: '#c8b793'\n  tertiary: '#c8c6c9'\n  on-tertiary: '#303033'\n  tertiary-container: '#9b9a9e'\n  on-tertiary-container: '#323235'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdeaa'\n  primary-fixed-dim: '#e7c182'\n  on-primary-fixed: '#271900'\n  on-primary-fixed-variant: '#5c420e'\n  secondary-fixed: '#f3e0bb'\n  secondary-fixed-dim: '#d6c5a1'\n  on-secondary-fixed: '#231a04'\n  on-secondary-fixed-variant: '#51452a'\n  tertiary-fixed: '#e4e1e5'\n  tertiary-fixed-dim: '#c8c6c9'\n  on-tertiary-fixed: '#1b1b1e'\n  on-tertiary-fixed-variant: '#47464a'\n  background: '#131314'\n  on-background: '#e5e2e3'\n  surface-variant: '#353436'\ntypography:\n  display-lg:\n    fontFamily: EB Garamond\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.01em\n  display-lg-mobile:\n    fontFamily: EB Garamond\n    fontSize: 36px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: 0em\n  headline-xl:\n    fontFamily: EB Garamond\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: 0em\n  headline-xl-mobile:\n    fontFamily: EB Garamond\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0.01em\n  headline-md:\n    fontFamily: EB Garamond\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0.01em\n  headline-sm:\n    fontFamily: EB Garamond\n    fontSize: 22px\n    fontWeight: '500'\n    lineHeight: 30px\n    letterSpacing: 0.02em\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  body-md:\n    fontFamily: Manrope\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n    letterSpacing: 0.01em\n  body-sm:\n    fontFamily: Manrope\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-lg:\n    fontFamily: Manrope\n    fontSize: 13px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.14em\n  label-md:\n    fontFamily: Manrope\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.18em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 14px\n    letterSpacing: 0.22em\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 4rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.75rem\n  space-xl: 3rem\n---\n\n## Brand & Style\n\nThis design system embodies the solemnity, architectural weight, and timeless permanence of an elite stone atelier. It communicates absolute craftsmanship, reverence, and understated luxury for memorial architecture. The emotional resonance is quiet, stoic, and profoundly dignified—eschewing commercial flash or decorative excess in favor of monumental geometry, polished stone surfaces, and delicate artisanal metallic accents.\n\n### Target Audience & Tone\n- **Audience:** Discerning clients seeking bespoke, enduring memorial complexes, family crypts, and refined stonework across Belarus and Eastern Europe.\n- **Tone:** Architectural, solemn, reverent, uncompromisingly precise.\n- **Visual Style:** High-end atelier minimalism blended with tactile materiality. Pure black polished granite, brushed antique bronze, and warm champagne leafing under controlled, low-key lighting.\n- **Strict Guidelines:** Strictly zero whimsical micro-interactions, zero emojis, zero saturated primary hues, and no soft consumer-tech \"bubble\" geometry.\n\n## Colors\n\nThe palette is rooted in dark monumental stone and warm metallic foils, designed exclusively in dark mode to mirror polished black slab surfaces under directional studio illumination.\n\n### Functional Roles\n- **Base Canvas (`#0F0F10`):** Polished black granite base; non-reflective, deep, and grounded.\n- **Surface Level 1 (`#1A1A1C`):** Deep graphite for structural cards, secondary containers, and inset panels.\n- **Surface Level 2 (`#232326`):** Elevated graphite for interactive controls, dialogs, floating toolbars, and active states.\n- **Primary Accent (`#B8955A`):** Warm antique gold and cast bronze. Reserved strictly for key focal points, primary interactive buttons, framing accents, and ceremonial signatures.\n- **Secondary Accent (`#D9C7A3`):** Soft champagne. Deployed for subtle badges, hover highlights on gold elements, and muted decorative rules.\n- **Text Primary (`#EDE7DC`):** Warm ivory. Delivers high-contrast legibility without the jarring sterility of pure clinical white.\n- **Text Muted (`#9A958C`):** Weathered stone grey for metadata, specifications, and subordinate supporting copy.\n- **Hairline Borders:** Dual-layer border strategy using `rgba(184, 149, 90, 0.25)` for focal golden framing and `rgba(255, 255, 255, 0.08)` for structural panel demarcation.\n\n## Typography\n\nThe typographic hierarchy establishes clear tension between classical monumental lapidary engraving and modern technical precision.\n\n- **Headlines (Classical Antiqua):** Utilizes `EB Garamond` to evoke timeless epigraphy, sculptural inscriptions, and heritage craftsmanship. Display scales emphasize balanced, rhythmic proportions without heavy bold weights.\n- **Body & UI (Technical Sans):** Governed by `Manrope` for absolute clarity, crisp metric rendering on digital screens, and clean tabular presentation of stone types, dimensions, and architectural specs.\n- **Micro-Labels & Metadata:** Rendered in `Manrope` uppercase with wide letter spacing (`0.14em` to `0.22em`) to mirror archival museum plaques and fine goldsmith hallmarks.\n\n## Layout & Spacing\n\nThe layout philosophy mirrors classical architectural compositions: symmetry, disciplined proportions, and deliberate negative space that lets imagery of monolithic stonework breathe.\n\n### Grid & Composition\n- **Desktop (1200px+):** 12-column symmetrical grid, 4rem canvas margins, 1.5rem gutters. Max-width container restricted to 1320px for controlled editorial pacing.\n- **Tablet (768px - 1199px):** 8-column layout, 2.5rem margins, 1.25rem gutters.\n- **Mobile (< 768px):** 4-column layout, 1.25rem margins, 1rem gutters. Columns collapse linearly; image galleries default to full-bleed or rigid card pairings.\n\n### Rhythm\nWhitespace is generous by design. Sections use large breathing zones (`space-xl` and higher) to evoke the quiet grandeur of a gallery. Components maintain compact internal vertical padding to keep information tightly bound while external separations remain expansive.\n\n## Elevation & Depth\n\nIn keeping with dense, opaque stone surfaces, depth is established through **tonal layering** and **delicate metallic edge illumination**, rather than diffuse drop shadows.\n\n- **Surface Stack:** \n  - Base: `#0F0F10` (Polished slab bedrock)\n  - Resting panels: `#1A1A1C` (Honed granite surface)\n  - Hovered/Active panels: `#232326` (Cut stone elevation)\n- **Separation Technique:** Boundaries are demarcated using crisp 1px borders:\n  - Standard structural partitions: `1px solid rgba(255, 255, 255, 0.08)`\n  - Featured / Selected states: `1px solid rgba(184, 149, 90, 0.25)`\n  - Focused interactive elements: `1px solid #B8955A` with an ambient glow of `box-shadow: 0 0 12px rgba(184, 149, 90, 0.15)`\n- **Shadow Philosophy:** Diffuse grey shadows are strictly forbidden. When spatial separation is required for modals or popovers, use pure deep black occlusion shadows (`box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85)`) coupled with a hairline border in soft gold.\n\n## Shapes\n\nThe shape vocabulary is strictly **sharp and architectural** (`roundedness: 0` / strictly 0px to a maximum microscopic 1–2px bevel via CSS where rendering anti-aliasing requires smoothing).\n\n- **Corners:** Razor-sharp corners reflect laser-cut granite, polished gabbro edges, and master masonry. Circular or rounded \"pill\" forms are completely excluded.\n- **Framing:** Cards and structural blocks employ perimeter hairline borders. Corner notches or subtle inset double-lines (inner gold hairline spaced 3px from container edge) may be used on ceremonial certificates, catalog portfolios, and bespoke commission showcases.\n\n## Components\n\n### Buttons\n- **Primary:** Background `#B8955A`, text `#0F0F10`, weight 600, uppercase letter-spaced label. Sharp corners (0px). Hover shifts background to `#D9C7A3` with zero lag or smooth linear ease (150ms).\n- **Secondary / Ghost:** Background transparent, 1px border `rgba(184, 149, 90, 0.4)`, text `#EDE7DC`. Hover state fills with `rgba(184, 149, 90, 0.08)` and border transitions to full `#B8955A`.\n- **Text Links:** Color `#D9C7A3`, subtle bottom border offset by 4px in `rgba(217, 199, 163, 0.3)`, transitioning to solid gold on hover.\n\n### Cards & Granite Portfolio Items\n- **Card Base:** Background `#1A1A1C`, 1px border `rgba(255, 255, 255, 0.08)`. Zero border radius.\n- **Image Treatment:** Aspect ratios strictly 4:5 (vertical monument proportion) or 16:9 (full memorial complex). Images carry a subtle dark vignette. Hover triggers a slow, refined zoom (1.02 scale over 500ms) with border shifting to `rgba(184, 149, 90, 0.35)`.\n- **Meta Badges:** Monospace or tracking-heavy sans (`label-sm`), background `#232326`, border `1px solid rgba(184, 149, 90, 0.2)`, text `#D9C7A3`.\n\n### Input Fields & Selectors\n- **Input Canvas:** Background `#141416`, 1px border `rgba(255, 255, 255, 0.12)`, text `#EDE7DC`, placeholder `#9A958C`. Sharp edges.\n- **Focus State:** Border shifts directly to `#B8955A` with an inner 1px hairline or subtle ambient gold aura. No thick outline rings.\n- **Labels:** Positioned strictly above fields in `label-md` uppercase stone grey (`#9A958C`).\n\n### Checkboxes, Radios & Toggles\n- **Checkboxes:** Square 18px box, border 1px `rgba(184, 149, 90, 0.4)`, background `#1A1A1C`. Checked state fills with `#B8955A` displaying a sharp geometric check in `#0F0F10`.\n- **Radio Buttons:** Diamond or square inset indicator rather than soft circles where feasible, or strict sharp concentric square markers.\n\n### Lists & Spec Sheets\n- **Granite Variety Tables:** Alternating rows using subtle `#1A1A1C` and transparent stripes, separated by `1px solid rgba(255, 255, 255, 0.05)`.\n- **Metric Pairings:** Left-aligned parameter in `#9A958C`, dotted horizontal hairline guide, right-aligned value in `#EDE7DC`.\n\n### Modal & Ceremonial Dialogs\n- Backdropped by `rgba(15, 15, 16, 0.85)` with light backdrop blur (`4px`). Container framed in solid `#1A1A1C` with an outer hairline border of `rgba(184, 149, 90, 0.3)`. Header centered with display antiqua typography and a centered 40px gold separator rule.",
+            "font": "EB_GARAMOND",
+            "headlineFont": "EB_GARAMOND",
+            "headlineFontFamily": "EB Garamond",
+            "labelFont": "MANROPE",
+            "labelFontFamily": "Manrope",
+            "namedColors": {
+              "background": "#131314",
+              "error": "#ffb4ab",
+              "error_container": "#93000a",
+              "inverse_on_surface": "#313031",
+              "inverse_primary": "#775a25",
+              "inverse_surface": "#e5e2e3",
+              "on_background": "#e5e2e3",
+              "on_error": "#690005",
+              "on_error_container": "#ffdad6",
+              "on_primary": "#422c00",
+              "on_primary_container": "#452e00",
+              "on_primary_fixed": "#271900",
+              "on_primary_fixed_variant": "#5c420e",
+              "on_secondary": "#3a2f16",
+              "on_secondary_container": "#c8b793",
+              "on_secondary_fixed": "#231a04",
+              "on_secondary_fixed_variant": "#51452a",
+              "on_surface": "#e5e2e3",
+              "on_surface_variant": "#d1c5b5",
+              "on_tertiary": "#303033",
+              "on_tertiary_container": "#323235",
+              "on_tertiary_fixed": "#1b1b1e",
+              "on_tertiary_fixed_variant": "#47464a",
+              "outline": "#9a8f81",
+              "outline_variant": "#4e463a",
+              "primary": "#e7c182",
+              "primary_container": "#b8955a",
+              "primary_fixed": "#ffdeaa",
+              "primary_fixed_dim": "#e7c182",
+              "secondary": "#d6c5a1",
+              "secondary_container": "#54482c",
+              "secondary_fixed": "#f3e0bb",
+              "secondary_fixed_dim": "#d6c5a1",
+              "surface": "#131314",
+              "surface_bright": "#39393a",
+              "surface_container": "#201f20",
+              "surface_container_high": "#2a2a2b",
+              "surface_container_highest": "#353436",
+              "surface_container_low": "#1c1b1c",
+              "surface_container_lowest": "#0e0e0f",
+              "surface_dim": "#131314",
+              "surface_tint": "#e7c182",
+              "surface_variant": "#353436",
+              "tertiary": "#c8c6c9",
+              "tertiary_container": "#9b9a9e",
+              "tertiary_fixed": "#e4e1e5",
+              "tertiary_fixed_dim": "#c8c6c9"
+            },
+            "overrideNeutralColor": "#0f0f10",
+            "overridePrimaryColor": "#b8955a",
+            "overrideSecondaryColor": "#d9c7a3",
+            "overrideTertiaryColor": "#232326",
+            "spacing": {
+              "gutter": "1.5rem",
+              "gutter-mobile": "1rem",
+              "margin": "4rem",
+              "margin-mobile": "1.25rem",
+              "space-lg": "1.75rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+              "space-xl": "3rem",
+              "space-xs": "0.25rem"
+            },
+            "spacingScale": 2,
+            "typography": {
+              "body-lg": {
+                "fontFamily": "Manrope",
+                "fontSize": "18px",
+                "fontWeight": "400",
+                "letterSpacing": "0.01em",
+                "lineHeight": "28px"
+              },
+              "body-md": {
+                "fontFamily": "Manrope",
+                "fontSize": "15px",
+                "fontWeight": "400",
+                "letterSpacing": "0.01em",
+                "lineHeight": "24px"
+              },
+              "body-sm": {
+                "fontFamily": "Manrope",
+                "fontSize": "13px",
+                "fontWeight": "400",
+                "letterSpacing": "0.02em",
+                "lineHeight": "20px"
+              },
+              "display-lg": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "56px",
+                "fontWeight": "400",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "64px"
+              },
+              "display-lg-mobile": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "36px",
+                "fontWeight": "400",
+                "letterSpacing": "0em",
+                "lineHeight": "44px"
+              },
+              "headline-md": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "28px",
+                "fontWeight": "400",
+                "letterSpacing": "0.01em",
+                "lineHeight": "36px"
+              },
+              "headline-sm": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "22px",
+                "fontWeight": "500",
+                "letterSpacing": "0.02em",
+                "lineHeight": "30px"
+              },
+              "headline-xl": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "40px",
+                "fontWeight": "400",
+                "letterSpacing": "0em",
+                "lineHeight": "48px"
+              },
+              "headline-xl-mobile": {
+                "fontFamily": "EB Garamond",
+                "fontSize": "28px",
+                "fontWeight": "400",
+                "letterSpacing": "0.01em",
+                "lineHeight": "36px"
+              },
+              "label-lg": {
+                "fontFamily": "Manrope",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "letterSpacing": "0.14em",
+                "lineHeight": "18px"
+              },
+              "label-md": {
+                "fontFamily": "Manrope",
+                "fontSize": "11px",
+                "fontWeight": "600",
+                "letterSpacing": "0.18em",
+                "lineHeight": "16px"
+              },
+              "label-sm": {
+                "fontFamily": "Manrope",
+                "fontSize": "10px",
+                "fontWeight": "700",
+                "letterSpacing": "0.22em",
+                "lineHeight": "14px"
+              }
+            }
+          }
+        },
+        "name": "assets/7b5522ab1d0b4aea92977f16308b1872",
+        "version": "1"
+      }
+    },
+    {
+      "design": {
+        "screens": [
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "768",
+            "id": "d61fe181983449149709f86bb8e42436",
+            "name": "projects/9735201724509393789/screens/d61fe181983449149709f86bb8e42436",
+            "prompt": "Atmospheric luxury photography of a vertical polished black granite tombstone monument with delicate gold leaf engraved religious cross and floral contour lines, warm soft golden dusk sunlight reflection on mirror-finish dark granite surface, outdoor cemetery garden backdrop with soft blurred trees, serene respectful quiet luxury, cinematic lighting, no text, no names or letters on the stone, 8k resolution photo.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/34d7b77dcb4e4e98836249b1913bd79a:download",
+              "name": "projects/9735201724509393789/files/34d7b77dcb4e4e98836249b1913bd79a"
+            },
+            "theme": {},
+            "title": "Atmospheric luxury photography of a vertical polished black granite tombstone monument with delicate gold leaf engraved religious cross and floral contour lines, warm soft golden dusk sunlight reflection on mirror-finish dark granite surface, outdoor cemetery garden backdrop with soft blurred trees, serene respectful quiet luxury, cinematic lighting, no text, no names or letters on the stone, 8k resolution photo.",
+            "width": "1376"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "9381fe4bacc549969e8960012b445505",
+            "name": "projects/9735201724509393789/screens/9381fe4bacc549969e8960012b445505",
+            "prompt": "Architectural landscape photography of a finished memorial burial site with polished black granite stela monument, dark grey granite paving slabs, clean low granite boundary curb fence, delicate morning mist, serene birch trees in background, soft natural lighting, realistic cemetery architecture in Belarus Eastern Europe, no people, no readable text.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/79f079bd6bcf457c8a5b7197c3d44a11:download",
+              "name": "projects/9735201724509393789/files/79f079bd6bcf457c8a5b7197c3d44a11"
+            },
+            "theme": {},
+            "title": "Architectural landscape photography of a finished memorial burial site with polished black granite stela monument, dark grey granite paving slabs, clean low granite boundary curb fence, delicate morning mist, serene birch trees in background, soft natural lighting, realistic cemetery architecture in Belarus Eastern Europe, no people, no readable text.",
+            "width": "1200"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "cc363a772bde4f9bb1072b8911e065c8",
+            "name": "projects/9735201724509393789/screens/cc363a772bde4f9bb1072b8911e065c8",
+            "prompt": "Close up hands of a skilled craftsman artisan stone carver polishing the edge of a heavy dark granite monument slab using professional water diamond grinding tool in an authentic masonry stone workshop, water droplets, dramatic moody atelier lighting, craftsmanship and precision, no faces, high detail documentary photo.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/f5f868d8151946b59d621f65750b0241:download",
+              "name": "projects/9735201724509393789/files/f5f868d8151946b59d621f65750b0241"
+            },
+            "theme": {},
+            "title": "Close up hands of a skilled craftsman artisan stone carver polishing the edge of a heavy dark granite monument slab using professional water diamond grinding tool in an authentic masonry stone workshop, water droplets, dramatic moody atelier lighting, craftsmanship and precision, no faces, high detail documentary photo.",
+            "width": "1200"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "eda51206d0694022b3ef90dd8a3315fb",
+            "name": "projects/9735201724509393789/screens/eda51206d0694022b3ef90dd8a3315fb",
+            "prompt": "Top-down close-up hands of a designer presenting granite and marble stone samples and a 3D tombstone CAD project render on an elegant laptop on a dark wooden table, measuring caliper and sketchpad nearby, warm moody atelier interior lighting, hands only, no faces, quiet luxury.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/a73e4b56226546ac9c7fe7fe13e07259:download",
+              "name": "projects/9735201724509393789/files/a73e4b56226546ac9c7fe7fe13e07259"
+            },
+            "theme": {},
+            "title": "Top-down close-up hands of a designer presenting granite and marble stone samples and a 3D tombstone CAD project render on an elegant laptop on a dark wooden table, measuring caliper and sketchpad nearby, warm moody atelier interior lighting, hands only, no faces, quiet luxury.",
+            "width": "1200"
+          },
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "Monolithic Elegance",
+                "styleGuidelines": "## Brand & Style\n\nThis design system embodies the solemnity, architectural weight, and timeless permanence of an elite stone atelier. It communicates absolute craftsmanship, reverence, and understated luxury for memorial architecture. The emotional resonance is quiet, stoic, and profoundly dignified—eschewing commercial flash or decorative excess in favor of monumental geometry, polished stone surfaces, and delicate artisanal metallic accents.\n\n### Target Audience & Tone\n- **Audience:** Discerning clients seeking bespoke, enduring memorial complexes, family crypts, and refined stonework across Belarus and Eastern Europe.\n- **Tone:** Architectural, solemn, reverent, uncompromisingly precise.\n- **Visual Style:** High-end atelier minimalism blended with tactile materiality. Pure black polished granite, brushed antique bronze, and warm champagne leafing under controlled, low-key lighting.\n- **Strict Guidelines:** Strictly zero whimsical micro-interactions, zero emojis, zero saturated primary hues, and no soft consumer-tech \"bubble\" geometry.\n\n## Layout & Spacing\n\nThe layout philosophy mirrors classical architectural compositions: symmetry, disciplined proportions, and deliberate negative space that lets imagery of monolithic stonework breathe.\n\n### Grid & Composition\n- **Desktop (1200px+):** 12-column symmetrical grid, 4rem canvas margins, 1.5rem gutters. Max-width container restricted to 1320px for controlled editorial pacing.\n- **Tablet (768px - 1199px):** 8-column layout, 2.5rem margins, 1.25rem gutters.\n- **Mobile (< 768px):** 4-column layout, 1.25rem margins, 1rem gutters. Columns collapse linearly; image galleries default to full-bleed or rigid card pairings.\n\n### Rhythm\nWhitespace is generous by design. Sections use large breathing zones (`space-xl` and higher) to evoke the quiet grandeur of a gallery. Components maintain compact internal vertical padding to keep information tightly bound while external separations remain expansive.\n\n## Elevation & Depth\n\nIn keeping with dense, opaque stone surfaces, depth is established through **tonal layering** and **delicate metallic edge illumination**, rather than diffuse drop shadows.\n\n- **Surface Stack:** \n  - Base: `#0F0F10` (Polished slab bedrock)\n  - Resting panels: `#1A1A1C` (Honed granite surface)\n  - Hovered/Active panels: `#232326` (Cut stone elevation)\n- **Separation Technique:** Boundaries are demarcated using crisp 1px borders:\n  - Standard structural partitions: `1px solid rgba(255, 255, 255, 0.08)`\n  - Featured / Selected states: `1px solid rgba(184, 149, 90, 0.25)`\n  - Focused interactive elements: `1px solid #B8955A` with an ambient glow of `box-shadow: 0 0 12px rgba(184, 149, 90, 0.15)`\n- **Shadow Philosophy:** Diffuse grey shadows are strictly forbidden. When spatial separation is required for modals or popovers, use pure deep black occlusion shadows (`box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85)`) coupled with a hairline border in soft gold.\n\n## Components\n\n### Buttons\n- **Primary:** Background `#B8955A`, text `#0F0F10`, weight 600, uppercase letter-spaced label. Sharp corners (0px). Hover shifts background to `#D9C7A3` with zero lag or smooth linear ease (150ms).\n- **Secondary / Ghost:** Background transparent, 1px border `rgba(184, 149, 90, 0.4)`, text `#EDE7DC`. Hover state fills with `rgba(184, 149, 90, 0.08)` and border transitions to full `#B8955A`.\n- **Text Links:** Color `#D9C7A3`, subtle bottom border offset by 4px in `rgba(217, 199, 163, 0.3)`, transitioning to solid gold on hover.\n\n### Cards & Granite Portfolio Items\n- **Card Base:** Background `#1A1A1C`, 1px border `rgba(255, 255, 255, 0.08)`. Zero border radius.\n- **Image Treatment:** Aspect ratios strictly 4:5 (vertical monument proportion) or 16:9 (full memorial complex). Images carry a subtle dark vignette. Hover triggers a slow, refined zoom (1.02 scale over 500ms) with border shifting to `rgba(184, 149, 90, 0.35)`.\n- **Meta Badges:** Monospace or tracking-heavy sans (`label-sm`), background `#232326`, border `1px solid rgba(184, 149, 90, 0.2)`, text `#D9C7A3`.\n\n### Input Fields & Selectors\n- **Input Canvas:** Background `#141416`, 1px border `rgba(255, 255, 255, 0.12)`, text `#EDE7DC`, placeholder `#9A958C`. Sharp edges.\n- **Focus State:** Border shifts directly to `#B8955A` with an inner 1px hairline or subtle ambient gold aura. No thick outline rings.\n- **Labels:** Positioned strictly above fields in `label-md` uppercase stone grey (`#9A958C`).\n\n### Checkboxes, Radios & Toggles\n- **Checkboxes:** Square 18px box, border 1px `rgba(184, 149, 90, 0.4)`, background `#1A1A1C`. Checked state fills with `#B8955A` displaying a sharp geometric check in `#0F0F10`.\n- **Radio Buttons:** Diamond or square inset indicator rather than soft circles where feasible, or strict sharp concentric square markers.\n\n### Lists & Spec Sheets\n- **Granite Variety Tables:** Alternating rows using subtle `#1A1A1C` and transparent stripes, separated by `1px solid rgba(255, 255, 255, 0.05)`.\n- **Metric Pairings:** Left-aligned parameter in `#9A958C`, dotted horizontal hairline guide, right-aligned value in `#EDE7DC`.\n\n### Modal & Ceremonial Dialogs\n- Backdropped by `rgba(15, 15, 16, 0.85)` with light backdrop blur (`4px`). Container framed in solid `#1A1A1C` with an outer hairline border of `rgba(184, 149, 90, 0.3)`. Header centered with display antiqua typography and a centered 40px gold separator rule.",
+                "theme": {
+                  "bodyFont": "MANROPE",
+                  "bodyFontFamily": "Manrope",
+                  "colorMode": "DARK",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#b8955a",
+                  "designMd": "---\nname: Monolithic Elegance\ncolors:\n  surface: '#131314'\n  surface-dim: '#131314'\n  surface-bright: '#39393a'\n  surface-container-lowest: '#0e0e0f'\n  surface-container-low: '#1c1b1c'\n  surface-container: '#201f20'\n  surface-container-high: '#2a2a2b'\n  surface-container-highest: '#353436'\n  on-surface: '#e5e2e3'\n  on-surface-variant: '#d1c5b5'\n  inverse-surface: '#e5e2e3'\n  inverse-on-surface: '#313031'\n  outline: '#9a8f81'\n  outline-variant: '#4e463a'\n  surface-tint: '#e7c182'\n  primary: '#e7c182'\n  on-primary: '#422c00'\n  primary-container: '#b8955a'\n  on-primary-container: '#452e00'\n  inverse-primary: '#775a25'\n  secondary: '#d6c5a1'\n  on-secondary: '#3a2f16'\n  secondary-container: '#54482c'\n  on-secondary-container: '#c8b793'\n  tertiary: '#c8c6c9'\n  on-tertiary: '#303033'\n  tertiary-container: '#9b9a9e'\n  on-tertiary-container: '#323235'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdeaa'\n  primary-fixed-dim: '#e7c182'\n  on-primary-fixed: '#271900'\n  on-primary-fixed-variant: '#5c420e'\n  secondary-fixed: '#f3e0bb'\n  secondary-fixed-dim: '#d6c5a1'\n  on-secondary-fixed: '#231a04'\n  on-secondary-fixed-variant: '#51452a'\n  tertiary-fixed: '#e4e1e5'\n  tertiary-fixed-dim: '#c8c6c9'\n  on-tertiary-fixed: '#1b1b1e'\n  on-tertiary-fixed-variant: '#47464a'\n  background: '#131314'\n  on-background: '#e5e2e3'\n  surface-variant: '#353436'\ntypography:\n  display-lg:\n    fontFamily: EB Garamond\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.01em\n  display-lg-mobile:\n    fontFamily: EB Garamond\n    fontSize: 36px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: 0em\n  headline-xl:\n    fontFamily: EB Garamond\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: 0em\n  headline-xl-mobile:\n    fontFamily: EB Garamond\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0.01em\n  headline-md:\n    fontFamily: EB Garamond\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0.01em\n  headline-sm:\n    fontFamily: EB Garamond\n    fontSize: 22px\n    fontWeight: '500'\n    lineHeight: 30px\n    letterSpacing: 0.02em\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  body-md:\n    fontFamily: Manrope\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n    letterSpacing: 0.01em\n  body-sm:\n    fontFamily: Manrope\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-lg:\n    fontFamily: Manrope\n    fontSize: 13px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.14em\n  label-md:\n    fontFamily: Manrope\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.18em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 14px\n    letterSpacing: 0.22em\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 4rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.75rem\n  space-xl: 3rem\n---\n\n## Brand & Style\n\nThis design system embodies the solemnity, architectural weight, and timeless permanence of an elite stone atelier. It communicates absolute craftsmanship, reverence, and understated luxury for memorial architecture. The emotional resonance is quiet, stoic, and profoundly dignified—eschewing commercial flash or decorative excess in favor of monumental geometry, polished stone surfaces, and delicate artisanal metallic accents.\n\n### Target Audience & Tone\n- **Audience:** Discerning clients seeking bespoke, enduring memorial complexes, family crypts, and refined stonework across Belarus and Eastern Europe.\n- **Tone:** Architectural, solemn, reverent, uncompromisingly precise.\n- **Visual Style:** High-end atelier minimalism blended with tactile materiality. Pure black polished granite, brushed antique bronze, and warm champagne leafing under controlled, low-key lighting.\n- **Strict Guidelines:** Strictly zero whimsical micro-interactions, zero emojis, zero saturated primary hues, and no soft consumer-tech \"bubble\" geometry.\n\n## Colors\n\nThe palette is rooted in dark monumental stone and warm metallic foils, designed exclusively in dark mode to mirror polished black slab surfaces under directional studio illumination.\n\n### Functional Roles\n- **Base Canvas (`#0F0F10`):** Polished black granite base; non-reflective, deep, and grounded.\n- **Surface Level 1 (`#1A1A1C`):** Deep graphite for structural cards, secondary containers, and inset panels.\n- **Surface Level 2 (`#232326`):** Elevated graphite for interactive controls, dialogs, floating toolbars, and active states.\n- **Primary Accent (`#B8955A`):** Warm antique gold and cast bronze. Reserved strictly for key focal points, primary interactive buttons, framing accents, and ceremonial signatures.\n- **Secondary Accent (`#D9C7A3`):** Soft champagne. Deployed for subtle badges, hover highlights on gold elements, and muted decorative rules.\n- **Text Primary (`#EDE7DC`):** Warm ivory. Delivers high-contrast legibility without the jarring sterility of pure clinical white.\n- **Text Muted (`#9A958C`):** Weathered stone grey for metadata, specifications, and subordinate supporting copy.\n- **Hairline Borders:** Dual-layer border strategy using `rgba(184, 149, 90, 0.25)` for focal golden framing and `rgba(255, 255, 255, 0.08)` for structural panel demarcation.\n\n## Typography\n\nThe typographic hierarchy establishes clear tension between classical monumental lapidary engraving and modern technical precision.\n\n- **Headlines (Classical Antiqua):** Utilizes `EB Garamond` to evoke timeless epigraphy, sculptural inscriptions, and heritage craftsmanship. Display scales emphasize balanced, rhythmic proportions without heavy bold weights.\n- **Body & UI (Technical Sans):** Governed by `Manrope` for absolute clarity, crisp metric rendering on digital screens, and clean tabular presentation of stone types, dimensions, and architectural specs.\n- **Micro-Labels & Metadata:** Rendered in `Manrope` uppercase with wide letter spacing (`0.14em` to `0.22em`) to mirror archival museum plaques and fine goldsmith hallmarks.\n\n## Layout & Spacing\n\nThe layout philosophy mirrors classical architectural compositions: symmetry, disciplined proportions, and deliberate negative space that lets imagery of monolithic stonework breathe.\n\n### Grid & Composition\n- **Desktop (1200px+):** 12-column symmetrical grid, 4rem canvas margins, 1.5rem gutters. Max-width container restricted to 1320px for controlled editorial pacing.\n- **Tablet (768px - 1199px):** 8-column layout, 2.5rem margins, 1.25rem gutters.\n- **Mobile (< 768px):** 4-column layout, 1.25rem margins, 1rem gutters. Columns collapse linearly; image galleries default to full-bleed or rigid card pairings.\n\n### Rhythm\nWhitespace is generous by design. Sections use large breathing zones (`space-xl` and higher) to evoke the quiet grandeur of a gallery. Components maintain compact internal vertical padding to keep information tightly bound while external separations remain expansive.\n\n## Elevation & Depth\n\nIn keeping with dense, opaque stone surfaces, depth is established through **tonal layering** and **delicate metallic edge illumination**, rather than diffuse drop shadows.\n\n- **Surface Stack:** \n  - Base: `#0F0F10` (Polished slab bedrock)\n  - Resting panels: `#1A1A1C` (Honed granite surface)\n  - Hovered/Active panels: `#232326` (Cut stone elevation)\n- **Separation Technique:** Boundaries are demarcated using crisp 1px borders:\n  - Standard structural partitions: `1px solid rgba(255, 255, 255, 0.08)`\n  - Featured / Selected states: `1px solid rgba(184, 149, 90, 0.25)`\n  - Focused interactive elements: `1px solid #B8955A` with an ambient glow of `box-shadow: 0 0 12px rgba(184, 149, 90, 0.15)`\n- **Shadow Philosophy:** Diffuse grey shadows are strictly forbidden. When spatial separation is required for modals or popovers, use pure deep black occlusion shadows (`box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85)`) coupled with a hairline border in soft gold.\n\n## Shapes\n\nThe shape vocabulary is strictly **sharp and architectural** (`roundedness: 0` / strictly 0px to a maximum microscopic 1–2px bevel via CSS where rendering anti-aliasing requires smoothing).\n\n- **Corners:** Razor-sharp corners reflect laser-cut granite, polished gabbro edges, and master masonry. Circular or rounded \"pill\" forms are completely excluded.\n- **Framing:** Cards and structural blocks employ perimeter hairline borders. Corner notches or subtle inset double-lines (inner gold hairline spaced 3px from container edge) may be used on ceremonial certificates, catalog portfolios, and bespoke commission showcases.\n\n## Components\n\n### Buttons\n- **Primary:** Background `#B8955A`, text `#0F0F10`, weight 600, uppercase letter-spaced label. Sharp corners (0px). Hover shifts background to `#D9C7A3` with zero lag or smooth linear ease (150ms).\n- **Secondary / Ghost:** Background transparent, 1px border `rgba(184, 149, 90, 0.4)`, text `#EDE7DC`. Hover state fills with `rgba(184, 149, 90, 0.08)` and border transitions to full `#B8955A`.\n- **Text Links:** Color `#D9C7A3`, subtle bottom border offset by 4px in `rgba(217, 199, 163, 0.3)`, transitioning to solid gold on hover.\n\n### Cards & Granite Portfolio Items\n- **Card Base:** Background `#1A1A1C`, 1px border `rgba(255, 255, 255, 0.08)`. Zero border radius.\n- **Image Treatment:** Aspect ratios strictly 4:5 (vertical monument proportion) or 16:9 (full memorial complex). Images carry a subtle dark vignette. Hover triggers a slow, refined zoom (1.02 scale over 500ms) with border shifting to `rgba(184, 149, 90, 0.35)`.\n- **Meta Badges:** Monospace or tracking-heavy sans (`label-sm`), background `#232326`, border `1px solid rgba(184, 149, 90, 0.2)`, text `#D9C7A3`.\n\n### Input Fields & Selectors\n- **Input Canvas:** Background `#141416`, 1px border `rgba(255, 255, 255, 0.12)`, text `#EDE7DC`, placeholder `#9A958C`. Sharp edges.\n- **Focus State:** Border shifts directly to `#B8955A` with an inner 1px hairline or subtle ambient gold aura. No thick outline rings.\n- **Labels:** Positioned strictly above fields in `label-md` uppercase stone grey (`#9A958C`).\n\n### Checkboxes, Radios & Toggles\n- **Checkboxes:** Square 18px box, border 1px `rgba(184, 149, 90, 0.4)`, background `#1A1A1C`. Checked state fills with `#B8955A` displaying a sharp geometric check in `#0F0F10`.\n- **Radio Buttons:** Diamond or square inset indicator rather than soft circles where feasible, or strict sharp concentric square markers.\n\n### Lists & Spec Sheets\n- **Granite Variety Tables:** Alternating rows using subtle `#1A1A1C` and transparent stripes, separated by `1px solid rgba(255, 255, 255, 0.05)`.\n- **Metric Pairings:** Left-aligned parameter in `#9A958C`, dotted horizontal hairline guide, right-aligned value in `#EDE7DC`.\n\n### Modal & Ceremonial Dialogs\n- Backdropped by `rgba(15, 15, 16, 0.85)` with light backdrop blur (`4px`). Container framed in solid `#1A1A1C` with an outer hairline border of `rgba(184, 149, 90, 0.3)`. Header centered with display antiqua typography and a centered 40px gold separator rule.",
+                  "font": "EB_GARAMOND",
+                  "headlineFont": "EB_GARAMOND",
+                  "headlineFontFamily": "EB Garamond",
+                  "labelFont": "MANROPE",
+                  "labelFontFamily": "Manrope",
+                  "namedColors": {
+                    "background": "#131314",
+                    "error": "#ffb4ab",
+                    "error_container": "#93000a",
+                    "inverse_on_surface": "#313031",
+                    "inverse_primary": "#775a25",
+                    "inverse_surface": "#e5e2e3",
+                    "on_background": "#e5e2e3",
+                    "on_error": "#690005",
+                    "on_error_container": "#ffdad6",
+                    "on_primary": "#422c00",
+                    "on_primary_container": "#452e00",
+                    "on_primary_fixed": "#271900",
+                    "on_primary_fixed_variant": "#5c420e",
+                    "on_secondary": "#3a2f16",
+                    "on_secondary_container": "#c8b793",
+                    "on_secondary_fixed": "#231a04",
+                    "on_secondary_fixed_variant": "#51452a",
+                    "on_surface": "#e5e2e3",
+                    "on_surface_variant": "#d1c5b5",
+                    "on_tertiary": "#303033",
+                    "on_tertiary_container": "#323235",
+                    "on_tertiary_fixed": "#1b1b1e",
+                    "on_tertiary_fixed_variant": "#47464a",
+                    "outline": "#9a8f81",
+                    "outline_variant": "#4e463a",
+                    "primary": "#e7c182",
+                    "primary_container": "#b8955a",
+                    "primary_fixed": "#ffdeaa",
+                    "primary_fixed_dim": "#e7c182",
+                    "secondary": "#d6c5a1",
+                    "secondary_container": "#54482c",
+                    "secondary_fixed": "#f3e0bb",
+                    "secondary_fixed_dim": "#d6c5a1",
+                    "surface": "#131314",
+                    "surface_bright": "#39393a",
+                    "surface_container": "#201f20",
+                    "surface_container_high": "#2a2a2b",
+                    "surface_container_highest": "#353436",
+                    "surface_container_low": "#1c1b1c",
+                    "surface_container_lowest": "#0e0e0f",
+                    "surface_dim": "#131314",
+                    "surface_tint": "#e7c182",
+                    "surface_variant": "#353436",
+                    "tertiary": "#c8c6c9",
+                    "tertiary_container": "#9b9a9e",
+                    "tertiary_fixed": "#e4e1e5",
+                    "tertiary_fixed_dim": "#c8c6c9"
+                  },
+                  "overrideNeutralColor": "#0f0f10",
+                  "overridePrimaryColor": "#b8955a",
+                  "overrideSecondaryColor": "#d9c7a3",
+                  "overrideTertiaryColor": "#232326",
+                  "spacing": {
+                    "gutter": "1.5rem",
+                    "gutter-mobile": "1rem",
+                    "margin": "4rem",
+                    "margin-mobile": "1.25rem",
+                    "space-lg": "1.75rem",
+                    "space-md": "1rem",
+                    "space-sm": "0.5rem",
+                    "space-xl": "3rem",
+                    "space-xs": "0.25rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "18px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "28px"
+                    },
+                    "body-md": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "15px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "24px"
+                    },
+                    "body-sm": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "13px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.02em",
+                      "lineHeight": "20px"
+                    },
+                    "display-lg": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "56px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "64px"
+                    },
+                    "display-lg-mobile": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "36px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0em",
+                      "lineHeight": "44px"
+                    },
+                    "headline-md": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "28px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-sm": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "22px",
+                      "fontWeight": "500",
+                      "letterSpacing": "0.02em",
+                      "lineHeight": "30px"
+                    },
+                    "headline-xl": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "40px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0em",
+                      "lineHeight": "48px"
+                    },
+                    "headline-xl-mobile": {
+                      "fontFamily": "EB Garamond",
+                      "fontSize": "28px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "36px"
+                    },
+                    "label-lg": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "13px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.14em",
+                      "lineHeight": "18px"
+                    },
+                    "label-md": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "11px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.18em",
+                      "lineHeight": "16px"
+                    },
+                    "label-sm": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "10px",
+                      "fontWeight": "700",
+                      "letterSpacing": "0.22em",
+                      "lineHeight": "14px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/7b5522ab1d0b4aea92977f16308b1872",
+              "version": "1"
+            },
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "17586",
+            "htmlCode": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/7276ddf00c34490cb9fd9ffebe864b49:download",
+              "mimeType": "text/html",
+              "name": "projects/9735201724509393789/files/7276ddf00c34490cb9fd9ffebe864b49"
+            },
+            "id": "8afe71413cde48d5afb01c07088d499b",
+            "name": "projects/9735201724509393789/screens/8afe71413cde48d5afb01c07088d499b",
+            "prompt": "Design a complete, dignified, high-end desktop landing page for \"Гранит-Монтаж\" — a memorial granite workshop based in Kamenitsa-Zhirovetskaya near Brest, Belarus.\n\nVisual style & theme:\n- Theme: \"Black granite & gold\" — dark, quiet luxury, high-end stone atelier.\n- Background: Polished black granite #0F0F10, cards and panels in deep graphite #1A1A1C and #232326.\n- Accents: Warm antique gold #B8955A for primary CTA buttons, thin 1px hairline borders, and small labels; soft champagne #D9C7A3 for secondary/hover accents; warm ivory #EDE7DC for headings/body; muted stone grey #9A958C for subtext.\n- Fonts: Cormorant Garamond for regal headings and serif accents; Manrope for clean body copy.\n- Corners: Crisp 2px corners, thin 1px gold hairline borders and subtle dividers, generous breathing room.\n- All visible text strictly in Russian with exact content provided below (no invented metrics, no review stars, no fake client counts).\n\nStructure and exact content to render across all 13 sections:\n\n1) Top thin graphite bar (#1A1A1C, border-b border-[#B8955A]/20):\n- Display with clean separators:\n  • \"Работаем по всей Брестской области\"\n  • \"ПН–ПТ 10:00–19:00, СБ 10:00–15:00\"\n  • \"Каменица-Жировецкая, ул. Советская 21/1\"\n\n2) Header (black granite #0F0F10, border-b border-[#B8955A]/20):\n- Left: Brand logo using monogram image {{DATA:IMAGE:IMAGE_2}} accompanied by serif wordmark \"Гранит-Монтаж\" and small uppercase caption \"памятники из гранита\"\n- Navigation menu links: \"Памятники\", \"Ограды\", \"Услуги\", \"Наши работы\", \"Эпитафии\", \"Контакты\"\n- Right: Direct phone \"+375 (33) 622-44-11\", a circular Viber icon button (purple/gold border), and primary gold CTA button \"Вызвать дизайнера\"\n\n3) Hero Section (split layout, deep polished dark ambience):\n- Left column:\n  • Small gold uppercase tracking label: \"БРЕСТ И БРЕСТСКАЯ ОБЛАСТЬ\"\n  • H1 (Cormorant Garamond, majestic): \"Памятники из гранита и мрамора с установкой под ключ\"\n  • Subtitle: \"Бесплатный выезд дизайнера на дом и бесплатный 3D-проект памятника. Изготовим, установим и благоустроим место захоронения.\"\n  • Buttons: Gold filled button \"Вызвать дизайнера бесплатно\" and gold outline button \"Позвонить\"\n  • Under buttons, 3 facts in a row separated by thin gold hairlines:\n    1. \"Рассрочка до 6 месяцев\"\n    2. \"Памятники от 840 руб.\"\n    3. \"Официальный подрядчик Брестского специализированного предприятия\"\n- Right column: Large atmospheric hero photo showing the polished black granite monument with delicate gold engraving {{DATA:IMAGE:IMAGE_6}} with subtle gold corner framing accents.\n\n4) Section \"Предложения\" (with small gold label \"Акции\"):\n- Heading: \"Специальные предложения мастерской\"\n- Subtitle: \"Прозрачные условия и фиксированная стоимость по договору\"\n- 3 horizontal cards on graphite #1A1A1C with 1px border:\n  • Card 1: Image of natural granite monument, title \"Памятники из натурального гранита\", price in gold \"от 840 руб.\", link \"Смотреть акцию →\"\n  • Card 2: Image of artistically decorated monument, title \"Памятник с художественным оформлением стелы\", price \"от 3890 руб.\", gold pill badge \"Ваза в подарок\", link \"Смотреть акцию →\"\n  • Card 3: Image of modern granite & steel monument, title \"Бюджетный памятник\", price \"830 руб.\", description \"Современное сочетание нержавеющей стали и натурального гранита\", link \"Смотреть акцию →\"\n- Small muted note below: \"Точную стоимость рассчитаем после выбора модели и камня\"\n\n5) Section \"Каталог\":\n- Heading (Cormorant Garamond): \"Выберите памятник\"\n- Subtitle: \"Собственное камнеобрабатывающее производство в Брестском районе\"\n- Grid of 6 tall photo tiles with dark gradients, subtle 1px gold hairline frames, and elegant serif captions:\n  1. \"Вертикальные\"\n  2. \"Горизонтальные\"\n  3. \"Дизайнерские\"\n  4. \"Двойные памятники\"\n  5. \"Памятники в виде креста\"\n  6. \"Ограды из гранита\"\n- Prominent button centered below: \"Весь каталог\"\n\n6) Section \"Бесплатный дизайнер\" (wide luxury feature block, dark graphite container #1A1A1C with 1px gold border):\n- Left side: High quality photo of hands with granite samples, caliper, sketchpad and laptop 3D CAD model {{DATA:IMAGE:IMAGE_4}}\n- Right side:\n  • Small gold label \"ИНДИВИДУАЛЬНЫЙ ПОДХОД\"\n  • H2 (Cormorant Garamond): \"Впервые в Бресте — бесплатный выезд дизайнера на дом\"\n  • Description: \"Дизайнер поможет выбрать материал, оформление и текст, по желанию поедет с вами к месту захоронения, бесплатно сделает 3D-проект и будет сопровождать заказ до окончательной установки.\"\n  • Button: \"Записаться на встречу\" (gold filled)\n\n7) Section \"Наши услуги\":\n- Heading: \"Полный комплекс мемориальных услуг\"\n- 5 numbered rows with large antique gold serif numerals 01–05, titles, and descriptions, divided by thin gold lines:\n  • 01 | \"Изготовление памятников\" — \"Из гранита, мрамора и гранитной крошки, по вашим эскизам\"\n  • 02 | \"Художественное оформление\" — \"Портреты, орнаменты и декор стелы\"\n  • 03 | \"Надписи на памятнике\" — \"Имена, даты и эпитафии\"\n  • 04 | \"Установка и благоустройство\" — \"Монтаж памятника, плитка, площадка, ограда\"\n  • 05 | \"Реконструкция старого захоронения\" — \"Замена деталей, облицовка плиткой, новая площадка\"\n\n8) Section \"Камень\":\n- Heading: \"Работаем с натуральным камнем\"\n- Description text: \"Гранит — самый прочный и долговечный материал. Полируем камень до зеркального блеска.\"\n- Dark graphite band showcasing 6 polished round stone swatches with realistic stone textures and labels:\n  1. \"Габбро-диабаз\" (глубокий карельский чёрный)\n  2. \"Гранатовый амфиболит\" (черно-бордовый зернистый)\n  3. \"Дымовский\" (благородный коричнево-серый)\n  4. \"Капустинский\" (насыщенный красный гранит)\n  5. \"Блю Перл\" (лабрадорит с синими искрами)\n  6. \"Мрамор Коелга\" (чистый белый уральский мрамор)\n- Include craftsmanship photo {{DATA:IMAGE:IMAGE_5}} depicting the artisan carver polishing granite in the masonry workshop.\n\n9) Section \"Как мы работаем\":\n- Heading: \"Прозрачный процесс работы\"\n- Subtitle: \"Полное спокойствие и контроль на каждом этапе\"\n- Horizontal timeline with 6 sequential steps connected by a thin gold line and numbered nodes:\n  1. \"Заявка или звонок\"\n  2. \"Дизайнер и 3D-макет\"\n  3. \"Расчёт стоимости и договор\"\n  4. \"Изготовление — фото стелы на одобрение\"\n  5. \"Монтаж и фото готового памятника\"\n  6. \"Окончательный расчёт после установки\"\n\n10) Section \"Наши работы\":\n- Heading: \"Наши работы\"\n- Subtitle: \"Реализованные мемориальные комплексы на кладбищах Бреста и области\"\n- Masonry gallery of 6 photos showing installed granite monuments, grave paving, granite fences, and family monuments (incorporating image {{DATA:IMAGE:IMAGE_7}} and photo references)\n- Action buttons: \"Все работы\" and link \"Мы в Instagram @granitmontaz\"\n\n11) Section \"Рассчитать стоимость памятника\" (split calculation & request block):\n- Left graphite panel (#1A1A1C):\n  • Heading: \"Рассчитаем стоимость памятника\"\n  • Subtext: \"Заявка сразу приходит мастеру в Viber\"\n  • Direct contacts: phones \"+375 (33) 622-44-11\" and \"+375 (29) 803-99-99\", email \"granitmontaz3@gmail.com\"\n  • Reassurance: \"Фиксируем смету в договоре, без скрытых платежей\"\n- Right form card (dark #1A1A1C, 1px gold hairline border, elegant inputs):\n  • Input \"Имя\"\n  • Input \"Телефон\"\n  • Select \"Тип памятника\" (options: \"Одинарный\", \"Двойной\", \"Ограда\", \"Реконструкция\")\n  • Select \"Камень\" (options: \"Габбро-диабаз\", \"Гранатовый амфиболит\", \"Дымовский\", \"Капустинский\", \"Блю Перл\", \"Мрамор\")\n  • File upload mock: \"Фото или эскиз (необязательно)\"\n  • Checkbox: \"Нужен выезд дизайнера\"\n  • Primary button: \"Отправить заявку\" (gold filled, high contrast)\n\n12) Section \"Контакты\":\n- Heading: \"Мастерская и выставка\"\n- Stylized dark map container with gold pin marker, clean minimalist map geometry\n- Contact card over map / adjacent:\n  • Address: \"Брестский р-н, аг. Каменица-Жировецкая, ул. Советская 21/1\"\n  • Hours: \"ПН–ПТ 10:00–19:00, СБ 10:00–15:00, ВС — выходной\"\n  • Important highlighted note in antique gold: \"Перед приездом обязательно позвоните\"\n  • Action buttons: \"Позвонить\" (+375 (33) 622-44-11), \"Viber\", \"Маршрут в Яндекс Навигаторе\"\n\n13) Footer (black #0F0F10, border-t border-[#B8955A]/20):\n- Monogram logo and brand: \"ГМ Гранит-Монтаж\" with caption \"Памятники и мемориальные комплексы\"\n- Quick links: \"Каталог мемориалов\", \"Виды гранита\", \"Благоустройство могил\", \"Портфолио мастерской\", \"Контакты и схема проезда\", \"Политика конфиденциальности\"\n- Phones & Messengers: \"+375 (33) 622-44-11\", Viber, Instagram\n- Bottom legal line: \"© 2026 Гранит-Монтаж. Памятники из гранита в Бресте. Все права защищены.\"\n## Available Images\nYou MUST include the following images in this design. You must reference them\nby putting their exact placeholder IDs in `src` attributes or CSS\n`background-image` rules. Do NOT use external URLs or generate new\nplaceholders. Preserve these IDs exactly as written. Read each image's\nDescription to understand its subject, intended section, and visual role.\n\n- {{DATA:IMAGE:IMAGE_2}}\n  Alt Text: Гранит-Монтаж Монограмма ГМ\n  Description: Refined monogram GM (ГМ) in antique gold serif Cormorant lettering, enclosed in a thin geometric gold hairline square or subtle octagonal stone-cut border, on transparent or dark granite background. Quiet luxury, stone carver atelier seal.. Brand logo. - Primary color: #b8955a\n- Font: ebGaramond\n- Mode: dark\n- Roundness: rounded-lg\n\n  Dimensions: 160x160\n  Aspect Ratio: 1.00\n  Colors: #131314, #B8955A, #D9C7A3\n",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/9735201724509393789/files/ac62f259406047e9a6ca91a0dd585d2d:download",
+              "name": "projects/9735201724509393789/files/ac62f259406047e9a6ca91a0dd585d2d"
+            },
+            "theme": {
+              "bodyFont": "MANROPE",
+              "bodyFontFamily": "Manrope",
+              "colorMode": "DARK",
+              "colorVariant": "FIDELITY",
+              "customColor": "#b8955a",
+              "font": "EB_GARAMOND",
+              "headlineFont": "EB_GARAMOND",
+              "headlineFontFamily": "EB Garamond",
+              "labelFont": "MANROPE",
+              "labelFontFamily": "Manrope",
+              "namedColors": {
+                "background": "#131314",
+                "error": "#ffb4ab",
+                "error_container": "#93000a",
+                "inverse_on_surface": "#313031",
+                "inverse_primary": "#775a25",
+                "inverse_surface": "#e5e2e3",
+                "on_background": "#e5e2e3",
+                "on_error": "#690005",
+                "on_error_container": "#ffdad6",
+                "on_primary": "#422c00",
+                "on_primary_container": "#452e00",
+                "on_primary_fixed": "#271900",
+                "on_primary_fixed_variant": "#5c420e",
+                "on_secondary": "#3a2f16",
+                "on_secondary_container": "#c8b793",
+                "on_secondary_fixed": "#231a04",
+                "on_secondary_fixed_variant": "#51452a",
+                "on_surface": "#e5e2e3",
+                "on_surface_variant": "#d1c5b5",
+                "on_tertiary": "#303033",
+                "on_tertiary_container": "#323235",
+                "on_tertiary_fixed": "#1b1b1e",
+                "on_tertiary_fixed_variant": "#47464a",
+                "outline": "#9a8f81",
+                "outline_variant": "#4e463a",
+                "primary": "#e7c182",
+                "primary_container": "#b8955a",
+                "primary_fixed": "#ffdeaa",
+                "primary_fixed_dim": "#e7c182",
+                "secondary": "#d6c5a1",
+                "secondary_container": "#54482c",
+                "secondary_fixed": "#f3e0bb",
+                "secondary_fixed_dim": "#d6c5a1",
+                "surface": "#131314",
+                "surface_bright": "#39393a",
+                "surface_container": "#201f20",
+                "surface_container_high": "#2a2a2b",
+                "surface_container_highest": "#353436",
+                "surface_container_low": "#1c1b1c",
+                "surface_container_lowest": "#0e0e0f",
+                "surface_dim": "#131314",
+                "surface_tint": "#e7c182",
+                "surface_variant": "#353436",
+                "tertiary": "#c8c6c9",
+                "tertiary_container": "#9b9a9e",
+                "tertiary_fixed": "#e4e1e5",
+                "tertiary_fixed_dim": "#c8c6c9"
+              },
+              "overrideNeutralColor": "#0f0f10",
+              "overridePrimaryColor": "#b8955a",
+              "overrideSecondaryColor": "#d9c7a3",
+              "overrideTertiaryColor": "#232326",
+              "spacing": {
+                "gutter": "1.5rem",
+                "gutter-mobile": "1rem",
+                "margin": "4rem",
+                "margin-mobile": "1.25rem",
+                "space-lg": "1.75rem",
+                "space-md": "1rem",
+                "space-sm": "0.5rem",
+                "space-xl": "3rem",
+                "space-xs": "0.25rem"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "28px"
+                },
+                "body-md": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "15px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "24px"
+                },
+                "body-sm": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "13px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.02em",
+                  "lineHeight": "20px"
+                },
+                "display-lg": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "56px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "64px"
+                },
+                "display-lg-mobile": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "36px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0em",
+                  "lineHeight": "44px"
+                },
+                "headline-md": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "28px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "36px"
+                },
+                "headline-sm": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "22px",
+                  "fontWeight": "500",
+                  "letterSpacing": "0.02em",
+                  "lineHeight": "30px"
+                },
+                "headline-xl": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "40px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0em",
+                  "lineHeight": "48px"
+                },
+                "headline-xl-mobile": {
+                  "fontFamily": "EB Garamond",
+                  "fontSize": "28px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "36px"
+                },
+                "label-lg": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "13px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.14em",
+                  "lineHeight": "18px"
+                },
+                "label-md": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "11px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.18em",
+                  "lineHeight": "16px"
+                },
+                "label-sm": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "10px",
+                  "fontWeight": "700",
+                  "letterSpacing": "0.22em",
+                  "lineHeight": "14px"
+                }
+              }
+            },
+            "title": "Гранит-Монтаж — Памятники из гранита в Бресте",
+            "width": "2560"
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "Создан премиальный дизайн главной страницы для мемориальной мастерской **«Гранит-Монтаж»** (Каменица-Жировецкая / Брестская область) с глубоким уважением к аудитории и эстетикой благородного полированного камня.\n\n### Ключевые решения в дизайне:\n1. **Колористика «Чёрный гранит и золото»**:\n   - Фон цвета полированного габбро-диабаза (`#0F0F10`), благородные графитовые блоки (`#1A1A1C`, `#232326`) и акцентное античное золото (`#B8955A`) с шампанью (`#D9C7A3`).\n   - Тонкие волосяные рамки (1px gold hairline) и лаконичные прямые формы (2px скругления), создающие ощущение надёжного монументального ателье.\n2. **Типографика**:\n   - Величественная и спокойная антиква **Cormorant Garamond** для заголовков и акцентов, создающая тактичное, доверительное настроение.\n   - Чистый и разборчивый гротеск **Manrope** для цен, характеристик и формы расчёта, удобный для старшей возрастной группы (40–70 лет).\n3. **Все 13 разделов по техническому заданию**:\n   - **Верхняя сервисная планка**: график работы, адрес производства и гео-охват всей Брестской области.\n   - **Хедер**: золотая монограмма «ГМ», деликатное меню, прямой контакт мастера, кнопка Viber и вызов дизайнера.\n   - **Hero-блок**: монументальный H1, подзаголовок, двойной CTA и 3 ключевых факта (рассрочка 6 месяцев, цены от 840 руб., официальный подрядчик спецпредприятия) рядом с фотографией мемориала в мягком закатном свете.\n   - **Акции**: 3 карточки с точными ценами («от 840 руб.», «от 3890 руб.» с бейджем «Ваза в подарок», «830 руб.» из стали и гранита).\n   - **Каталог моделей**: 6 категорий (вертикальные, горизонтальные, дизайнерские, двойные, кресты, ограды).\n   - **Бесплатный выезд дизайнера**: флагманский промо-блок с документальным фото процесса 3D-проектирования и подбора образцов камня.\n   - **Услуги (01–05)**: структурированный список с золотой нумерацией.\n   - **Натуральный камень**: интерактивные круглые срезы 6 пород гранита и мрамора (Габбро-диабаз, Гранатовый амфиболит, Дымовский, Капустинский, Блю Перл, Коелга) с фото камнереза в мастерской.\n   - **Прозрачный процесс (1–6)**: пошаговая шкала с утверждением фото стелы перед установкой и расчётом по факту сдачи.\n   - **Галерея работ**: 6 реальных объектов на кладбищах с кнопкой перехода в Instagram `@granitmontaz`.\n   - **Калькулятор стоимости**: удобная форма заявки в графитовой рамке с выбором типа камня, памятника и прикреплением фото, отправляющая запрос напрямую мастеру в Viber.\n   - **Контакты и мастерская**: интерактивная стилизованная тёмная карта с золотым маркером, подсказкой о предварительном звонке и маршрутом в навигаторе.\n   - **Футер**: полное меню, монограмма, юридическая информация и копирайт 2026 года."
+    },
+    {
+      "suggestion": "Разработать мобильную версию (Mobile viewport 390px)"
+    },
+    {
+      "suggestion": "Создать детальную страницу каталога с фильтрами по камню и цене"
+    },
+    {
+      "suggestion": "Подготовить всплывающее модальное окно быстрой заявки в Viber"
+    }
+  ],
+  "projectId": "9735201724509393789",
+  "sessionId": "8359012235979677382"
+}

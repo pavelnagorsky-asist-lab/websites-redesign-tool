@@ -1,0 +1,61 @@
+{
+  "slug": "stoevro-by",
+  "company": "СТО Евро (BMW)",
+  "industry": "СТО / ремонт авто",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "https://www.stoevro.by",
+  "domain": "stoevro.by",
+  "contacts": {
+    "emails": [
+      "info@stoevro.by"
+    ],
+    "phones": [
+      "+375 (33) 648-70-00",
+      "+375 (29) 628-13-48"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [
+      "http://vk.com/stoevroby"
+    ],
+    "facebook": [],
+    "address": "+375 33 648-70-00 +375 29 628-13-48 Витебск, ул. Ломоносова 4a"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 5,
+    "potential": 6,
+    "complexity": 2
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Адаптивный шаблон с понятным первым экраном и контактами — дизайн «не модный, но нормальный»",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 5,
+    "reasons": [
+      "Очень старый jQuery 1.11.3"
+    ],
+    "complexity": "medium",
+    "complexitySignals": [
+      "фильтры / подбор",
+      "многоязычность"
+    ],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

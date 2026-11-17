@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "https://vse-vorota.by",
+  "finalUrl": "https://vse-vorota.by/",
+  "httpStatus": 200,
+  "lastModified": "Sun, 17 Dec 2023 19:26:00 GMT",
+  "server": "nginx",
+  "loadMs": 11537,
+  "bytes": 7167659,
+  "requests": 204,
+  "viewportMeta": "width=device-width, initial-scale=1, maximum-scale=1",
+  "generator": "",
+  "cms": [],
+  "jquery": "1.11.1",
+  "legacy": {
+    "tables": 0,
+    "nestedTables": 0,
+    "layoutTables": 0,
+    "fontTags": 0,
+    "centerTags": 0,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 35
+  },
+  "copyrightYears": [],
+  "contentWidth": 1440,
+  "docHeight": 7541,
+  "bodyFont": "Philosopher, sans-serif",
+  "mobile": {
+    "viewportMeta": "width=device-width, initial-scale=1, maximum-scale=1",
+    "innerWidth": 390,
+    "screenWidth": 390,
+    "scrollWidth": 390,
+    "scale": 1,
+    "smallTextRatio": 0.00025743338911056766,
+    "smallTapRatio": 0.37142857142857144,
+    "overflow": [],
+    "brokenImages": 0,
+    "docHeight": 13695
+  },
+  "brokenImages": 0,
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "TypeError: b.checkState is not a function",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+  ],
+  "complexity": [],
+  "score": 20,
+  "reasons": [
+    "Очень старый jQuery 1.11.1",
+    "Тяжёлая главная страница: 7.2 МБ",
+    "Медленная загрузка: 11.5 с",
+    "Ошибки JavaScript в консоли: 5",
+    "Нет meta description — хуже выглядит в поиске"
+  ]
+}

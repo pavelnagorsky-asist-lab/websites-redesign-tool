@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "description": "Рабочее пространство Claude: поиск компаний с устаревшими сайтами, аудит, концепт редизайна в Google Stitch, отчёт",
+  "description": "Рабочее пространство AI-агента (Claude Code, Codex, Cursor): поиск компаний с устаревшими сайтами, аудит, концепт редизайна в Google Stitch, отчёт",
   "scripts": {
     "typecheck": "tsc -p ."
   },

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>МЕБЕЛЬЕР — Кухни и мебель на заказ в Гомеле | Собственное производство</title>
+<!-- Typography & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#a1673b",
+            "outline": "#84746a",
+            "inverse-surface": "#382f27",
+            "secondary-container": "#fdd2a7",
+            "on-primary-container": "#fffbff",
+            "surface-variant": "#f0e0d3",
+            "on-tertiary-container": "#fffbff",
+            "surface-bright": "#fff8f5",
+            "on-tertiary-fixed-variant": "#4e453f",
+            "on-secondary-fixed-variant": "#5d4121",
+            "tertiary-fixed": "#ede0d8",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#6b3b12",
+            "inverse-primary": "#feb784",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#301400",
+            "on-surface": "#221a13",
+            "error": "#ba1a1a",
+            "background": "#fff8f5",
+            "on-error-container": "#93000a",
+            "surface-tint": "#875127",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#f0e0d3",
+            "secondary-fixed-dim": "#e8bf95",
+            "surface-container-high": "#f6e5d9",
+            "surface-container": "#fbebde",
+            "tertiary-container": "#7d736c",
+            "surface-dim": "#e7d7cb",
+            "on-secondary-fixed": "#2c1700",
+            "secondary": "#785836",
+            "on-error": "#ffffff",
+            "primary-fixed": "#ffdcc5",
+            "outline-variant": "#d7c3b7",
+            "tertiary": "#635a54",
+            "on-background": "#221a13",
+            "on-secondary-container": "#785937",
+            "inverse-on-surface": "#feeee1",
+            "surface-container-low": "#fff1e7",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#ffdcbb",
+            "primary": "#844f25",
+            "tertiary-fixed-dim": "#d1c4bc",
+            "on-surface-variant": "#52443b",
+            "surface": "#fff8f5",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#211a16",
+            "primary-fixed-dim": "#feb784"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2.5rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem",
+            "margin-tablet": "3rem",
+            "space-xl": "5rem",
+            "gutter": "1.5rem",
+            "margin": "5rem",
+            "space-md": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Newsreader", "serif"],
+            "label-caps": ["Inter", "sans-serif"],
+            "label-regular": ["Inter", "sans-serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "subhead-editorial": ["Newsreader", "serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "display-hero-mobile": ["Newsreader", "serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "display-hero": ["Newsreader", "serif"]
+          },
+          "fontSize": {
+            "headline-md": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "label-caps": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.14em", "fontWeight": "600" }],
+            "label-regular": ["0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.6rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "subhead-editorial": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.375rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "display-hero-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0", "fontWeight": "500" }],
+            "display-hero": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    ::selection {
+      background-color: #fdd2a7;
+      color: #221a13;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container">
+<!-- 1) HEADER -->
+<header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-sm border-b border-outline-variant/40">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto flex items-center justify-between h-20">
+<!-- Brand Wordmark & Subtitle -->
+<a class="flex flex-col group focus:outline-none" href="#">
+<span class="font-headline-sm text-headline-sm tracking-widest text-on-surface transition-colors duration-150">МЕБЕЛЬЕР</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">мебель на заказ · Гомель</span>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#kitchens">Кухни</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#wardrobes">Шкафы-купе</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#corpus">Корпусная мебель</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#wood">Мебель из дерева</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#production">Производство</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" href="#contacts">Контакты</a>
+</nav>
+<!-- Contact Cluster & Primary Action -->
+<div class="flex items-center space-x-4">
+<div class="hidden xl:flex items-center space-x-3 text-on-surface-variant">
+<a class="font-label-regular text-label-regular text-on-surface tracking-wider hover:text-primary transition-colors duration-150" href="tel:+375296206769" style="white-space: nowrap; flex-shrink: 0;">
+            <span style="white-space:nowrap">+375 (29) 620-67-69</span>
+          </a>
+<!-- Social Icons -->
+<div class="flex items-center space-x-1.5 pl-2 border-l border-outline-variant/60">
+<a class="w-8 h-8 rounded-full border border-outline-variant/80 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors duration-150" href="viber://chat?number=%2B375296206769" title="Viber">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M19.78 15.65c-.65-.43-1.63-.95-2.52-1.32-.42-.18-.84-.18-1.2.14-.38.35-.77.78-1.12 1.15-.31.33-.6.38-1 .18-1.58-.77-2.92-1.89-3.95-3.35-.27-.38-.22-.67.1-.99.34-.35.71-.73 1.03-1.13.3-.37.33-.78.13-1.21-.4-1.02-.91-1.95-1.39-2.59-.28-.37-.65-.48-1.09-.45-.48.03-.98.3-1.42.66-.9.76-1.32 1.76-1.34 2.89-.04 2.12.78 4.09 2.05 5.79 2.08 2.76 4.8 4.41 8.21 4.98.54.09 1.09.07 1.62-.05 1.12-.26 1.95-.97 2.45-1.99.23-.48.16-1-.28-1.33l-1.22-.65zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+</a>
+<a class="w-8 h-8 rounded-full border border-outline-variant/80 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-colors duration-150" href="https://t.me/mebelier_gomel" target="_blank" title="Telegram">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"></path></svg>
+</a>
+</div>
+</div>
+<a class="bg-primary text-on-primary hover:bg-primary-container px-6 py-2.5 rounded text-center font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150 inline-block shadow-sm" href="#order">
+          Заказать замер
+        </a>
+</div>
+</div>
+</header>
+<!-- 2) HERO SECTION -->
+<section class="w-full pt-12 md:pt-space-lg pb-16 md:pb-space-xl border-b border-outline-variant/40">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Left Editorial Typography Column (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+<div class="inline-flex items-center space-x-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">СОБСТВЕННОЕ ПРОИЗВОДСТВО В ГОМЕЛЕ</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight">
+            Кухни и мебель на заказ от производителя в Гомеле
+          </h1>
+<p class="font-body-lg text-body-lg text-tertiary leading-relaxed">
+            Замер с выездом на объект, дизайн-проект мебели, изготовление и монтаж — без посредников между вами и производством.
+          </p>
+<!-- Buttons -->
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+<a class="bg-primary text-on-primary hover:bg-primary-container px-8 py-3.5 rounded font-label-caps text-label-caps uppercase tracking-widest text-center transition-colors duration-150" href="#order">
+              Заказать замер
+            </a>
+<a class="border border-on-surface text-on-surface hover:bg-surface-variant px-6 py-3.5 rounded font-label-caps text-label-caps uppercase tracking-widest flex items-center justify-center space-x-2 transition-colors duration-150" href="viber://chat?number=%2B375296206769">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M19.78 15.65c-.65-.43-1.63-.95-2.52-1.32-.42-.18-.84-.18-1.2.14-.38.35-.77.78-1.12 1.15-.31.33-.6.38-1 .18-1.58-.77-2.92-1.89-3.95-3.35-.27-.38-.22-.67.1-.99.34-.35.71-.73 1.03-1.13.3-.37.33-.78.13-1.21-.4-1.02-.91-1.95-1.39-2.59-.28-.37-.65-.48-1.09-.45-.48.03-.98.3-1.42.66-.9.76-1.32 1.76-1.34 2.89-.04 2.12.78 4.09 2.05 5.79 2.08 2.76 4.8 4.41 8.21 4.98.54.09 1.09.07 1.62-.05 1.12-.26 1.95-.97 2.45-1.99.23-.48.16-1-.28-1.33l-1.22-.65zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+<span>Написать в Viber</span>
+</a>
+</div>
+<!-- 3 Facts Row -->
+<div class="pt-6 border-t border-outline-variant/50 grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="pr-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Более десяти лет в производстве корпусной мебели</p>
+</div>
+<div class="sm:border-l border-outline-variant/50 sm:px-3">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Свои участки алюминиевых фасадов и дверей-купе</p>
+</div>
+<div class="sm:border-l border-outline-variant/50 sm:pl-3">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Изделия подтверждены сертификатами</p>
+</div>
+</div>
+</div>
+<!-- Right Visual Showcase Column (7 cols) -->
+<div class="lg:col-span-7">
+<div class="relative bg-surface-variant rounded border border-outline-variant/60 p-2 md:p-3 overflow-hidden">
+<div class="aspect-[16/10] overflow-hidden rounded">
+<img alt="Кухни на заказ Мебельер" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoh6yQUe4L33-HiRbM4Cmql9aQS_asWjpYCCV6aUprOXcCC6qEAq-kAD1H-16q3Q_pmBlK6uSsQK8TpT8_76xtbwDz98OC-su2nnX-ZJaVZOgWLH2VXg5RIejX3k0Ju8E0aKCTpqExP6FHVMAviebLBOn1jTxgtYHwv3gWDxpAf6anAY7iLGmScmEJGPmtFpaFGpUwJVsGhUWjFQ437VqMA4sHpajuyHbbDAL4Z9I3LjIDqHHOPRc3CsgsZkkrUpRVnJv9m7L1NF_Q"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3) SECTION "ЧТО МЫ ДЕЛАЕМ" (КАТАЛОГ) -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface" id="kitchens">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-2">КАТАЛОГ</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Что мы делаем</h2>
+</div>
+<p class="mt-4 md:mt-0 font-body-md text-tertiary max-w-md">
+          Архитектурная точность, надёжная фурнитура и благородные текстуры в каждом предмете.
+        </p>
+</div>
+<!-- Asymmetric Editorial Grid: 2 Large + 4 Compact -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+<!-- Large Featured Card 1 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group">
+<div class="aspect-[16/11] overflow-hidden">
+<img alt="Мебель для кухни" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUh-ij2AaE1yjM0gHmpfQRewxLpeVh443THndRbFEIx9XgKhLRv08UCE28Gpo_953rpHoQ3SwR5zeJoYiuxvKDY6cF0Mq0OoLCE4s5h7bkrfJJZL43t3_rl0qwcIAl4JxvU7CWGd7M9qc3KkKp5APcZCtYR8kqAr0a04WfEYSCqJwF3auu_WSdZc4K59cdsMA3IeecfzSGgjR7-Nlj-4JPjqQvwsvneeILG5M_vM_fdDPm53O-pTma2_pAy3bvXgiq3bhLf_I-V7K4"/>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Мебель для кухни</h3>
+<p class="font-body-md text-tertiary">Угловые, прямые, с островом — под размеры вашей кухни</p>
+</div>
+<a class="mt-6 inline-flex items-center space-x-2 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Large Featured Card 2 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group" id="wardrobes">
+<div class="aspect-[16/11] overflow-hidden">
+<img alt="Шкафы и двери-купе" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQp0hNVghVmR9Q7_IwZYCmzZ9sXz0o092cAly_HcbSgchKEzG9nZmKreaGTdz7rJXaFGp4PVF7aUIEOWJv6-8w7GdIrBvnZHw-lToZ_R4rDqnCq-BudlOw-xlwS5ECH_jFCtKuD8Ihbz4iyXzNYMoiettNrjp6d0hcUmc9jjLu92posrHj0muF-Rt7TgmHtq4PWpZ2tsHk34uGLxMjAwIrinepQ7OQtFQxgpuwA3aZJRSbCXtfeZbUKdpSwRvppJFJhHQwEPt3CKi4"/>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Шкафы и двери-купе</h3>
+<p class="font-body-md text-tertiary">Встроенные и корпусные, с зеркалами и алюминиевым профилем</p>
+</div>
+<a class="mt-6 inline-flex items-center space-x-2 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Smaller Card 3 (3 cols) -->
+<div class="lg:col-span-3 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Мебель для спальни" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiPzubbbO8yY79gT6tEIqi3lRfKRZq3_NNJfO7W7LNg9qeIVkChIG3EKMNGIEd76yoLws8DRPiv5GRpOzONznf3ml5pJRbeZVFSSVZGZR5iHZygwVtZqFOcaSWhmBADGaWXuZx4nLnoj3vRn80GFGKnB11I2cwAbWCy17nQgpXuQCFX8Yqgp8pUrvzo2zM8xTh1Mdcqnxb_PkDFWU23zEmluMi0NubTfNyvLYwTjc-aztNTRFZHodOlOkOukT5UsCPO8j-HXXDY43P"/>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Мебель для спальни</h3>
+<p class="font-body-sm text-tertiary">Гардеробные системы, кровати и комоды</p>
+</div>
+<a class="mt-4 inline-flex items-center space-x-1 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Smaller Card 4 (3 cols) -->
+<div class="lg:col-span-3 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Прихожие" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBknrpD47M-CBWz9ytdwdYAkl2FvS8dB9hfH8xS7A7eP8jwG7ere3fH2klSXKQx0MmIb3N2YnB3g2hr3YTn7b3n6GmpuFRlSKYQd-xVdwUiAfd2vu6yEJIzRSZyvJZlttQREHiHlLncLqXprT1mHIK4p1CD-YlPt3cruEO52Df-pfwpKGhoJpXJd7Zp97RJBZZiLOB4b3Z9oXZG7dBRyHK4cgKPSUWTB9MVqWqnc6ODbpeJdRjQJdoyYd4CrawKsHjW-XywefG1DQqF"/>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Прихожие</h3>
+<p class="font-body-sm text-tertiary">Эргономичные шкафные группы и стеновые панели</p>
+</div>
+<a class="mt-4 inline-flex items-center space-x-1 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Smaller Card 5 (3 cols) -->
+<div class="lg:col-span-3 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group" id="corpus">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Корпусная мебель" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrfX_NUmTGzfDLca841bwGRyR4pahkuXDhdVN5XsEyu9tvlno-JyYNZP2y8Ie5D4sJHiM9JBIGIMaoae-IdeItKGa9e46MvkrYG-qLKUHIsEImZMSl4s3FOmSCyc7nOsE45BC59A52VD3IBYPd-lyULwkgjFltOWp5x77P0Ku6bSFGfnPBHmWhuaj-EJKS5oYFjpGC98LmxX3toURzcgKi961XA0gCGcSk-Neqk9fNnRmZMd0Fi7AeU-ED9Rw7Ye0lsBLoqocxrhFN"/>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Корпусная мебель</h3>
+<p class="font-body-sm text-tertiary">Для дома, офиса и банков</p>
+</div>
+<a class="mt-4 inline-flex items-center space-x-1 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Smaller Card 6 (3 cols) -->
+<div class="lg:col-span-3 bg-surface-variant/40 rounded border border-outline-variant/60 overflow-hidden flex flex-col group" id="wood">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Мебель из дерева" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4a4gth5-90rnaRBl8i-X1dS4kSQGPw5imVSPv939X0zf4kmqX2uTXd3fhjGfruVWGso9D-knt1Hj1RyVUoJmoFFGP2zxfA10iXurQET9oX08D9HKuB8HeDI7h2ZN_s_-A00Ng8rCvgyMsXvXfXerRsN5-jsIwvAZ8X28tYwQI8vgNXWq5PkzkON8TL_nsYkk1wW3jl3TiMXuFO94mfO2QksxISHBfBUaBGEr6loEM_97G5MOlSRMoSjdTK7P9OxR9mEI_meqztrEF"/>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Мебель из дерева</h3>
+<p class="font-body-sm text-tertiary">Из натуральной древесины, в том числе «под старину»</p>
+</div>
+<a class="mt-4 inline-flex items-center space-x-1 text-primary font-label-caps text-label-caps uppercase tracking-widest hover:text-primary-container transition-colors" href="#order">
+<span>Смотреть работы</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4) SECTION "ПОЧЕМУ У ПРОИЗВОДИТЕЛЯ" -->
+<section class="w-full py-16 md:py-space-xl bg-inverse-surface text-inverse-on-surface">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="mb-14 text-center max-w-3xl mx-auto">
+<span class="font-label-caps text-label-caps text-inverse-primary uppercase tracking-widest block mb-3">ПРЯМОЙ КОНТАКТ</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-inverse-on-surface">
+          Заказывать мебель выгодно у производителя
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Feature 01 -->
+<div class="border-t border-outline/30 pt-6 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-inverse-primary block mb-4">01</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Без посредников</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">
+              Экономите деньги и время: между производством и вами нет наценки салона.
+            </p>
+</div>
+</div>
+<!-- Feature 02 -->
+<div class="border-t border-outline/30 pt-6 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-inverse-primary block mb-4">02</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Точность исполнения</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">
+              Нет «испорченного телефона» — ваш заказ передаётся напрямую на производство.
+            </p>
+</div>
+</div>
+<!-- Feature 03 -->
+<div class="border-t border-outline/30 pt-6 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-inverse-primary block mb-4">03</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Модель под вас</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">
+              Можно откорректировать любую модель под свои потребности и бюджет с помощью наших специалистов.
+            </p>
+</div>
+</div>
+<!-- Feature 04 -->
+<div class="border-t border-outline/30 pt-6 flex flex-col justify-between">
+<div>
+<span class="font-headline-md text-headline-md text-inverse-primary block mb-4">04</span>
+<h3 class="font-headline-sm text-headline-sm mb-3">Короче сроки</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">
+              Срок изготовления и доставки сокращён — нет промежуточных звеньев.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5) SECTION "КАК МЫ РАБОТАЕМ" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="mb-14">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-2">ЭТАПЫ ВЗАИМОДЕЙСТВИЯ</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Как мы работаем</h2>
+<p class="font-body-md text-tertiary max-w-xl mt-3">
+          Каждый проект ведётся по выверенному регламенту от первого визита замерщика до финальной регулировки фасадов.
+        </p>
+</div>
+<!-- Timeline -->
+<div class="relative">
+<!-- Connecting Line for desktop -->
+<div class="hidden lg:block absolute top-6 left-6 right-6 h-[1px] bg-outline-variant/60"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface border border-outline-variant flex items-center justify-center font-label-caps text-label-caps text-primary font-bold mb-6">
+              1
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Замер</h3>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Контрольный замер помещения с выездом к вам на объект
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface border border-outline-variant flex items-center justify-center font-label-caps text-label-caps text-primary font-bold mb-6">
+              2
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Интерьерное решение</h3>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Помогаем проработать решение и подобрать материалы
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface border border-outline-variant flex items-center justify-center font-label-caps text-label-caps text-primary font-bold mb-6">
+              3
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Дизайн-проект мебели</h3>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Учитываем окна, радиаторы, газовые трубы, розетки и вентиляцию
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface border border-outline-variant flex items-center justify-center font-label-caps text-label-caps text-primary font-bold mb-6">
+              4
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Изготовление</h3>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              На собственном производстве с полным циклом обработки
+            </p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface border border-outline-variant flex items-center justify-center font-label-caps text-label-caps text-primary font-bold mb-6">
+              5
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Монтаж</h3>
+<p class="font-body-sm text-body-sm text-tertiary leading-relaxed">
+              Устанавливаем мебель на объекте и ведём авторский контроль
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6) SECTION "НАШИ РАБОТЫ" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface-container-low/40">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-2">ПОРТФОЛИО</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Только наши работы</h2>
+<p class="font-body-md text-tertiary mt-3">
+            Мы не выдаём фото из салонов и с выставок за свои — здесь реальные кухни и шкафы наших клиентов
+          </p>
+</div>
+<div class="mt-6 md:mt-0">
+<a class="border border-on-surface text-on-surface hover:bg-surface-variant px-6 py-3 rounded font-label-caps text-label-caps uppercase tracking-widest inline-block transition-colors duration-150" href="#order">
+            Смотреть все работы
+          </a>
+</div>
+</div>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Светлая кухня с островом" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoh6yQUe4L33-HiRbM4Cmql9aQS_asWjpYCCV6aUprOXcCC6qEAq-kAD1H-16q3Q_pmBlK6uSsQK8TpT8_76xtbwDz98OC-su2nnX-ZJaVZOgWLH2VXg5RIejX3k0Ju8E0aKCTpqExP6FHVMAviebLBOn1jTxgtYHwv3gWDxpAf6anAY7iLGmScmEJGPmtFpaFGpUwJVsGhUWjFQ437VqMA4sHpajuyHbbDAL4Z9I3LjIDqHHOPRc3CsgsZkkrUpRVnJv9m7L1NF_Q"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Светлая кухня с реечными фасадами и островом</p>
+</div>
+</div>
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Шкаф с раздвижными зеркальными дверями" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQp0hNVghVmR9Q7_IwZYCmzZ9sXz0o092cAly_HcbSgchKEzG9nZmKreaGTdz7rJXaFGp4PVF7aUIEOWJv6-8w7GdIrBvnZHw-lToZ_R4rDqnCq-BudlOw-xlwS5ECH_jFCtKuD8Ihbz4iyXzNYMoiettNrjp6d0hcUmc9jjLu92posrHj0muF-Rt7TgmHtq4PWpZ2tsHk34uGLxMjAwIrinepQ7OQtFQxgpuwA3aZJRSbCXtfeZbUKdpSwRvppJFJhHQwEPt3CKi4"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Встроенный гардероб с бронзовым зеркалом в прихожую</p>
+</div>
+</div>
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Спальня со встроенным шкафом" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiPzubbbO8yY79gT6tEIqi3lRfKRZq3_NNJfO7W7LNg9qeIVkChIG3EKMNGIEd76yoLws8DRPiv5GRpOzONznf3ml5pJRbeZVFSSVZGZR5iHZygwVtZqFOcaSWhmBADGaWXuZx4nLnoj3vRn80GFGKnB11I2cwAbWCy17nQgpXuQCFX8Yqgp8pUrvzo2zM8xTh1Mdcqnxb_PkDFWU23zEmluMi0NubTfNyvLYwTjc-aztNTRFZHodOlOkOukT5UsCPO8j-HXXDY43P"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Спальня со встроенной мебельной группой в потолок</p>
+</div>
+</div>
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Обеденная группа из массива" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4a4gth5-90rnaRBl8i-X1dS4kSQGPw5imVSPv939X0zf4kmqX2uTXd3fhjGfruVWGso9D-knt1Hj1RyVUoJmoFFGP2zxfA10iXurQET9oX08D9HKuB8HeDI7h2ZN_s_-A00Ng8rCvgyMsXvXfXerRsN5-jsIwvAZ8X28tYwQI8vgNXWq5PkzkON8TL_nsYkk1wW3jl3TiMXuFO94mfO2QksxISHBfBUaBGEr6loEM_97G5MOlSRMoSjdTK7P9OxR9mEI_meqztrEF"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Обеденная группа и стол из натурального дуба</p>
+</div>
+</div>
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Детская со встроенным шкафом и рабочим местом" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqhdeNhf6V9cSKRrhpx9QKZPu4mp0GPUyhJcnkQU_fQ9HYb5XJ1QcfzSz9iXMwnPW34_MMI7a6rTgtjuqSxLIbNMMhFP5yfig3aaKbW1QTjRm1f79vgO1ALI-cRZSbd2y3DWZrP5_ak-X1Y3WlRR8PzR6mMvJeV7YYMS6r3PD6h56anux6CRbSZQUkSIao4-i5QnoY6BE_9fPsLInD3uoH8mgqcp8NPVJdollULAkhJNG8iPl4nOLM-iQLrx5-A9oaK6GZfWLnQic8"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Детская со встроенным шкафом и рабочим местом</p>
+</div>
+</div>
+<div class="bg-surface rounded border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Кухня с алюминиевыми фасадами со стеклом" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGIlit3O7jjolj7A-pOxOZhJeqoV8-jN5filTpFeDepGVburwLjaV_YhhEh8dRnGjStZZMvetlffp_pBBW9Hhe2i4i5MPahPHT-WKWudnOH57edj_-KBp24hURzW1CufQVtGP26gbrMGS-OdnXnSjA1PUc1D1JCDExDvWVBCTAVarafohUQL9qpgx-dGW6TCMDtMA2tyKNZ0rFijTtIjyaNKlEhT9LB2Isy0RusSYA2EH4jPVrHhS9RYwDKRjv7XQTipgQMGWva2u9"/>
+</div>
+<div class="p-4 border-t border-outline-variant/40">
+<p class="font-label-regular text-label-regular text-on-surface">Кухня с алюминиевыми фасадами со стеклом</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7) SECTION "ПРОИЗВОДСТВО" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface" id="production">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Workshop Photo (6 cols) -->
+<div class="lg:col-span-6">
+<div class="relative bg-surface-variant rounded border border-outline-variant/60 p-2 md:p-3 overflow-hidden">
+<div class="aspect-[4/3] overflow-hidden rounded">
+<img alt="Производственный цех Мебельер" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Wd3BrmzSOkRKA6QdKI_qNLTjKeth7rw3ZE5FVfGcFoT7l6Qs3EI-5xbCJScEkdsBUOsjvSh0XgllFibPCALYTymKejfDxfrEZ-JRaD1eA-qcu2iGOZDHPKaCISSQxJOczgcX9bY2eimEyE6hVykUlbZFDmfc0iBJgbjHg2WQPfR1faxVNsQSvtQFewSs1QKbGt026NsyWfFKz1x83qEbaY_RTTMXBTmHloyzBDL4BcWxEBMOpkfEiP-xj01BT-q519IJDEbvYUip"/>
+</div>
+</div>
+</div>
+<!-- Right Content Block (6 cols) -->
+<div class="lg:col-span-6 flex flex-col space-y-6">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">СВОЁ ПРОИЗВОДСТВО</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight">
+            Полный цикл — от доски до монтажа
+          </h2>
+<p class="font-body-lg text-body-lg text-tertiary leading-relaxed">
+            Современное оборудование, собственные участки по изготовлению алюминиевых фасадов и дверей-купе, квалифицированный персонал. Мебель по индивидуальным заказам и серийные изделия стабильного качества.
+          </p>
+<!-- Pill tags row -->
+<div class="pt-2 flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+              Прессвакуумная сушка древесины
+            </span>
+<span class="px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+              Мебельные фасады
+            </span>
+<span class="px-3.5 py-1.5 rounded-full border border-outline-variant bg-surface-container-low text-on-surface font-label-caps text-label-caps uppercase tracking-wider">
+              Комплектующие
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8) SECTION "ДИЗАЙНЕРАМ И ПРЕДПРИНИМАТЕЛЯМ" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface-variant/30">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="bg-surface rounded border border-outline-variant/80 p-8 md:p-12">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-2">B2B СОТРУДНИЧЕСТВО</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Сотрудничество</h2>
+<p class="font-body-lg text-body-lg text-tertiary leading-relaxed mb-8">
+            Производим мебель и мебельные фасады для юридических лиц, предпринимателей, дизайнеров и проектировщиков. Сушка древесины на заказ.
+          </p>
+<a class="bg-primary text-on-primary hover:bg-primary-container px-8 py-3.5 rounded font-label-caps text-label-caps uppercase tracking-widest inline-block transition-colors duration-150" href="#order">
+            Обсудить сотрудничество
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 9) SECTION "ЗАЯВКА НА ЗАМЕР" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface" id="order">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 rounded border border-outline-variant overflow-hidden">
+<!-- Left Panel: Dark Espresso (5 cols) -->
+<div class="lg:col-span-5 bg-inverse-surface text-inverse-on-surface p-8 md:p-12 flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-inverse-primary uppercase tracking-widest block mb-3">ОПЕРАТИВНАЯ СВЯЗЬ</span>
+<h2 class="font-headline-md text-headline-md mb-4 text-inverse-on-surface">Рассчитаем вашу кухню или шкаф</h2>
+<p class="font-body-md text-tertiary-fixed-dim leading-relaxed mb-8">
+              Оставьте заявку — она сразу придёт менеджеру в Telegram, перезвоним и согласуем время замера
+            </p>
+<div class="space-y-4 pt-4 border-t border-outline/30">
+<div>
+<span class="font-label-caps text-label-caps text-outline-variant block mb-1">ПРЯМОЙ ТЕЛЕФОН:</span>
+<a class="font-subhead-editorial text-subhead-editorial text-inverse-on-surface hover:text-inverse-primary transition-colors" href="tel:+375296206769">
+                  <span style="white-space:nowrap">+375 (29) 620-67-69</span>
+                </a>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-outline-variant block mb-1">ЭЛЕКТРОННАЯ ПОЧТА:</span>
+<a class="font-body-md text-body-md text-inverse-on-surface hover:text-inverse-primary transition-colors" href="mailto:info@mebelier.by">
+                  info@mebelier.by
+                </a>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<span class="font-label-caps text-label-caps text-outline-variant block mb-3">МЕССЕНДЖЕРЫ:</span>
+<div class="flex items-center space-x-3">
+<a class="border border-outline/50 hover:border-inverse-primary px-4 py-2 rounded text-inverse-on-surface flex items-center space-x-2 transition-colors" href="viber://chat?number=%2B375296206769">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M19.78 15.65c-.65-.43-1.63-.95-2.52-1.32-.42-.18-.84-.18-1.2.14-.38.35-.77.78-1.12 1.15-.31.33-.6.38-1 .18-1.58-.77-2.92-1.89-3.95-3.35-.27-.38-.22-.67.1-.99.34-.35.71-.73 1.03-1.13.3-.37.33-.78.13-1.21-.4-1.02-.91-1.95-1.39-2.59-.28-.37-.65-.48-1.09-.45-.48.03-.98.3-1.42.66-.9.76-1.32 1.76-1.34 2.89-.04 2.12.78 4.09 2.05 5.79 2.08 2.76 4.8 4.41 8.21 4.98.54.09 1.09.07 1.62-.05 1.12-.26 1.95-.97 2.45-1.99.23-.48.16-1-.28-1.33l-1.22-.65zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+<span class="font-label-caps text-label-caps uppercase">Viber</span>
+</a>
+<a class="border border-outline/50 hover:border-inverse-primary px-4 py-2 rounded text-inverse-on-surface flex items-center space-x-2 transition-colors" href="https://t.me/mebelier_gomel" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"></path></svg>
+<span class="font-label-caps text-label-caps uppercase">Telegram</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Panel: Interactive Form (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Спасибо! Заявка принята, мы свяжемся с вами в ближайшее время.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-outline uppercase tracking-wider mb-2" for="name">ИМЯ</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors" id="name" placeholder="Ваше имя" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-outline uppercase tracking-wider mb-2" for="phone">ТЕЛЕФОН</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors" id="phone" placeholder="+375 (__) ___-__-__" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-outline uppercase tracking-wider mb-2" for="type">ЧТО НУЖНО</label>
+<select class="w-full bg-surface-container-low border border-outline-variant rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-colors" id="type">
+<option value="kitchen">Кухня</option>
+<option value="wardrobe">Шкаф-купе</option>
+<option value="bedroom">Спальня</option>
+<option value="hallway">Прихожая</option>
+<option value="other">Другое</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-outline uppercase tracking-wider mb-2">ФОТО ИЛИ ПЛАН ПОМЕЩЕНИЯ (НЕОБЯЗАТЕЛЬНО)</label>
+<div class="border border-dashed border-outline-variant rounded p-6 text-center bg-surface-container-low/50 hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-outline text-2xl mb-1 block">upload_file</span>
+<span class="font-body-sm text-body-sm text-tertiary">Нажмите для загрузки файла или перетащите его сюда</span>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-0" id="design-project" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface select-none cursor-pointer" for="design-project">
+                Нужен дизайн-проект
+              </label>
+</div>
+<button class="w-full bg-primary text-on-primary hover:bg-primary-container py-4 rounded font-label-caps text-label-caps uppercase tracking-widest transition-colors duration-150" type="submit">
+              Отправить заявку
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 10) SECTION "КОНТАКТЫ" -->
+<section class="w-full py-16 md:py-space-xl border-b border-outline-variant/40 bg-surface" id="contacts">
+<div class="w-full px-margin-mobile md:px-margin max-w-7xl mx-auto">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-2">МЕСТОНАХОЖДЕНИЕ</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Контакты</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Minimal Vector Stylized Map (7 cols) -->
+<div class="lg:col-span-7 bg-surface-variant/40 rounded border border-outline-variant p-6 relative h-[380px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#84746a 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Abstract Architectural Plan Representation of Gomel Center -->
+<div class="w-full h-full relative border border-outline-variant/40 flex items-center justify-center">
+<!-- Road vectors -->
+<div class="absolute w-full h-[2px] bg-outline-variant/60 rotate-12"></div>
+<div class="absolute w-full h-[2px] bg-outline-variant/60 -rotate-45"></div>
+<div class="absolute h-full w-[2px] bg-outline-variant/60 left-1/3"></div>
+<!-- Pin -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg border-2 border-surface">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+<div class="mt-2 bg-surface px-3 py-1 rounded border border-outline-variant shadow-sm text-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold">г. Гомель, ул. Войсковая, 7</span>
+<span class="block font-body-sm text-body-sm text-tertiary">Производственная база «Мебельер»</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Information Card (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low rounded border border-outline-variant p-8 space-y-6">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-1">АДРЕС ПРОИЗВОДСТВА:</span>
+<p class="font-body-md text-body-md text-on-surface font-medium">г. Гомель, ул. Войсковая, 7</p>
+</div>
+<div class="space-y-3 pt-3 border-t border-outline-variant/60">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block">ТЕЛЕФОНЫ:</span>
+<div>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors block" href="tel:+375296206769">
+                <span style="white-space:nowrap">+375 (29) 620-67-69</span>
+              </a>
+<span class="font-body-sm text-body-sm text-tertiary">производство, кухни и мебель</span>
+</div>
+<div>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors block" href="tel:+375232429493">
+                <span style="white-space:nowrap">+375 (232) 42-94-93</span>
+              </a>
+<span class="font-body-sm text-body-sm text-tertiary">офис</span>
+</div>
+<div>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors block" href="tel:+375293950494">
+                <span style="white-space:nowrap">+375 (29) 395-04-94</span>
+              </a>
+<span class="font-body-sm text-body-sm text-tertiary">сушка древесины</span>
+</div>
+</div>
+<div class="pt-3 border-t border-outline-variant/60">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider block mb-1">EMAIL:</span>
+<a class="font-body-md text-body-md text-primary hover:underline" href="mailto:info@mebelier.by">
+              info@mebelier.by
+            </a>
+</div>
+<!-- Quick Action Buttons -->
+<div class="pt-4 flex flex-wrap gap-2">
+<a class="bg-primary text-on-primary hover:bg-primary-container px-4 py-2 rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors" href="tel:+375296206769">
+              Позвонить
+            </a>
+<a class="border border-outline text-on-surface hover:bg-surface-variant px-4 py-2 rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors" href="viber://chat?number=%2B375296206769">
+              Viber
+            </a>
+<a class="border border-outline text-on-surface hover:bg-surface-variant px-4 py-2 rounded font-label-caps text-label-caps uppercase tracking-wider transition-colors" href="https://t.me/mebelier_gomel" target="_blank">
+              Telegram
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11) FOOTER -->
+<footer class="w-full bg-inverse-surface text-inverse-on-surface border-t border-outline/20">
+<div class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg">
+<!-- Brand & Direct Info -->
+<div class="space-y-3">
+<span class="font-headline-md text-headline-md text-inverse-on-surface tracking-wide uppercase block">
+          МЕБЕЛЬЕР
+        </span>
+<div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-6 text-tertiary-fixed-dim font-body-sm text-body-sm">
+<a class="hover:text-inverse-on-surface transition-colors duration-150" href="tel:+375296206769">
+            <span style="white-space:nowrap">+375 (29) 620-67-69</span>
+          </a>
+<a class="hover:text-inverse-on-surface transition-colors duration-150" href="mailto:info@mebelier.by">
+            info@mebelier.by
+          </a>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex flex-wrap gap-6 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider"><a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#kitchens">Кухни</a>
+<a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#wardrobes">Шкафы-купе</a>
+<a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#corpus">Корпусная мебель</a>
+<a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#wood">Мебель из дерева</a>
+<a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#production">Производство</a>
+<a class="text-[#F3EEEA]/90 hover:text-white transition-colors duration-150" href="#contacts">Контакты</a></div>
+</div>
+<!-- Legal Sub-line -->
+<div class="w-full border-t border-outline/10">
+<div class="w-full px-margin-mobile md:px-margin py-6 max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-outline font-body-sm text-body-sm gap-2">
+<p>© 2026 ООО «Мебельер», УНП 490556422, г. Гомель</p>
+</div>
+</div>
+</footer>
+</body></html>

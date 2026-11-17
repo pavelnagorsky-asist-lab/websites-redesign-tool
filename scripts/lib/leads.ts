@@ -54,7 +54,7 @@ export interface Design {
   projectId: string;
   /** ссылка для клиента: https://stitch.withgoogle.com/projects/<id> */
   url: string;
-  /** проект публичный (scripts/stitch.ts publish) */
+  /** проект публичный (stitch.ts design делает его публичным) */
   shared: boolean;
   screens: DesignScreen[];
   /** стилевое направление, коротко — для отчёта и чтобы не повторяться между лидами */
@@ -72,7 +72,7 @@ export interface Lead {
   domain: string;
   contacts: Contacts;
   status: Status;
-  /** Оценка Claude/человека по рубрике docs/criteria.md */
+  /** Оценка агента/человека по рубрике docs/criteria.md */
   rating: { outdated: number | null; potential: number | null; complexity: number | null };
   /** Проблемы текущего сайта — коротко, понятным владельцу языком */
   problems: string[];

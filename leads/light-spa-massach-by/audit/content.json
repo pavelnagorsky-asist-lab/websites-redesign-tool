@@ -1,0 +1,135 @@
+{
+  "url": "http://notexist.cloudpark.by/",
+  "title": "Указанный адрес не обслуживается - cloudpark.by",
+  "description": "Указанный адрес не обслуживается",
+  "lang": "ru-RU",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Указанный адрес не обслуживается"
+    },
+    {
+      "tag": "h2",
+      "text": "Вы видите эту страницу по одной из двух причин:"
+    },
+    {
+      "tag": "h2",
+      "text": "1) Указанное доменное имя не существует на сервере. Убедитесь, что WWW-домен с нужным именем существует и его имя указано верно. Если Вы пытаетесь получить дост"
+    },
+    {
+      "tag": "h2",
+      "text": "2) Вы пытаетесь подключиться по протоколу HTTPS к WWW-домену (сайту), к которому доступ по протоколу HTTPS отключен. Проверьте правильность указания протокола д"
+    },
+    {
+      "tag": "h1",
+      "text": "Период заказа:"
+    },
+    {
+      "tag": "h1",
+      "text": "Стоимость:"
+    }
+  ],
+  "nav": [
+    {
+      "text": "УСЛУГИ",
+      "href": "https://cloudpark.by/uslugi/"
+    },
+    {
+      "text": "Хостинг сайтов",
+      "href": "https://cloudpark.by/hosting"
+    },
+    {
+      "text": "VPS",
+      "href": "https://cloudpark.by/vps"
+    },
+    {
+      "text": "Домены",
+      "href": "https://cloudpark.by/domeny"
+    },
+    {
+      "text": "SSL-сертификаты",
+      "href": "https://cloudpark.by/ssl"
+    },
+    {
+      "text": "Администрирование",
+      "href": "https://cloudpark.by/services/administrirovanie"
+    },
+    {
+      "text": "КОНТАКТЫ",
+      "href": "https://cloudpark.by/contacts/"
+    },
+    {
+      "text": "ПОДДЕРЖКА",
+      "href": "https://cloudpark.by/support/"
+    },
+    {
+      "text": "О КОМПАНИИ",
+      "href": "https://cloudpark.by/o-kompanii/"
+    },
+    {
+      "text": "ИНФОРМАЦИЯ",
+      "href": "https://cloudpark.by/info/"
+    },
+    {
+      "text": "База знаний",
+      "href": "https://cloudpark.by/info/bz"
+    },
+    {
+      "text": "Способы оплаты",
+      "href": "https://cloudpark.by/info/sposoby-oplaty"
+    },
+    {
+      "text": "Возврат средств",
+      "href": "https://cloudpark.by/info/vozvrat-sredstv"
+    },
+    {
+      "text": "Партнерская программа",
+      "href": "https://cloudpark.by/info/partnerskaya-programma"
+    },
+    {
+      "text": "Документы",
+      "href": "https://cloudpark.by/info/docs"
+    },
+    {
+      "text": "ВХОД / РЕГИСТРАЦИЯ",
+      "href": "https://account.cloudpark.by/"
+    }
+  ],
+  "text": "УСЛУГИ\nКОНТАКТЫ\nПОДДЕРЖКА\nО КОМПАНИИ\nИНФОРМАЦИЯ\nВХОД / РЕГИСТРАЦИЯ\nУказанный адрес не обслуживается\nВы видите эту страницу по одной из двух причин:\n\n \n\n1) Указанное доменное имя не существует на сервере. Убедитесь, что WWW-домен с нужным именем существует и его имя указано верно. Если Вы пытаетесь получить доступ по техническому домену, то убедитесь, что технический домен привязан к основному WWW-домену.\n\n \n\n2) Вы пытаетесь подключиться по протоколу HTTPS к WWW-домену (сайту), к которому доступ по протоколу HTTPS отключен. Проверьте правильность указания протокола доступа в адресе (URL) и, при необходимости, настройте доступ к WWW-домену по протоколу HTTPS.\n\nЧУП «Золотой Слон»\nУНП: 390402270\nРегистрационный номер: 390402270\nРегистрация произведена 30.06.2006 Витебским областным исполнительным комитетом.\ncloudpark.by — Хостинг в Беларуси. Любое копирование материалов сайта без указания источника запрещено.\n\nМЕНЮ\n Хостинг\n VPS\n Домены\n SSL-сертификаты\n Контакты\n Поддержка\n О компании\nКОНТАКТЫ\n 210033, Республика Беларусь, Витебск, пр-т Фрунзе, 81 корп.33А, комн.409\n +375 33 633 11 11\n support@cloudpark.by",
+  "pages": [],
+  "logo": "http://notexist.cloudpark.by/logo-white.png",
+  "ogImage": "",
+  "favicon": "https://cloudpark.by/wp-content/uploads/2020/01/cropped-favicon-32x32.png",
+  "images": [
+    {
+      "src": "https://cloudpark.by/wp-content/themes/maxhost/images/clouds-black.jpg",
+      "w": 1440,
+      "h": 437,
+      "bg": true
+    },
+    {
+      "src": "http://notexist.cloudpark.by/logo-white.png",
+      "alt": "CloudPark logo",
+      "w": 200,
+      "h": 79,
+      "hint": ""
+    }
+  ],
+  "contacts": {
+    "emails": [
+      "support@cloudpark.by"
+    ],
+    "phones": [
+      "+375 (33) 633-11-11"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [
+      "https://vk.com/cloudparkby"
+    ],
+    "facebook": [],
+    "address": "210033, Республика Беларусь, Витебск, пр-т Фрунзе, 81 корп.33А, комн.409"
+  }
+}

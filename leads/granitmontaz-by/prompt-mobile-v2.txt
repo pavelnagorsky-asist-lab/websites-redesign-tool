@@ -1,0 +1,37 @@
+Mobile version (390px wide) of the same homepage for "Гранит-Монтаж" (granite memorials workshop, Brest region, Belarus). Same visual style, colors and fonts as the desktop screen: black granite #0F0F10, graphite #1A1A1C, antique gold #B8955A accents and buttons, ivory text #EDE7DC, muted grey #9A958C, Cormorant Garamond serif headings, Manrope body, thin 1px gold hairlines, 2px corners.
+
+STRICT CONTENT RULE: use ONLY the Russian texts below, word for word. Do NOT add any extra descriptions, badges, guarantees, years, percentages, standards (ГОСТ), distances, prices, project names, place names or currency other than "руб.". If a card has no description below, show no description. No reviews.
+
+Header: gold monogram "ГМ" + "Гранит-Монтаж", phone icon button, hamburger menu icon.
+
+Hero: tall real photo of a polished black granite headstone with a gold engraved ornament branch, no readable text, soft dusk light, dark overlay. Gold label "Брест и Брестская область". H1 "Памятники из гранита и мрамора с установкой под ключ". Subtitle "Бесплатный выезд дизайнера на дом и бесплатный 3D-проект памятника". Full-width buttons "Вызвать дизайнера бесплатно" (gold) and "Позвонить" (outline). Below: three stacked thin-bordered rows (not chips, full width, one line each): "Рассрочка до 6 месяцев", "Памятники от 840 руб.", "Официальный подрядчик Брестского специализированного предприятия".
+
+Section label "Акции", heading "Предложения". Horizontally scrollable cards with photo:
+ - "Памятники из натурального гранита" — gold "от 840 руб."
+ - "Памятник с художественным оформлением стелы" — gold "от 3890 руб." — badge "Ваза в подарок"
+ - "Бюджетный памятник" — "Нержавеющая сталь и натуральный гранит" — gold "830 руб."
+ Muted note: "Точную стоимость рассчитаем после выбора модели и камня".
+
+Heading "Выберите памятник": 2-column grid of real photo tiles (outdoor granite monuments, no text, no phones, no screenshots) with captions only: "Вертикальные", "Горизонтальные", "Дизайнерские", "Двойные", "В виде креста", "Ограды".
+Button "Весь каталог".
+
+Block: photo of hands with granite samples and a laptop with 3D monument model. Heading "Впервые в Бресте — бесплатный выезд дизайнера на дом". Text "Поможет выбрать материал и оформление, по желанию поедет с вами к месту захоронения, бесплатно сделает 3D-проект и будет сопровождать заказ до установки." Button "Записаться на встречу".
+
+Heading "Наши услуги": list with gold numbers:
+ 01 "Изготовление памятников" — "Из гранита, мрамора и гранитной крошки"
+ 02 "Художественное оформление" — "Портреты, орнаменты и декор стелы"
+ 03 "Надписи на памятнике" — "Имена, даты и эпитафии"
+ 04 "Установка и благоустройство" — "Монтаж, плитка, площадка, ограда"
+ 05 "Реконструкция старого захоронения" — "Замена деталей, плитка, новая площадка"
+
+Heading "Как мы работаем": vertical timeline, titles only, no descriptions: "1. Заявка или звонок", "2. Дизайнер и 3D-макет", "3. Расчёт стоимости и договор", "4. Фото стелы на одобрение", "5. Монтаж и фото готового памятника", "6. Окончательный расчёт после установки".
+
+Heading "Наши работы": horizontal carousel of 3 real photos of installed black granite monuments with granite paving (no captions, no text in photos). Link "Мы в Instagram @granitmontaz".
+
+Form card, heading "Рассчитать стоимость памятника": fields "Имя", "Телефон", select "Тип памятника", upload "Фото или эскиз (необязательно)", checkbox "Нужен выезд дизайнера", button "Отправить заявку" (gold), note "Заявка сразу приходит мастеру в Viber".
+
+Heading "Контакты": "Брестский р-н, аг. Каменица-Жировецкая, ул. Советская 21/1"; "ПН–ПТ 10:00–19:00, СБ 10:00–15:00, ВС — выходной"; gold-bordered note "Перед приездом обязательно позвоните"; phone rows "+375 (33) 622-44-11" and "+375 (29) 803-99-99" (no operator labels); "granitmontaz3@gmail.com"; dark stylized map illustration with a gold pin (not a photo, not a phone screenshot); button "Маршрут в Яндекс Навигаторе".
+
+Footer (black): "ГМ Гранит-Монтаж", links "Памятники", "Ограды", "Услуги", "Контакты", Viber and Instagram icons, "© 2026 Гранит-Монтаж".
+
+Sticky bottom bar (fixed, black with gold top hairline): three buttons "Позвонить" (gold filled), "Viber", "Заявка".

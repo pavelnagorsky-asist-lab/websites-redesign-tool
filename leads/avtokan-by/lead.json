@@ -1,0 +1,51 @@
+{
+  "slug": "avtokan-by",
+  "company": "АвтоКАНсервис",
+  "industry": "СТО / ремонт авто",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "http://www.avtokan.by",
+  "domain": "avtokan.by",
+  "contacts": {
+    "emails": [],
+    "phones": [],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": ""
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 5,
+    "potential": 6,
+    "complexity": 3
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [
+    "Headless-браузер не открывает сайт (таймаут), curl/WebFetch — открывает"
+  ],
+  "rejectReason": "Сайт на Bootstrap/jQuery 3.4 с viewport (адаптивный); скриншот снять не удалось — нет оснований считать сильно устаревшим",
+  "activitySignals": [],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [
+      "Сайт не открывается: page.goto: Timeout 45000ms exceeded."
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": false
+  },
+  "notes": "Аудит: таймаут Playwright; оценка по HTML и WebFetch"
+}

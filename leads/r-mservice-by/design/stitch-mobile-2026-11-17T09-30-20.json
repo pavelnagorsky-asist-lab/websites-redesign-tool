@@ -1,0 +1,408 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "screens": [
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "СТО R-M СЕРВИС",
+                "styleGuidelines": "## Brand & Style\n\nThe brand personality conveys certified dealership-grade technical authority, absolute transparency, and rapid, friction-free execution. Built for vehicle owners in Polotsk seeking premium diagnostic and mechanical precision without dealer inflation, the UI projects competence, clarity, and reassuring order.\n\nThe aesthetic combines Modern Corporate Service architecture with functional, tactile engineering touches:\n- **Pristine Foundation:** Pure white workspaces accented by technical cool-grey paneling.\n- **Direct Action:** Energetic crimson triggers strictly reserved for primary user conversions and urgent states.\n- **Architectural Discipline:** Structural 12px radiuses, sharp mechanical dividers, generous air gaps, and technical line iconography.\n- **Restraint:** No emojis, no decorative ambient gradients, and no frosted glass distortion. All trust is earned through legible telemetry, clear pricing matrices, and unyielding typographic hierarchy.\n\n## Layout & Spacing\n\nA structured 12-column desktop grid anchors content within a maximum width of 1280px, transitioning to an 8-column layout on tablets and a single-column stack on mobile devices:\n\n- **Desktop (≥ 1024px):** 12-column grid, 24px (`1.5rem`) gutters, minimum 40px outer margins. Section vertical padding uses 80px to 112px to enforce dealer-level spaciousness.\n- **Tablet (768px - 1023px):** 8-column grid, 20px gutters, 24px outer margins.\n- **Mobile (< 768px):** 4-column flow, 16px (`1rem`) gutters, 16px outer safe margins. Touch zones strictly respect a minimum 48px hit area.\n- **Rhythm:** Alternating canvas sections (#FFFFFF vs #F3F5F8) visually structure service offerings, client proof, and diagnostic pricing without reliance on heavy dividers.\n\n## Elevation & Depth\n\nVisual hierarchy uses crisp, structured surfaces paired with ultra-subtle, clean ambient shadows. Surfaces reject blur-heavy diffusion and multi-color glow in favor of sharp, technical precision:\n\n- **Level 0 (Flat Ground):** Base canvas in `#FFFFFF` or `#F3F5F8` bounded by hairline `#E1E5EC` borders.\n- **Level 1 (Interactive Cards & Panels):** Subtle depth for service modules and vehicle selection trays.\n  - Shadow: `0 2px 4px rgba(14, 42, 92, 0.04), 0 1px 2px rgba(14, 42, 92, 0.02)`\n  - Border: 1px solid `#E1E5EC`\n- **Level 2 (Hovered Cards & Dropdowns):** Dynamic elevation for card interactions and active dropdown selectors.\n  - Shadow: `0 12px 24px -6px rgba(14, 42, 92, 0.08), 0 4px 8px -2px rgba(14, 42, 92, 0.03)`\n  - Border: 1px solid `#CBD5E1`\n- **Level 3 (Modals & Fixed Booking Drawers):** Distinct focus separation for the appointment overlay.\n  - Shadow: `0 24px 48px -12px rgba(14, 42, 92, 0.16)`\n- **Dark Inversion Depth:** For dark navy panels (`#0E2A5C`), elevation is achieved through solid interior fills (`#143673`) bounded by inner white hairlines (`rgba(255, 255, 255, 0.1)`), never dark drop shadows.\n\n## Components\n\n### Buttons\n- **Primary Action:** Solid Brand Red (`#D7262E`), text in `#FFFFFF`, font `Inter` SemiBold 15px. Padding: 14px 28px. Radius: 12px. Shadow: `0 2px 6px rgba(215, 38, 46, 0.25)`. Hover: `#BD1F26` with zero expansion.\n- **Secondary (Navy Outline):** 1.5px border in `#0E2A5C`, text `#0E2A5C`, background transparent. Hover: Background `#0E2A5C`, text `#FFFFFF`.\n- **Tertiary / Ghost:** Text `#0E2A5C`, transparent background, underlined on hover.\n\n### Inputs & Selectors\n- Background: `#FFFFFF` (or `#F3F5F8` within white cards).\n- Height: 52px with 16px horizontal padding.\n- Border: 1px solid `#E1E5EC`. Radius: 12px.\n- Focus: 1.5px border `#0E2A5C` with a crisp `0 0 0 3px rgba(14, 42, 92, 0.1)` ring. No red focus states unless validating errors.\n- Placeholder: Text `#5B6475`.\n\n### Service Cards\n- White `#FFFFFF` backdrop, 1px solid `#E1E5EC` outline, 12px radius, 24px padding.\n- Iconography: 24px technical line icon in Deep Navy (`#0E2A5C`) nestled in a 44px rounded container of `#F3F5F8`.\n- Action link at bottom: 14px SemiBold Navy with subtle directional arrow indicator (`→`).\n\n### Chips & Filter Tags\n- Height: 36px, radius 8px.\n- Inactive: Background `#FFFFFF`, border 1px solid `#E1E5EC`, text `#5B6475`.\n- Active: Background `#0E2A5C`, border 1px solid `#0E2A5C`, text `#FFFFFF`.\n\n### Checkboxes & Radios\n- Size: 20x20px, radius 4px (checkbox) or circular (radio).\n- Border: 1.5px solid `#CBD5E1`.\n- Checked: Fill `#D7262E` with white checkmark icon.\n\n### Technical Price Row\n- Minimal list layout with alternating clean row borders (`#E1E5EC`).\n- Service title in `#14213D` 16px SemiBold; duration/warranty in `#5B6475` 14px; cost in `#0E2A5C` 18px Manrope ExtraBold aligned to the right.",
+                "theme": {
+                  "bodyFont": "INTER",
+                  "bodyFontFamily": "Inter",
+                  "colorMode": "LIGHT",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#d7262e",
+                  "designMd": "---\nname: СТО R-M СЕРВИС\ncolors:\n  surface: '#faf8ff'\n  surface-dim: '#cdd9fe'\n  surface-bright: '#faf8ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f3ff'\n  surface-container: '#e9edff'\n  surface-container-high: '#e1e8ff'\n  surface-container-highest: '#d9e2ff'\n  on-surface: '#0d1b36'\n  on-surface-variant: '#5c403d'\n  inverse-surface: '#23304d'\n  inverse-on-surface: '#edf0ff'\n  outline: '#906f6c'\n  outline-variant: '#e5bdba'\n  surface-tint: '#bd0c1f'\n  primary: '#b2001a'\n  on-primary: '#ffffff'\n  primary-container: '#d7262e'\n  on-primary-container: '#fff1f0'\n  inverse-primary: '#ffb3ad'\n  secondary: '#465d92'\n  on-secondary: '#ffffff'\n  secondary-container: '#acc3fe'\n  on-secondary-container: '#384f83'\n  tertiary: '#705200'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#8f6900'\n  on-tertiary-container: '#fff2e0'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdad7'\n  primary-fixed-dim: '#ffb3ad'\n  on-primary-fixed: '#410004'\n  on-primary-fixed-variant: '#930013'\n  secondary-fixed: '#d9e2ff'\n  secondary-fixed-dim: '#b0c6ff'\n  on-secondary-fixed: '#001944'\n  on-secondary-fixed-variant: '#2d4578'\n  tertiary-fixed: '#ffdea0'\n  tertiary-fixed-dim: '#fbbc0e'\n  on-tertiary-fixed: '#261a00'\n  on-tertiary-fixed-variant: '#5c4300'\n  background: '#faf8ff'\n  on-background: '#0d1b36'\n  surface-variant: '#d9e2ff'\ntypography:\n  display-hero:\n    fontFamily: Manrope\n    fontSize: 56px\n    fontWeight: '800'\n    lineHeight: 64px\n    letterSpacing: -0.03em\n  display-hero-mobile:\n    fontFamily: Manrope\n    fontSize: 36px\n    fontWeight: '800'\n    lineHeight: 42px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Manrope\n    fontSize: 40px\n    fontWeight: '800'\n    lineHeight: 48px\n    letterSpacing: -0.025em\n  headline-lg-mobile:\n    fontFamily: Manrope\n    fontSize: 28px\n    fontWeight: '800'\n    lineHeight: 34px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Manrope\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 36px\n    letterSpacing: -0.02em\n  headline-md-mobile:\n    fontFamily: Manrope\n    fontSize: 22px\n    fontWeight: '700'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Manrope\n    fontSize: 20px\n    fontWeight: '700'\n    lineHeight: 26px\n    letterSpacing: -0.01em\n  title-md:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 24px\n    letterSpacing: -0.01em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.01em\n  label-md:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.02em\n  label-tech:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '700'\n    lineHeight: 16px\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 2.5rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThe brand personality conveys certified dealership-grade technical authority, absolute transparency, and rapid, friction-free execution. Built for vehicle owners in Polotsk seeking premium diagnostic and mechanical precision without dealer inflation, the UI projects competence, clarity, and reassuring order.\n\nThe aesthetic combines Modern Corporate Service architecture with functional, tactile engineering touches:\n- **Pristine Foundation:** Pure white workspaces accented by technical cool-grey paneling.\n- **Direct Action:** Energetic crimson triggers strictly reserved for primary user conversions and urgent states.\n- **Architectural Discipline:** Structural 12px radiuses, sharp mechanical dividers, generous air gaps, and technical line iconography.\n- **Restraint:** No emojis, no decorative ambient gradients, and no frosted glass distortion. All trust is earned through legible telemetry, clear pricing matrices, and unyielding typographic hierarchy.\n\n## Colors\n\nThe palette establishes an immediate dealer-level standard of care:\n\n- **Primary (`#D7262E`):** Pure brand red. Applied exclusively to high-intent conversion points (e.g., \"Записаться на СТО\", \"Вызвать эвакуатор\"), progress badges, and critical interactive states. Never used for passive decorative shapes or body text.\n- **Secondary (`#0E2A5C`):** Deep Navy Blue. Anchors the identity via structural headings, primary navigation bars, technician profile backdrops, and deep dark-mode booking panels.\n- **Tertiary (`#F5B700`):** Warm Gold. Strictly restricted to the logo's inner hexagon badge and verified certification emblems. Must not bleed into general UI elements or action states.\n- **Neutral (`#14213D`):** Primary body and metric text color, delivering severe high-contrast readability against white and light-grey planes.\n- **Surface & Backgrounds:**\n  - Base Canvas: `#FFFFFF`\n  - Alternating Structural Sections: `#F3F5F8` (Cool Grey)\n  - Dark Immersion Sections (Interactive Schedule/Footer): `#0E2A5C` with text inverted to `#FFFFFF` and muted text shifted to `#94A3B8`\n- **Muted Text:** `#5B6475` for subtitles, diagnostic specs, opening hours, and secondary labels.\n- **Borders & Dividers:** Crisp hairline `#E1E5EC` for cards, table separators, and field boundaries.\n\n## Typography\n\nThe typographic system balances the geometric muscle of **Manrope** with the neutral, utilitarian clarity of **Inter** across Cyrillic and Latin scripts:\n\n- **Headlines (Manrope):** Display titles leverage `800` (ExtraBold) with tight negative tracking (-0.02em to -0.03em) to evoke precision automotive engineering and confidence.\n- **Body & Controls (Inter):** Regular (`400`) and SemiBold (`600`) ensure uncompromised legibility across service pricing lists, maintenance tables, vehicle spec sheets, and input fields.\n- **Technical Badges (`label-tech`):** Rendered in uppercase with subtle letter-spacing for serial numbers, VIN indicators, warranty tags, and status trackers.\n\n## Layout & Spacing\n\nA structured 12-column desktop grid anchors content within a maximum width of 1280px, transitioning to an 8-column layout on tablets and a single-column stack on mobile devices:\n\n- **Desktop (≥ 1024px):** 12-column grid, 24px (`1.5rem`) gutters, minimum 40px outer margins. Section vertical padding uses 80px to 112px to enforce dealer-level spaciousness.\n- **Tablet (768px - 1023px):** 8-column grid, 20px gutters, 24px outer margins.\n- **Mobile (< 768px):** 4-column flow, 16px (`1rem`) gutters, 16px outer safe margins. Touch zones strictly respect a minimum 48px hit area.\n- **Rhythm:** Alternating canvas sections (#FFFFFF vs #F3F5F8) visually structure service offerings, client proof, and diagnostic pricing without reliance on heavy dividers.\n\n## Elevation & Depth\n\nVisual hierarchy uses crisp, structured surfaces paired with ultra-subtle, clean ambient shadows. Surfaces reject blur-heavy diffusion and multi-color glow in favor of sharp, technical precision:\n\n- **Level 0 (Flat Ground):** Base canvas in `#FFFFFF` or `#F3F5F8` bounded by hairline `#E1E5EC` borders.\n- **Level 1 (Interactive Cards & Panels):** Subtle depth for service modules and vehicle selection trays.\n  - Shadow: `0 2px 4px rgba(14, 42, 92, 0.04), 0 1px 2px rgba(14, 42, 92, 0.02)`\n  - Border: 1px solid `#E1E5EC`\n- **Level 2 (Hovered Cards & Dropdowns):** Dynamic elevation for card interactions and active dropdown selectors.\n  - Shadow: `0 12px 24px -6px rgba(14, 42, 92, 0.08), 0 4px 8px -2px rgba(14, 42, 92, 0.03)`\n  - Border: 1px solid `#CBD5E1`\n- **Level 3 (Modals & Fixed Booking Drawers):** Distinct focus separation for the appointment overlay.\n  - Shadow: `0 24px 48px -12px rgba(14, 42, 92, 0.16)`\n- **Dark Inversion Depth:** For dark navy panels (`#0E2A5C`), elevation is achieved through solid interior fills (`#143673`) bounded by inner white hairlines (`rgba(255, 255, 255, 0.1)`), never dark drop shadows.\n\n## Shapes\n\nThe design system establishes a uniform **12px (`0.75rem`) corner radius** across all primary interactive cards, form inputs, and structural buttons:\n\n- **Buttons & Inputs:** Fixed 12px corners communicate a clean, precision-tooled feel that avoids both harsh brutalist edges and juvenile pill rounds.\n- **Containers & Cards:** 12px corners on standard modules; 16px (`1rem`) on hero banners and dark booking breakout blocks.\n- **Badges & Micro-tags:** 6px radius for compact status tags (e.g., \"Гарантия 12 мес\", \"В наличии\").\n- **Hexagonal Geometry:** Strictly reserved for the master brand mark and technician qualification stamps; never used as generic UI wrappers.\n\n## Components\n\n### Buttons\n- **Primary Action:** Solid Brand Red (`#D7262E`), text in `#FFFFFF`, font `Inter` SemiBold 15px. Padding: 14px 28px. Radius: 12px. Shadow: `0 2px 6px rgba(215, 38, 46, 0.25)`. Hover: `#BD1F26` with zero expansion.\n- **Secondary (Navy Outline):** 1.5px border in `#0E2A5C`, text `#0E2A5C`, background transparent. Hover: Background `#0E2A5C`, text `#FFFFFF`.\n- **Tertiary / Ghost:** Text `#0E2A5C`, transparent background, underlined on hover.\n\n### Inputs & Selectors\n- Background: `#FFFFFF` (or `#F3F5F8` within white cards).\n- Height: 52px with 16px horizontal padding.\n- Border: 1px solid `#E1E5EC`. Radius: 12px.\n- Focus: 1.5px border `#0E2A5C` with a crisp `0 0 0 3px rgba(14, 42, 92, 0.1)` ring. No red focus states unless validating errors.\n- Placeholder: Text `#5B6475`.\n\n### Service Cards\n- White `#FFFFFF` backdrop, 1px solid `#E1E5EC` outline, 12px radius, 24px padding.\n- Iconography: 24px technical line icon in Deep Navy (`#0E2A5C`) nestled in a 44px rounded container of `#F3F5F8`.\n- Action link at bottom: 14px SemiBold Navy with subtle directional arrow indicator (`→`).\n\n### Chips & Filter Tags\n- Height: 36px, radius 8px.\n- Inactive: Background `#FFFFFF`, border 1px solid `#E1E5EC`, text `#5B6475`.\n- Active: Background `#0E2A5C`, border 1px solid `#0E2A5C`, text `#FFFFFF`.\n\n### Checkboxes & Radios\n- Size: 20x20px, radius 4px (checkbox) or circular (radio).\n- Border: 1.5px solid `#CBD5E1`.\n- Checked: Fill `#D7262E` with white checkmark icon.\n\n### Technical Price Row\n- Minimal list layout with alternating clean row borders (`#E1E5EC`).\n- Service title in `#14213D` 16px SemiBold; duration/warranty in `#5B6475` 14px; cost in `#0E2A5C` 18px Manrope ExtraBold aligned to the right.",
+                  "font": "MANROPE",
+                  "headlineFont": "MANROPE",
+                  "headlineFontFamily": "Manrope",
+                  "labelFont": "INTER",
+                  "labelFontFamily": "Inter",
+                  "namedColors": {
+                    "background": "#faf8ff",
+                    "error": "#ba1a1a",
+                    "error_container": "#ffdad6",
+                    "inverse_on_surface": "#edf0ff",
+                    "inverse_primary": "#ffb3ad",
+                    "inverse_surface": "#23304d",
+                    "on_background": "#0d1b36",
+                    "on_error": "#ffffff",
+                    "on_error_container": "#93000a",
+                    "on_primary": "#ffffff",
+                    "on_primary_container": "#fff1f0",
+                    "on_primary_fixed": "#410004",
+                    "on_primary_fixed_variant": "#930013",
+                    "on_secondary": "#ffffff",
+                    "on_secondary_container": "#384f83",
+                    "on_secondary_fixed": "#001944",
+                    "on_secondary_fixed_variant": "#2d4578",
+                    "on_surface": "#0d1b36",
+                    "on_surface_variant": "#5c403d",
+                    "on_tertiary": "#ffffff",
+                    "on_tertiary_container": "#fff2e0",
+                    "on_tertiary_fixed": "#261a00",
+                    "on_tertiary_fixed_variant": "#5c4300",
+                    "outline": "#906f6c",
+                    "outline_variant": "#e5bdba",
+                    "primary": "#b2001a",
+                    "primary_container": "#d7262e",
+                    "primary_fixed": "#ffdad7",
+                    "primary_fixed_dim": "#ffb3ad",
+                    "secondary": "#465d92",
+                    "secondary_container": "#acc3fe",
+                    "secondary_fixed": "#d9e2ff",
+                    "secondary_fixed_dim": "#b0c6ff",
+                    "surface": "#faf8ff",
+                    "surface_bright": "#faf8ff",
+                    "surface_container": "#e9edff",
+                    "surface_container_high": "#e1e8ff",
+                    "surface_container_highest": "#d9e2ff",
+                    "surface_container_low": "#f2f3ff",
+                    "surface_container_lowest": "#ffffff",
+                    "surface_dim": "#cdd9fe",
+                    "surface_tint": "#bd0c1f",
+                    "surface_variant": "#d9e2ff",
+                    "tertiary": "#705200",
+                    "tertiary_container": "#8f6900",
+                    "tertiary_fixed": "#ffdea0",
+                    "tertiary_fixed_dim": "#fbbc0e"
+                  },
+                  "overrideNeutralColor": "#14213d",
+                  "overridePrimaryColor": "#d7262e",
+                  "overrideSecondaryColor": "#0e2a5c",
+                  "overrideTertiaryColor": "#f5b700",
+                  "roundness": "ROUND_EIGHT",
+                  "spacing": {
+                    "gutter": "1.5rem",
+                    "gutter-mobile": "1rem",
+                    "margin": "2.5rem",
+                    "margin-mobile": "1rem",
+                    "space-lg": "1.5rem",
+                    "space-md": "1rem",
+                    "space-sm": "0.5rem",
+                    "space-xl": "2.5rem",
+                    "space-xs": "0.25rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "18px",
+                      "fontWeight": "400",
+                      "lineHeight": "28px"
+                    },
+                    "body-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "24px"
+                    },
+                    "body-sm": {
+                      "fontFamily": "Inter",
+                      "fontSize": "14px",
+                      "fontWeight": "400",
+                      "lineHeight": "20px"
+                    },
+                    "display-hero": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "56px",
+                      "fontWeight": "800",
+                      "letterSpacing": "-0.03em",
+                      "lineHeight": "64px"
+                    },
+                    "display-hero-mobile": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "36px",
+                      "fontWeight": "800",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "42px"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "40px",
+                      "fontWeight": "800",
+                      "letterSpacing": "-0.025em",
+                      "lineHeight": "48px"
+                    },
+                    "headline-lg-mobile": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "28px",
+                      "fontWeight": "800",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "34px"
+                    },
+                    "headline-md": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "28px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-md-mobile": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "22px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "28px"
+                    },
+                    "headline-sm": {
+                      "fontFamily": "Manrope",
+                      "fontSize": "20px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "26px"
+                    },
+                    "label-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "15px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "20px"
+                    },
+                    "label-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "13px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.02em",
+                      "lineHeight": "18px"
+                    },
+                    "label-tech": {
+                      "fontFamily": "Inter",
+                      "fontSize": "12px",
+                      "fontWeight": "700",
+                      "letterSpacing": "0.05em",
+                      "lineHeight": "16px"
+                    },
+                    "title-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "18px",
+                      "fontWeight": "600",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "24px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/8bb3f41fdac544bf928739bffd585d42",
+              "version": "1"
+            },
+            "deviceType": "MOBILE",
+            "generatedBy": "figaro_agent",
+            "height": "10878",
+            "htmlCode": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/1885348805064332598/files/7054c67ebd224f0c8af5d79205b22623:download",
+              "mimeType": "text/html",
+              "name": "projects/1885348805064332598/files/7054c67ebd224f0c8af5d79205b22623"
+            },
+            "id": "7db81557fb78426c849330a34627196c",
+            "name": "projects/1885348805064332598/screens/7db81557fb78426c849330a34627196c",
+            "prompt": "Mobile responsive version of the homepage for \"Автосервис R-M\" (СТО «R-M СЕРВИС») in Polotsk, Belarus. Device type: mobile (portrait 390px width layout).\nStrict adherence to design instructions:\n- Visual style: \"Trust & action, light\" — white #FFFFFF and light grey #F3F5F8 backgrounds, deep navy #0E2A5C headings, navy card for booking panel and footer, brand red #D7262E for primary CTA only, yellow #F5B700 only in hexagon logo badge.\n- Fonts: \"Manrope\" for headings and titles, \"Inter\" for body text (Cyrillic support). DO NOT use Space Grotesk. 12px border radius (rounded-xl), soft clean shadows, navy line icons (or Lucide SVG icons).\n- All text strictly in Russian. Do not invent any extra prices, warranties, hours, names or fake review quotes.\n\nKey mobile sections condensed & optimized for touch:\n1. Header (sticky/white, border-b):\n- Hexagon logo badge in yellow #F5B700 with bold dark text \"R-M\", title \"Автосервис R-M\" (Manrope bold), phone quick action button (navy icon), and hamburger menu button.\n\n2. Hero Section:\n- Navy pill badge: \"Полоцк и Новополоцк · 2 адреса\"\n- H1: \"Ремонт и обслуживание автомобилей в Полоцке\" (Manrope bold, #0E2A5C)\n- Subtitle: \"Кузовной ремонт и покраска, замена масла, развал-схождение 3D Bosch, шиномонтаж, ремонт двигателя и автоэлектрика\"\n- Full-width CTA buttons: \"Записаться онлайн\" (brand red #D7262E bg, white text, bold, rounded-xl) and \"Позвонить\" (outline navy #0E2A5C, navy text).\n- Workshop hero image: {{DATA:IMAGE:IMAGE_8}} (clean, modern photo of mechanic under a car on a hydraulic lift).\n- Trust row (3 compact items): \"⭐ 4.9 · 63 отзыва\", \"Стенд 3D Bosch\", \"Авто из США\".\n\n3. Section \"Популярные услуги\":\n- Title: \"Популярные услуги\"\n- Vertical compact cards (horizontal card layout: photo on left, title + one short line description on right, chevron arrow):\n  1) \"Кузовной ремонт\" (photo: {{DATA:IMAGE:IMAGE_8}})\n  2) \"Покраска автомобиля\" (photo: {{DATA:IMAGE:IMAGE_7}})\n  3) \"Замена масла\" (photo: {{DATA:IMAGE:IMAGE_4}})\n  4) \"Развал-схождение 3D Bosch\" (photo: {{DATA:IMAGE:IMAGE_6}})\n  5) \"Ремонт двигателя и КПП\" (photo: {{DATA:IMAGE:IMAGE_5}})\n  6) \"Автоэлектрика и диагностика\"\n- Horizontally scrollable service chips row: \"Подвеска\", \"Тормоза\", \"Сцепление\", \"Шиномонтаж\", \"Полировка\", \"Тонировка\".\n- Text link with arrow: \"Все услуги →\".\n\n4. Booking card on deep navy background (#0E2A5C):\n- Badge \"ОНЛАЙН-ЗАПИСЬ\" (red pill)\n- Title: \"Запишитесь на удобное время\" (white Manrope)\n- Step tracker: \"1 Услуга · 2 Адрес · 3 Дата\"\n- Dropdown select: \"Услуга: Замена масла\"\n- Two address tiles: \"ул. Гагарина, 83\" (active/selected with red highlight border) and \"ул. Дзержинского, 103\"\n- Horizontal scrollable date pills: \"Пн 18\", \"Вт 19\", \"Ср 20\" (active navy/red), \"Чт 21\", \"Пт 22\", \"Сб 23\"\n- Time chips: \"09:00\", \"11:00\" (selected red), \"14:00\"\n- Inputs: \"Имя\" (placeholder: \"Ваше имя\"), \"Телефон\" (placeholder: \"+375 (__) ___-__-__\")\n- Full-width button: \"Записаться\" (brand red #D7262E)\n- Note: \"Мастер подтвердит время в Telegram или Viber\"\n\n5. Section \"Стоимость работ\" (bg #F3F5F8 or white container):\n- Title: \"Стоимость работ\" + subtitle \"Прозрачное ценообразование без скрытых переплат\"\n- 4 clean rows with borders:\n  1) \"Замена масла в двигателе\" — muted \"по запросу\" — red link \"Узнать цену\"\n  2) \"Развал-схождение 3D Bosch\" — muted \"по запросу\" — red link \"Узнать цену\"\n  3) \"Шиномонтаж и балансировка\" — muted \"по запросу\" — red link \"Узнать цену\"\n  4) \"Компьютерная диагностика\" — muted \"по запросу\" — red link \"Узнать цену\"\n- Note text: \"Точную стоимость назовёт мастер после осмотра\"\n- Outline button: \"Спросить цену в Viber\" (with Viber icon).\n\n6. Section \"Почему R-M\":\n- Title: \"Почему выбирают Автосервис R-M\"\n- 2x2 grid of feature cards with navy line icons:\n  1) \"Два адреса в Полоцке\"\n  2) \"Узкие специалисты\"\n  3) \"Оборудование Bosch\"\n  4) \"Американские авто\"\n\n7. Section \"Как мы работаем\":\n- Title: \"Как мы работаем\"\n- Vertical 4-step timeline:\n  01. \"Запись\"\n  02. \"Осмотр и диагностика\"\n  03. \"Согласование стоимости\"\n  04. \"Ремонт и выдача авто\"\n\n8. Rating card:\n- Clean card with big \"4.9\", 5 red stars, \"63 отзыва на avservice.by\", outline button \"Читать отзывы\" (no review text quotes).\n\n9. Contacts & Addresses:\n- Two address cards:\n  Card 1: \"Адрес 1: ул. Гагарина, 83, г. Полоцк\", button \"Маршрут\"\n  Card 2: \"Адрес 2: ул. Дзержинского, 103, г. Полоцк\", button \"Маршрут\"\n- Direct phone contacts with master names:\n  \"+375 (29) 714-72-57 — Алеся\"\n  \"+375 (29) 744-54-86 — Ольга\"\n  \"+375 (214) 44-34-55 — Городской телефон\"\n- Simplified schematic map card showing both branches.\n- Messenger and social buttons: Telegram, Viber, Instagram, VK.\n\n10. Footer (deep navy #0E2A5C):\n- \"© 2026 СТО «R-M СЕРВИС», г. Полоцк\"\n\n11. Mobile sticky bottom action bar (z-50, shadow-lg, bg-white/95 backdrop-blur border-t):\n- 3 touch-friendly buttons: \"Позвонить\" (solid red #D7262E with phone icon), \"Telegram\" (pill outline with telegram icon), \"Viber\" (pill outline with viber icon). Padding-bottom safe area for mobile.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/1885348805064332598/files/93a9082b8b214d5fa47c54589fe4cd7c:download",
+              "name": "projects/1885348805064332598/files/93a9082b8b214d5fa47c54589fe4cd7c"
+            },
+            "theme": {
+              "bodyFont": "INTER",
+              "bodyFontFamily": "Inter",
+              "colorMode": "LIGHT",
+              "colorVariant": "FIDELITY",
+              "customColor": "#d7262e",
+              "font": "MANROPE",
+              "headlineFont": "MANROPE",
+              "headlineFontFamily": "Manrope",
+              "labelFont": "INTER",
+              "labelFontFamily": "Inter",
+              "namedColors": {
+                "background": "#faf8ff",
+                "error": "#ba1a1a",
+                "error_container": "#ffdad6",
+                "inverse_on_surface": "#edf0ff",
+                "inverse_primary": "#ffb3ad",
+                "inverse_surface": "#23304d",
+                "on_background": "#0d1b36",
+                "on_error": "#ffffff",
+                "on_error_container": "#93000a",
+                "on_primary": "#ffffff",
+                "on_primary_container": "#fff1f0",
+                "on_primary_fixed": "#410004",
+                "on_primary_fixed_variant": "#930013",
+                "on_secondary": "#ffffff",
+                "on_secondary_container": "#384f83",
+                "on_secondary_fixed": "#001944",
+                "on_secondary_fixed_variant": "#2d4578",
+                "on_surface": "#0d1b36",
+                "on_surface_variant": "#5c403d",
+                "on_tertiary": "#ffffff",
+                "on_tertiary_container": "#fff2e0",
+                "on_tertiary_fixed": "#261a00",
+                "on_tertiary_fixed_variant": "#5c4300",
+                "outline": "#906f6c",
+                "outline_variant": "#e5bdba",
+                "primary": "#b2001a",
+                "primary_container": "#d7262e",
+                "primary_fixed": "#ffdad7",
+                "primary_fixed_dim": "#ffb3ad",
+                "secondary": "#465d92",
+                "secondary_container": "#acc3fe",
+                "secondary_fixed": "#d9e2ff",
+                "secondary_fixed_dim": "#b0c6ff",
+                "surface": "#faf8ff",
+                "surface_bright": "#faf8ff",
+                "surface_container": "#e9edff",
+                "surface_container_high": "#e1e8ff",
+                "surface_container_highest": "#d9e2ff",
+                "surface_container_low": "#f2f3ff",
+                "surface_container_lowest": "#ffffff",
+                "surface_dim": "#cdd9fe",
+                "surface_tint": "#bd0c1f",
+                "surface_variant": "#d9e2ff",
+                "tertiary": "#705200",
+                "tertiary_container": "#8f6900",
+                "tertiary_fixed": "#ffdea0",
+                "tertiary_fixed_dim": "#fbbc0e"
+              },
+              "overrideNeutralColor": "#14213d",
+              "overridePrimaryColor": "#d7262e",
+              "overrideSecondaryColor": "#0e2a5c",
+              "overrideTertiaryColor": "#f5b700",
+              "roundness": "ROUND_EIGHT",
+              "spacing": {
+                "gutter": "1.5rem",
+                "gutter-mobile": "1rem",
+                "margin": "2.5rem",
+                "margin-mobile": "1rem",
+                "space-lg": "1.5rem",
+                "space-md": "1rem",
+                "space-sm": "0.5rem",
+                "space-xl": "2.5rem",
+                "space-xs": "0.25rem"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "28px"
+                },
+                "body-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "16px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px"
+                },
+                "body-sm": {
+                  "fontFamily": "Inter",
+                  "fontSize": "14px",
+                  "fontWeight": "400",
+                  "lineHeight": "20px"
+                },
+                "display-hero": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "56px",
+                  "fontWeight": "800",
+                  "letterSpacing": "-0.03em",
+                  "lineHeight": "64px"
+                },
+                "display-hero-mobile": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "36px",
+                  "fontWeight": "800",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "42px"
+                },
+                "headline-lg": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "40px",
+                  "fontWeight": "800",
+                  "letterSpacing": "-0.025em",
+                  "lineHeight": "48px"
+                },
+                "headline-lg-mobile": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "28px",
+                  "fontWeight": "800",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "34px"
+                },
+                "headline-md": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "28px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "36px"
+                },
+                "headline-md-mobile": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "22px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "28px"
+                },
+                "headline-sm": {
+                  "fontFamily": "Manrope",
+                  "fontSize": "20px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "26px"
+                },
+                "label-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "15px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "20px"
+                },
+                "label-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "13px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.02em",
+                  "lineHeight": "18px"
+                },
+                "label-tech": {
+                  "fontFamily": "Inter",
+                  "fontSize": "12px",
+                  "fontWeight": "700",
+                  "letterSpacing": "0.05em",
+                  "lineHeight": "16px"
+                },
+                "title-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "24px"
+                }
+              }
+            },
+            "title": "Автосервис R-M — Мобильная версия",
+            "width": "780"
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "Создана мобильная версия главной страницы **«Автосервис R-M» (СТО «R-M СЕРВИС» в г. Полоцк)** в строгом соответствии с визуальным стилем и требованиями:\n\n### Ключевые решения и адаптация:\n- **Цветовая палитра и типографика**: \n  - Чистые фоны `#FFFFFF` и `#F3F5F8`, заголовки и брендовые блоки в глубоком синем `#0E2A5C`.\n  - Единственный акцентный цвет для главных CTA — фирменный красный `#D7262E`.\n  - Жёлтый цвет `#F5B700` зарезервирован исключительно под шестиугольный бейдж с логотипом «R-M».\n  - Шрифты: **Manrope** для всех заголовков и **Inter** для основного текста (без использования Space Grotesk). Скругления элементов — 12px (`rounded-xl`).\n- **Структура контента**:\n  - **Шапка**: жёлтый гексагон «R-M», название, кнопка быстрого звонка и компактный гамбургер.\n  - **Первый экран (Hero)**: бейдж «Полоцк и Новополоцк · 2 адреса», H1, подзаголовок, две полноширинные кнопки «Записаться онлайн» и «Позвонить», реальное фото цеха на подъёмнике и 3 компактных триггера доверия («4.9 · 63 отзыва», «3D Bosch», «Авто из США»).\n  - **Популярные услуги**: компактный вертикальный список карточек с реальными фотографиями слева, названиями, кратким описанием и стрелками перехода; ниже — горизонтально скроллируемые чипсы категорий и ссылка «Все услуги».\n  - **Интерактивная карточка онлайн-записи**: тёмно-синий контрастный блок со ступенчатым процессом (1 Услуга · 2 Адрес · 3 Дата), выбор филиала («ул. Гагарина, 83» с красной рамкой выбора), чипсы дат и времени, поля ввода и кнопка подтверждения.\n  - **Стоимость работ**: 4 аккуратные строки с плашкой «по запросу», ссылкой «Узнать цену» и кнопкой консультации в Viber.\n  - **Преимущества («Почему R-M»)**: сетка 2×2 с аккуратными синими линейными иконками.\n  - **Этапы работы**: 4-шаговый вертикальный таймлайн сервисного регламента.\n  - **Рейтинг**: крупная плашка 4.9 с 5 звёздами и числом отзывов без вымышленных текстов.\n  - **Контакты и филиалы**: 2 карточки адресов с кнопками «Маршрут», прямые телефоны мастеров с именами, схема проезда и мессенджеры.\n  - **Фиксированная нижняя панель (Sticky Bar)**: удобные мобильные кнопки быстрого вызова мастера и перехода в Telegram/Viber."
+    },
+    {
+      "suggestion": "Добавить всплывающее модальное окно выбора услуг"
+    },
+    {
+      "suggestion": "Создать отдельный экран онлайн-записи с выбором времени мастера"
+    },
+    {
+      "suggestion": "Подготовить карточку отдельной услуги (например, Развал-схождение 3D)"
+    }
+  ],
+  "projectId": "1885348805064332598",
+  "sessionId": "5038040107858864794"
+}

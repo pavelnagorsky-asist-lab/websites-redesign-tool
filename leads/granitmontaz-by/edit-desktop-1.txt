@@ -1,0 +1,12 @@
+Fix only these points, keep the layout, colors, fonts and all other content exactly as is:
+
+1) Header: the logo monogram must read "ГМ" (Cyrillic), not "FM". The phone "+375 (33) 622-44-11" must be on ONE line (no wrapping), remove the caption under it. Same in the footer: phone "+375 (33) 622-44-11" on one line.
+
+2) Hero image: replace with a real-looking photo of a polished black granite headstone with only an engraved gold ornament branch and a small cross, NO readable text, no English words, no names, soft dusk light, birches. Remove the caption plate under the image ("Модель С-42", "Габбро-диабаз с золочением", "от 1 450 руб.") completely.
+
+3) Replace three images that look like website screenshots with real photos (no browser bars, no UI, no text):
+ - "Бюджетный памятник" card: modern monument combining a polished stainless steel frame and a black granite stele, outdoors.
+ - Catalog tile "Вертикальные": classic vertical black granite stele outdoors, no text on it.
+ - In "Наши работы" gallery, the first photo of the second row: landscaped grave with granite paving and a black granite monument, no text overlay.
+
+4) Remove invented claims: delete the text "Прозрачные условия и фиксированная стоимость по договору" (Акции section), replace subtitle "Собственное камнеобрабатывающее производство в Брестском районе" with "Изготовим по вашему эскизу или поможем выбрать форму", delete the line "Фиксируем смету в договоре, без скрытых платежей" in the form block, and in the "Как мы работаем" timeline remove the small grey descriptions under steps 3–6 (keep only the step titles). Section heading "Прозрачный процесс работы" → "Как мы работаем", its subtitle → "Дизайнер сопровождает заказ от заявки до установки".

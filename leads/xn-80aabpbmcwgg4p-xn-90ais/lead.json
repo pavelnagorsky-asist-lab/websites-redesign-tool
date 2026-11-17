@@ -1,0 +1,61 @@
+{
+  "slug": "xn-80aabpbmcwgg4p-xn-90ais",
+  "company": "Мастер-мебель (ИП Садовый)",
+  "industry": "Мебель на заказ / кухни",
+  "city": "Жлобин",
+  "country": "BY",
+  "site": "https://xn--80aabpbmcwgg4p.xn--90ais",
+  "domain": "xn--80aabpbmcwgg4p.xn--90ais",
+  "contacts": {
+    "emails": [],
+    "phones": [
+      "+375 (29) 122-86-79"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [
+      "https://vk.com/mactermebel"
+    ],
+    "facebook": [],
+    "address": ""
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 6,
+    "potential": 4,
+    "complexity": 1
+  },
+  "problems": [
+    "Блок «Наши контакты» пустой — карта не грузится",
+    "В подвале ©2019"
+  ],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Одностраничник на конструкторе onetwo.site (2019) с приемлемой мобильной версией; микробизнес ИП, заявки идут через VK/OK — редизайн вряд ли купят",
+  "activitySignals": [
+    "Группы VK/OK, ИП Садовый (УНП 491430242)"
+  ],
+  "design": null,
+  "source": "поиск: мебель на заказ Жлобин",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 12,
+    "reasons": [
+      "В подвале © 2019 — сайт выглядит заброшенным",
+      "Нет meta description — хуже выглядит в поиске"
+    ],
+    "complexity": "low",
+    "complexitySignals": [
+      "карта"
+    ],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

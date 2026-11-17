@@ -1,0 +1,423 @@
+{
+  "outputComponents": [
+    {
+      "design": {
+        "screens": [
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "Atelier Granite & Bronze",
+                "styleGuidelines": "## Brand & Style\n\nThis design system embodies solemn dignity, architectural permanence, and serene craftsmanship. Created for a memorial masonry and natural stone workshop, the aesthetic avoids overt sentimentality or commercial loudness in favor of stillness, tactile authenticity, and quiet precision.\n\nThe visual direction draws from high-end architectural monographs and bespoke material ateliers:\n- **Restraint and Space**: Generous breathing room, precise symmetry balanced with thoughtful asymmetry, and intentional silence across every view.\n- **Architectural Tactility**: Light natural granite hues, warm limestone surfaces, deep monolithic graphite accents, and muted brushed bronze trims evoke genuine stonecraft.\n- **Pure Materiality**: Absence of decorative gradients, neon tones, playful iconography, or superficial motion. Every element feels carved, honed, and physically grounded.\n\n## Layout & Spacing\n\nThe layout philosophy follows a disciplined, editorial grid structure that prioritizes breathing space and compositional balance:\n- **Grid Architecture**: 12-column fluid grid on desktop (`1440px` max container), 8-column layout on tablet, and 4-column layout on mobile.\n- **Horizontal Framing**: Generous outer canvas margins give every composition gallery-like gravitas.\n- **Vertical Rhythm**: Section pacing employs large intervals (from `2.5rem` up to `6rem` between major thematic transitions), allowing stone photographs and monument profiles to command focus without competition.\n- **Structural Dividing Rules**: Clean, unornamented 1px hairline horizontal rules are used to separate section headers and content tiers.\n\n## Elevation & Depth\n\nThis system intentionally eliminates traditional dropped shadows, floating overlays, and blurred skeuomorphism. Depth is achieved entirely through physical material layering:\n- **Tonal Stepping**: Background granite (`#F3F1ED`) holds secondary stone planes (`#EDE9E3`), which in turn hold pure masonry cards (`#FAF9F6` or `#FFFFFF`).\n- **Hairline Definition**: Every raised surface is enclosed by a single, crisp 1px hairline border (`#DDD8D0` on pale surfaces, `#383B3F` on graphite surfaces).\n- **Inverted Graphite Blocks**: Full-bleed `#26282B` sections introduce stark, deliberate weight for monumental exhibits, master craftsman notes, and consultation touchpoints.\n- **Hover & State Shifts**: State transitions are conveyed strictly via subtle border tone changes (from `#DDD8D0` to `#9A7B4F`) and background shifts, avoiding artificial elevation or scale increases.\n\n## Components\n\n### Buttons & Interactive Controls\n- **Primary CTA**: Solid muted bronze fill (`#9A7B4F`), crisp graphite or white typography, subtle 6px corner radius, 1px matching bronze border. On hover, background deepens slightly without shadow.\n- **Secondary Button**: Pale limestone background (`#EDE9E3` or transparent), `#26282B` text, framed with a 1px hairline border (`#DDD8D0`). On hover, the border shifts to bronze (`#9A7B4F`).\n- **Dark Section Variant**: Graphite-backed primary CTA features a crisp bronze outline with muted bronze fill or inverse white text.\n\n### Cards & Stone Showcases\n- **Stone Specimen Cards**: White (`#FFFFFF`) or off-white (`#FAF9F6`) ground, 1px `#DDD8D0` border, 6px corner radius. Generous internal padding (`space-lg`).\n- **Visual Presentation**: High-resolution photography of stone surfaces (granite, gabbro-diabase, marble) set with zero inner margin or separated by a crisp 1px rule.\n\n### Input Fields & Selectors\n- **Form Controls**: Crisp `#FAF9F6` background with a 1px `#DDD8D0` boundary. Placeholder text set in slate grey (`#6B6F74`).\n- **Focus State**: Hairline shifts smoothly to bronze (`#9A7B4F`). Never use heavy outline halos or glowing drop shadows.\n\n### Chips & Badges\n- **Material & Origin Chips**: Rectangular with 4px or 6px corners, background `#EDE9E3`, border 1px `#DDD8D0`, text in slate grey or graphite using `label-md` uppercase styling.\n- **Featured Badges**: Transparent background with a 1px `#9A7B4F` hairline frame and bronze text.\n\n### Selection Controls (Checkboxes & Radios)\n- **Checkboxes**: Crisp 16px square with 2px corner radius, 1px `#DDD8D0` border. Active state fills with `#26282B` or `#9A7B4F` with a precise hairline checkmark.\n- **Radio Buttons**: Concentric circles with a hairline border and a solid graphite or bronze central dot when checked.\n\n### Lists & Technical Data Tables\n- **Specification Tables**: Thin 1px dividers (`#DDD8D0`), ample row heights (`space-md` to `space-lg`), left-aligned graphite labels with right-aligned slate grey values in `Inter`.",
+                "theme": {
+                  "bodyFont": "INTER",
+                  "bodyFontFamily": "Inter",
+                  "colorMode": "LIGHT",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#9a7b4f",
+                  "designMd": "---\nname: Atelier Granite & Bronze\ncolors:\n  surface: '#fbf9f5'\n  surface-dim: '#dbdad6'\n  surface-bright: '#fbf9f5'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f5f3ef'\n  surface-container: '#f0eeea'\n  surface-container-high: '#eae8e4'\n  surface-container-highest: '#e4e2de'\n  on-surface: '#1b1c1a'\n  on-surface-variant: '#4e453b'\n  inverse-surface: '#30312e'\n  inverse-on-surface: '#f2f0ec'\n  outline: '#807569'\n  outline-variant: '#d1c4b7'\n  surface-tint: '#755a31'\n  primary: '#73572f'\n  on-primary: '#ffffff'\n  primary-container: '#8d6f45'\n  on-primary-container: '#fffbff'\n  inverse-primary: '#e5c18f'\n  secondary: '#5d5e62'\n  on-secondary: '#ffffff'\n  secondary-container: '#e2e2e6'\n  on-secondary-container: '#636468'\n  tertiary: '#585c61'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#71757a'\n  on-tertiary-container: '#fcfcff'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffddb1'\n  primary-fixed-dim: '#e5c18f'\n  on-primary-fixed: '#291800'\n  on-primary-fixed-variant: '#5b421c'\n  secondary-fixed: '#e2e2e6'\n  secondary-fixed-dim: '#c6c6ca'\n  on-secondary-fixed: '#1a1c1f'\n  on-secondary-fixed-variant: '#45474a'\n  tertiary-fixed: '#dfe3e8'\n  tertiary-fixed-dim: '#c3c7cc'\n  on-tertiary-fixed: '#181c20'\n  on-tertiary-fixed-variant: '#43474c'\n  background: '#fbf9f5'\n  on-background: '#1b1c1a'\n  surface-variant: '#e4e2de'\ntypography:\n  display-lg:\n    fontFamily: Playfair Display\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.01em\n  display-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 36px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: -0.005em\n  headline-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0em\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 28px\n    fontWeight: '500'\n    lineHeight: 36px\n  headline-sm:\n    fontFamily: Playfair Display\n    fontSize: 22px\n    fontWeight: '500'\n    lineHeight: 30px\n  title-md:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n    letterSpacing: -0.01em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 17px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.08em\n  label-md:\n    fontFamily: Inter\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.12em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system embodies solemn dignity, architectural permanence, and serene craftsmanship. Created for a memorial masonry and natural stone workshop, the aesthetic avoids overt sentimentality or commercial loudness in favor of stillness, tactile authenticity, and quiet precision.\n\nThe visual direction draws from high-end architectural monographs and bespoke material ateliers:\n- **Restraint and Space**: Generous breathing room, precise symmetry balanced with thoughtful asymmetry, and intentional silence across every view.\n- **Architectural Tactility**: Light natural granite hues, warm limestone surfaces, deep monolithic graphite accents, and muted brushed bronze trims evoke genuine stonecraft.\n- **Pure Materiality**: Absence of decorative gradients, neon tones, playful iconography, or superficial motion. Every element feels carved, honed, and physically grounded.\n\n## Colors\n\nThe color architecture is built around natural stone strata and hand-tooled bronze accents.\n\n### Core Roles\n- **Canvas Base (`#F3F1ED`)**: Primary canvas background replicating raw, pale honed granite.\n- **Surface Tiers (`#EDE9E3`, `#E4E0D9`)**: Layered architectural planes, raised containers, and structural dividers.\n- **Card Fills (`#FFFFFF`, `#FAF9F6`)**: Subtle high-clarity surfaces reserved for stone catalog showcases and content focal points.\n- **Primary Ink & Monolith Dark (`#26282B`)**: Deep graphite used for authoritative titles, heavy contrast narrative blocks, and solemn memorial galleries.\n- **Secondary Ink (`#6B6F74`)**: Balanced slate grey ensuring high legibility without sharp visual tension for descriptive body text and technical specifications.\n- **Primary Accent (`#9A7B4F`)**: Muted brushed bronze reserved strictly for primary interactive triggers, hairline rules, badges, and focal status marks.\n- **Structural Lines (`#DDD8D0` on light, `#383B3F` on graphite)**: Hairline borders providing quiet structure without visual clutter.\n\nNo bright accent hues (reds, greens, purples) are permitted; informational signals must rely entirely on tonal weight, bronze framing, and clear typographic labels.\n\n## Typography\n\nThe typographic hierarchy establishes a dialogue between classical lapidary stonework and functional modern clarity.\n\n- **Headings (`Playfair Display`)**: Conveys classical proportion, stillness, and permanence. Headlines must lean into regular and medium weights; never use heavy or italicized variations for standard titles.\n- **Body & Technical Specs (`Inter`)**: Neutral, highly legible, and unpretentious. Handles long-form memorial narratives, stone origin descriptions, and workshop parameters.\n- **Labels & Microcopy (`Inter Uppercase`)**: Uses expanded letter-spacing (`0.08em` to `0.12em`) to mirror bronze gallery plaques and architectural metadata.\n\n## Layout & Spacing\n\nThe layout philosophy follows a disciplined, editorial grid structure that prioritizes breathing space and compositional balance:\n- **Grid Architecture**: 12-column fluid grid on desktop (`1440px` max container), 8-column layout on tablet, and 4-column layout on mobile.\n- **Horizontal Framing**: Generous outer canvas margins give every composition gallery-like gravitas.\n- **Vertical Rhythm**: Section pacing employs large intervals (from `2.5rem` up to `6rem` between major thematic transitions), allowing stone photographs and monument profiles to command focus without competition.\n- **Structural Dividing Rules**: Clean, unornamented 1px hairline horizontal rules are used to separate section headers and content tiers.\n\n## Elevation & Depth\n\nThis system intentionally eliminates traditional dropped shadows, floating overlays, and blurred skeuomorphism. Depth is achieved entirely through physical material layering:\n- **Tonal Stepping**: Background granite (`#F3F1ED`) holds secondary stone planes (`#EDE9E3`), which in turn hold pure masonry cards (`#FAF9F6` or `#FFFFFF`).\n- **Hairline Definition**: Every raised surface is enclosed by a single, crisp 1px hairline border (`#DDD8D0` on pale surfaces, `#383B3F` on graphite surfaces).\n- **Inverted Graphite Blocks**: Full-bleed `#26282B` sections introduce stark, deliberate weight for monumental exhibits, master craftsman notes, and consultation touchpoints.\n- **Hover & State Shifts**: State transitions are conveyed strictly via subtle border tone changes (from `#DDD8D0` to `#9A7B4F`) and background shifts, avoiding artificial elevation or scale increases.\n\n## Shapes\n\nThe shape system reflects fine masonry work: clean, geometric, and finished with a restrained chamfer.\n- **Border Radius**: Fixed to a subtle 6px (`0.375rem`, category soft/subtle) across cards, input containers, and button frames.\n- **Sharp Geometry**: Avoid circular, pill-shaped, or heavily rounded containers. Corners must retain the disciplined precision of squared, machine-honed stone blocks.\n- **Inner Accents**: Tags, thumbnail wrappers, and divider lines maintain strictly rectangular or lightly eased profiles to sustain the architectural rhythm.\n\n## Components\n\n### Buttons & Interactive Controls\n- **Primary CTA**: Solid muted bronze fill (`#9A7B4F`), crisp graphite or white typography, subtle 6px corner radius, 1px matching bronze border. On hover, background deepens slightly without shadow.\n- **Secondary Button**: Pale limestone background (`#EDE9E3` or transparent), `#26282B` text, framed with a 1px hairline border (`#DDD8D0`). On hover, the border shifts to bronze (`#9A7B4F`).\n- **Dark Section Variant**: Graphite-backed primary CTA features a crisp bronze outline with muted bronze fill or inverse white text.\n\n### Cards & Stone Showcases\n- **Stone Specimen Cards**: White (`#FFFFFF`) or off-white (`#FAF9F6`) ground, 1px `#DDD8D0` border, 6px corner radius. Generous internal padding (`space-lg`).\n- **Visual Presentation**: High-resolution photography of stone surfaces (granite, gabbro-diabase, marble) set with zero inner margin or separated by a crisp 1px rule.\n\n### Input Fields & Selectors\n- **Form Controls**: Crisp `#FAF9F6` background with a 1px `#DDD8D0` boundary. Placeholder text set in slate grey (`#6B6F74`).\n- **Focus State**: Hairline shifts smoothly to bronze (`#9A7B4F`). Never use heavy outline halos or glowing drop shadows.\n\n### Chips & Badges\n- **Material & Origin Chips**: Rectangular with 4px or 6px corners, background `#EDE9E3`, border 1px `#DDD8D0`, text in slate grey or graphite using `label-md` uppercase styling.\n- **Featured Badges**: Transparent background with a 1px `#9A7B4F` hairline frame and bronze text.\n\n### Selection Controls (Checkboxes & Radios)\n- **Checkboxes**: Crisp 16px square with 2px corner radius, 1px `#DDD8D0` border. Active state fills with `#26282B` or `#9A7B4F` with a precise hairline checkmark.\n- **Radio Buttons**: Concentric circles with a hairline border and a solid graphite or bronze central dot when checked.\n\n### Lists & Technical Data Tables\n- **Specification Tables**: Thin 1px dividers (`#DDD8D0`), ample row heights (`space-md` to `space-lg`), left-aligned graphite labels with right-aligned slate grey values in `Inter`.",
+                  "font": "PLAYFAIR_DISPLAY",
+                  "headlineFont": "PLAYFAIR_DISPLAY",
+                  "headlineFontFamily": "Playfair Display",
+                  "labelFont": "INTER",
+                  "labelFontFamily": "Inter",
+                  "namedColors": {
+                    "background": "#fbf9f5",
+                    "error": "#ba1a1a",
+                    "error_container": "#ffdad6",
+                    "inverse_on_surface": "#f2f0ec",
+                    "inverse_primary": "#e5c18f",
+                    "inverse_surface": "#30312e",
+                    "on_background": "#1b1c1a",
+                    "on_error": "#ffffff",
+                    "on_error_container": "#93000a",
+                    "on_primary": "#ffffff",
+                    "on_primary_container": "#fffbff",
+                    "on_primary_fixed": "#291800",
+                    "on_primary_fixed_variant": "#5b421c",
+                    "on_secondary": "#ffffff",
+                    "on_secondary_container": "#636468",
+                    "on_secondary_fixed": "#1a1c1f",
+                    "on_secondary_fixed_variant": "#45474a",
+                    "on_surface": "#1b1c1a",
+                    "on_surface_variant": "#4e453b",
+                    "on_tertiary": "#ffffff",
+                    "on_tertiary_container": "#fcfcff",
+                    "on_tertiary_fixed": "#181c20",
+                    "on_tertiary_fixed_variant": "#43474c",
+                    "outline": "#807569",
+                    "outline_variant": "#d1c4b7",
+                    "primary": "#73572f",
+                    "primary_container": "#8d6f45",
+                    "primary_fixed": "#ffddb1",
+                    "primary_fixed_dim": "#e5c18f",
+                    "secondary": "#5d5e62",
+                    "secondary_container": "#e2e2e6",
+                    "secondary_fixed": "#e2e2e6",
+                    "secondary_fixed_dim": "#c6c6ca",
+                    "surface": "#fbf9f5",
+                    "surface_bright": "#fbf9f5",
+                    "surface_container": "#f0eeea",
+                    "surface_container_high": "#eae8e4",
+                    "surface_container_highest": "#e4e2de",
+                    "surface_container_low": "#f5f3ef",
+                    "surface_container_lowest": "#ffffff",
+                    "surface_dim": "#dbdad6",
+                    "surface_tint": "#755a31",
+                    "surface_variant": "#e4e2de",
+                    "tertiary": "#585c61",
+                    "tertiary_container": "#71757a",
+                    "tertiary_fixed": "#dfe3e8",
+                    "tertiary_fixed_dim": "#c3c7cc"
+                  },
+                  "overrideNeutralColor": "#f3f1ed",
+                  "overridePrimaryColor": "#9a7b4f",
+                  "overrideSecondaryColor": "#26282b",
+                  "overrideTertiaryColor": "#6b6f74",
+                  "roundness": "ROUND_FOUR",
+                  "spacing": {
+                    "gutter": "1.5rem",
+                    "gutter-mobile": "1rem",
+                    "margin": "3rem",
+                    "margin-mobile": "1.25rem",
+                    "space-lg": "1.5rem",
+                    "space-md": "1rem",
+                    "space-sm": "0.5rem",
+                    "space-xl": "2.5rem",
+                    "space-xs": "0.25rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "17px",
+                      "fontWeight": "400",
+                      "lineHeight": "28px"
+                    },
+                    "body-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "15px",
+                      "fontWeight": "400",
+                      "lineHeight": "24px"
+                    },
+                    "body-sm": {
+                      "fontFamily": "Inter",
+                      "fontSize": "13px",
+                      "fontWeight": "400",
+                      "lineHeight": "20px"
+                    },
+                    "display-lg": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "56px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "64px"
+                    },
+                    "display-lg-mobile": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "36px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "44px"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "40px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.005em",
+                      "lineHeight": "48px"
+                    },
+                    "headline-lg-mobile": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "28px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-md": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "28px",
+                      "fontWeight": "500",
+                      "lineHeight": "36px"
+                    },
+                    "headline-sm": {
+                      "fontFamily": "Playfair Display",
+                      "fontSize": "22px",
+                      "fontWeight": "500",
+                      "lineHeight": "30px"
+                    },
+                    "label-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "13px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.08em",
+                      "lineHeight": "18px"
+                    },
+                    "label-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "11px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.12em",
+                      "lineHeight": "16px"
+                    },
+                    "title-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "18px",
+                      "fontWeight": "600",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "26px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/408dcc2c24454b2898697aff175672c0",
+              "version": "1"
+            },
+            "deviceType": "DESKTOP",
+            "generatedBy": "HatterAgent",
+            "height": "16900",
+            "htmlCode": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/6988932069936990354/files/c74a869c8e49437bbd7c9e7ba1e8d1bd:download",
+              "mimeType": "text/html",
+              "name": "projects/6988932069936990354/files/c74a869c8e49437bbd7c9e7ba1e8d1bd"
+            },
+            "id": "deaa92f947204d1598c75a64ed878249",
+            "name": "projects/6988932069936990354/screens/deaa92f947204d1598c75a64ed878249",
+            "prompt": "Fix exactly the 3 requested sections on {{DATA:SCREEN:SCREEN_2}} and keep everything else completely untouched:\n\n1) The dark graphite section right after \"Ограды и аксессуары\" (the installment section, currently broken with overlapping steps):\n- Completely remove the squeezed overlapping step cards (\"01 02 03 04\").\n- Restore this section properly as a two-column banner on a dark graphite background (bg-surface-dim or dark charcoal #222220 / bg-[#1e1e1c]):\n  * Left side:\n    - Small bronze uppercase label: \"БЕСПРОЦЕНТНАЯ РАССРОЧКА\" (or \"Беспроцентная рассрочка\" in bronze font-label-md tracking-wider).\n    - Serif heading (white/light text): \"Беспроцентная рассрочка на 6 месяцев\" (font-serif text-3xl or 4xl text-[#fbf9f5]).\n    - Subtitle text: \"Памятник можно оплатить частями — без переплаты.\" (text-[#dbdad6] or text-white/80 text-base).\n    - Button: \"Узнать условия\" (bronze button, bg-[#9a7b4f] hover:bg-[#886c44] text-white px-6 py-3 rounded text-sm font-medium transition).\n  * Right side:\n    - A clean framed photo of polished black granite texture with soft light reflection using {{DATA:IMAGE:IMAGE_13}}. Set with neat rounded corners, subtle border or frame, no text overlay on top of the image.\n\n2) Section \"Как заказать памятник\" (the 4 light cards 01, 02, 03, 04):\n- Keep titles: \"Обращение\", \"Проектирование\", \"Производство\", \"Установка\".\n- Update card texts verbatim:\n  * 01: \"Позвоните или оставьте заявку — поможем определить бюджет и подобрать модель.\"\n  * 02: \"Выберите готовую модель или закажите индивидуальный проект.\"\n  * 03: \"Изготовим памятник из натурального гранита.\"\n  * 04: \"Установим памятник и благоустроим место захоронения.\"\n- Remove the small footnote line, divider, and bottom footnote texts from every single card (e.g. remove \"Консультация без обязательств\", \"Согласование эскиза и шрифтов\", \"Контроль геометрии и полировки\", \"Гарантия на монтажные работы\" and their separating borders).\n\n3) Section \"Почему нам доверяют\" (3 trust cards):\n- Update the descriptions verbatim:\n  * \"Надёжность и опыт\": \"Более 10 лет изготавливаем ритуальные комплексы и декоративные элементы из натурального камня.\"\n  * \"Качество и долговечность\": \"Работаем только с натуральным гранитом и внимательны к каждой детали.\"\n  * \"Поддержка на всех этапах\": \"Поможем определить бюджет, выбрать модель и сопроводим до установки.\"\n\nKeep all other sections (header, hero with {{DATA:IMAGE:IMAGE_14}}, catalog with its 6 cards and images {{DATA:IMAGE:IMAGE_14}}, {{DATA:IMAGE:IMAGE_8}}, {{DATA:IMAGE:IMAGE_6}}, {{DATA:IMAGE:IMAGE_7}}, {{DATA:IMAGE:IMAGE_3}}, {{DATA:IMAGE:IMAGE_4}}, fences with {{DATA:IMAGE:IMAGE_5}} and {{DATA:IMAGE:IMAGE_12}}, gallery with all 6 photos, calculator/form, workshops in Brest & Pruzhany, footer) strictly intact.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/6988932069936990354/files/c2e474bb1e2548369855be59491e2952:download",
+              "name": "projects/6988932069936990354/files/c2e474bb1e2548369855be59491e2952"
+            },
+            "theme": {
+              "bodyFont": "INTER",
+              "bodyFontFamily": "Inter",
+              "colorMode": "LIGHT",
+              "colorVariant": "FIDELITY",
+              "customColor": "#9a7b4f",
+              "font": "PLAYFAIR_DISPLAY",
+              "headlineFont": "PLAYFAIR_DISPLAY",
+              "headlineFontFamily": "Playfair Display",
+              "labelFont": "INTER",
+              "labelFontFamily": "Inter",
+              "namedColors": {
+                "background": "#fbf9f5",
+                "error": "#ba1a1a",
+                "error_container": "#ffdad6",
+                "inverse_on_surface": "#f2f0ec",
+                "inverse_primary": "#e5c18f",
+                "inverse_surface": "#30312e",
+                "on_background": "#1b1c1a",
+                "on_error": "#ffffff",
+                "on_error_container": "#93000a",
+                "on_primary": "#ffffff",
+                "on_primary_container": "#fffbff",
+                "on_primary_fixed": "#291800",
+                "on_primary_fixed_variant": "#5b421c",
+                "on_secondary": "#ffffff",
+                "on_secondary_container": "#636468",
+                "on_secondary_fixed": "#1a1c1f",
+                "on_secondary_fixed_variant": "#45474a",
+                "on_surface": "#1b1c1a",
+                "on_surface_variant": "#4e453b",
+                "on_tertiary": "#ffffff",
+                "on_tertiary_container": "#fcfcff",
+                "on_tertiary_fixed": "#181c20",
+                "on_tertiary_fixed_variant": "#43474c",
+                "outline": "#807569",
+                "outline_variant": "#d1c4b7",
+                "primary": "#73572f",
+                "primary_container": "#8d6f45",
+                "primary_fixed": "#ffddb1",
+                "primary_fixed_dim": "#e5c18f",
+                "secondary": "#5d5e62",
+                "secondary_container": "#e2e2e6",
+                "secondary_fixed": "#e2e2e6",
+                "secondary_fixed_dim": "#c6c6ca",
+                "surface": "#fbf9f5",
+                "surface_bright": "#fbf9f5",
+                "surface_container": "#f0eeea",
+                "surface_container_high": "#eae8e4",
+                "surface_container_highest": "#e4e2de",
+                "surface_container_low": "#f5f3ef",
+                "surface_container_lowest": "#ffffff",
+                "surface_dim": "#dbdad6",
+                "surface_tint": "#755a31",
+                "surface_variant": "#e4e2de",
+                "tertiary": "#585c61",
+                "tertiary_container": "#71757a",
+                "tertiary_fixed": "#dfe3e8",
+                "tertiary_fixed_dim": "#c3c7cc"
+              },
+              "overrideNeutralColor": "#f3f1ed",
+              "overridePrimaryColor": "#9a7b4f",
+              "overrideSecondaryColor": "#26282b",
+              "overrideTertiaryColor": "#6b6f74",
+              "roundness": "ROUND_FOUR",
+              "spacing": {
+                "gutter": "1.5rem",
+                "gutter-mobile": "1rem",
+                "margin": "3rem",
+                "margin-mobile": "1.25rem",
+                "space-lg": "1.5rem",
+                "space-md": "1rem",
+                "space-sm": "0.5rem",
+                "space-xl": "2.5rem",
+                "space-xs": "0.25rem"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "17px",
+                  "fontWeight": "400",
+                  "lineHeight": "28px"
+                },
+                "body-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "15px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px"
+                },
+                "body-sm": {
+                  "fontFamily": "Inter",
+                  "fontSize": "13px",
+                  "fontWeight": "400",
+                  "lineHeight": "20px"
+                },
+                "display-lg": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "56px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "64px"
+                },
+                "display-lg-mobile": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "36px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "44px"
+                },
+                "headline-lg": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "40px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.005em",
+                  "lineHeight": "48px"
+                },
+                "headline-lg-mobile": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "28px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0em",
+                  "lineHeight": "36px"
+                },
+                "headline-md": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "28px",
+                  "fontWeight": "500",
+                  "lineHeight": "36px"
+                },
+                "headline-sm": {
+                  "fontFamily": "Playfair Display",
+                  "fontSize": "22px",
+                  "fontWeight": "500",
+                  "lineHeight": "30px"
+                },
+                "label-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "13px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.08em",
+                  "lineHeight": "18px"
+                },
+                "label-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "11px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.12em",
+                  "lineHeight": "16px"
+                },
+                "title-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "26px"
+                }
+              }
+            },
+            "title": "Мастерская натурального камня — Главная страница (исправленная)",
+            "width": "2560"
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "Все три раздела исправлены в точном соответствии с вашими требованиями:\n\n1. **Баннер рассрочки (после раздела «Ограды и аксессуары»)**:\n   - Полностью удалены сжатые перекрывающиеся карточки шагов.\n   - Восстановлена корректная двухколоночная верстка на темном графитовом фоне:\n     - **Слева**: аккуратный бронзовый лейбл *«Беспроцентная рассрочка»*, заголовок с антиквой *«Беспроцентная рассрочка на 6 месяцев»*, пояснение *«Памятник можно оплатить частями — без переплаты.»* и бронзовая кнопка *«Узнать условия»*.\n     - **Справа**: обрамленная макро-фотография полированной текстуры натурального черного гранита с мягким диагональным бликом (без текста и посторонних элементов).\n\n2. **Раздел «Как заказать памятник»**:\n   - Сохранены заголовки: *«Обращение»*, *«Проектирование»*, *«Производство»*, *«Установка»*.\n   - Тексты шагов установлены слово в слово:\n     - 01: «Позвоните или оставьте заявку — поможем определить бюджет и подобрать модель.»\n     - 02: «Выберите готовую модель или закажите индивидуальный проект.»\n     - 03: «Изготовим памятник из натурального гранита.»\n     - 04: «Установим памятник и благоустроим место захоронения.»\n   - Полностью удалены нижние сноски и разделительные линии в каждой из четырех карточек.\n\n3. **Раздел «Почему нам доверяют»**:\n   - Формулировки обновлены строго по запросу:\n     - *«Надёжность и опыт»*: «Более 10 лет изготавливаем ритуальные комплексы и декоративные элементы из натурального камня.»\n     - *«Качество и долговечность»*: «Работаем только с натуральным гранитом и внимательны к каждой детали.»\n     - *«Поддержка на всех этапах»*: «Поможем определить бюджет, выбрать модель и сопроводим до установки.»\n\nВсе остальные элементы страницы (шапка, первый экран, каталог с фотографиями, ограды, портфолио работ, форма расчета, мастерские и подвал) сохранены без изменений."
+    },
+    {
+      "suggestion": "Посмотреть мобильную версию с этими обновлениями"
+    },
+    {
+      "suggestion": "Настроить модальное окно для кнопки «Узнать условия»"
+    },
+    {
+      "suggestion": "Скорректировать поля формы расчета стоимости"
+    },
+    {
+      "sessionEvent": {
+        "actor": "Agent",
+        "eventId": "2c526a27",
+        "eventPayload": {
+          "dom_operations": [
+            {
+              "action": "replace_content",
+              "attr_name": null,
+              "attr_value": null,
+              "class_name": null,
+              "content": "Более 10 лет изготавливаем ритуальные комплексы и декоративные элементы из натурального камня.",
+              "selector": "div.grid.grid-cols-1.md\\:grid-cols-3.gap-8 > div:nth-child(1) > p",
+              "selector_strategy": "Find the first card in the 'Почему нам доверяют' grid: section containing heading 'Почему нам доверяют' has a grid of 3 items. Target the first card's paragraph.",
+              "target_element_goal": "Update the description text for 'Надёжность и опыт'",
+              "verified_html_context": "<p class=\"font-body-md text-body-md text-secondary\">"
+            },
+            {
+              "action": "replace_content",
+              "attr_name": null,
+              "attr_value": null,
+              "class_name": null,
+              "content": "Работаем только с натуральным гранитом и внимательны к каждой детали.",
+              "selector": "div.grid.grid-cols-1.md\\:grid-cols-3.gap-8 > div:nth-child(2) > p",
+              "selector_strategy": "Target the second card's paragraph in the 3-column grid of 'Почему нам доверяют'.",
+              "target_element_goal": "Update the description text for 'Качество и долговечность'",
+              "verified_html_context": "<p class=\"font-body-md text-body-md text-secondary\">"
+            },
+            {
+              "action": "replace_content",
+              "attr_name": null,
+              "attr_value": null,
+              "class_name": null,
+              "content": "Поможем определить бюджет, выбрать модель и сопроводим до установки.",
+              "selector": "div.grid.grid-cols-1.md\\:grid-cols-3.gap-8 > div:nth-child(3) > p",
+              "selector_strategy": "Target the third card's paragraph in the 3-column grid of 'Почему нам доверяют'.",
+              "target_element_goal": "Update the description text for 'Поддержка на всех этапах'",
+              "verified_html_context": "<p class=\"font-body-md text-body-md text-secondary\">"
+            }
+          ],
+          "payload_type": "DomOperationEvent",
+          "screen_id": "SCREEN_15"
+        },
+        "eventTime": "2026-11-17T09:15:32.161306547Z",
+        "eventType": "project.file_update"
+      }
+    }
+  ],
+  "projectId": "6988932069936990354",
+  "sessionId": "16391456301869022922"
+}

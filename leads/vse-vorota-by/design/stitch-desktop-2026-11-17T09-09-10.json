@@ -1,0 +1,616 @@
+{
+  "outputComponents": [
+    {
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Kinetic Forge",
+          "styleGuidelines": "## Brand & Style\n\nThis design system establishes an \"Industrial Tech\" aesthetic rooted in modern mechanical engineering, heavy automation, and precision tooling. The visual tone is unapologetic, robust, and mathematically ordered—evoking the tactile weight of CNC-milled aluminum, architectural blueprints, and high-visibility industrial safety equipment.\n\n### Audience & Mood\n- **Target Audience:** Mechanical engineers, industrial equipment procurement leads, field operators, and enterprise hardware stakeholders.\n- **Emotional Resonance:** High reliability, operational confidence, absolute dimensional precision, and uncompromising physical authority.\n\n### Stylistic Directives\n- **Structural Blueprint:** Surfaces are treated like technical schematics. Layouts make prominent use of rigid structural grid lines, crosshair registration marks, technical dimension overlays (e.g., `5000 × 2000 mm`), and monospace metadata readouts.\n- **No Decorative Excess:** Strictly prohibit glassmorphism, decorative drop shadows, ambient blur fills, non-functional rounded curves, and purple or pastel tones.\n- **Surface Contrast:** High-impact juxtaposition between deep structural graphite blocks and stark, functional light concrete workspaces.\n\n## Layout & Spacing\n\nLayouts adhere to an uncompromising mathematical rhythm engineered around precision grids and modular panels:\n\n### Grid Architecture\n- **Desktop (1280px+):** Strict 12-column fluid grid within an ultra-wide structural boundary (max-width `1440px`). Gutters are fixed to `1.5rem` (`24px`), with outer margins of `3rem` (`48px`).\n- **Tablet (768px – 1279px):** 8-column grid with `1.5rem` gutters and `2rem` outer margins. Modules prioritize split 4-column pairing.\n- **Mobile (Below 768px):** 4-column grid with `1rem` (`16px`) gutters and margins. Side-by-side spec callouts fold linearly into stacked technical modules.\n\n### Blueprint Lines & Cadence\n- Modular containers align along continuous horizontal and vertical 1px structural gridlines.\n- Technical headers and structural sections may include hairline technical crosshairs (`+`) at boundary intersections.\n- Content density favors structured, packed layouts over expansive, ambiguous whitespace.\n\n## Elevation & Depth\n\nThis design system rejects synthetic lighting models, ambient blurs, and soft blurred drop shadows. Depth is achieved entirely through high-contrast structural layering and crisp borders:\n\n- **Ground Level (Base Canvas):** Light concrete (`#F2F3F5`) functions as the physical foundation plane.\n- **Machine Surfaces (Cards & Modules):** Pure white (`#FFFFFF`) or deep steel (`#2B3138`) panels set with a precise 1px solid border (`#DCE0E5` on light surfaces; `#2B3138` on dark graphite surfaces).\n- **Z-Index Layering (Overlays & Dialogs):** Modals, parameter inspectors, and precision dropdowns do not cast fuzzy shadows. Instead, they use a crisp 2px offset hard technical shadow (`box-shadow: 4px 4px 0px #15181C`) or a high-contrast 1px border reinforcement in steel (`#2B3138`).\n- **Surface Inversion:** Visual hierarchy transitions abruptly from light concrete panels into full-bleed graphite (`#15181C`) zones to signal high-priority instrumentation, telemetry, or structural machinery overviews.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Solid Signal Orange (`#FF5B14`) fill, white uppercase bold text, 6px radius, zero shadow. Hover state shifts to dark orange (`#E04E0E`). Active state depresses 1px down and right.\n- **Secondary CTA:** Graphite (`#15181C`) background, white text, 6px radius. Hover shifts to Steel (`#2B3138`).\n- **Outline / Technical Action:** Transparent fill, 1px border in Steel (`#2B3138`) or Border Gray (`#DCE0E5`), text in Primary Neutral (`#15181C`). Hover triggers a 1px border shift to Brand Blue (`#1F5FA8`) with text matching.\n- **All Buttons:** Fixed height classes (`36px` compact, `44px` standard), horizontal padding `1.25rem`, uppercase label styling.\n\n### Input Fields & Controls\n- **Inputs:** White (`#FFFFFF`) background, 1px border in `#DCE0E5`, 6px radius. Placeholder text in `#5E6670`. Focus state replaces standard border with a razor-sharp 1px border in Signal Orange (`#FF5B14`) and an outer 1px solid offset outline.\n- **Checkboxes & Radios:** Sharp square and circular geometries with 1.5px solid Steel borders. Checked states fill with Signal Orange (`#FF5B14`) featuring crisp, geometric white checkmarks.\n\n### Cards & Data Panels\n- **Structure:** Crisp white (`#FFFFFF`) surfaces framed by 1px solid `#DCE0E5` borders.\n- **Header Accents:** Cards frequently feature a 2px top accent line in Signal Orange (`#FF5B14`) or Brand Blue (`#1F5FA8`) to denote functional operational tiers.\n- **Technical Badges / Chips:** Monospaced uppercase text, neutral concrete (`#F2F3F5`) fill, 1px solid `#DCE0E5` border, 4px corner radius. Status chips use functional dots: Signal Orange for active/processing, Brand Blue for telemetry, and Graphite for offline/standby.\n\n### Technical Data Tables & Lists\n- **Rows:** Alternating rows using pure white and subtle concrete tint. Separated by crisp 1px borders.\n- **Headers:** Monospaced label caps, uppercase, `#5E6670` color, seated on a steel or concrete base strip.\n- **Data Callouts:** Numeric metrics must use tabular lining figures for effortless vertical scanning.\n\n### Dimension & Coordinate Overlays\n- Technical dimension callouts (e.g., `5000 × 2000 mm`) must be wrapped in fine hairline guide ticks with a monospaced label centered on the boundary axis line.",
+          "theme": {
+            "bodyFont": "INTER",
+            "bodyFontFamily": "Inter",
+            "colorMode": "LIGHT",
+            "colorVariant": "FIDELITY",
+            "customColor": "#ff5b14",
+            "designMd": "---\nname: Kinetic Forge\ncolors:\n  surface: '#f8f9ff'\n  surface-dim: '#d8dadf'\n  surface-bright: '#f8f9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f3f9'\n  surface-container: '#eceef3'\n  surface-container-high: '#e6e8ee'\n  surface-container-highest: '#e1e2e8'\n  on-surface: '#191c20'\n  on-surface-variant: '#5b4138'\n  inverse-surface: '#2e3135'\n  inverse-on-surface: '#eff0f6'\n  outline: '#8f7066'\n  outline-variant: '#e4beb2'\n  surface-tint: '#aa3600'\n  primary: '#aa3600'\n  on-primary: '#ffffff'\n  primary-container: '#ff5b14'\n  on-primary-container: '#531600'\n  inverse-primary: '#ffb59c'\n  secondary: '#1f5fa8'\n  on-secondary: '#ffffff'\n  secondary-container: '#7ab0fe'\n  on-secondary-container: '#00417e'\n  tertiary: '#595f67'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#8d939b'\n  on-tertiary-container: '#262c33'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdbcf'\n  primary-fixed-dim: '#ffb59c'\n  on-primary-fixed: '#390c00'\n  on-primary-fixed-variant: '#822700'\n  secondary-fixed: '#d5e3ff'\n  secondary-fixed-dim: '#a7c8ff'\n  on-secondary-fixed: '#001c3b'\n  on-secondary-fixed-variant: '#004787'\n  tertiary-fixed: '#dde3ec'\n  tertiary-fixed-dim: '#c1c7d0'\n  on-tertiary-fixed: '#161c23'\n  on-tertiary-fixed-variant: '#41474f'\n  background: '#f8f9ff'\n  on-background: '#191c20'\n  surface-variant: '#e1e2e8'\ntypography:\n  display:\n    fontFamily: Space Grotesk\n    fontSize: 56px\n    fontWeight: '700'\n    lineHeight: 64px\n    letterSpacing: -0.03em\n  display-mobile:\n    fontFamily: Space Grotesk\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: 44px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Space Grotesk\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: 48px\n    letterSpacing: -0.02em\n  headline-lg-mobile:\n    fontFamily: Space Grotesk\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Space Grotesk\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Space Grotesk\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: 0em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 22px\n    letterSpacing: 0em\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 18px\n    letterSpacing: 0.01em\n  technical-mono:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.08em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system establishes an \"Industrial Tech\" aesthetic rooted in modern mechanical engineering, heavy automation, and precision tooling. The visual tone is unapologetic, robust, and mathematically ordered—evoking the tactile weight of CNC-milled aluminum, architectural blueprints, and high-visibility industrial safety equipment.\n\n### Audience & Mood\n- **Target Audience:** Mechanical engineers, industrial equipment procurement leads, field operators, and enterprise hardware stakeholders.\n- **Emotional Resonance:** High reliability, operational confidence, absolute dimensional precision, and uncompromising physical authority.\n\n### Stylistic Directives\n- **Structural Blueprint:** Surfaces are treated like technical schematics. Layouts make prominent use of rigid structural grid lines, crosshair registration marks, technical dimension overlays (e.g., `5000 × 2000 mm`), and monospace metadata readouts.\n- **No Decorative Excess:** Strictly prohibit glassmorphism, decorative drop shadows, ambient blur fills, non-functional rounded curves, and purple or pastel tones.\n- **Surface Contrast:** High-impact juxtaposition between deep structural graphite blocks and stark, functional light concrete workspaces.\n\n## Colors\n\nThe color architecture communicates functional clarity, machine state, and industrial visibility:\n\n- **Signal Orange (`#FF5B14`):** Primary action color. Reserved strictly for key conversion points, critical indicators, active operational states, metric accents, and hairline technical callouts. It demands immediate operator focus.\n- **Brand Blue (`#1F5FA8`):** Secondary structural color. Used for technical iconography, navigation links, interactive states, and technical identification tags.\n- **Steel (`#2B3138`):** Intermediate mechanical tone. Serves as structural panel surfaces, contrasting container boundaries, secondary dark surfaces, and high-density technical component backgrounds.\n- **Graphite (`#15181C`):** Heavy industrial neutral. Anchors the primary header, dark data ribbons, full-width equipment showcase panels, footer bands, and core typography.\n- **Light Concrete (`#F2F3F5`):** Canvas background. Emulates cleanroom assembly flooring and architectural composite surfaces.\n- **Pure White (`#FFFFFF`):** High-contrast component card base for legibility of dense schematics and data specifications.\n- **Border Grays (`#DCE0E5` light, `#2B3138` dark):** Precise 1px containment rules separating spatial modules.\n- **Muted Text (`#5E6670`):** Secondary specifications, dimension labels, serial codes, and supplementary documentation metadata.\n- **Gradients:** Strictly prohibited, with the sole exception of a linear dark graphite-to-transparent overlay (`rgba(21, 24, 28, 0.85)` to `transparent`) applied over photographic equipment imagery.\n\n## Typography\n\nThe typographic hierarchy balances tight, mechanical geometry with high-density data legibility:\n\n- **Display & Headings:** Set in an ultra-tight, geometric technical sans (Space Grotesk). Letter tracking is pulled tight to reinforce machine-tooled rigidity. Headings must always maintain a strong, commanding presence without ornate flourishes.\n- **Body & Controls:** Set in Inter for maximum clarity across high-density specifications, industrial bill-of-materials tables, and interactive configuration states.\n- **Technical Readouts & Metadata:** Set in JetBrains Mono. All technical parameters, serial numbers, dimension strings, coordinates, and system state labels must use this monospaced scale to reinforce computational and mechanical accuracy.\n- **Casing Rules:** Structural section tags, system states, and dimension metrics should be styled in uppercase monospace with deliberate letter spacing.\n\n## Layout & Spacing\n\nLayouts adhere to an uncompromising mathematical rhythm engineered around precision grids and modular panels:\n\n### Grid Architecture\n- **Desktop (1280px+):** Strict 12-column fluid grid within an ultra-wide structural boundary (max-width `1440px`). Gutters are fixed to `1.5rem` (`24px`), with outer margins of `3rem` (`48px`).\n- **Tablet (768px – 1279px):** 8-column grid with `1.5rem` gutters and `2rem` outer margins. Modules prioritize split 4-column pairing.\n- **Mobile (Below 768px):** 4-column grid with `1rem` (`16px`) gutters and margins. Side-by-side spec callouts fold linearly into stacked technical modules.\n\n### Blueprint Lines & Cadence\n- Modular containers align along continuous horizontal and vertical 1px structural gridlines.\n- Technical headers and structural sections may include hairline technical crosshairs (`+`) at boundary intersections.\n- Content density favors structured, packed layouts over expansive, ambiguous whitespace.\n\n## Elevation & Depth\n\nThis design system rejects synthetic lighting models, ambient blurs, and soft blurred drop shadows. Depth is achieved entirely through high-contrast structural layering and crisp borders:\n\n- **Ground Level (Base Canvas):** Light concrete (`#F2F3F5`) functions as the physical foundation plane.\n- **Machine Surfaces (Cards & Modules):** Pure white (`#FFFFFF`) or deep steel (`#2B3138`) panels set with a precise 1px solid border (`#DCE0E5` on light surfaces; `#2B3138` on dark graphite surfaces).\n- **Z-Index Layering (Overlays & Dialogs):** Modals, parameter inspectors, and precision dropdowns do not cast fuzzy shadows. Instead, they use a crisp 2px offset hard technical shadow (`box-shadow: 4px 4px 0px #15181C`) or a high-contrast 1px border reinforcement in steel (`#2B3138`).\n- **Surface Inversion:** Visual hierarchy transitions abruptly from light concrete panels into full-bleed graphite (`#15181C`) zones to signal high-priority instrumentation, telemetry, or structural machinery overviews.\n\n## Shapes\n\nForm follows mechanical utility:\n\n- **6px Standard Radius:** All primary UI components (buttons, input fields, structural cards, and data tiles) maintain a rigid 6px corner radius (`rounded-md`). This reflects machined parts that have undergone precise deburring without losing their defined geometric profile.\n- **Internal Micro-Elements:** Status tags, technical badges, and coordinate pills use a reduced 2px or 4px radius to preserve their monospaced tabular nature.\n- **Strict Geometric Uniformity:** No circular or fully pill-shaped buttons are permitted. Floating action buttons must be square with a 6px radius.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Solid Signal Orange (`#FF5B14`) fill, white uppercase bold text, 6px radius, zero shadow. Hover state shifts to dark orange (`#E04E0E`). Active state depresses 1px down and right.\n- **Secondary CTA:** Graphite (`#15181C`) background, white text, 6px radius. Hover shifts to Steel (`#2B3138`).\n- **Outline / Technical Action:** Transparent fill, 1px border in Steel (`#2B3138`) or Border Gray (`#DCE0E5`), text in Primary Neutral (`#15181C`). Hover triggers a 1px border shift to Brand Blue (`#1F5FA8`) with text matching.\n- **All Buttons:** Fixed height classes (`36px` compact, `44px` standard), horizontal padding `1.25rem`, uppercase label styling.\n\n### Input Fields & Controls\n- **Inputs:** White (`#FFFFFF`) background, 1px border in `#DCE0E5`, 6px radius. Placeholder text in `#5E6670`. Focus state replaces standard border with a razor-sharp 1px border in Signal Orange (`#FF5B14`) and an outer 1px solid offset outline.\n- **Checkboxes & Radios:** Sharp square and circular geometries with 1.5px solid Steel borders. Checked states fill with Signal Orange (`#FF5B14`) featuring crisp, geometric white checkmarks.\n\n### Cards & Data Panels\n- **Structure:** Crisp white (`#FFFFFF`) surfaces framed by 1px solid `#DCE0E5` borders.\n- **Header Accents:** Cards frequently feature a 2px top accent line in Signal Orange (`#FF5B14`) or Brand Blue (`#1F5FA8`) to denote functional operational tiers.\n- **Technical Badges / Chips:** Monospaced uppercase text, neutral concrete (`#F2F3F5`) fill, 1px solid `#DCE0E5` border, 4px corner radius. Status chips use functional dots: Signal Orange for active/processing, Brand Blue for telemetry, and Graphite for offline/standby.\n\n### Technical Data Tables & Lists\n- **Rows:** Alternating rows using pure white and subtle concrete tint. Separated by crisp 1px borders.\n- **Headers:** Monospaced label caps, uppercase, `#5E6670` color, seated on a steel or concrete base strip.\n- **Data Callouts:** Numeric metrics must use tabular lining figures for effortless vertical scanning.\n\n### Dimension & Coordinate Overlays\n- Technical dimension callouts (e.g., `5000 × 2000 mm`) must be wrapped in fine hairline guide ticks with a monospaced label centered on the boundary axis line.",
+            "font": "SPACE_GROTESK",
+            "headlineFont": "SPACE_GROTESK",
+            "headlineFontFamily": "Space Grotesk",
+            "labelFont": "JETBRAINS_MONO",
+            "labelFontFamily": "JetBrains Mono",
+            "namedColors": {
+              "background": "#f8f9ff",
+              "error": "#ba1a1a",
+              "error_container": "#ffdad6",
+              "inverse_on_surface": "#eff0f6",
+              "inverse_primary": "#ffb59c",
+              "inverse_surface": "#2e3135",
+              "on_background": "#191c20",
+              "on_error": "#ffffff",
+              "on_error_container": "#93000a",
+              "on_primary": "#ffffff",
+              "on_primary_container": "#531600",
+              "on_primary_fixed": "#390c00",
+              "on_primary_fixed_variant": "#822700",
+              "on_secondary": "#ffffff",
+              "on_secondary_container": "#00417e",
+              "on_secondary_fixed": "#001c3b",
+              "on_secondary_fixed_variant": "#004787",
+              "on_surface": "#191c20",
+              "on_surface_variant": "#5b4138",
+              "on_tertiary": "#ffffff",
+              "on_tertiary_container": "#262c33",
+              "on_tertiary_fixed": "#161c23",
+              "on_tertiary_fixed_variant": "#41474f",
+              "outline": "#8f7066",
+              "outline_variant": "#e4beb2",
+              "primary": "#aa3600",
+              "primary_container": "#ff5b14",
+              "primary_fixed": "#ffdbcf",
+              "primary_fixed_dim": "#ffb59c",
+              "secondary": "#1f5fa8",
+              "secondary_container": "#7ab0fe",
+              "secondary_fixed": "#d5e3ff",
+              "secondary_fixed_dim": "#a7c8ff",
+              "surface": "#f8f9ff",
+              "surface_bright": "#f8f9ff",
+              "surface_container": "#eceef3",
+              "surface_container_high": "#e6e8ee",
+              "surface_container_highest": "#e1e2e8",
+              "surface_container_low": "#f2f3f9",
+              "surface_container_lowest": "#ffffff",
+              "surface_dim": "#d8dadf",
+              "surface_tint": "#aa3600",
+              "surface_variant": "#e1e2e8",
+              "tertiary": "#595f67",
+              "tertiary_container": "#8d939b",
+              "tertiary_fixed": "#dde3ec",
+              "tertiary_fixed_dim": "#c1c7d0"
+            },
+            "overrideNeutralColor": "#15181c",
+            "overridePrimaryColor": "#ff5b14",
+            "overrideSecondaryColor": "#1f5fa8",
+            "overrideTertiaryColor": "#2b3138",
+            "roundness": "ROUND_FOUR",
+            "spacing": {
+              "gutter": "1.5rem",
+              "gutter-mobile": "1rem",
+              "margin": "3rem",
+              "margin-mobile": "1rem",
+              "space-lg": "1.5rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+              "space-xl": "2.5rem",
+              "space-xs": "0.25rem"
+            },
+            "spacingScale": 2,
+            "typography": {
+              "body-lg": {
+                "fontFamily": "Inter",
+                "fontSize": "18px",
+                "fontWeight": "400",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "28px"
+              },
+              "body-md": {
+                "fontFamily": "Inter",
+                "fontSize": "15px",
+                "fontWeight": "400",
+                "letterSpacing": "0em",
+                "lineHeight": "22px"
+              },
+              "body-sm": {
+                "fontFamily": "Inter",
+                "fontSize": "13px",
+                "fontWeight": "400",
+                "letterSpacing": "0.01em",
+                "lineHeight": "18px"
+              },
+              "display": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "56px",
+                "fontWeight": "700",
+                "letterSpacing": "-0.03em",
+                "lineHeight": "64px"
+              },
+              "display-mobile": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "36px",
+                "fontWeight": "700",
+                "letterSpacing": "-0.02em",
+                "lineHeight": "44px"
+              },
+              "headline-lg": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "40px",
+                "fontWeight": "700",
+                "letterSpacing": "-0.02em",
+                "lineHeight": "48px"
+              },
+              "headline-lg-mobile": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "28px",
+                "fontWeight": "700",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "36px"
+              },
+              "headline-md": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "28px",
+                "fontWeight": "600",
+                "letterSpacing": "-0.01em",
+                "lineHeight": "36px"
+              },
+              "headline-sm": {
+                "fontFamily": "Space Grotesk",
+                "fontSize": "20px",
+                "fontWeight": "600",
+                "letterSpacing": "0em",
+                "lineHeight": "28px"
+              },
+              "label-caps": {
+                "fontFamily": "JetBrains Mono",
+                "fontSize": "11px",
+                "fontWeight": "600",
+                "letterSpacing": "0.08em",
+                "lineHeight": "14px"
+              },
+              "technical-mono": {
+                "fontFamily": "JetBrains Mono",
+                "fontSize": "12px",
+                "fontWeight": "500",
+                "letterSpacing": "0.05em",
+                "lineHeight": "16px"
+              }
+            }
+          }
+        },
+        "name": "assets/06413f44b69a492790f453cc56f9623e",
+        "version": "1"
+      }
+    },
+    {
+      "design": {
+        "screens": [
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "768",
+            "id": "b2c5dcc047e8461295cd282af6dbcacf",
+            "name": "projects/8764376492803633442/screens/b2c5dcc047e8461295cd282af6dbcacf",
+            "prompt": "Modern premium dark-grey anthracite sliding gate installed with clean brick post pillars in front of a contemporary private residential house in Belarus, neat paved stone driveway, clean industrial precision gate construction, daylight realistic photography, no text, no watermark, no people",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/e18e15deaac84b11891de41ddfe15bad:download",
+              "name": "projects/8764376492803633442/files/e18e15deaac84b11891de41ddfe15bad"
+            },
+            "theme": {},
+            "title": "Modern premium dark-grey anthracite sliding gate installed with clean brick post pillars in front of a contemporary private residential house in Belarus, neat paved stone driveway, clean industrial precision gate construction, daylight realistic photography, no text, no watermark, no people",
+            "width": "1376"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "768",
+            "id": "bc82d4ad78154340be2b9f9710fb356a",
+            "name": "projects/8764376492803633442/screens/bc82d4ad78154340be2b9f9710fb356a",
+            "prompt": "Professional gate manufacturing metal workshop, metal framework welding with bright sparks, clean industrial workshop with steel tubes and gate frame assembly, professional realism, no text, no logos",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/d34eab7588c3469a8d776e5696093218:download",
+              "name": "projects/8764376492803633442/files/d34eab7588c3469a8d776e5696093218"
+            },
+            "theme": {},
+            "title": "Professional gate manufacturing metal workshop, metal framework welding with bright sparks, clean industrial workshop with steel tubes and gate frame assembly, professional realism, no text, no logos",
+            "width": "1376"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "b95516e84c9947548827cf12cd45ffb2",
+            "name": "projects/8764376492803633442/screens/b95516e84c9947548827cf12cd45ffb2",
+            "prompt": "Modern sliding gate made of vertical dark graphite metal picket евроштакетник installed on screw piles at a modern private home in Belarus, clean engineering finish, crisp realistic photography, no text, no watermark",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/9666c49f324c4942a0e9eee30923c6db:download",
+              "name": "projects/8764376492803633442/files/9666c49f324c4942a0e9eee30923c6db"
+            },
+            "theme": {},
+            "title": "Modern sliding gate made of vertical dark graphite metal picket евроштакетник installed on screw piles at a modern private home in Belarus, clean engineering finish, crisp realistic photography, no text, no watermark",
+            "width": "1200"
+          },
+          {
+            "generatedBy": "interactive_ui_controller",
+            "height": "896",
+            "id": "f75d10fa34524a9f8bbc68be99b67d95",
+            "name": "projects/8764376492803633442/screens/f75d10fa34524a9f8bbc68be99b67d95",
+            "prompt": "Close-up of a modern sliding gate electric motor drive with gear rack and metal pinion gear mounted on concrete foundation outdoors, professional clean hardware engineering photography",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "IMAGE",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/80f57aed73bb4095a036cb347b040b7a:download",
+              "name": "projects/8764376492803633442/files/80f57aed73bb4095a036cb347b040b7a"
+            },
+            "theme": {},
+            "title": "Close-up of a modern sliding gate electric motor drive with gear rack and metal pinion gear mounted on concrete foundation outdoors, professional clean hardware engineering photography",
+            "width": "1200"
+          },
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "Kinetic Forge",
+                "styleGuidelines": "## Brand & Style\n\nThis design system establishes an \"Industrial Tech\" aesthetic rooted in modern mechanical engineering, heavy automation, and precision tooling. The visual tone is unapologetic, robust, and mathematically ordered—evoking the tactile weight of CNC-milled aluminum, architectural blueprints, and high-visibility industrial safety equipment.\n\n### Audience & Mood\n- **Target Audience:** Mechanical engineers, industrial equipment procurement leads, field operators, and enterprise hardware stakeholders.\n- **Emotional Resonance:** High reliability, operational confidence, absolute dimensional precision, and uncompromising physical authority.\n\n### Stylistic Directives\n- **Structural Blueprint:** Surfaces are treated like technical schematics. Layouts make prominent use of rigid structural grid lines, crosshair registration marks, technical dimension overlays (e.g., `5000 × 2000 mm`), and monospace metadata readouts.\n- **No Decorative Excess:** Strictly prohibit glassmorphism, decorative drop shadows, ambient blur fills, non-functional rounded curves, and purple or pastel tones.\n- **Surface Contrast:** High-impact juxtaposition between deep structural graphite blocks and stark, functional light concrete workspaces.\n\n## Layout & Spacing\n\nLayouts adhere to an uncompromising mathematical rhythm engineered around precision grids and modular panels:\n\n### Grid Architecture\n- **Desktop (1280px+):** Strict 12-column fluid grid within an ultra-wide structural boundary (max-width `1440px`). Gutters are fixed to `1.5rem` (`24px`), with outer margins of `3rem` (`48px`).\n- **Tablet (768px – 1279px):** 8-column grid with `1.5rem` gutters and `2rem` outer margins. Modules prioritize split 4-column pairing.\n- **Mobile (Below 768px):** 4-column grid with `1rem` (`16px`) gutters and margins. Side-by-side spec callouts fold linearly into stacked technical modules.\n\n### Blueprint Lines & Cadence\n- Modular containers align along continuous horizontal and vertical 1px structural gridlines.\n- Technical headers and structural sections may include hairline technical crosshairs (`+`) at boundary intersections.\n- Content density favors structured, packed layouts over expansive, ambiguous whitespace.\n\n## Elevation & Depth\n\nThis design system rejects synthetic lighting models, ambient blurs, and soft blurred drop shadows. Depth is achieved entirely through high-contrast structural layering and crisp borders:\n\n- **Ground Level (Base Canvas):** Light concrete (`#F2F3F5`) functions as the physical foundation plane.\n- **Machine Surfaces (Cards & Modules):** Pure white (`#FFFFFF`) or deep steel (`#2B3138`) panels set with a precise 1px solid border (`#DCE0E5` on light surfaces; `#2B3138` on dark graphite surfaces).\n- **Z-Index Layering (Overlays & Dialogs):** Modals, parameter inspectors, and precision dropdowns do not cast fuzzy shadows. Instead, they use a crisp 2px offset hard technical shadow (`box-shadow: 4px 4px 0px #15181C`) or a high-contrast 1px border reinforcement in steel (`#2B3138`).\n- **Surface Inversion:** Visual hierarchy transitions abruptly from light concrete panels into full-bleed graphite (`#15181C`) zones to signal high-priority instrumentation, telemetry, or structural machinery overviews.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Solid Signal Orange (`#FF5B14`) fill, white uppercase bold text, 6px radius, zero shadow. Hover state shifts to dark orange (`#E04E0E`). Active state depresses 1px down and right.\n- **Secondary CTA:** Graphite (`#15181C`) background, white text, 6px radius. Hover shifts to Steel (`#2B3138`).\n- **Outline / Technical Action:** Transparent fill, 1px border in Steel (`#2B3138`) or Border Gray (`#DCE0E5`), text in Primary Neutral (`#15181C`). Hover triggers a 1px border shift to Brand Blue (`#1F5FA8`) with text matching.\n- **All Buttons:** Fixed height classes (`36px` compact, `44px` standard), horizontal padding `1.25rem`, uppercase label styling.\n\n### Input Fields & Controls\n- **Inputs:** White (`#FFFFFF`) background, 1px border in `#DCE0E5`, 6px radius. Placeholder text in `#5E6670`. Focus state replaces standard border with a razor-sharp 1px border in Signal Orange (`#FF5B14`) and an outer 1px solid offset outline.\n- **Checkboxes & Radios:** Sharp square and circular geometries with 1.5px solid Steel borders. Checked states fill with Signal Orange (`#FF5B14`) featuring crisp, geometric white checkmarks.\n\n### Cards & Data Panels\n- **Structure:** Crisp white (`#FFFFFF`) surfaces framed by 1px solid `#DCE0E5` borders.\n- **Header Accents:** Cards frequently feature a 2px top accent line in Signal Orange (`#FF5B14`) or Brand Blue (`#1F5FA8`) to denote functional operational tiers.\n- **Technical Badges / Chips:** Monospaced uppercase text, neutral concrete (`#F2F3F5`) fill, 1px solid `#DCE0E5` border, 4px corner radius. Status chips use functional dots: Signal Orange for active/processing, Brand Blue for telemetry, and Graphite for offline/standby.\n\n### Technical Data Tables & Lists\n- **Rows:** Alternating rows using pure white and subtle concrete tint. Separated by crisp 1px borders.\n- **Headers:** Monospaced label caps, uppercase, `#5E6670` color, seated on a steel or concrete base strip.\n- **Data Callouts:** Numeric metrics must use tabular lining figures for effortless vertical scanning.\n\n### Dimension & Coordinate Overlays\n- Technical dimension callouts (e.g., `5000 × 2000 mm`) must be wrapped in fine hairline guide ticks with a monospaced label centered on the boundary axis line.",
+                "theme": {
+                  "bodyFont": "INTER",
+                  "bodyFontFamily": "Inter",
+                  "colorMode": "LIGHT",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#ff5b14",
+                  "designMd": "---\nname: Kinetic Forge\ncolors:\n  surface: '#f8f9ff'\n  surface-dim: '#d8dadf'\n  surface-bright: '#f8f9ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f3f9'\n  surface-container: '#eceef3'\n  surface-container-high: '#e6e8ee'\n  surface-container-highest: '#e1e2e8'\n  on-surface: '#191c20'\n  on-surface-variant: '#5b4138'\n  inverse-surface: '#2e3135'\n  inverse-on-surface: '#eff0f6'\n  outline: '#8f7066'\n  outline-variant: '#e4beb2'\n  surface-tint: '#aa3600'\n  primary: '#aa3600'\n  on-primary: '#ffffff'\n  primary-container: '#ff5b14'\n  on-primary-container: '#531600'\n  inverse-primary: '#ffb59c'\n  secondary: '#1f5fa8'\n  on-secondary: '#ffffff'\n  secondary-container: '#7ab0fe'\n  on-secondary-container: '#00417e'\n  tertiary: '#595f67'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#8d939b'\n  on-tertiary-container: '#262c33'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdbcf'\n  primary-fixed-dim: '#ffb59c'\n  on-primary-fixed: '#390c00'\n  on-primary-fixed-variant: '#822700'\n  secondary-fixed: '#d5e3ff'\n  secondary-fixed-dim: '#a7c8ff'\n  on-secondary-fixed: '#001c3b'\n  on-secondary-fixed-variant: '#004787'\n  tertiary-fixed: '#dde3ec'\n  tertiary-fixed-dim: '#c1c7d0'\n  on-tertiary-fixed: '#161c23'\n  on-tertiary-fixed-variant: '#41474f'\n  background: '#f8f9ff'\n  on-background: '#191c20'\n  surface-variant: '#e1e2e8'\ntypography:\n  display:\n    fontFamily: Space Grotesk\n    fontSize: 56px\n    fontWeight: '700'\n    lineHeight: 64px\n    letterSpacing: -0.03em\n  display-mobile:\n    fontFamily: Space Grotesk\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: 44px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Space Grotesk\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: 48px\n    letterSpacing: -0.02em\n  headline-lg-mobile:\n    fontFamily: Space Grotesk\n    fontSize: 28px\n    fontWeight: '700'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Space Grotesk\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Space Grotesk\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: 0em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 22px\n    letterSpacing: 0em\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 18px\n    letterSpacing: 0.01em\n  technical-mono:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.08em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system establishes an \"Industrial Tech\" aesthetic rooted in modern mechanical engineering, heavy automation, and precision tooling. The visual tone is unapologetic, robust, and mathematically ordered—evoking the tactile weight of CNC-milled aluminum, architectural blueprints, and high-visibility industrial safety equipment.\n\n### Audience & Mood\n- **Target Audience:** Mechanical engineers, industrial equipment procurement leads, field operators, and enterprise hardware stakeholders.\n- **Emotional Resonance:** High reliability, operational confidence, absolute dimensional precision, and uncompromising physical authority.\n\n### Stylistic Directives\n- **Structural Blueprint:** Surfaces are treated like technical schematics. Layouts make prominent use of rigid structural grid lines, crosshair registration marks, technical dimension overlays (e.g., `5000 × 2000 mm`), and monospace metadata readouts.\n- **No Decorative Excess:** Strictly prohibit glassmorphism, decorative drop shadows, ambient blur fills, non-functional rounded curves, and purple or pastel tones.\n- **Surface Contrast:** High-impact juxtaposition between deep structural graphite blocks and stark, functional light concrete workspaces.\n\n## Colors\n\nThe color architecture communicates functional clarity, machine state, and industrial visibility:\n\n- **Signal Orange (`#FF5B14`):** Primary action color. Reserved strictly for key conversion points, critical indicators, active operational states, metric accents, and hairline technical callouts. It demands immediate operator focus.\n- **Brand Blue (`#1F5FA8`):** Secondary structural color. Used for technical iconography, navigation links, interactive states, and technical identification tags.\n- **Steel (`#2B3138`):** Intermediate mechanical tone. Serves as structural panel surfaces, contrasting container boundaries, secondary dark surfaces, and high-density technical component backgrounds.\n- **Graphite (`#15181C`):** Heavy industrial neutral. Anchors the primary header, dark data ribbons, full-width equipment showcase panels, footer bands, and core typography.\n- **Light Concrete (`#F2F3F5`):** Canvas background. Emulates cleanroom assembly flooring and architectural composite surfaces.\n- **Pure White (`#FFFFFF`):** High-contrast component card base for legibility of dense schematics and data specifications.\n- **Border Grays (`#DCE0E5` light, `#2B3138` dark):** Precise 1px containment rules separating spatial modules.\n- **Muted Text (`#5E6670`):** Secondary specifications, dimension labels, serial codes, and supplementary documentation metadata.\n- **Gradients:** Strictly prohibited, with the sole exception of a linear dark graphite-to-transparent overlay (`rgba(21, 24, 28, 0.85)` to `transparent`) applied over photographic equipment imagery.\n\n## Typography\n\nThe typographic hierarchy balances tight, mechanical geometry with high-density data legibility:\n\n- **Display & Headings:** Set in an ultra-tight, geometric technical sans (Space Grotesk). Letter tracking is pulled tight to reinforce machine-tooled rigidity. Headings must always maintain a strong, commanding presence without ornate flourishes.\n- **Body & Controls:** Set in Inter for maximum clarity across high-density specifications, industrial bill-of-materials tables, and interactive configuration states.\n- **Technical Readouts & Metadata:** Set in JetBrains Mono. All technical parameters, serial numbers, dimension strings, coordinates, and system state labels must use this monospaced scale to reinforce computational and mechanical accuracy.\n- **Casing Rules:** Structural section tags, system states, and dimension metrics should be styled in uppercase monospace with deliberate letter spacing.\n\n## Layout & Spacing\n\nLayouts adhere to an uncompromising mathematical rhythm engineered around precision grids and modular panels:\n\n### Grid Architecture\n- **Desktop (1280px+):** Strict 12-column fluid grid within an ultra-wide structural boundary (max-width `1440px`). Gutters are fixed to `1.5rem` (`24px`), with outer margins of `3rem` (`48px`).\n- **Tablet (768px – 1279px):** 8-column grid with `1.5rem` gutters and `2rem` outer margins. Modules prioritize split 4-column pairing.\n- **Mobile (Below 768px):** 4-column grid with `1rem` (`16px`) gutters and margins. Side-by-side spec callouts fold linearly into stacked technical modules.\n\n### Blueprint Lines & Cadence\n- Modular containers align along continuous horizontal and vertical 1px structural gridlines.\n- Technical headers and structural sections may include hairline technical crosshairs (`+`) at boundary intersections.\n- Content density favors structured, packed layouts over expansive, ambiguous whitespace.\n\n## Elevation & Depth\n\nThis design system rejects synthetic lighting models, ambient blurs, and soft blurred drop shadows. Depth is achieved entirely through high-contrast structural layering and crisp borders:\n\n- **Ground Level (Base Canvas):** Light concrete (`#F2F3F5`) functions as the physical foundation plane.\n- **Machine Surfaces (Cards & Modules):** Pure white (`#FFFFFF`) or deep steel (`#2B3138`) panels set with a precise 1px solid border (`#DCE0E5` on light surfaces; `#2B3138` on dark graphite surfaces).\n- **Z-Index Layering (Overlays & Dialogs):** Modals, parameter inspectors, and precision dropdowns do not cast fuzzy shadows. Instead, they use a crisp 2px offset hard technical shadow (`box-shadow: 4px 4px 0px #15181C`) or a high-contrast 1px border reinforcement in steel (`#2B3138`).\n- **Surface Inversion:** Visual hierarchy transitions abruptly from light concrete panels into full-bleed graphite (`#15181C`) zones to signal high-priority instrumentation, telemetry, or structural machinery overviews.\n\n## Shapes\n\nForm follows mechanical utility:\n\n- **6px Standard Radius:** All primary UI components (buttons, input fields, structural cards, and data tiles) maintain a rigid 6px corner radius (`rounded-md`). This reflects machined parts that have undergone precise deburring without losing their defined geometric profile.\n- **Internal Micro-Elements:** Status tags, technical badges, and coordinate pills use a reduced 2px or 4px radius to preserve their monospaced tabular nature.\n- **Strict Geometric Uniformity:** No circular or fully pill-shaped buttons are permitted. Floating action buttons must be square with a 6px radius.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Solid Signal Orange (`#FF5B14`) fill, white uppercase bold text, 6px radius, zero shadow. Hover state shifts to dark orange (`#E04E0E`). Active state depresses 1px down and right.\n- **Secondary CTA:** Graphite (`#15181C`) background, white text, 6px radius. Hover shifts to Steel (`#2B3138`).\n- **Outline / Technical Action:** Transparent fill, 1px border in Steel (`#2B3138`) or Border Gray (`#DCE0E5`), text in Primary Neutral (`#15181C`). Hover triggers a 1px border shift to Brand Blue (`#1F5FA8`) with text matching.\n- **All Buttons:** Fixed height classes (`36px` compact, `44px` standard), horizontal padding `1.25rem`, uppercase label styling.\n\n### Input Fields & Controls\n- **Inputs:** White (`#FFFFFF`) background, 1px border in `#DCE0E5`, 6px radius. Placeholder text in `#5E6670`. Focus state replaces standard border with a razor-sharp 1px border in Signal Orange (`#FF5B14`) and an outer 1px solid offset outline.\n- **Checkboxes & Radios:** Sharp square and circular geometries with 1.5px solid Steel borders. Checked states fill with Signal Orange (`#FF5B14`) featuring crisp, geometric white checkmarks.\n\n### Cards & Data Panels\n- **Structure:** Crisp white (`#FFFFFF`) surfaces framed by 1px solid `#DCE0E5` borders.\n- **Header Accents:** Cards frequently feature a 2px top accent line in Signal Orange (`#FF5B14`) or Brand Blue (`#1F5FA8`) to denote functional operational tiers.\n- **Technical Badges / Chips:** Monospaced uppercase text, neutral concrete (`#F2F3F5`) fill, 1px solid `#DCE0E5` border, 4px corner radius. Status chips use functional dots: Signal Orange for active/processing, Brand Blue for telemetry, and Graphite for offline/standby.\n\n### Technical Data Tables & Lists\n- **Rows:** Alternating rows using pure white and subtle concrete tint. Separated by crisp 1px borders.\n- **Headers:** Monospaced label caps, uppercase, `#5E6670` color, seated on a steel or concrete base strip.\n- **Data Callouts:** Numeric metrics must use tabular lining figures for effortless vertical scanning.\n\n### Dimension & Coordinate Overlays\n- Technical dimension callouts (e.g., `5000 × 2000 mm`) must be wrapped in fine hairline guide ticks with a monospaced label centered on the boundary axis line.",
+                  "font": "SPACE_GROTESK",
+                  "headlineFont": "SPACE_GROTESK",
+                  "headlineFontFamily": "Space Grotesk",
+                  "labelFont": "JETBRAINS_MONO",
+                  "labelFontFamily": "JetBrains Mono",
+                  "namedColors": {
+                    "background": "#f8f9ff",
+                    "error": "#ba1a1a",
+                    "error_container": "#ffdad6",
+                    "inverse_on_surface": "#eff0f6",
+                    "inverse_primary": "#ffb59c",
+                    "inverse_surface": "#2e3135",
+                    "on_background": "#191c20",
+                    "on_error": "#ffffff",
+                    "on_error_container": "#93000a",
+                    "on_primary": "#ffffff",
+                    "on_primary_container": "#531600",
+                    "on_primary_fixed": "#390c00",
+                    "on_primary_fixed_variant": "#822700",
+                    "on_secondary": "#ffffff",
+                    "on_secondary_container": "#00417e",
+                    "on_secondary_fixed": "#001c3b",
+                    "on_secondary_fixed_variant": "#004787",
+                    "on_surface": "#191c20",
+                    "on_surface_variant": "#5b4138",
+                    "on_tertiary": "#ffffff",
+                    "on_tertiary_container": "#262c33",
+                    "on_tertiary_fixed": "#161c23",
+                    "on_tertiary_fixed_variant": "#41474f",
+                    "outline": "#8f7066",
+                    "outline_variant": "#e4beb2",
+                    "primary": "#aa3600",
+                    "primary_container": "#ff5b14",
+                    "primary_fixed": "#ffdbcf",
+                    "primary_fixed_dim": "#ffb59c",
+                    "secondary": "#1f5fa8",
+                    "secondary_container": "#7ab0fe",
+                    "secondary_fixed": "#d5e3ff",
+                    "secondary_fixed_dim": "#a7c8ff",
+                    "surface": "#f8f9ff",
+                    "surface_bright": "#f8f9ff",
+                    "surface_container": "#eceef3",
+                    "surface_container_high": "#e6e8ee",
+                    "surface_container_highest": "#e1e2e8",
+                    "surface_container_low": "#f2f3f9",
+                    "surface_container_lowest": "#ffffff",
+                    "surface_dim": "#d8dadf",
+                    "surface_tint": "#aa3600",
+                    "surface_variant": "#e1e2e8",
+                    "tertiary": "#595f67",
+                    "tertiary_container": "#8d939b",
+                    "tertiary_fixed": "#dde3ec",
+                    "tertiary_fixed_dim": "#c1c7d0"
+                  },
+                  "overrideNeutralColor": "#15181c",
+                  "overridePrimaryColor": "#ff5b14",
+                  "overrideSecondaryColor": "#1f5fa8",
+                  "overrideTertiaryColor": "#2b3138",
+                  "roundness": "ROUND_FOUR",
+                  "spacing": {
+                    "gutter": "1.5rem",
+                    "gutter-mobile": "1rem",
+                    "margin": "3rem",
+                    "margin-mobile": "1rem",
+                    "space-lg": "1.5rem",
+                    "space-md": "1rem",
+                    "space-sm": "0.5rem",
+                    "space-xl": "2.5rem",
+                    "space-xs": "0.25rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-lg": {
+                      "fontFamily": "Inter",
+                      "fontSize": "18px",
+                      "fontWeight": "400",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "28px"
+                    },
+                    "body-md": {
+                      "fontFamily": "Inter",
+                      "fontSize": "15px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0em",
+                      "lineHeight": "22px"
+                    },
+                    "body-sm": {
+                      "fontFamily": "Inter",
+                      "fontSize": "13px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.01em",
+                      "lineHeight": "18px"
+                    },
+                    "display": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "56px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.03em",
+                      "lineHeight": "64px"
+                    },
+                    "display-mobile": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "36px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "44px"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "40px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "48px"
+                    },
+                    "headline-lg-mobile": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "28px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-md": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "28px",
+                      "fontWeight": "600",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "36px"
+                    },
+                    "headline-sm": {
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": "20px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0em",
+                      "lineHeight": "28px"
+                    },
+                    "label-caps": {
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": "11px",
+                      "fontWeight": "600",
+                      "letterSpacing": "0.08em",
+                      "lineHeight": "14px"
+                    },
+                    "technical-mono": {
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": "12px",
+                      "fontWeight": "500",
+                      "letterSpacing": "0.05em",
+                      "lineHeight": "16px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/06413f44b69a492790f453cc56f9623e",
+              "version": "1"
+            },
+            "deviceType": "DESKTOP",
+            "generatedBy": "figaro_agent",
+            "height": "13788",
+            "htmlCode": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/6830313cbd634d5e90379142cffa11b1:download",
+              "mimeType": "text/html",
+              "name": "projects/8764376492803633442/files/6830313cbd634d5e90379142cffa11b1"
+            },
+            "id": "c70452ad4af34bc08ea7d174fefe30df",
+            "name": "projects/8764376492803633442/screens/c70452ad4af34bc08ea7d174fefe30df",
+            "prompt": "Landing page redesign for \"Все ворота\" (vse-vorota.by) — manufacturer and installer of sliding gates (откатные ворота), fences, and automation in Minsk, Belarus.\n\nVisual style: \"Industrial tech\" — confident, engineering, precise.\nColors:\n- Graphite background: #15181C (header, hero, calculator section, application section dark panel, footer)\n- Steel: #2B3138\n- Light concrete background: #F2F3F5 (body background for light sections)\n- White cards: #FFFFFF\n- Signal orange accent: #FF5B14 (primary CTA buttons, key metrics/numbers, thin technical dimension lines)\n- Brand blue accent: #1F5FA8 (logo blue square icon, Viber/Telegram accents, subtle links)\n- Text primary: #15181C (in light sections), #FFFFFF (in dark sections)\n- Muted text: #5E6670 (in light sections), #9AA2AC (in dark sections)\n- Borders: thin 1px steel borders (border-[#2B3138] on dark, border-[#DCE0E5] on light), sharp 6px corner radius (rounded-[6px]), technical blueprint/grid background on dark panels. No purple, no emojis, no glassmorphism.\n\nImages to use:\n- Hero Gate: {{DATA:IMAGE:IMAGE_3}}\n- Project 1 (штакетник на сваях): {{DATA:IMAGE:IMAGE_4}}\n- Workshop / производство: {{DATA:IMAGE:IMAGE_5}}\n- Automation motor (Nice/Came): {{DATA:IMAGE:IMAGE_6}}\n\nSections to include with exact verbatim Russian content:\n\n1) Header (graphite #15181C, white text, 1px border-b border-[#2B3138]):\n- Logo: blue square mark (#1F5FA8) with white minimalist gate glyph + text \"ВСЕ ВОРОТА\" in Unbounded bold font + caption \"производство и установка ворот по всей РБ\".\n- Navigation: \"Каталог\", \"Автоматика\", \"Работы\", \"Цены\", \"О компании\", \"Контакты\".\n- Work time: \"Ежедневно 9:00–18:00\".\n- Phone: \"+375 (29) 820-79-12\" with direct tel link.\n- Round icon buttons for Viber and Telegram (clean SVG icons, styled).\n- Primary CTA button: \"Рассчитать стоимость\" (signal orange #FF5B14 with black/white text, rounded-[6px], font-semibold).\n\n2) Hero (graphite #15181C background with faint technical blueprint grid):\n- Split layout:\n  - Left column:\n    - Small pill/tag: \"Минск и вся Беларусь · собственное производство\" (with orange dot).\n    - H1 (Unbounded bold): \"Откатные ворота под ключ — производство и установка в Минске\".\n    - Subtitle: \"Заборы, калитки, навесы и автоматика Nice, Came, DoorHan. Бесплатный выезд замерщика, расчёт стоимости за 15 минут.\"\n    - Buttons row: Button \"Рассчитать стоимость ворот\" (bg-[#FF5B14] hover:bg-[#e04e0e] text-white px-7 py-3.5 rounded-[6px] font-bold) and Button \"Вызвать замерщика бесплатно\" (border border-white/60 hover:border-white text-white px-7 py-3.5 rounded-[6px] font-medium).\n    - Under buttons 4 facts row with orange icons (border-t border-[#2B3138] pt-6 mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4):\n      * \"Установка ворот за 1 день\"\n      * \"Гарантия на услуги до 3 лет\"\n      * \"Собственное производство\"\n      * \"Гарантия лучшей цены\"\n  - Right column:\n    - Large photo {{DATA:IMAGE:IMAGE_3}} with sharp 6px corners, thin border border-[#2B3138].\n    - Architectural overlay: thin orange dimension line (#FF5B14) along the bottom edge with technical blueprint tick marks and label \"5000 × 2000 мм\" in monospace technical badge.\n\n3) Section \"Что мы делаем\" (light concrete #F2F3F5 background, py-16):\n- Section title: \"Что мы делаем\", subtitle with engineering description.\n- 4 large cards in a row (bg-white rounded-[6px] border border-[#DCE0E5] p-6 hover:border-[#FF5B14] transition-all flex flex-col justify-between):\n  - Card 1: \"Откатные ворота\" — \"Из профнастила, евроштакетника, сэндвич-панелей, поликарбоната, дерева, кованые и решётчатые\". Link \"Подробнее →\".\n  - Card 2: \"Заборы\" — \"Из профнастила, металлического и деревянного штакетника, кирпича, поликарбоната, сетки-рабицы; на винтовых сваях и забивные\". Link \"Подробнее →\".\n  - Card 3: \"Автоматика\" — \"Приводы Nice, Came, DoorHan для откатных, распашных и секционных ворот\". Link \"Подробнее →\".\n  - Card 4: \"Навесы и калитки\" — \"Навесы из поликарбоната для автомобиля, калитки с электромеханическим замком\". Link \"Подробнее →\".\n- Chips / tags row below cards:\n  Chips: \"Распашные ворота\", \"Секционные ворота\", \"Фундаменты для ворот\", \"Ремонт откатных ворот\", \"Комплектующие\" (rounded-[6px] bg-white border border-[#DCE0E5] px-4 py-2 text-sm text-[#15181C]).\n\n4) Section \"Рассчитать стоимость ворот\" (key conversion block, graphite #15181C background with blueprint grid, py-16):\n- Left side:\n  - Heading: \"Рассчитайте стоимость ворот за 1 минуту\"\n  - Description: \"Ответьте на 4 вопроса — менеджер пришлёт расчёт в Viber или Telegram в течение 15 минут\"\n  - Technical badges: \"Точный расчёт сметы\", \"Без скрытых платежей\", \"Фиксация цены в договоре\".\n- Right side:\n  - White quiz card (bg-white text-[#15181C] rounded-[6px] p-8 shadow-xl max-w-xl):\n    - Header: \"Шаг 1 из 4\", thin orange progress bar (25% filled with #FF5B14, h-1.5 bg-gray-100 rounded-full).\n    - Question: \"Какие ворота нужны?\"\n    - 4 selectable tiles (2x2 grid, border border-[#DCE0E5] rounded-[6px] p-4 text-center cursor-pointer hover:border-[#FF5B14] active:border-[#FF5B14] bg-gray-50/50 hover:bg-orange-50/20):\n      1) Line icon + \"Откатные\" (selected state with orange border and checkmark)\n      2) Line icon + \"Распашные\"\n      3) Line icon + \"Секционные\"\n      4) Line icon + \"Пока не знаю\"\n    - Preview next steps below as muted pills: \"Ширина проёма\", \"Материал\", \"Автоматика\".\n    - Button: \"Далее\" (orange #FF5B14 w-full py-3.5 rounded-[6px] font-bold text-white uppercase tracking-wider text-sm mt-6).\n\n5) Section \"Материалы ворот\" (#F2F3F5 background, py-14):\n- Section heading: \"Материалы ворот\"\n- Horizontal strip of 7 square texture tiles with technical captions:\n  - \"Профнастил\"\n  - \"Дерево\"\n  - \"Решётчатые\"\n  - \"Поликарбонат\"\n  - \"Сэндвич-панели\"\n  - \"Кованые\"\n  - \"Комбинированные\"\n  Each tile styled with subtle industrial pattern/graphic, sharp 6px radius, border border-[#DCE0E5], white card styling.\n\n6) Section \"Выполненные работы\" (#F2F3F5 background, py-16):\n- Header: \"Выполненные работы\" + technical tag \"Реализованные объекты в Минске и области\"\n- 3 project cards in a 3-column grid (bg-white rounded-[6px] border border-[#DCE0E5] overflow-hidden):\n  - Card 1: Image {{DATA:IMAGE:IMAGE_4}}, Badge \"Проект #241\". Title: \"Откатные ворота 5000×2000 на винтовых сваях\". Spec list (thin lines between rows):\n    * Отделка: евроштакетник\n    * Калитка с врезным замком\n    * Забор из евроштакетника 36 м.п.\n    * Привод Nice ROX600, 2 пульта\n  - Card 2: Image {{DATA:IMAGE:IMAGE_3}}, Badge \"Проект #238\". Title: \"Откатные ворота 4500×2500 с кирпичными столбами\". Spec list:\n    * Отделка: профлист с двух сторон\n    * Привод Nice ROX1000\n    * Фотоэлементы и сигнальная лампа\n  - Card 3: Image {{DATA:IMAGE:IMAGE_5}}, Badge \"Проект #235\". Title: \"Откатные ворота 4000×1500, отделка деревом\". Spec list:\n    * Калитка 1000×1500 с электромеханическим замком CISA\n    * Привод Nice RD400, 2 пульта\n    * Фундамент бетонный\n- Bottom button: \"Смотреть все работы\" (outline border border-[#15181C] text-[#15181C] hover:bg-[#15181C] hover:text-white px-8 py-3 rounded-[6px] font-semibold mx-auto block mt-8).\n\n7) Section \"Почему выбирают нас\" (bg-white py-16 border-y border-[#DCE0E5]):\n- Section title: \"Почему выбирают нас\"\n- 4 columns with big orange accents (#FF5B14) and short text:\n  1) \"1 день\" (large font-extrabold text-[#FF5B14] text-4xl lg:text-5xl) — \"установка ворот\"\n  2) \"до 3 лет\" (large font-extrabold text-[#FF5B14] text-4xl lg:text-5xl) — \"гарантия на услуги\"\n  3) \"15 минут\" (large font-extrabold text-[#FF5B14] text-4xl lg:text-5xl) — \"расчёт стоимости\"\n  4) \"0 руб.\" (large font-extrabold text-[#FF5B14] text-4xl lg:text-5xl) — \"выезд замерщика и консультация\"\n- Under them one line: \"Работаем с частными и юридическими лицами: ворота для частных домов и промышленных предприятий Минска и области.\"\n\n8) Section \"Как мы работаем\" (#F2F3F5 background, py-16):\n- Section title: \"Как мы работаем\"\n- Horizontal 5-step timeline with thin connecting line and orange step numbers:\n  * \"01\" (orange #FF5B14 font-bold text-2xl) \"Заявка или звонок\"\n  * \"02\" (orange) \"Бесплатный замер\"\n  * \"03\" (orange) \"Расчёт и договор\"\n  * \"04\" (orange) \"Изготовление на собственном производстве\"\n  * \"05\" (orange) \"Монтаж за 1 день\"\n\n9) Section \"Автоматика от проверенных производителей\" (bg-white py-14 border-y border-[#DCE0E5]):\n- Section title: \"Автоматика от проверенных производителей\"\n- Text: \"Подберём привод под вес и размер ворот, установим и настроим пульты\"\n- Row of 3 brand name plates in plain bold text (no logos, clean engineering industrial plates): \"Nice\", \"Came\", \"DoorHan\"\n- Side image or engineering feature: {{DATA:IMAGE:IMAGE_6}} (close-up of drive motor with gear rack).\n\n10) Section \"Отзывы клиентов\" (#F2F3F5 background, py-16):\n- Section title: \"Отзывы клиентов\"\n- 3 text-only review cards with initial-letter avatars (no photos, no stars, no dates):\n  - Card 1: Avatar \"АР\". Name: \"Антон Романович\". Text: \"В сжатые сроки установили у меня на участке откатные ворота. Прошло довольно много времени, а ворота до сих пор как новые. Механизм работает отлично, не заедает.\"\n  - Card 2: Avatar \"ЕА\". Name: \"Елена Александровна\". Text: \"Размер ворот был не стандартный, но это не стало проблемой — в кратчайшие сроки изготовили ворота по моим размерам.\"\n  - Card 3: Avatar \"ВА\". Name: \"Виктор Андреевич\". Text: \"Дважды обращался по поводу установки откатных ворот, себе и тестю. Оба раза всё сделали быстро и качественно.\"\n\n11) Section \"Заявка на замер\" (py-16 bg-[#15181C] text-white):\n- Split block:\n  - Left graphite panel:\n    * Heading: \"Вызовите замерщика бесплатно\"\n    * Text: \"Заявка сразу приходит менеджеру в Viber и Telegram. Перезвоним, поможем с выбором и подберём решение.\"\n    * Phones: \"+375 (29) 820-79-12\" and \"+375 (29) 399-05-61\"\n    * Viber and Telegram buttons (with clean icons).\n  - Right white form card (bg-white text-[#15181C] p-8 rounded-[6px]):\n    * Field \"Имя\" (input, rounded-[6px], border border-[#DCE0E5])\n    * Field \"Телефон\" (input \"+375 (__) ___-__-__\")\n    * Field \"Адрес объекта\" (input \"г. Минск или район...\")\n    * Field \"Ширина проёма, м\" (input \"например, 4.5 м\")\n    * File upload field: \"Прикрепить фото участка\" (dashed border box with paperclip icon)\n    * Button: \"Отправить заявку\" (orange #FF5B14 hover:bg-[#e04e0e] text-white py-3.5 rounded-[6px] font-bold w-full uppercase tracking-wider text-sm)\n    * Small note: \"Нажимая кнопку, вы соглашаетесь на обработку персональных данных\"\n\n12) Section \"Контакты\" (#F2F3F5 background, py-16):\n- Left side: Map placeholder — clean minimal flat architectural map in grey/slate tones with one distinct orange pin marker (#FF5B14), no browser frame.\n- Right side:\n  * \"г. Минск, ул. Уманская 54, ТЦ Globo, 2 этаж\"\n  * \"Ежедневно с 9:00 до 18:00\"\n  * Phones: \"+375 (29) 820-79-12\", \"+375 (29) 399-05-61\"\n  * Email: \"info@vse-vorota.by\"\n  * Viber, Telegram quick action buttons.\n\n13) Footer (graphite #15181C, py-12 text-[#9AA2AC] border-t border-[#2B3138]):\n- Logo: \"ВСЕ ВОРОТА\" (Unbounded bold white)\n- Navigation columns:\n  - \"Ворота\": Откатные ворота, Распашные ворота, Секционные ворота\n  - \"Заборы\": Заборы из профнастила, Заборы на винтовых сваях\n  - \"Автоматика\": Автоматика Nice, Автоматика Came, Автоматика DoorHan\n  - \"Компания\": Портфолио, Цены, О компании, Контакты\n- Contact details: phone \"+375 (29) 820-79-12\", email \"info@vse-vorota.by\"\n- Bottom line: \"© 2026 Все ворота. Производство и установка ворот по всей РБ\"\n\nStrict adherence to constraints:\n- Only given facts: no made-up years of experience, no imaginary client counters, no prices other than specified.\n- Phones only: +375 (29) 820-79-12 and +375 (29) 399-05-61.\n- Currency \"руб.\" only.\n- Real realistic photography without mockups, watermarks or text in images.\n- Full length landing page down to footer.",
+            "screenMetadata": {
+              "agentType": "PRO_AGENT",
+              "status": "COMPLETE"
+            },
+            "screenType": "DESIGN",
+            "screenshot": {
+              "downloadUrl": "https://stitch.googleapis.com/v1/projects/8764376492803633442/files/f1b584b4670343c7b909d774cd36d334:download",
+              "name": "projects/8764376492803633442/files/f1b584b4670343c7b909d774cd36d334"
+            },
+            "theme": {
+              "bodyFont": "INTER",
+              "bodyFontFamily": "Inter",
+              "colorMode": "LIGHT",
+              "colorVariant": "FIDELITY",
+              "customColor": "#ff5b14",
+              "font": "SPACE_GROTESK",
+              "headlineFont": "SPACE_GROTESK",
+              "headlineFontFamily": "Space Grotesk",
+              "labelFont": "JETBRAINS_MONO",
+              "labelFontFamily": "JetBrains Mono",
+              "namedColors": {
+                "background": "#f8f9ff",
+                "error": "#ba1a1a",
+                "error_container": "#ffdad6",
+                "inverse_on_surface": "#eff0f6",
+                "inverse_primary": "#ffb59c",
+                "inverse_surface": "#2e3135",
+                "on_background": "#191c20",
+                "on_error": "#ffffff",
+                "on_error_container": "#93000a",
+                "on_primary": "#ffffff",
+                "on_primary_container": "#531600",
+                "on_primary_fixed": "#390c00",
+                "on_primary_fixed_variant": "#822700",
+                "on_secondary": "#ffffff",
+                "on_secondary_container": "#00417e",
+                "on_secondary_fixed": "#001c3b",
+                "on_secondary_fixed_variant": "#004787",
+                "on_surface": "#191c20",
+                "on_surface_variant": "#5b4138",
+                "on_tertiary": "#ffffff",
+                "on_tertiary_container": "#262c33",
+                "on_tertiary_fixed": "#161c23",
+                "on_tertiary_fixed_variant": "#41474f",
+                "outline": "#8f7066",
+                "outline_variant": "#e4beb2",
+                "primary": "#aa3600",
+                "primary_container": "#ff5b14",
+                "primary_fixed": "#ffdbcf",
+                "primary_fixed_dim": "#ffb59c",
+                "secondary": "#1f5fa8",
+                "secondary_container": "#7ab0fe",
+                "secondary_fixed": "#d5e3ff",
+                "secondary_fixed_dim": "#a7c8ff",
+                "surface": "#f8f9ff",
+                "surface_bright": "#f8f9ff",
+                "surface_container": "#eceef3",
+                "surface_container_high": "#e6e8ee",
+                "surface_container_highest": "#e1e2e8",
+                "surface_container_low": "#f2f3f9",
+                "surface_container_lowest": "#ffffff",
+                "surface_dim": "#d8dadf",
+                "surface_tint": "#aa3600",
+                "surface_variant": "#e1e2e8",
+                "tertiary": "#595f67",
+                "tertiary_container": "#8d939b",
+                "tertiary_fixed": "#dde3ec",
+                "tertiary_fixed_dim": "#c1c7d0"
+              },
+              "overrideNeutralColor": "#15181c",
+              "overridePrimaryColor": "#ff5b14",
+              "overrideSecondaryColor": "#1f5fa8",
+              "overrideTertiaryColor": "#2b3138",
+              "roundness": "ROUND_FOUR",
+              "spacing": {
+                "gutter": "1.5rem",
+                "gutter-mobile": "1rem",
+                "margin": "3rem",
+                "margin-mobile": "1rem",
+                "space-lg": "1.5rem",
+                "space-md": "1rem",
+                "space-sm": "0.5rem",
+                "space-xl": "2.5rem",
+                "space-xs": "0.25rem"
+              },
+              "spacingScale": 2,
+              "typography": {
+                "body-lg": {
+                  "fontFamily": "Inter",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "28px"
+                },
+                "body-md": {
+                  "fontFamily": "Inter",
+                  "fontSize": "15px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0em",
+                  "lineHeight": "22px"
+                },
+                "body-sm": {
+                  "fontFamily": "Inter",
+                  "fontSize": "13px",
+                  "fontWeight": "400",
+                  "letterSpacing": "0.01em",
+                  "lineHeight": "18px"
+                },
+                "display": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "56px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.03em",
+                  "lineHeight": "64px"
+                },
+                "display-mobile": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "36px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "44px"
+                },
+                "headline-lg": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "40px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.02em",
+                  "lineHeight": "48px"
+                },
+                "headline-lg-mobile": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "28px",
+                  "fontWeight": "700",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "36px"
+                },
+                "headline-md": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "28px",
+                  "fontWeight": "600",
+                  "letterSpacing": "-0.01em",
+                  "lineHeight": "36px"
+                },
+                "headline-sm": {
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": "20px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0em",
+                  "lineHeight": "28px"
+                },
+                "label-caps": {
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": "11px",
+                  "fontWeight": "600",
+                  "letterSpacing": "0.08em",
+                  "lineHeight": "14px"
+                },
+                "technical-mono": {
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": "12px",
+                  "fontWeight": "500",
+                  "letterSpacing": "0.05em",
+                  "lineHeight": "16px"
+                }
+              }
+            },
+            "title": "Все ворота — Производство и монтаж откатных ворот в Минске",
+            "width": "2560"
+          }
+        ],
+        "theme": {}
+      }
+    },
+    {
+      "text": "Спроектирован и создан высококонверсионный редизайн главной страницы компании **«Все ворота»** (`vse-vorota.by`) в строгом инженерном стиле «Industrial tech».\n\n### Ключевые решения и особенности дизайна:\n1. **Инженерный стиль и строгая геометрия**:\n   - Палитра: графит `#15181C` для шапки, темных секций и футера; сталь `#2B3138`; светлый бетон `#F2F3F5` для фона контентных блоков; чистые белые карточки `#FFFFFF`.\n   - Акцентный сигнальный оранжевый `#FF5B14` применён только для целевых действий (CTA-кнопки), ключевых цифр и размерных линий.\n   - Фирменный синий `#1F5FA8` аккуратно интегрирован в знак логотипа и мессенджеры.\n   - Четкие радиусы скругления 6px, тонкие миллиметровые разделители 1px, моноширинные технические бейджи с габаритами (напр. *«5000 × 2000 мм»*).\n\n2. **Все 13 запрошенных секций реализованы с дословным сохранением текста**:\n   - **Шапка**: синий знак + «ВСЕ ВОРОТА», меню, график «Ежедневно 9:00–18:00», телефон `+375 (29) 820-79-12`, кнопки Viber и Telegram, кнопка «Рассчитать стоимость».\n   - **Первый экран (Hero)**: сплит-композиция на графитовом фоне с чертежной сеткой; заголовок H1, подзаголовок, кнопки заявки и замера, плашка «Минск и вся Беларусь · собственное производство» и 4 факта с оранжевыми акцентами; справа реальная фотография ворот с размерной линией.\n   - **«Что мы делаем»**: 4 карточки направлений с описанием материалов и ссылками «Подробнее», нижний ряд тегов (распашные, секционные, фундаменты, ремонт, комплектующие).\n   - **Квиз-калькулятор**: контрастный блок на графитовом фоне, шаг 1 из 4 с оранжевым прогресс-баром, выбор типа ворот (откатные, распашные, секционные, пока не знаю), превью следующих шагов и кнопка «Далее».\n   - **«Материалы ворот»**: плитки текстур (профнастил, дерево, решётчатые, поликарбонат, сэндвич-панели, кованые, комбинированные).\n   - **«Выполненные работы»**: 3 проекта с фотографиями и подробными техническими спецификациями (евроштакетник, кирпичные столбы, отделка деревом, приводы Nice).\n   - **«Почему выбирают нас»**: крупные цифры (`1 день`, `до 3 лет`, `15 минут`, `0 руб.`) и строка о работе с физ. и юр. лицами.\n   - **«Как мы работаем»**: горизонтальная таймлайн-цепочка из 5 шагов с оранжевыми номерами.\n   - **«Автоматика»**: плашки брендов Nice, Came, DoorHan в строгом шрифтовом исполнении и техническое фото привода с зубчатой рейкой.\n   - **«Отзывы клиентов»**: текстовые карточки с инициалами авторов (Антон Романович, Елена Александровна, Виктор Андреевич).\n   - **«Заявка на замер»**: сплит-блок с вызовом замерщика, прямыми контактами и формой с полем загрузки фото участка.\n   - **«Контакты»**: минималистичная карта Минска с оранжевым маркером и точный адрес (г. Минск, ул. Уманская 54, ТЦ Globo, 2 этаж).\n   - **Футер**: 4 структурированные колонки ссылок, контактные данные и копирайт `© 2026 Все ворота`.\n\n3. **Соблюдение ограничений**:\n   - Использованы только реальные указанные телефоны: `+375 (29) 820-79-12` и `+375 (29) 399-05-61`.\n   - Валюта — исключительно `руб.`.\n   - Реалистичная фотосъемка без имитаций браузеров и водяных знаков."
+    },
+    {
+      "suggestion": "Подготовить мобильную версию страницы (390px)"
+    },
+    {
+      "suggestion": "Детализировать следующие шаги квиз-калькулятора стоимости"
+    },
+    {
+      "suggestion": "Добавить модальное окно для быстрого вызова замерщика"
+    }
+  ],
+  "projectId": "8764376492803633442",
+  "sessionId": "13732882616235289260"
+}

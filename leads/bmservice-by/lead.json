@@ -1,0 +1,61 @@
+{
+  "slug": "bmservice-by",
+  "company": "BMservice",
+  "industry": "СТО / ремонт авто",
+  "city": "Витебск",
+  "country": "BY",
+  "site": "https://bmservice.by",
+  "domain": "bmservice.by",
+  "contacts": {
+    "emails": [
+      "bmservice.bel@mail.ru"
+    ],
+    "phones": [
+      "+375 (29) 890-21-04"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/bmservice_vtb/"
+    ],
+    "vk": [],
+    "facebook": [],
+    "address": "Юр. адрес: г. Витебск, Бешенковичское шоссе, д. 22А, пом. 1"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 2,
+    "potential": 7,
+    "complexity": 3
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Современный сайт с мобильной панелью «Звонок/Запись»",
+  "activitySignals": [
+    "© 2026 в подвале сайта"
+  ],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 13,
+    "reasons": [
+      "Тяжёлая главная страница: 19.4 МБ",
+      "Медленная загрузка: 25.7 с",
+      "Ошибки JavaScript в консоли: 4"
+    ],
+    "complexity": "low",
+    "complexitySignals": [
+      "фильтры / подбор"
+    ],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

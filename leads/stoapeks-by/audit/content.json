@@ -1,0 +1,417 @@
+{
+  "url": "https://stoapeks.by/",
+  "title": "СТО \"Апекс\" Витебск — ремонт двигателя, подвески и электрики",
+  "description": "СТО \"Апекс\" в октябрьском районе Витебска — сочетание доступной цены, надежности и высочайшего сервиса. Выполним ремонт быстро и недорого",
+  "lang": "ru",
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "СТО «Апекс» в Витебске — диагностика и ремонт легковых авто и микроавтобусов"
+    },
+    {
+      "tag": "h3",
+      "text": "Контакты"
+    },
+    {
+      "tag": "h3",
+      "text": "Услуги"
+    },
+    {
+      "tag": "h3",
+      "text": "Максимум выгоды"
+    },
+    {
+      "tag": "h3",
+      "text": "Партнеры"
+    }
+  ],
+  "nav": [
+    {
+      "text": "О КОМПАНИИ",
+      "href": "https://stoapeks.by/company/"
+    },
+    {
+      "text": "О компании",
+      "href": "https://stoapeks.by/company/index.php"
+    },
+    {
+      "text": "Партнеры",
+      "href": "https://stoapeks.by/company/brands/"
+    },
+    {
+      "text": "Отзывы",
+      "href": "https://stoapeks.by/company/reviews/"
+    },
+    {
+      "text": "Вакансии",
+      "href": "https://stoapeks.by/company/vacancy/"
+    },
+    {
+      "text": "Вопрос-ответ",
+      "href": "https://stoapeks.by/info/faq/"
+    },
+    {
+      "text": "УСЛУГИ",
+      "href": "https://stoapeks.by/services/"
+    },
+    {
+      "text": "Ремонт рефрижераторов",
+      "href": "https://stoapeks.by/services/remont-refrizheratorov/"
+    },
+    {
+      "text": "Пескоструйная обработка авто",
+      "href": "https://stoapeks.by/services/peskostruynaya-obrabotka-avto/"
+    },
+    {
+      "text": "Антикоррозийная обработка",
+      "href": "https://stoapeks.by/services/antikorroziynaya-obrabotka/"
+    },
+    {
+      "text": "Промывка радиатора печки автомобиля",
+      "href": "https://stoapeks.by/services/promyvka-radiatora-pechki-avtomobilya/"
+    },
+    {
+      "text": "Установка Вебасто",
+      "href": "https://stoapeks.by/services/ustanovka-avtonomnogo-oteplitelya-vebasto/"
+    },
+    {
+      "text": "Ремонт Вебасто",
+      "href": "https://stoapeks.by/services/remont-vebasto-avtonomnogo-otopitelya/"
+    },
+    {
+      "text": "Ремонт электрических рулевых реек",
+      "href": "https://stoapeks.by/services/remont-elektricheskikh-rulevykh-reek/"
+    },
+    {
+      "text": "Замена сцепления",
+      "href": "https://stoapeks.by/services/zamena-stsepleniya/"
+    },
+    {
+      "text": "Кузовной ремонт авто",
+      "href": "https://stoapeks.by/services/kuzovnoy-remont-avto/"
+    },
+    {
+      "text": "Подготовка к техническому осмотру",
+      "href": "https://stoapeks.by/services/podgotovka-k-tekhnicheskomu-osmotru/"
+    },
+    {
+      "text": "Ремонт глушителя",
+      "href": "https://stoapeks.by/services/remont-glushitelya/"
+    },
+    {
+      "text": "Ремонт микроавтобусов",
+      "href": "https://stoapeks.by/services/remont-mikroavtobusov/"
+    },
+    {
+      "text": "Ремонт микроавтобусов Витебск",
+      "href": "https://stoapeks.by/services/remont-mikroavtobusov/remont-mikroavtobusov-vitebsk/"
+    },
+    {
+      "text": "Ремонт мостов и редукторов",
+      "href": "https://stoapeks.by/services/remont-mostov-i-reduktorov/"
+    },
+    {
+      "text": "Ремонт отопителя салона",
+      "href": "https://stoapeks.by/services/remont-otopitelya-salona/"
+    },
+    {
+      "text": "Ремонт системы отопления",
+      "href": "https://stoapeks.by/services/remont-otopitelya-salona/remont-sistemy-otopleniya/"
+    },
+    {
+      "text": "Стапельные работы",
+      "href": "https://stoapeks.by/services/stapelnye-raboty/"
+    },
+    {
+      "text": "Сварочные работы",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/"
+    },
+    {
+      "text": "Восстановление лонжеронов авто",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/vosstanovlenie-lonzheronov-avto/"
+    },
+    {
+      "text": "Замена арок автомобилей",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/zamena-arok-avtomobiley/"
+    },
+    {
+      "text": "Замена порогов автомобиля",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/zamena-porogov-avtomobilya/"
+    },
+    {
+      "text": "Ремонт днища автомобиля",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/remont-dnishcha-avtomobilya/"
+    },
+    {
+      "text": "Сварка глушителей",
+      "href": "https://stoapeks.by/services/svarochnye-raboty/svarka-remont-i-zamena-glushiteley/"
+    },
+    {
+      "text": "Автоэлектрика",
+      "href": "https://stoapeks.by/services/avtoelektrika/"
+    },
+    {
+      "text": "Диагностика аккумулятора",
+      "href": "https://stoapeks.by/services/avtoelektrika/diagnostika-akkumulyatora/"
+    },
+    {
+      "text": "Замена датчиков",
+      "href": "https://stoapeks.by/services/avtoelektrika/zamena-datchikov/"
+    },
+    {
+      "text": "Замена и чистка ЕГР",
+      "href": "https://stoapeks.by/services/avtoelektrika/zamena-i-chistka-egr/"
+    },
+    {
+      "text": "Замена свечей зажигания",
+      "href": "https://stoapeks.by/services/avtoelektrika/zamena-svechey-zazhiganiya/"
+    },
+    {
+      "text": "Ремонт электропроводки и электрооборудования",
+      "href": "https://stoapeks.by/services/avtoelektrika/remont-elektroprovodki-i-elektrooborudovaniya/"
+    },
+    {
+      "text": "Снятие и установка генератора",
+      "href": "https://stoapeks.by/services/avtoelektrika/remont-snyatie-i-ustanovka-generatora/"
+    },
+    {
+      "text": "Установка автосигнализации",
+      "href": "https://stoapeks.by/services/avtoelektrika/ustanovka-avtosignalizatsii/"
+    },
+    {
+      "text": "Установка акустической системы",
+      "href": "https://stoapeks.by/services/avtoelektrika/ustanovka-akusticheskoy-sistemy/"
+    },
+    {
+      "text": "Установка сигнализации с автозапуском",
+      "href": "https://stoapeks.by/services/avtoelektrika/ustanovka-signalizatsii-s-avtozapuskom/"
+    }
+  ],
+  "text": "О КОМПАНИИ\nУСЛУГИ\nЦЕНЫ\nАКЦИИ\nг. Витебск\n+375445114488\nБесплатная диагностика\n-99% Заполните форму и пройдите диагностику за 1 BYN\nСТО «Апекс» в Витебске — диагностика и ремонт легковых авто и микроавтобусов\nВаше имя *\nТелефон *\nКомментарий\nЯ согласен на обработку персональных данных\nДоступность\nБюджетная и демократичная цена.\nДобросовестность\nМы не «находим» неисправности, где их нет.\nОперативность\nВыполнение в срок – наше кредо.\nПрофессионализм\nТолько лучшие специалисты с большим опытом работы.\nКонтакты\nКонтакты\nг. Витебск, ул. Фрунзе 81, к20, помещение 5\nРежим работы\nПн - Сб: 8.00 - 19.00\n\nТелефон\n+37544 511-44-88 A1\n+37529 500-10-20 МТС\nEmail\nstoapeks@gmail.com\nНаписать сообщение\nзагрузка карты...\nВыполним ремонт быстро и недорого\nУслуги\nВсе услуги \nРемонт микроавтобусов\nРемонт микроавтобусов Витебск\nПодвеска\nРемонт ходовой части автомобиля в Витебске\nРемонт двигателей\nЗамена радиатора\nРемонт двигателей\nКомпьютерная диагностика двигателя\nЗагрузить еще\nАкции\nМаксимум выгоды\nВсе акции \n– 99% на полную диагностику авто: компьютерная + на подъёмнике\n–99%\n-10% на все услуги в СТО \"Апекс\" для водителей такси\n10%\n-10% на ремонт в СТО \"Апекс\" при покупке запчастей\n10%\nПартнеры\nВсе партнеры \nКомпания\nО компании\nПартнеры\nОтзывы\nВакансии\nВопрос-ответ\nУслуги\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nЦены\nДиагностика\nЗамена масла и фильтров\nРемонт двигателей\nАвтоэлектрика\nРемонт подвески и замена рычагов\nРемонт тормозов\nРемонт рулевого управления\nАнтикор эконом\nАнтикор премиум\nРемонт отопителя салона\nУстановка Webasto\nРемонт Webasto\nРемонт электрических рулевых реек\nАкции\nНовости\nГалерея\nКонтакты\n+375445114488\nstoapeks@gmail.com\nг. Витебск, ул. Фрунзе 81, к 20, помещение 5\n© 2026 ООО Дело в Деталях. Сто Апекс\nРазработка сайта —  Медиа Лайн\nSEO продвижение сайта",
+  "pages": [
+    {
+      "kind": "contacts",
+      "url": "https://stoapeks.by/contacts/vitebsk/",
+      "title": "Контакты СТО «Апекс» в Витебске. ул. Фрунзе 81, к20, помещение 5",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "г. Витебск, ул. Фрунзе 81, к20, помещение 5"
+        }
+      ],
+      "text": "О КОМПАНИИ\nУСЛУГИ\nЦЕНЫ\nАКЦИИ\nг. Витебск\n+375445114488\nБесплатная диагностика\nг. Витебск, ул. Фрунзе 81, к20, помещение 5\nГлавная—Контакты—г. Витебск, ул. Фрунзе 81, к20, помещение 5\nАдрес\nг. Витебск, ул. Фрунзе 81, к20, помещение 5\nРежим работы\nПн - Сб: 8.00 - 19.00\n\nТелефон\n+37544 511-44-88 A1\n+37529 500-10-20 МТС\nE-mail\nstoapeks@gmail.com\nСвяжитесь с нами\n© ЯндексУсловия использования\nСхема\nСхема\nСпутник\nГибрид\nКомпания\nО компании\nПартнеры\nОтзывы\nВакансии\nВопрос-ответ\nУслуги\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nЦены\nДиагностика\nЗамена масла и фильтров\nРемонт двигателей\nАвтоэлектрика\nРемонт подвески и замена рычагов\nРемонт тормозов\nРемонт рулевого управления\nАнтикор эконом\nАнтикор премиум\nРемонт отопителя салона\nУстановка Webasto\nРемонт Webasto\nРемонт электрических рулевых реек\nАкции\nНовости\nГалерея\nКонтакты\n+375445114488\nstoapeks@gmail.com\nг. Витебск, ул. Фрунзе 81, к 20, помещение 5\n© 2026 ООО Дело в Деталях. Сто Апекс\nРазработка сайта —  Медиа Лайн\nSEO продвижение сайта"
+    },
+    {
+      "kind": "services",
+      "url": "https://stoapeks.by/services/",
+      "title": "Услуги СТО \"Апеск\" в Витебске. От диагностики до ремонта и замены автоэлектрики.",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Услуги"
+        }
+      ],
+      "text": "О КОМПАНИИ\nУСЛУГИ\nЦЕНЫ\nАКЦИИ\nг. Витебск\n+375445114488\nБесплатная диагностика\nУслуги\nГлавная—Услуги\n\n\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nКузовной ремонт авто\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nКузовной ремонт авто\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nКомпания\nО компании\nПартнеры\nОтзывы\nВакансии\nВопрос-ответ\nУслуги\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nЦены\nДиагностика\nЗамена масла и фильтров\nРемонт двигателей\nАвтоэлектрика\nРемонт подвески и замена рычагов\nРемонт тормозов\nРемонт рулевого управления\nАнтикор эконом\nАнтикор премиум\nРемонт отопителя салона\nУстановка Webasto\nРемонт Webasto\nРемонт электрических рулевых реек\nАкции\nНовости\nГалерея\nКонтакты\n+375445114488\nstoapeks@gmail.com\nг. Витебск, ул. Фрунзе 81, к 20, помещение 5\n© 2026 ООО Дело в Деталях. Сто Апекс\nРазработка сайта —  Медиа Лайн\nSEO продвижение сайта"
+    },
+    {
+      "kind": "about",
+      "url": "https://stoapeks.by/company/",
+      "title": "О компании \"Апекс\"",
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "О компании \"Апекс\""
+        },
+        {
+          "tag": "h3",
+          "text": "Сто апекс молодая динамично развивающаяся компания. Мы используем самое современное оборудование."
+        }
+      ],
+      "text": "О КОМПАНИИ\nУСЛУГИ\nЦЕНЫ\nАКЦИИ\nг. Витебск\n+375445114488\nБесплатная диагностика\nО компании \"Апекс\"\nГлавная—О компании\n\nСТО Апекс-  сочетание доступной цены, надежности и высочайшего сервиса.\n\nСто апекс молодая динамично развивающаяся компания. Мы используем самое современное оборудование.\nКомпьютерная диагностика, замена расходников, ремонт автоэлектрики, двигателя, подвески, подготовка авто к ТО – на нашем СТО производится ремонт и грузовых, и легковых  авто любых марок.\nДобросовестность. Мы не «находим» неисправности, где их нет.\nОперативность. Выполнение в срок – наше кредо. С СТО «Апекс», будьте уверены, что устранение неисправности будет произведено безотлагательно, ведь теперь  приобрести оригинальные автозапчасти в Витебске для вашего авто можно  у нас.\nДоступность. Стоимость на ремонт на станции техобслуживания «Апекс» бюджетна и демократична, а крупные партии поставок деталей позволяют нам формировать на запчасти минимальные цены.\nПрофессионализм. В штате нет людей «с улицы», поэтому гарантируем, что ремонт авто на СТО «Апекс»  - безопасность и надежность автомобиля.\nПредварительная онлайн запись на СТО. \nО компании\nПартнеры\nОтзывы\nВакансии\nВопрос-ответ\nКомпания\nО компании\nПартнеры\nОтзывы\nВакансии\nВопрос-ответ\nУслуги\nРемонт рефрижераторов\nПескоструйная обработка авто\nАнтикоррозийная обработка\nПромывка радиатора печки автомобиля\nУстановка Вебасто\nРемонт Вебасто\nРемонт электрических рулевых реек\nЗамена сцепления\nПодготовка к техническому осмотру\nРемонт глушителя\nРемонт микроавтобусов\nРемонт мостов и редукторов\nРемонт отопителя салона\nСтапельные работы\nСварочные работы\nАвтоэлектрика\nЗамена масла и фильтров\nПодвеска\nРемонт двигателей\nЦены\nДиагностика\nЗамена масла и фильтров\nРемонт двигателей\nАвтоэлектрика\nРемонт подвески и замена рычагов\nРемонт тормозов\nРемонт рулевого управления\nАнтикор эконом\nАнтикор премиум\nРемонт отопителя салона\nУстановка Webasto\nРемонт Webasto\nРемонт электрических рулевых реек\nАкции\nНовости\nГалерея\nКонтакты\n+375445114488\nstoapeks@gmail.com\nг. Витебск, ул. Фрунзе 81, к 20, помещение 5\n© 2026 ООО Дело в Деталях. Сто Апекс\nРазработка сайта —  Медиа Лайн\nSEO продвижение сайта"
+    }
+  ],
+  "logo": "https://stoapeks.by/upload/CAllcorp3/15a/djgs45r18a2kmuojpte302lbodqwz6nv.png",
+  "ogImage": "https://stoapeks.by/upload/CAllcorp3/15a/djgs45r18a2kmuojpte302lbodqwz6nv.png",
+  "favicon": "https://stoapeks.by/favicon.ico",
+  "images": [
+    {
+      "src": "https://stoapeks.by/images/151.jpg",
+      "alt": "company",
+      "w": 959,
+      "h": 694,
+      "hint": "img-responsive rounded-4 lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/CAllcorp3/6e8/phvjayay8dt4ixiwvw2nikfyc2ohyva0.jpg",
+      "w": 720,
+      "h": 834,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/9b0/600_600_1/t7bvbk1ha30znfyia74337kcgldnubwr.jpg",
+      "w": 664,
+      "h": 442,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/5b5/gyafwmd6ais4epr1w7pd038t30icq7x3.jpg",
+      "w": 498,
+      "h": 498,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/eda/i4dbm8941t1g9pvwyeg1pcr5w3fsp72k.jpg",
+      "w": 498,
+      "h": 498,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/medialibrary/564/wxv73g5a1et33fiq0ngazlgml1bv8goa.jpg",
+      "alt": "СТО Витебск АПЕКС полная диагностика за 1 руб",
+      "w": 1024,
+      "h": 182,
+      "hint": "desk_diagnost lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/d5d/krrn1cuz2r6mp25umixm0j78gam833by.png",
+      "w": 320,
+      "h": 403,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/e85/hn8owblk0wf08vg1slq328v082u1qbv4.jpg",
+      "w": 320,
+      "h": 403,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/988/wl59gg15ntmbumg612wrkx4b3obtu07f.jpg",
+      "w": 320,
+      "h": 403,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/iblock/4f0/2ghav1xif6nsn6egdl2cbtuy3skl2i0t.jpg",
+      "w": 320,
+      "h": 403,
+      "bg": true
+    },
+    {
+      "src": "https://stoapeks.by/upload/CAllcorp3/15a/djgs45r18a2kmuojpte302lbodqwz6nv.png",
+      "alt": "Корпоративный сайт",
+      "w": 130,
+      "h": 50,
+      "hint": "menu-light-icon-fill banner-light-icon-fill"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/79c/90_60_0/9wqifcg0hbfmdup1isqbc4t0busfw2sp.jpg",
+      "alt": "Антикоррозийная обработка",
+      "w": 90,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/c1f/90_60_0/zz07ovz3gcyxls2fw2el32eu2lkd12zj.jpg",
+      "alt": "Ремонт мостов и редукторов",
+      "w": 90,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/bf4/90_60_0/69azhbey2owwuab5hzx9u8e7b7zr4nz3.jpg",
+      "alt": "Ремонт отопителя салона",
+      "w": 90,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/5b5/90_60_0/gyafwmd6ais4epr1w7pd038t30icq7x3.jpg",
+      "alt": "Ремонт рефрижераторов",
+      "w": 86,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/cb0/90_60_0/kdskkq5dmqlll49hn1fczfghxixepguo.jpg",
+      "alt": "Замена сцепления",
+      "w": 86,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/7f1/90_60_0/x5clx1vq00g56kmhi9d36u85u9rgl27p.jpg",
+      "alt": "Стапельные работы",
+      "w": 83,
+      "h": 60,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/c41/90_60_0/207230ae70wfm63p6yi81rb0mg6bpd4f.jpg",
+      "alt": "Промывка радиатора печки автомобиля",
+      "w": 90,
+      "h": 51,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/eda/90_60_0/i4dbm8941t1g9pvwyeg1pcr5w3fsp72k.jpg",
+      "alt": "Пескоструйная обработка авто",
+      "w": 90,
+      "h": 49,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/d8a/90_60_0/f959i8go3j5kcxs0htx3bte4vfa41fda.jpg",
+      "alt": "Установка Вебасто",
+      "w": 90,
+      "h": 43,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/images/ml.png",
+      "alt": "",
+      "w": 82,
+      "h": 44,
+      "hint": "ls-is-cached lazyloaded users_copyright no-margin-left-right font_xs"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/6eb/90_60_0/ridx8j00dyywsct44jh7au88cgiktpkx.png",
+      "alt": "Кузовной ремонт авто",
+      "w": 90,
+      "h": 37,
+      "hint": "lazyloaded"
+    },
+    {
+      "src": "https://stoapeks.by/upload/resize_cache/iblock/cb3/90_60_0/sa8xg7oculb1wusm808r4p2v1vni5hj6.png",
+      "alt": "Ремонт электрических рулевых реек",
+      "w": 90,
+      "h": 35,
+      "hint": "lazyloaded"
+    }
+  ],
+  "contacts": {
+    "emails": [
+      "stoapeks@gmail.com"
+    ],
+    "phones": [
+      "+375 (44) 511-44-88",
+      "+375 (29) 500-10-20",
+      "+375 (44) 595-51-55"
+    ],
+    "telegram": [
+      "https://t.me/Stoapeks"
+    ],
+    "viber": [
+      "viber://add?number=375445114488",
+      "viber://chat?number=375445114488"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "https://www.instagram.com/stoapeks.by"
+    ],
+    "vk": [
+      "https://vk.com/stoapeks"
+    ],
+    "facebook": [],
+    "address": "г. Витебск, ул. Фрунзе 81, к20, помещение 5"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "vorota-mogilev-com",
+  "company": "Ворота Могилёв",
+  "industry": "Ворота и заборы",
+  "city": "Могилёв",
+  "country": "BY",
+  "site": "https://vorota-mogilev.com",
+  "domain": "vorota-mogilev.com",
+  "contacts": {
+    "emails": [],
+    "phones": [
+      "+375 (29) 192-17-91"
+    ],
+    "telegram": [],
+    "viber": [],
+    "whatsapp": [],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": ""
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": null,
+    "potential": 2,
+    "complexity": null
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [
+    "Домен не резолвится; в индексе поисковиков страницы 1.5–2-летней давности"
+  ],
+  "rejectReason": "Сайт не работает (домен не резолвится), живой бизнес и владелец не подтверждены",
+  "activitySignals": [],
+  "design": null,
+  "source": "поиск",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 0,
+    "reasons": [
+      "Сайт не открывается: page.goto: net::ERR_NAME_NOT_RESOLVED at http://vorota-mogilev.com/"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": false
+  },
+  "notes": "17.11.2026: ERR_NAME_NOT_RESOLVED и в Playwright, и через WebFetch/nslookup. По выдаче — сайт-лендинг «изготовление и установка ворот» без юр. лица и адреса (похоже на лидогенерационный/дилерский сайт Alutech/DoorHan). Телефон из индекса: +375 29 192-17-91."
+}

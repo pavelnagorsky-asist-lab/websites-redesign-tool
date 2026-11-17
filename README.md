@@ -1,31 +1,40 @@
 # websites-redesign
 
-Рабочее пространство для Claude Code: поиск компаний с устаревшими сайтами → аудит → концепт редизайна в Google Stitch → общий список (`list.csv`).
+Рабочее пространство для AI-агента (Claude Code, Codex, Cursor): поиск компаний с устаревшими сайтами → аудит → концепт редизайна в Google Stitch → общий список (`list.csv`).
 
-Работа идёт в диалоге с Claude, например:
+Работа идёт в диалоге с агентом, например:
 
 - «найди 5 мебельных производств в Гомеле»
 - «оцени сайт example.by»
 - «сделай дизайн для всех qualified»
 - «покажи общий список»
 
-Правила, процесс и инструменты описаны в [CLAUDE.md](CLAUDE.md) и `docs/`.
+Правила, процесс и инструменты — в [AGENTS.md](AGENTS.md) и `docs/` (пошаговые процессы — `docs/workflows/`).
 
 ## Первичная настройка (один раз)
 
 ```bash
 npm install
 npx playwright install chromium
+cp .env.example .env   # и вписать STITCH_API_KEY
 ```
 
-### Подключение Stitch
+### Ключ Stitch
 
 1. https://stitch.withgoogle.com → Settings → API Keys → **Create API Key**.
-2. Сохранить ключ в переменную окружения пользователя (Windows):
-   ```
-   setx STITCH_API_KEY "ваш-ключ"
-   ```
-3. Перезапустить терминал и Claude Code. Сервер `stitch` подключится из `.mcp.json` (проверить: `/mcp`).
+2. Вписать в `.env`: `STITCH_API_KEY=ваш-ключ` (или `setx STITCH_API_KEY "ваш-ключ"` в Windows).
+
+Всё общение со Stitch идёт через `scripts/stitch.ts` — MCP-сервер агенту не нужен.
+
+## Какой агент
+
+| Инструмент | Что читает |
+|---|---|
+| **Codex** | `AGENTS.md` автоматически |
+| **Cursor** | `.cursor/rules/workspace.mdc` (alwaysApply) → `AGENTS.md`; режим Agent |
+| **Claude Code** | `CLAUDE.md` (импортирует `AGENTS.md`) + skills `.claude/skills/` и субагенты `.claude/agents/`; MCP `stitch` из `.mcp.json` — необязательно, только для просмотра |
+
+Агенту нужны: доступ к терминалу (`npx tsx …`, Playwright), веб-поиск (для поиска лидов) и возможность смотреть картинки (скриншоты сайтов и макетов). Долгие команды Stitch (2–6 мин) — если агент обрывает команды по таймауту, запускать их в фоне с логом.
 
 ## Общий список
 
@@ -34,4 +43,4 @@ npx playwright install chromium
 
 ## После создания дизайна
 
-Ничего делать не нужно: Claude сам делает проект Stitch публичным (`visibility: PUBLIC`).
+Ничего делать не нужно: проект Stitch сразу публичный, в нём только desktop + mobile (2 генерации на лид, правки агент вносит без генераций), ссылка проверена — можно отправлять клиенту.

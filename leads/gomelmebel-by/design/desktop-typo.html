@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GomelMebel — Мебель под заказ в Гомеле с 2005 года</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Unbounded:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#1a1c1b",
+            "on-surface-variant": "#5c403e",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#f3f5fa",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#ffb3ae",
+            "primary": "#b2001d",
+            "outline": "#906f6d",
+            "on-tertiary-fixed-variant": "#44474c",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f4f4f2",
+            "surface-container-high": "#e8e8e6",
+            "tertiary-fixed-dim": "#c4c6cc",
+            "on-secondary-fixed": "#1a1b1e",
+            "surface-dim": "#dadad8",
+            "on-primary-fixed-variant": "#930016",
+            "on-secondary-container": "#646468",
+            "primary-fixed-dim": "#ffb3ae",
+            "error": "#ba1a1a",
+            "tertiary-container": "#6d7075",
+            "surface": "#f9f9f7",
+            "primary-fixed": "#ffdad7",
+            "secondary-container": "#e3e2e6",
+            "secondary-fixed": "#e3e2e6",
+            "outline-variant": "#e5bdba",
+            "surface-variant": "#e2e3e1",
+            "on-primary-container": "#fff1f0",
+            "secondary": "#5e5e62",
+            "secondary-fixed-dim": "#c7c6ca",
+            "on-secondary-fixed-variant": "#46474a",
+            "on-background": "#1a1c1b",
+            "inverse-on-surface": "#f1f1ef",
+            "on-secondary": "#ffffff",
+            "primary-container": "#d72631",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#2f3130",
+            "surface-tint": "#bd0c22",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#181c20",
+            "background": "#f9f9f7",
+            "tertiary": "#55585c",
+            "surface-bright": "#f9f9f7",
+            "surface-container-highest": "#e2e3e1",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#410005",
+            "tertiary-fixed": "#e0e2e8",
+            "surface-container": "#eeeeec"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Space Grotesk"],
+            "display-lg-mobile": ["Space Grotesk"],
+            "headline-xl-mobile": ["Space Grotesk"],
+            "body-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "display-lg": ["Space Grotesk"],
+            "headline-xl": ["Space Grotesk"],
+            "headline-lg": ["Space Grotesk"],
+            "label-caps": ["Inter"],
+            "headline-md": ["Space Grotesk"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "unbounded": ["Unbounded", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body class="bg-[#FFFFFF] text-[#1E1F22] font-body-md text-body-md antialiased selection:bg-[#D72631] selection:text-white">
+<!-- 1. HEADER (TopNavBar) -->
+<header class="sticky top-0 z-50 bg-[#FFFFFF] border-b border-[#E2E2DF]">
+<div class="w-full mx-auto px-6 lg:px-12 max-w-7xl flex items-center justify-between h-20">
+<!-- Logo block -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-[10px] h-[10px] bg-[#D72631] shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-lg tracking-tight text-[#1E1F22]">GomelMebel</span>
+<span class="font-body-sm text-[11px] text-[#6B6E73] tracking-wide">Мебель под заказ в Гомеле</span>
+</div>
+</a>
+<!-- Center navigation -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="#catalog">Каталог</a>
+<a class="font-label-md text-label-md text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="#payment">Оплата и доставка</a>
+<a class="font-label-md text-label-md text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="#payment">Рассрочка</a>
+<a class="font-label-md text-label-md text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="#payment">Акции</a>
+<a class="font-label-md text-label-md text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="#contacts">Контакты</a>
+</nav>
+<!-- Right cluster -->
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex flex-col text-right">
+<a class="font-bold text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150 text-[15px] tracking-tight" href="tel:+375296041804">
+            <span style="white-space:nowrap">+375 (29) 604-18-04</span>
+          </a>
+<span class="text-[11px] text-[#6B6E73] font-body-sm">Пн–Пт 9:00–18:00</span>
+</div>
+<a class="rounded-[4px] bg-[#D72631] hover:bg-[#ba1e28] text-white font-medium px-4 py-2 text-sm transition-colors duration-150 inline-flex items-center justify-center" href="#request-form">
+          Перезвонить мне
+        </a>
+</div>
+</div>
+</header>
+<!-- 2. HERO SECTION -->
+<section class="w-full bg-[#FFFFFF] border-b border-[#E2E2DF] py-12 lg:py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column (~45% on desktop) -->
+<div class="lg:col-span-5 flex flex-col items-start space-y-6">
+<div class="inline-block bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] px-3 py-1 text-[#D72631] font-label-caps text-label-caps uppercase tracking-[0.12em]">
+          С 2005 года · Гомель
+        </div>
+<h1 class="font-unbounded font-bold text-3xl sm:text-4xl lg:text-[42px] leading-[1.15] text-[#1E1F22] tracking-tight">
+          Мебель под заказ в Гомеле
+        </h1>
+<p class="font-body-md text-[#6B6E73] text-[15px] leading-relaxed">
+          Кухни, шкафы-купе, гостиные и детские по индивидуальному проекту: бесплатный выезд мастера и дизайнера, 3D-проект, доставка и установка.
+        </p>
+<!-- Action buttons row -->
+<div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center rounded-[4px] bg-[#D72631] hover:bg-[#ba1e28] text-white font-medium px-7 py-3.5 text-sm transition-colors duration-150" href="#request-form">
+            Вызвать замерщика
+          </a>
+<a class="w-full sm:w-auto text-center rounded-[4px] bg-transparent hover:bg-[#1E1F22] hover:text-white border-[1.5px] border-[#1E1F22] text-[#1E1F22] font-medium px-7 py-3.5 text-sm transition-colors duration-150" href="#request-form">
+            Перезвонить мне
+          </a>
+</div>
+<!-- Info chips row -->
+<div class="flex flex-wrap items-center gap-3 pt-3">
+<div class="border border-[#E2E2DF] rounded-[4px] px-3 py-1.5 text-xs text-[#1E1F22] font-medium bg-[#F2F2F0]">
+            Рассрочка до 8 месяцев
+          </div>
+<div class="border border-[#E2E2DF] rounded-[4px] px-3 py-1.5 text-xs text-[#1E1F22] font-medium bg-[#F2F2F0]">
+            Скидка 5% при 100% предоплате
+          </div>
+</div>
+</div>
+<!-- Right Column (~55% on desktop) -->
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden rounded-[4px] border border-[#E2E2DF]">
+<img alt="Кухни на заказ в Гомеле GomelMebel" class="w-full h-[400px] sm:h-[480px] lg:h-[520px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGFjE_S8yQJr-xjPuzbUQQg5AnRWohcDf3_mmLDNdeifnRUV_1Ly52LdrTjkluv53q6ja21si6BMD3cqbjWVVVGb9FVCyMWrXrvGEq58i5azn5uVjqPbsnECOpceqHCeL_cyw5B-GYIzgOkHcpG623GvPFRtBMIBM1rMkGNNNeLKGHXcmNw-Al_M_VFrZb6fErNKNUf8ZvmBENDx50ADZj9XGSoY25dd7qUJ2HqFnlGZXANLuVKJcOFuP5ebOSyby1CnKxpbuF4hA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SECTION "КАТАЛОГ" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]" id="catalog">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps uppercase text-[#D72631] tracking-[0.12em] block mb-2">Каталог</span>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl text-[#1E1F22] tracking-tight">Что мы делаем</h2>
+</div>
+<!-- 8 Photo Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Кухни" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEzxS8d6Ssv4-kJH21cbaAJKLSYxFnY_UzJ-Yzf_NoKrZ19A3v417y23HmdM-MpVstILFT1iuoNx7ctJH9CJU2gLnKqKXMQyR6HYrPogNtblRe0Jydht4U93wsiELU9gkE9Nj03vFvMA7MqZx6a0bvRqrzlXvlCXwCso0onx1uELCjdGwtC0VQ4xQG9QWn2HN-5w_7OXf-BOJw6Ca2DJk8rcZUyHzK2j7PanmFvIQbDYKH-tmsiI6BraI2o-nGDrxIyeeWCEhktX8"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Кухни</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Шкафы-купе" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2x-53iMbvXp1VQcr-K1DEKkkQY0tsA3lx99AGu-7Mvj93EncrDBwRS8AR-HwtoT8yoN9eksPa_73IZ0EQwgGfuf5DvSFVtBlrUDDyw7xfwdTO977sxrvFugRnbyLlvzypOoWw-6QP1NeaFwfb7NVWr-C8I2sk3JABx4atbNXJd-3S8AKNKYatInzONEXAqY1P3lr9I9U9iB4R6yA76cOn3jbUegmi2uL362csom8kR8PkNyPdmTFo6CqWdxnzb-9tikHOc8z7kqU"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Шкафы-купе</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Гостиные" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrHX9j2__qSjFdFGs6v6jipE9TMSzXtzSnLlPXTZ2yXJDMDRVSfNXFG9SleqQIhr09XmKwrzOcSM6TZqR--B7fNwoFfqDqvIH6ebd6qmfUrn-NyanEOAzQHF9xo4ZTzT7vUCYSNWs4LvZ5wYetm3J8J-kcIzlL6Bphw6jT370M2wDkYm5xLG9j_B77lhz7gyZUj50t-cu_yJdignh2LyVVz1snqJdozvPR3k-Ar-9AH-rZUcBA_uwFtpPExBrhBkqXGFfnryN9go"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Гостиные</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Спальни" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_YKthxZAkoSmSvSz2kP2Jrp8Y_y3or21WjtW-ykgarthBUvU9w1AgPZZY1FDFFST8fB4ZCvssKKOYu6YwR93BT3DFSu6FyQNaacLwSWi_6fSd1SWj5XHk9zXd767J8EI7r3dSWqEEpTpR1cA5BhhC5IYz4HFLoZEFqqN79IYPK9A6kYVPX_75ubAiod1gTA0YkL6kbSCWVjlV698sjIj4luXzXlQv1g4__PSHW6Q6NiKsriqBFXuJ2KPUntQY5JBzZ1b1qQy4-V4"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Спальни</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 5 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Прихожие" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqHbowieDrxQkOwX7MkkIvIQMiqzkvRDoRkC5knSlk-U3H4uSw5rou-iVL5_ZdutuGR0ji7Kwm6PpZViZScQb62uOL4af5_xnxf9k6FETIC4ceID3A1yZps5YhsggRh4tzkJ8Y4WhAfSq0SQryEP0daFDSk8sS9mr6ybFGGDneOWiO9tiGI-1YwMUyKtilPxiMcpdsxhfGCgui8SGl0nMjGZ4FsbGVXWTX0kyRPr7Hu0NgegYNhVg8SLtdusDfL14dp9XhCRLzIgI"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Прихожие</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 6 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Детские" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIK7ynrDuLTh06-dcIfZJB95mszLhw7OXgJYO9qsXPF7CQDhvhx0BZ1wr-0-8bAQZc22hnjrkSLrZWC5u3Ti4q6huv8KEUP0BD3pgLlecP3-FOFGzeiiXQaRHsBlEhjXQVsfa3mhgAyLgdwPH2mm2xPeXij5CWGtK1ilrk0pdl4QvQjDyuemwtznWYi7rov4uoXJaESOgPtZ034jg-1JMVs1hTznRjevX0nkB6bMHTUXlKqMYymJyJResb10Pd1KbufeUC6yUuwIQ"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Детские</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 7 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Комоды" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2bPFJ73ZyXo_uULAkCH1vJtCgMLO90pTSRW8Lf3EQgqZbuBc8Kgk3CxXsTJSjPl7E3l29jESutR-lt4cHQfJaks3j8XSSEpFHJrBAvHHQWvPYKcUFVSQXElda_WOIIMSyS3mkY9w9i5xOa2b3M-1hNV_7ZgYHtIqIYG0NwuOUOeuPHJ0qXOqSd9UtsGehJbiCc3EUJDjFS9kxr8snR7pDloKnMU7918ZyZAhcmAgk9isaK5iyY9YzUX6ME9mDmcI7yLaPWXHB8WU"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Комоды</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+<!-- Card 8 -->
+<a class="group flex flex-col bg-[#FFFFFF] border border-[#E2E2DF] rounded-[4px] p-3 transition-colors duration-150 hover:border-[#1E1F22]" href="#request-form">
+<div class="overflow-hidden rounded-[4px] aspect-[4/3] mb-4 bg-[#F2F2F0]">
+<img alt="Столы компьютерные" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjyb6DwxBGfEocvU57oA2pN8JcMRj1r5RMtUe8u2of4-T07PDizLcfyA_8VHYg8xaCegGsIjrNa8Rvzc3vmAE_lv1CA6KCBuJ0a6zwQzcnFnnMjyoQu8DsGmJ235ZV7DNjbti8vhN02e9S9AV3f77oQhhmeccHgdhmQniexGTwnmGj_qrpo2lVDbvcWy1JjL6Jk3cEYhrkM_ytPUcbuuLQ9waMr-tfgulCnujIxKhq5tSyDd5UXVw3ETdQaVLGFqnu8c2lHDi0he4"/>
+</div>
+<div class="flex items-center justify-between px-1 py-1">
+<span class="font-unbounded font-medium text-base text-[#1E1F22]">Столы компьютерные</span>
+<span class="material-symbols-outlined text-[#1E1F22] group-hover:text-[#D72631] group-hover:translate-x-1 transition-all duration-150 text-[20px]">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. SECTION "ЧТО ВХОДИТ В ЗАКАЗ" -->
+<section class="w-full bg-[#1E1F22] text-white py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="mb-14">
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-white">
+          Наше мастерство для вас
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-6 border-t border-[#3A3B40] pt-10">
+<!-- 01 -->
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-4xl lg:text-5xl text-[#D72631] mb-4">01</span>
+<h3 class="font-unbounded font-medium text-base mb-2 text-white leading-snug">Бесплатный выезд мастера и дизайнера</h3>
+<p class="font-body-sm text-[13px] text-[#A2A4A8] leading-relaxed">Поможем с подбором дизайна с учётом параметров помещения и его стилистики</p>
+</div>
+<!-- 02 -->
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-4xl lg:text-5xl text-[#D72631] mb-4">02</span>
+<h3 class="font-unbounded font-medium text-base mb-2 text-white leading-snug">Проект в 3D</h3>
+<p class="font-body-sm text-[13px] text-[#A2A4A8] leading-relaxed">Чтобы увидеть мебель до изготовления</p>
+</div>
+<!-- 03 -->
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-4xl lg:text-5xl text-[#D72631] mb-4">03</span>
+<h3 class="font-unbounded font-medium text-base mb-2 text-white leading-snug">Экологичные материалы</h3>
+<p class="font-body-sm text-[13px] text-[#A2A4A8] leading-relaxed">Качественное выполнение работ</p>
+</div>
+<!-- 04 -->
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-4xl lg:text-5xl text-[#D72631] mb-4">04</span>
+<h3 class="font-unbounded font-medium text-base mb-2 text-white leading-snug">Доставка и установка</h3>
+<p class="font-body-sm text-[13px] text-[#A2A4A8] leading-relaxed">Привезём и соберём комплект мебели</p>
+</div>
+<!-- 05 -->
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-4xl lg:text-5xl text-[#D72631] mb-4">05</span>
+<h3 class="font-unbounded font-medium text-base mb-2 text-white leading-snug">Оптимальные цены</h3>
+<p class="font-body-sm text-[13px] text-[#A2A4A8] leading-relaxed">На весь ассортимент</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SECTION "КАК МЫ РАБОТАЕМ" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="mb-14">
+<span class="font-label-caps text-label-caps uppercase text-[#D72631] tracking-[0.12em] block mb-2">Процесс</span>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl text-[#1E1F22] tracking-tight">Как мы работаем</h2>
+</div>
+<!-- 4-step workflow connected by a continuous thin red keyline -->
+<div class="relative">
+<!-- Continuous red line for desktop -->
+<div class="hidden md:block absolute top-[28px] left-[40px] right-[40px] h-[1px] bg-[#D72631] z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-[#FFFFFF] border-2 border-[#D72631] text-[#D72631] font-unbounded font-bold text-xl flex items-center justify-center mb-6">
+              1
+            </div>
+<h3 class="font-unbounded font-semibold text-lg text-[#1E1F22] mb-2">Заявка</h3>
+<p class="font-body-md text-sm text-[#6B6E73] leading-relaxed">Оставьте заявку на сайте или позвоните нам</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-[#FFFFFF] border-2 border-[#D72631] text-[#D72631] font-unbounded font-bold text-xl flex items-center justify-center mb-6">
+              2
+            </div>
+<h3 class="font-unbounded font-semibold text-lg text-[#1E1F22] mb-2">Выезд и замер</h3>
+<p class="font-body-md text-sm text-[#6B6E73] leading-relaxed">Мастер и дизайнер приедут к вам бесплатно</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-[#FFFFFF] border-2 border-[#D72631] text-[#D72631] font-unbounded font-bold text-xl flex items-center justify-center mb-6">
+              3
+            </div>
+<h3 class="font-unbounded font-semibold text-lg text-[#1E1F22] mb-2">3D-проект</h3>
+<p class="font-body-md text-sm text-[#6B6E73] leading-relaxed">Согласуем цвет фасадов, фурнитуру, размеры и конфигурацию</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-[#FFFFFF] border-2 border-[#D72631] text-[#D72631] font-unbounded font-bold text-xl flex items-center justify-center mb-6">
+              4
+            </div>
+<h3 class="font-unbounded font-semibold text-lg text-[#1E1F22] mb-2">Изготовление и установка</h3>
+<p class="font-body-md text-sm text-[#6B6E73] leading-relaxed">Изготовим, доставим и установим мебель</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. SECTION "УДОБНАЯ ОПЛАТА" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]" id="payment">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps uppercase text-[#D72631] tracking-[0.12em] block mb-2">Условия</span>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl text-[#1E1F22] tracking-tight">Удобная оплата</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1: Рассрочка -->
+<div class="bg-[#F2F2F0] border border-[#E2E2DF] rounded-[4px] p-8 lg:p-10 flex flex-col justify-between">
+<div>
+<div class="font-unbounded font-bold text-3xl sm:text-4xl text-[#D72631] mb-6">
+              до 8 месяцев
+            </div>
+<h3 class="font-unbounded font-bold text-xl text-[#1E1F22] mb-4">
+              Рассрочка
+            </h3>
+<p class="font-body-md text-[15px] text-[#6B6E73] leading-relaxed mb-8">
+              При оформлении заказа на сумму от 1000 руб. предоставляется рассрочка от 3 до 8 месяцев.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 font-medium text-sm text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150 group" href="#request-form">
+<span>Подробнее о рассрочке</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform duration-150">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2: Скидка 5% -->
+<div class="bg-[#F2F2F0] border border-[#E2E2DF] rounded-[4px] p-8 lg:p-10 flex flex-col justify-between">
+<div>
+<div class="font-unbounded font-bold text-3xl sm:text-4xl text-[#D72631] mb-6">
+              5%
+            </div>
+<h3 class="font-unbounded font-bold text-xl text-[#1E1F22] mb-4">
+              Скидка на мебель
+            </h3>
+<p class="font-body-md text-[15px] text-[#6B6E73] leading-relaxed mb-8">
+              Скидка на мебель 5% при 100% предоплате.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 font-medium text-sm text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150 group" href="#request-form">
+<span>Все акции</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform duration-150">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SECTION "О КОМПАНИИ" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Media wall photo -->
+<div class="lg:col-span-6">
+<div class="overflow-hidden rounded-[4px] border border-[#E2E2DF]">
+<img alt="О компании GomelMebel" class="w-full h-[380px] sm:h-[440px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrHX9j2__qSjFdFGs6v6jipE9TMSzXtzSnLlPXTZ2yXJDMDRVSfNXFG9SleqQIhr09XmKwrzOcSM6TZqR--B7fNwoFfqDqvIH6ebd6qmfUrn-NyanEOAzQHF9xo4ZTzT7vUCYSNWs4LvZ5wYetm3J8J-kcIzlL6Bphw6jT370M2wDkYm5xLG9j_B77lhz7gyZUj50t-cu_yJdignh2LyVVz1snqJdozvPR3k-Ar-9AH-rZUcBA_uwFtpPExBrhBkqXGFfnryN9go"/>
+</div>
+</div>
+<!-- Right Column -->
+<div class="lg:col-span-6 flex flex-col space-y-6">
+<span class="font-label-caps text-label-caps uppercase text-[#D72631] tracking-[0.12em]">С 2005 года</span>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl text-[#1E1F22] tracking-tight leading-snug">
+          Для нас нет сложных задач
+        </h2>
+<p class="font-body-md text-[15px] text-[#6B6E73] leading-relaxed">
+          Выполняем сложные по дизайну и конструкторскому наполнению комплекты для кухонь, спален, гостиных и детских комнат. Реализуем проекты, которые создают сами клиенты или наши дизайнеры.
+        </p>
+<p class="font-body-md text-[15px] text-[#6B6E73] leading-relaxed">
+          Учтём все пожелания: цвет фасадов, качество фурнитуры, размеры и конфигурацию.
+        </p>
+<div class="pt-2">
+<a class="inline-block rounded-[4px] bg-[#D72631] hover:bg-[#ba1e28] text-white font-medium px-7 py-3.5 text-sm transition-colors duration-150" href="#request-form">
+            Вызвать замерщика
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. SECTION "ЗАЯВКА НА ЗАМЕР" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]" id="request-form">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 border border-[#E2E2DF] rounded-[4px] overflow-hidden">
+<!-- Left side: Graphite #1E1F22 panel -->
+<div class="lg:col-span-5 bg-[#1E1F22] p-8 lg:p-12 text-white flex flex-col justify-between">
+<div>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl text-white tracking-tight leading-snug mb-6">
+              Рассчитаем стоимость вашей мебели
+            </h2>
+<p class="font-body-md text-[15px] text-[#A2A4A8] leading-relaxed mb-10">
+              Оставьте заявку — она сразу придёт менеджеру в Telegram, мы перезвоним и договоримся о бесплатном выезде мастера и дизайнера.
+            </p>
+</div>
+<div class="border-t border-[#3A3B40] pt-8 space-y-2">
+<a class="font-unbounded font-bold text-xl text-white hover:text-[#D72631] transition-colors duration-150 block" href="tel:+375296041804">
+              <span style="white-space:nowrap">+375 (29) 604-18-04</span>
+            </a>
+<div class="text-sm text-[#A2A4A8]">
+              Пн–Пт 9:00–18:00
+            </div>
+</div>
+</div>
+<!-- Right side: Clean white form card -->
+<div class="lg:col-span-7 bg-[#FFFFFF] p-8 lg:p-12">
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Спасибо! Ваша заявка принята. Менеджер свяжется с вами.');">
+<div>
+<label class="block font-medium text-xs text-[#1E1F22] uppercase tracking-wider mb-2">Имя</label>
+<input class="w-full h-11 px-4 border border-[#E2E2DF] rounded-[4px] text-sm text-[#1E1F22] placeholder-[#6B6E73] focus:border-[#1E1F22] focus:ring-0 outline-none transition-colors duration-150" placeholder="Ваше имя" required="" type="text"/>
+</div>
+<div>
+<label class="block font-medium text-xs text-[#1E1F22] uppercase tracking-wider mb-2">Телефон</label>
+<input class="w-full h-11 px-4 border border-[#E2E2DF] rounded-[4px] text-sm text-[#1E1F22] placeholder-[#6B6E73] focus:border-[#1E1F22] focus:ring-0 outline-none transition-colors duration-150" placeholder="+375 (__) ___-__-__" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-medium text-xs text-[#1E1F22] uppercase tracking-wider mb-2">Что нужно</label>
+<select class="w-full h-11 px-4 border border-[#E2E2DF] rounded-[4px] text-sm text-[#1E1F22] focus:border-[#1E1F22] focus:ring-0 outline-none transition-colors duration-150 bg-[#FFFFFF]">
+<option value="kitchen">Кухня</option>
+<option value="wardrobe">Шкаф-купе</option>
+<option value="living">Гостиная</option>
+<option value="bedroom">Спальня</option>
+<option value="hallway">Прихожая</option>
+<option value="kids">Детская</option>
+<option value="other">Другое</option>
+</select>
+</div>
+<div>
+<label class="block font-medium text-xs text-[#1E1F22] uppercase tracking-wider mb-2">Комментарий (необязательно)</label>
+<textarea class="w-full p-4 border border-[#E2E2DF] rounded-[4px] text-sm text-[#1E1F22] placeholder-[#6B6E73] focus:border-[#1E1F22] focus:ring-0 outline-none transition-colors duration-150" placeholder="Опишите ваши пожелания, примерные размеры..." rows="3"></textarea>
+</div>
+<button class="w-full rounded-[4px] bg-[#D72631] hover:bg-[#ba1e28] text-white font-medium py-3.5 text-sm transition-colors duration-150 text-center uppercase tracking-wider mt-2" type="submit">
+              Отправить заявку
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. SECTION "КОНТАКТЫ" -->
+<section class="w-full bg-[#FFFFFF] py-20 border-b border-[#E2E2DF]" id="contacts">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Contact Details -->
+<div class="lg:col-span-5 flex flex-col space-y-6">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-[#D72631] tracking-[0.12em] block mb-2">Контакты</span>
+<h2 class="font-unbounded font-bold text-2xl sm:text-3xl text-[#1E1F22] tracking-tight">Ждём вас</h2>
+</div>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#D72631] text-[22px] shrink-0 mt-0.5">location_on</span>
+<div class="font-body-md text-base text-[#1E1F22]">
+              г. Гомель, ул. Добролюбова, 8
+            </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#D72631] text-[22px] shrink-0 mt-0.5">call</span>
+<div class="flex flex-col">
+<a class="font-body-md text-base font-bold text-[#1E1F22] hover:text-[#D72631] transition-colors duration-150" href="tel:+375296041804">
+                <span style="white-space:nowrap">+375 (29) 604-18-04</span>
+              </a>
+<span class="text-sm text-[#6B6E73]">Пн–Пт 9:00–18:00</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="rounded-[4px] bg-[#D72631] hover:bg-[#ba1e28] text-white font-medium px-6 py-3 text-sm transition-colors duration-150" href="tel:+375296041804">
+            Позвонить
+          </a>
+<a class="rounded-[4px] bg-transparent hover:bg-[#1E1F22] hover:text-white border-[1.5px] border-[#1E1F22] text-[#1E1F22] font-medium px-6 py-3 text-sm transition-colors duration-150" href="https://maps.google.com/?q=Gomel+ul+Dobrolyubova+8" rel="noopener noreferrer" target="_blank">
+            Построить маршрут
+          </a>
+</div>
+</div>
+<!-- Right: Stylized Vector Map Graphic -->
+<div class="lg:col-span-7">
+<div class="w-full h-[360px] bg-[#F2F2F0] border border-[#E2E2DF] rounded-[4px] relative overflow-hidden flex items-center justify-center p-6">
+<!-- Subtle street grid pattern lines -->
+<svg class="absolute inset-0 w-full h-full text-[#E2E2DF]" fill="none" stroke="currentColor">
+<line stroke-width="1.5" x1="10%" x2="10%" y1="0" y2="100%"></line>
+<line stroke-width="1.5" x1="30%" x2="30%" y1="0" y2="100%"></line>
+<line stroke-width="2" x1="60%" x2="60%" y1="0" y2="100%"></line>
+<line stroke-width="1.5" x1="85%" x2="85%" y1="0" y2="100%"></line>
+<line stroke-width="1.5" x1="0" x2="100%" y1="20%" y2="20%"></line>
+<line stroke-width="2.5" x1="0" x2="100%" y1="50%" y2="50%"></line>
+<line stroke-width="1.5" x1="0" x2="100%" y1="75%" y2="75%"></line>
+<!-- Diagonal connecting road -->
+<line stroke-dasharray="4 4" stroke-width="2" x1="0" x2="90%" y1="90%" y2="0"></line>
+</svg>
+<!-- Area labels in muted grey -->
+
+
+<!-- Location Pin Marker -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-12 h-12 bg-[#D72631] text-white rounded-full flex items-center justify-center border-2 border-white">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div class="bg-[#1E1F22] text-white font-unbounded text-xs font-semibold px-3 py-1.5 rounded-[4px] mt-2 tracking-wide whitespace-nowrap">
+              ул. Добролюбова, 8
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FOOTER -->
+<footer class="w-full bg-[#1E1F22] text-white border-t border-[#3A3B40] py-14">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-[#3A3B40]">
+<!-- Brand wordmark -->
+<a class="flex items-center gap-3" href="#">
+<div class="w-[10px] h-[10px] bg-[#D72631] shrink-0"></div>
+<span class="font-unbounded font-bold text-xl tracking-tight text-white">GomelMebel</span>
+</a>
+<!-- Navigation Links -->
+<nav class="flex flex-wrap items-center gap-6 lg:gap-8">
+<a class="text-sm text-[#A2A4A8] hover:text-[#D72631] transition-colors duration-150" href="#catalog">Каталог</a>
+<a class="text-sm text-[#A2A4A8] hover:text-[#D72631] transition-colors duration-150" href="#payment">Оплата и доставка</a>
+<a class="text-sm text-[#A2A4A8] hover:text-[#D72631] transition-colors duration-150" href="#payment">Рассрочка</a>
+<a class="text-sm text-[#A2A4A8] hover:text-[#D72631] transition-colors duration-150" href="#payment">Акции</a>
+<a class="text-sm text-[#A2A4A8] hover:text-[#D72631] transition-colors duration-150" href="#contacts">Контакты</a>
+</nav>
+<!-- Contact Phone -->
+<div class="flex flex-col md:text-right">
+<a class="font-unbounded font-bold text-base text-white hover:text-[#D72631] transition-colors duration-150" href="tel:+375296041804">
+            <span style="white-space:nowrap">+375 (29) 604-18-04</span>
+          </a>
+<span class="text-xs text-[#A2A4A8] mt-0.5">Пн–Пт 9:00–18:00</span>
+</div>
+</div>
+<!-- Copyright line -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#A2A4A8]">
+<div>
+          © 2026 GomelMebel.by · г. Гомель
+        </div>
+<div class="mt-4 sm:mt-0">
+          Мебель по индивидуальному проекту с 2005 года
+        </div>
+</div>
+</div>
+</footer>
+</body></html>

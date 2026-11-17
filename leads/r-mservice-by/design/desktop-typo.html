@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Автосервис <span style="white-space:nowrap">R-M</span> СТО в Полоцке и Новополоцке</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#b2001a",
+            "surface-dim": "#cdd9fe",
+            "on-tertiary-container": "#fff2e0",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#b0c6ff",
+            "surface-variant": "#d9e2ff",
+            "inverse-surface": "#23304d",
+            "tertiary-fixed": "#ffdea0",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed-variant": "#2d4578",
+            "secondary-container": "#acc3fe",
+            "surface-tint": "#bd0c1f",
+            "surface": "#faf8ff",
+            "primary-fixed-dim": "#ffb3ad",
+            "surface-container-highest": "#d9e2ff",
+            "primary-fixed": "#ffdad7",
+            "inverse-on-surface": "#edf0ff",
+            "on-background": "#0d1b36",
+            "on-secondary": "#ffffff",
+            "primary-container": "#d7262e",
+            "background": "#faf8ff",
+            "on-primary-container": "#fff1f0",
+            "on-primary-fixed": "#410004",
+            "tertiary": "#705200",
+            "surface-bright": "#faf8ff",
+            "tertiary-container": "#8f6900",
+            "on-tertiary-fixed-variant": "#5c4300",
+            "outline": "#906f6c",
+            "outline-variant": "#e5bdba",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f2f3ff",
+            "on-tertiary-fixed": "#261a00",
+            "on-error-container": "#93000a",
+            "secondary": "#465d92",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#5c403d",
+            "surface-container-high": "#e1e8ff",
+            "surface-container": "#e9edff",
+            "inverse-primary": "#ffb3ad",
+            "tertiary-fixed-dim": "#fbbc0e",
+            "on-secondary-container": "#384f83",
+            "on-surface": "#0d1b36",
+            "on-secondary-fixed": "#001944",
+            "on-primary-fixed-variant": "#930013",
+            "secondary-fixed": "#d9e2ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "margin": "2.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Manrope"],
+            "body-sm": ["Inter"],
+            "display-hero-mobile": ["Manrope"],
+            "display-hero": ["Manrope"],
+            "headline-md-mobile": ["Manrope"],
+            "headline-lg-mobile": ["Manrope"],
+            "label-md": ["Inter"],
+            "label-tech": ["Inter"],
+            "label-lg": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Manrope"],
+            "headline-sm": ["Manrope"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800"}],
+            "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+            "headline-md-mobile": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+            "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+            "label-tech": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+            "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "title-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "headline-sm": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-shadow {
+      box-shadow: 0 2px 4px rgba(14, 42, 92, 0.04), 0 1px 2px rgba(14, 42, 92, 0.02);
+    }
+    .custom-shadow-hover:hover {
+      box-shadow: 0 12px 24px -6px rgba(14, 42, 92, 0.08), 0 4px 8px -2px rgba(14, 42, 92, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-[#FFFFFF] text-[#14213D] font-body-md antialiased selection:bg-primary selection:text-white">
+<!-- TOP NAVIGATION BAR (Shared Component Anchor) -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest border-b border-[#E1E5EC] shadow-sm">
+<div class="flex justify-between items-center w-full px-6 md:px-10 max-w-7xl mx-auto h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full drop-shadow-sm" viewbox="0 0 100 100">
+<polygon fill="#F5B700" points="50,4 93,27 93,73 50,96 7,73 7,27" stroke="#0E2A5C" stroke-width="4"></polygon>
+</svg>
+<span class="absolute font-headline-sm font-extrabold text-[#0E2A5C] text-sm tracking-tight"><span style="white-space:nowrap">R-M</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-[#0E2A5C] tracking-tight">Автосервис <span style="white-space:nowrap">R-M</span></span>
+<span class="font-label-md text-xs text-[#5B6475]">СТО в Полоцке · 2 адреса</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-title-md text-sm text-[#0E2A5C] border-b-2 border-primary-container pb-1 transition-colors" href="#services">Услуги</a>
+<a class="font-label-lg text-sm text-[#5B6475] hover:text-[#0E2A5C] transition-colors" href="#prices">Цены</a>
+<a class="font-label-lg text-sm text-[#5B6475] hover:text-[#0E2A5C] transition-colors" href="#booking">Запись</a>
+<a class="font-label-lg text-sm text-[#5B6475] hover:text-[#0E2A5C] transition-colors" href="#why-us">Преимущества</a>
+<a class="font-label-lg text-sm text-[#5B6475] hover:text-[#0E2A5C] transition-colors" href="#workflow">Процесс</a>
+<a class="font-label-lg text-sm text-[#5B6475] hover:text-[#0E2A5C] transition-colors" href="#contacts">Контакты</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex flex-col items-end">
+<a class="font-title-md text-sm font-bold text-[#0E2A5C] hover:text-primary-container transition-colors" href="tel:+375297147257">
+            <span style="white-space:nowrap">+375 (29) 714-72-57</span>
+          </a>
+</div>
+<!-- Messengers -->
+<div class="hidden sm:flex items-center gap-2">
+<a aria-label="Telegram" class="w-9 h-9 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="https://t.me" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.98-1.73 6.64-2.88 7.97-3.44 3.79-1.59 4.58-1.87 5.1-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.21-.04.38z"></path></svg>
+</a>
+<a aria-label="Viber" class="w-9 h-9 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="viber://chat" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M19.78 16.32c-.52-.39-1.22-.88-1.86-1.32-.67-.46-1.28-.58-1.82-.04-.55.55-.91.95-1.38.83-.82-.21-2.28-1.24-3.32-2.28-1.04-1.04-2.07-2.5-2.28-3.32-.12-.47.28-.83.83-1.38.54-.54.42-1.15-.04-1.82-.44-.64-.93-1.34-1.32-1.86-.48-.63-1.07-.6-1.58-.09-.59.59-1.26 1.43-1.31 2.37-.09 1.63.78 3.84 2.89 6.22 2.38 2.11 4.59 2.98 6.22 2.89.94-.05 1.78-.72 2.37-1.31.51-.51.54-1.1.09-1.58v-.01z"></path></svg>
+</a>
+</div>
+<!-- Primary CTA Button -->
+<a class="bg-primary-container text-white px-5 py-2.5 rounded-xl font-label-lg font-semibold hover:bg-[#bd1f26] active:scale-95 transition-all shadow-sm" href="#booking">
+          Записаться онлайн
+        </a>
+</div>
+</div>
+</header>
+<!-- 1. HERO SECTION -->
+<section class="bg-[#FFFFFF] border-b border-[#E1E5EC]">
+<div class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column (col-span-7) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 bg-[#0E2A5C]/10 text-[#0E2A5C] font-label-tech px-3.5 py-1.5 rounded-full mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Полоцк и Новополоцк · 2 адреса</span>
+</div>
+<h1 class="font-headline-lg text-3xl md:text-5xl lg:text-[46px] text-[#0E2A5C] leading-tight font-extrabold mb-6 tracking-tight">
+          Ремонт и обслуживание автомобилей в Полоцке
+        </h1>
+<p class="font-body-lg text-[#5B6475] leading-relaxed mb-8 max-w-2xl">
+          Кузовной ремонт и покраска, замена масла, развал-схождение 3D Bosch, шиномонтаж, ремонт двигателя, подвески и автоэлектрики — на ул. Гагарина, 83 и ул. Дзержинского, 103.
+        </p>
+<!-- CTA Row -->
+<div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center bg-primary-container text-white px-8 py-3.5 rounded-xl font-label-lg font-bold shadow-md hover:bg-[#bd1f26] transition-colors" href="#booking">
+            Записаться онлайн
+          </a>
+<a class="w-full sm:w-auto text-center border-2 border-[#0E2A5C] text-[#0E2A5C] px-8 py-3.5 rounded-xl font-label-lg font-bold hover:bg-[#0E2A5C]/5 transition-colors" href="tel:+375297147257">
+            Позвонить
+          </a>
+</div>
+<!-- Trust Badges Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-[#E1E5EC] w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] shrink-0">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<p class="font-label-lg text-sm font-bold text-[#0E2A5C]">Рейтинг 4.9</p>
+<p class="font-body-sm text-xs text-[#5B6475]">63 отзыва на avservice.by</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] shrink-0">
+<span class="material-symbols-outlined text-xl">tune</span>
+</div>
+<div>
+<p class="font-label-lg text-sm font-bold text-[#0E2A5C]">Стенд 3D Bosch</p>
+<p class="font-body-sm text-xs text-[#5B6475]">Развал-схождение</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] shrink-0">
+<span class="material-symbols-outlined text-xl">build</span>
+</div>
+<div>
+<p class="font-label-lg text-sm font-bold text-[#0E2A5C]">Авто из США</p>
+<p class="font-body-sm text-xs text-[#5B6475]">Профильный ремонт</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (col-span-5) -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-lg border border-[#E1E5EC] h-[440px] md:h-[480px] w-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern automotive technical service repair bay in Polotsk with clean grey floor and a modern vehicle raised on a hydraulic lift. A professional mechanic wearing navy uniform conducts inspection under bright clean lighting with tool trolleys visible in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu__2JHimjH0rCkb4MXbCXk9U7_XrjWzXjo7hmhnkv0lzCQEHAs9XNvr1Z92baOza5ZZB_iGurWvvZJVKPcdhDGU9dCeZRyomN-ZON6VIMLIP6Jcux7N9mrfybkbMS-9oCd_1bfl4_hK-MUlBQHBzEfPXbIVNw8y8iZvf_YBB3N4-2uHsBKknSQLH5aPbNTvRLqPXSMZhl0plRAIzIEhFE-ya69lBigGrBlLVKy0dKA7poIV2sQ6X-Xz8x-9To8H0bdVV_oco-4q4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0E2A5C]/40 via-transparent to-transparent"></div>
+</div>
+<!-- Overlapping Floating Card -->
+<div class="bg-white rounded-xl p-4 shadow-xl border border-[#E1E5EC] max-w-xs absolute -bottom-6 -left-4 md:-left-6 z-20 flex gap-3.5 items-start">
+<div class="w-9 h-9 rounded-lg bg-red-50 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<p class="font-title-md text-sm font-bold text-[#0E2A5C]">Ближайшая запись</p>
+</div>
+<p class="font-body-sm text-xs text-[#5B6475] mt-1 leading-normal">
+              Выберите удобный адрес и время — мастер подтвердит в Telegram или Viber.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SECTION: ПОПУЛЯРНЫЕ УСЛУГИ -->
+<section class="bg-[#F3F5F8] py-20 border-b border-[#E1E5EC]" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Header -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-tech text-xs tracking-wider uppercase text-primary-container font-bold mb-2 block">
+          УСЛУГИ СТО
+        </span>
+<h2 class="font-headline-lg text-3xl md:text-4xl font-extrabold text-[#0E2A5C] mb-4">
+          Популярные услуги
+        </h2>
+<p class="font-body-md text-[#5B6475]">Кузовной ремонт, покраска, обслуживание и ремонт автомобилей на двух адресах в Полоцке</p>
+</div>
+<!-- 3x2 Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-300" data-alt="Close-up of automotive metal bodywork repair in a brightly lit professional repair shop in Belarus with precision measuring tools, welding equipment, and technical grey concrete floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmnv8JnWq1XTs8XOr_waQuPZnXLp5TJ71_Cp4rmW78Jj4NlobdSQUr9belTYeIPKNVWF8Z6iwXkHM1QkPp-DGEkdJUv3yOZ60fZcitstpsJGOll8teBkr5dQ_InA2q8jjvD7hFU3oeFAdRitjrR5zjzWAV2TH7T1AXXX_lRe6Ie87ZPxSWRKehmmXTaOKHEU0k0NBCKwSlbJGcU2FFr7Fm8HKN8QjTmvBC0sKzqs2QnudhxgBD0d0dsYnVPUSVOE62eQ9tYTigeyA"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">
+              Кузовной цех
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Кузовной ремонт</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                Любой сложности, переварка порогов, арок и днища на профессиональном стапеле.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-300" data-alt="High-end professional automotive spray booth with immaculate white walls and bright LED lighting, showcasing precision car painting and flawless gloss finish on a vehicle panel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIvMYth63GJ2hBL8aEqv_DzoJwxgRusKrsv1hyreMqlVANimV5sC1IRaCK8GJeb6IaXb2wjal-3Isn2xD-2p60hmctGBjte1n0V-bgNL8vBpHE77Nf3o1CQ4I_aKe_058I3_-ZU90n8U8KlO3TGlhZWWX-2OwqckYraPopm2yW_VzdGEkEAvKY5TuITDyNNjEGPi7cLfG-ZEr5PD3gNpj5IQLsbChOJyxNgBlziLeEsP5e860gc5B147IAqSxhRG5Ax7xs__AVklA"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">Покрасочная камера</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Покраска автомобиля</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                Полная и частичная, точный компьютерный подбор эмалей <span style="white-space:nowrap">R-M</span>, Lechler, Profix.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img alt="Замена масла в двигателе" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnCVf_vvcFxHqSFuPBuHJSUd3LZvauWILAl6LDx-TWI3D_T6vnPnPpfrPUslU8zzNrHS7bLXnZ8atGVvlIA9QUB8Lb2_TifhRUcjeOszc-udwj0TxWEkXkmecCVz8RqzpVQBhcQBjWyBH1Cbi5KK2-2N8xF3HqLoLHKa1injn2qiteVaWD-X6U44ZmC3P8gXpi3rRUFN6FbqoHGqq9TS9XmApql0S3TeDsKeHHd60ItKOeNGO8wfrSv2AZkZg8wDmCLN1Pwg6GJTQ"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">
+              Регламентное ТО
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Замена масла</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                В двигателе, МКПП и АКПП, с оперативной заменой масляных, воздушных и салонных фильтров.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img alt="Стенд 3D Bosch развал-схождение" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzTNhj_zu5cZfJzavusfnSsVVtKba31k-2flS8u1v0DKPMnBK9u3Gw8pL1fIcTVcoBCFU9Ee8aYiYD2Qb01wu0svLKAg2munWKeeAzx4h077jewS-jd_2adkzh8B0I9FNYxCR5R0K4QGWBMYmyW_E-56YFqtuXypJwwiqg-ooPvlKvXlKmOTWk0GdiRwnFs8pLwutCabI16cluqn4f80TZuFYrIt_4kBSSsdnEjRxBLIxQovF8hyt3XyAPRvw9EDzi03U4E-utxSM"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">
+              Bosch 3D
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Развал-схождение 3D Bosch</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                Шиномонтаж, балансировка, аргоновая сварка и правка легкосплавных дисков от 13 до 24 дюймов.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img alt="Ремонт двигателя и трансмиссии" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-ZEYYpcRck15voHfBzi-QUSy9WFNG7ylvjWPTWajxl2X8IV1vPJsyPkUu-Vm3fJB6bRsws2cjTrLtT7rx85Jh-uAMPYBMyYeJd_tpx4JRRtQt-P4a3ANJTdtfupSAUwI0TI9p5ES6oAAorrBj2Jkh2yUqGhbda4rHPjsdgcUoaTP_Gm-U0pnAZGIPFeLW0Tob2ct6QQKOx11V4YY9wPAR-0IcnlL7yPIbROlWbdyMaR1rBVdmQoWQVBURCdP5M3YK0Yh8-hv61GQ"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">
+              Агрегатный цех
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Ремонт двигателя и КПП</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                Замена двигателя, ремней и цепей ГРМ, турбин, механических и автоматических коробок передач.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white rounded-xl border border-[#E1E5EC] overflow-hidden custom-shadow custom-shadow-hover transition duration-200 flex flex-col group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-300" data-alt="Automotive electronics diagnostics technician connecting a specialized diagnostic scanner tablet to an OBD port in a pristine modern workshop with clean white ambient lighting and digital waveform graphs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJJp27bashKg6oizR_qG7Wz9GB_-okvr3shxH8ZgUXBBNR9mOdSCIN9aZJpJ_n7MEzlOdP_cBcKEKJhkxU19A0NGZJiAAYV_d70jXrq66ig6suIQivpODMfRygjpmYfqHiRoev4p0bamxVOWTHTWXKiIKKlsNnKjVsJAMiLGSHx48Ikb-2VsHsUpwrbyGrlVVvbaBY2wM8X8sVLLNv5vS-Nce_h4pH4UqrbBJxaK7WBB25klTKs4u4yIqk4OI3amDZJo8m3XvXHRQ"/>
+<div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-xs font-label-tech text-[#0E2A5C]">
+              Диагностика
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-lg font-bold text-[#0E2A5C] mb-2">Автоэлектрика и диагностика</h3>
+<p class="font-body-sm text-[#5B6475] leading-relaxed">
+                Компьютерная диагностика систем, ремонт стартеров, генераторов и электронных блоков управления.
+              </p>
+</div>
+<a class="font-label-lg text-sm text-primary-container font-semibold mt-4 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#prices">
+              Узнать стоимость <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service Chips Row -->
+<div class="bg-white rounded-xl p-6 border border-[#E1E5EC] flex flex-wrap items-center justify-between gap-3">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Ремонт подвески</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Тормозная система</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Сцепление</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Рулевая рейка</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Топливная аппаратура</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Автокондиционеры</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Полировка</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Тонировка</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Химчистка</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Шумоизоляция</span>
+<span class="px-3.5 py-1.5 rounded-lg bg-[#F3F5F8] border border-[#E1E5EC] text-xs font-medium text-[#5B6475]">Антигравийная плёнка</span>
+</div>
+<a class="font-title-md text-sm text-[#0E2A5C] font-bold underline hover:text-primary-container transition-colors shrink-0" href="#prices">
+          Все услуги
+        </a>
+</div>
+</div>
+</section>
+<!-- 3. SECTION: ОНЛАЙН-ЗАПИСЬ НА РЕМОНТ (Dark Navy Panel) -->
+<section class="bg-[#0E2A5C] py-20 text-white relative" id="booking">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column (col-span-5) -->
+<div class="lg:col-span-5">
+<span class="inline-block bg-primary-container text-white text-xs font-label-tech font-bold px-3 py-1 rounded mb-4">
+          ОНЛАЙН-ЗАПИСЬ
+        </span>
+<h2 class="font-headline-lg text-3xl lg:text-4xl font-extrabold text-white mb-6 leading-tight">
+          Запишитесь на удобное время
+        </h2>
+<p class="font-body-md text-slate-300 leading-relaxed mb-8">
+          Без звонков и ожидания: выберите услугу, адрес и дату — заявка сразу придёт мастеру в Telegram или Viber, он подтвердит время.
+        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-lg">schedule</span>
+</div>
+<p class="font-label-lg text-sm text-slate-200">Подтверждение в Telegram или Viber</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+<p class="font-label-lg text-sm text-slate-200">Два адреса на выбор</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Booking Form (col-span-7) -->
+<div class="lg:col-span-7">
+<div class="bg-white text-[#14213D] p-6 sm:p-8 rounded-xl shadow-2xl border border-white/10">
+<!-- Step indicator -->
+<div class="flex items-center justify-between pb-6 mb-6 border-b border-[#E1E5EC]">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-white text-xs font-bold flex items-center justify-center">1</span>
+<span class="font-label-md text-xs font-bold text-[#0E2A5C]">Услуга</span>
+</div>
+<div class="w-8 h-[1px] bg-[#E1E5EC]"></div>
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-white text-xs font-bold flex items-center justify-center">2</span>
+<span class="font-label-md text-xs font-bold text-[#0E2A5C]">Адрес</span>
+</div>
+<div class="w-8 h-[1px] bg-[#E1E5EC]"></div>
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-[#F3F5F8] text-[#5B6475] text-xs font-bold flex items-center justify-center">3</span>
+<span class="font-label-md text-xs font-medium text-[#5B6475]">Дата и время</span>
+</div>
+</div>
+<!-- Form Fields -->
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Заявка отправлена мастеру в Telegram/Viber!');">
+<!-- Service select -->
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] uppercase mb-2">Выберите услугу</label>
+<select class="w-full bg-[#FFFFFF] border border-[#E1E5EC] rounded-lg p-3 text-sm font-medium text-[#0E2A5C] focus:border-[#0E2A5C] focus:ring-1 focus:ring-[#0E2A5C] outline-none">
+<option selected="">Замена масла</option>
+<option>Кузовной ремонт</option>
+<option>Покраска автомобиля</option>
+<option>Развал-схождение 3D Bosch</option>
+<option>Ремонт двигателя и КПП</option>
+<option>Автоэлектрика и диагностика</option>
+<option>Шиномонтаж и балансировка</option>
+</select>
+</div>
+<!-- Address tiles -->
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] uppercase mb-2">Адрес автосервиса</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="address-selector">
+<button class="border-2 border-primary-container bg-red-50/50 p-3 rounded-lg flex items-center justify-between text-sm font-bold text-[#0E2A5C] text-left" type="button">
+<span>ул. Гагарина, 83</span>
+<span class="material-symbols-outlined text-primary-container text-lg">check_circle</span>
+</button>
+<button class="border border-[#E1E5EC] p-3 rounded-lg text-sm text-[#5B6475] font-medium text-left hover:border-[#0E2A5C] transition-colors" type="button">
+<span>ул. Дзержинского, 103</span>
+</button>
+</div>
+</div>
+<!-- Date & Time Row -->
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] uppercase mb-2">Дата и время записи</label>
+<!-- Week row -->
+<div class="grid grid-cols-6 gap-2 mb-3">
+<button class="py-2 rounded-lg border border-[#E1E5EC] text-xs font-semibold text-[#5B6475] hover:bg-slate-50 text-center" type="button">Пн<br/><span class="text-[10px] text-slate-400">18</span></button>
+<button class="py-2 rounded-lg border border-[#E1E5EC] text-xs font-semibold text-[#5B6475] hover:bg-slate-50 text-center" type="button">Вт<br/><span class="text-[10px] text-slate-400">19</span></button>
+<button class="py-2 rounded-lg bg-[#0E2A5C] text-white text-xs font-bold text-center" type="button">Ср<br/><span class="text-[10px] text-slate-300">20</span></button>
+<button class="py-2 rounded-lg border border-[#E1E5EC] text-xs font-semibold text-[#5B6475] hover:bg-slate-50 text-center" type="button">Чт<br/><span class="text-[10px] text-slate-400">21</span></button>
+<button class="py-2 rounded-lg border border-[#E1E5EC] text-xs font-semibold text-[#5B6475] hover:bg-slate-50 text-center" type="button">Пт<br/><span class="text-[10px] text-slate-400">22</span></button>
+<button class="py-2 rounded-lg border border-[#E1E5EC] text-xs font-semibold text-[#5B6475] hover:bg-slate-50 text-center" type="button">Сб<br/><span class="text-[10px] text-slate-400">23</span></button>
+</div>
+<!-- Time Chips -->
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-1.5 rounded-lg border border-[#E1E5EC] text-xs font-medium text-[#5B6475] hover:border-[#0E2A5C]" type="button">09:00</button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-white text-xs font-bold shadow-sm" type="button">11:00</button>
+<button class="px-3.5 py-1.5 rounded-lg border border-[#E1E5EC] text-xs font-medium text-[#5B6475] hover:border-[#0E2A5C]" type="button">14:00</button>
+<button class="px-3.5 py-1.5 rounded-lg border border-[#E1E5EC] text-xs font-medium text-[#5B6475] hover:border-[#0E2A5C]" type="button">16:00</button>
+</div>
+</div>
+<!-- Inputs row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] mb-1">Имя</label>
+<input class="w-full bg-[#FFFFFF] border border-[#E1E5EC] rounded-lg p-2.5 text-sm text-[#0E2A5C] focus:border-[#0E2A5C] outline-none" placeholder="Ваше имя" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] mb-1">Телефон</label>
+<input class="w-full bg-[#FFFFFF] border border-[#E1E5EC] rounded-lg p-2.5 text-sm text-[#0E2A5C] focus:border-[#0E2A5C] outline-none" placeholder="+375 (__) ___-__-__" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-xs text-[#5B6475] mb-1">Марка авто</label>
+<input class="w-full bg-[#FFFFFF] border border-[#E1E5EC] rounded-lg p-2.5 text-sm text-[#0E2A5C] focus:border-[#0E2A5C] outline-none" placeholder="Например, VW Passat" type="text"/>
+</div>
+</div>
+<!-- Submit Button -->
+<div>
+<button class="w-full bg-primary-container text-white py-4 rounded-xl font-label-lg font-bold text-base hover:bg-[#bd1f26] active:scale-[0.99] transition shadow-md" type="submit">
+                Записаться
+              </button>
+<p class="font-body-sm text-[11px] text-[#5B6475] text-center mt-3">
+                Нажимая кнопку, вы соглашаетесь на обработку персональных данных
+              </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SECTION: СТОИМОСТЬ РАБОТ -->
+<section class="bg-[#FFFFFF] py-20 border-b border-[#E1E5EC]" id="prices">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-3xl md:text-4xl font-extrabold text-[#0E2A5C] mb-3">
+          Стоимость работ
+        </h2>
+<p class="font-body-md text-[#5B6475]">Цены на основные работы</p>
+</div>
+<!-- Price Table -->
+<div class="border border-[#E1E5EC] rounded-xl overflow-hidden divide-y divide-[#E1E5EC] mb-8 bg-white custom-shadow">
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Замена масла в двигателе</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Развал-схождение 3D Bosch</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Шиномонтаж и балансировка</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Компьютерная диагностика</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Покраска элемента кузова</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+<div class="p-4 sm:p-5 flex items-center justify-between hover:bg-[#F3F5F8]/50 transition-colors">
+<span class="font-title-md text-sm sm:text-base font-semibold text-[#14213D]">Заправка автокондиционера</span>
+<div class="flex items-center gap-4">
+<span class="font-body-sm text-sm text-[#5B6475]">по запросу</span>
+<a class="font-label-md text-xs font-bold text-primary-container hover:underline" href="https://t.me" target="_blank">Узнать цену</a>
+</div>
+</div>
+</div>
+<!-- Note card -->
+<div class="bg-[#F3F5F8] border border-[#E1E5EC] rounded-xl p-5 mb-8 text-center text-[#5B6475] text-sm">
+<p>Точную стоимость назовёт мастер после осмотра автомобиля. Отправьте фото или опишите проблему в Telegram или Viber.</p>
+</div>
+<!-- Action Button Centered -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 border-2 border-[#0E2A5C] text-[#0E2A5C] px-8 py-3.5 rounded-xl font-label-lg font-bold hover:bg-[#0E2A5C]/5 transition-colors" href="viber://chat" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Спросить цену в Viber</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. SECTION: ПОЧЕМУ R-M -->
+<section class="bg-[#F3F5F8] py-20 border-b border-[#E1E5EC]" id="why-us">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline-lg text-3xl md:text-4xl font-extrabold text-[#0E2A5C] text-center mb-14">
+        Почему выбирают Автосервис <span style="white-space:nowrap">R-M</span>
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="bg-white rounded-xl p-6 border border-[#E1E5EC] custom-shadow">
+<div class="w-12 h-12 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] mb-5">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Два адреса в Полоцке</h3>
+<p class="font-body-sm text-[#5B6475]">ул. Гагарина, 83 и ул. Дзержинского, 103</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white rounded-xl p-6 border border-[#E1E5EC] custom-shadow">
+<div class="w-12 h-12 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] mb-5">
+<span class="material-symbols-outlined text-2xl">engineering</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Узкие специалисты</h3>
+<p class="font-body-sm text-[#5B6475]">Кузовщики, маляры, мастера по подвеске, двигателю и шиномонтажу</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white rounded-xl p-6 border border-[#E1E5EC] custom-shadow">
+<div class="w-12 h-12 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] mb-5">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Оборудование Bosch</h3>
+<p class="font-body-sm text-[#5B6475]">3D развал-схождение и компьютерная диагностика</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-white rounded-xl p-6 border border-[#E1E5EC] custom-shadow">
+<div class="w-12 h-12 rounded-xl bg-[#F3F5F8] flex items-center justify-center text-[#0E2A5C] mb-5">
+<span class="material-symbols-outlined text-2xl">directions_car</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Американские авто</h3>
+<p class="font-body-sm text-[#5B6475]">Кузовной ремонт и покраска автомобилей из США</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. SECTION: КАК МЫ РАБОТАЕМ -->
+<section class="bg-[#FFFFFF] py-20 border-b border-[#E1E5EC]" id="workflow">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline-lg text-3xl md:text-4xl font-extrabold text-[#0E2A5C] text-center mb-16">
+        Как мы работаем
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="relative flex flex-col items-start">
+<span class="font-headline-lg text-3xl font-extrabold text-primary-container mb-3">01</span>
+<div class="w-full h-1 bg-[#F3F5F8] mb-4 relative">
+<div class="w-8 h-1 bg-primary-container"></div>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Запись онлайн или по телефону</h3>
+<p class="font-body-sm text-[#5B6475]">Выберите услугу на сайте или свяжитесь с мастером-приемщиком.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col items-start">
+<span class="font-headline-lg text-3xl font-extrabold text-primary-container mb-3">02</span>
+<div class="w-full h-1 bg-[#F3F5F8] mb-4"></div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Осмотр и диагностика</h3>
+<p class="font-body-sm text-[#5B6475]">Тщательная проверка узлов и агрегатов на специализированном стенде.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col items-start">
+<span class="font-headline-lg text-3xl font-extrabold text-primary-container mb-3">03</span>
+<div class="w-full h-1 bg-[#F3F5F8] mb-4"></div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Согласование стоимости</h3>
+<p class="font-body-sm text-[#5B6475]">Прозрачный расчет деталей и работ без скрытых платежей.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col items-start">
+<span class="font-headline-lg text-3xl font-extrabold text-primary-container mb-3">04</span>
+<div class="w-full h-1 bg-[#F3F5F8] mb-4"></div>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-2">Ремонт и выдача автомобиля</h3>
+<p class="font-body-sm text-[#5B6475]">Ремонт, проверка и передача автомобиля владельцу</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SECTION: ОТЗЫВЫ -->
+<section class="bg-[#F3F5F8] py-16 border-b border-[#E1E5EC]">
+<div class="max-w-4xl mx-auto px-6">
+<div class="bg-white rounded-xl p-8 sm:p-10 border border-[#E1E5EC] text-center shadow-sm">
+<p class="font-headline-lg text-5xl font-extrabold text-[#0E2A5C] mb-2">4.9</p>
+<div class="flex items-center justify-center gap-1 text-primary-container mb-3">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-title-md text-base font-medium text-[#5B6475] mb-8">
+          63 отзыва на avservice.by
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="border border-[#0E2A5C] text-[#0E2A5C] px-6 py-2.5 rounded-xl font-label-lg font-semibold hover:bg-[#0E2A5C]/5 transition-colors" href="#">
+            Читать отзывы
+          </a>
+<a class="text-primary-container font-label-lg font-semibold underline hover:text-[#bd1f26] transition-colors" href="#">
+            Оставить отзыв
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. SECTION: КОНТАКТЫ И АДРЕСА -->
+<section class="bg-[#FFFFFF] py-20 border-b border-[#E1E5EC]" id="contacts">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline-lg text-3xl md:text-4xl font-extrabold text-[#0E2A5C] mb-12">
+        Контакты и адреса
+      </h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Side: Cards & Phones (col-span-6) -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<!-- Two Address Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<div class="p-5 rounded-xl border border-[#E1E5EC] bg-[#F3F5F8] flex flex-col justify-between">
+<div>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-[#0E2A5C] text-white mb-2">Адрес 1</span>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-1">ул. Гагарина, 83</h3>
+<p class="font-body-sm text-xs text-[#5B6475] leading-relaxed mb-4">211405, Витебская обл., г. Полоцк</p>
+</div>
+<a class="inline-flex items-center gap-1 text-xs font-label-md font-bold text-[#0E2A5C] border border-[#0E2A5C] px-3 py-1.5 rounded-lg w-fit hover:bg-[#0E2A5C] hover:text-white transition-colors" href="https://maps.yandex.ru" target="_blank">
+<span class="material-symbols-outlined text-sm">navigation</span>
+<span>Маршрут</span>
+</a>
+</div>
+<div class="p-5 rounded-xl border border-[#E1E5EC] bg-[#F3F5F8] flex flex-col justify-between">
+<div>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-bold bg-[#0E2A5C] text-white mb-2">Адрес 2</span>
+<h3 class="font-headline-sm text-base font-bold text-[#0E2A5C] mb-1">ул. Дзержинского, 103</h3>
+<p class="font-body-sm text-xs text-[#5B6475] leading-relaxed mb-4">г. Полоцк</p>
+</div>
+<a class="inline-flex items-center gap-1 text-xs font-label-md font-bold text-[#0E2A5C] border border-[#0E2A5C] px-3 py-1.5 rounded-lg w-fit hover:bg-[#0E2A5C] hover:text-white transition-colors" href="https://maps.yandex.ru" target="_blank">
+<span class="material-symbols-outlined text-sm">navigation</span>
+<span>Маршрут</span>
+</a>
+</div>
+</div>
+<!-- Phone Numbers List -->
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#0E2A5C] text-xl">call</span>
+<div>
+<a class="font-headline-sm text-lg font-bold text-[#0E2A5C] hover:text-primary-container transition-colors" href="tel:+375297147257">
+                  <span style="white-space:nowrap">+375 (29) 714-72-57</span>
+                </a>
+<span class="text-xs text-[#5B6475] ml-2 font-medium">Алеся</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#0E2A5C] text-xl">call</span>
+<div>
+<a class="font-headline-sm text-lg font-bold text-[#0E2A5C] hover:text-primary-container transition-colors" href="tel:+375297445486">
+                  <span style="white-space:nowrap">+375 (29) 744-54-86</span>
+                </a>
+<span class="text-xs text-[#5B6475] ml-2 font-medium">Ольга</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#0E2A5C] text-xl">phone_in_talk</span>
+<div>
+<a class="font-headline-sm text-lg font-bold text-[#0E2A5C] hover:text-primary-container transition-colors" href="tel:+375214443455">
+                  <span style="white-space:nowrap">+375 (214) 44-34-55</span>
+                </a>
+<span class="text-xs text-[#5B6475] ml-2 font-medium">Городской телефон</span>
+</div>
+</div>
+</div>
+<!-- Messengers and Socials -->
+<div class="flex items-center gap-3">
+<a class="w-10 h-10 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="https://t.me" target="_blank" title="Telegram">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.98-1.73 6.64-2.88 7.97-3.44 3.79-1.59 4.58-1.87 5.1-1.88.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.21-.04.38z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="viber://chat" target="_blank" title="Viber">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19.78 16.32c-.52-.39-1.22-.88-1.86-1.32-.67-.46-1.28-.58-1.82-.04-.55.55-.91.95-1.38.83-.82-.21-2.28-1.24-3.32-2.28-1.04-1.04-2.07-2.5-2.28-3.32-.12-.47.28-.83.83-1.38.54-.54.42-1.15-.04-1.82-.44-.64-.93-1.34-1.32-1.86-.48-.63-1.07-.6-1.58-.09-.59.59-1.26 1.43-1.31 2.37-.09 1.63.78 3.84 2.89 6.22 2.38 2.11 4.59 2.98 6.22 2.89.94-.05 1.78-.72 2.37-1.31.51-.51.54-1.1.09-1.58v-.01z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="https://instagram.com" target="_blank" title="Instagram">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-xl border border-[#E1E5EC] flex items-center justify-center text-[#0E2A5C] hover:bg-[#F3F5F8] transition-colors" href="https://vk.com" target="_blank" title="ВКонтакте">
+<span class="font-bold text-xs">VK</span>
+</a>
+</div>
+</div>
+<!-- Right Side: Minimal Map Representation (col-span-6) -->
+<div class="lg:col-span-6">
+<div class="w-full h-[380px] bg-[#F3F5F8] rounded-xl border border-[#E1E5EC] overflow-hidden relative p-4 flex flex-col justify-between" data-location="Polotsk" style="">
+<!-- Map styling accents -->
+<div class="absolute inset-0 opacity-40">
+<!-- River Western Dvina SVG trace -->
+<svg class="w-full h-full text-slate-300" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-width="14" viewbox="0 0 600 400">
+<path d="M 0,160 Q 180,220 320,180 T 600,240"></path>
+</svg>
+<!-- Roads -->
+<svg class="w-full h-full text-slate-200" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-width="4" viewbox="0 0 600 400">
+<path d="M 80,0 L 220,400"></path>
+<path d="M 0,280 L 600,210"></path>
+<path d="M 450,0 L 380,400"></path>
+</svg>
+</div>
+<!-- Header Map Badge -->
+<div class="relative z-10 flex justify-between items-center bg-white/90 backdrop-blur-sm border border-[#E1E5EC] px-4 py-2.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0E2A5C] text-lg">map</span>
+<span class="font-label-md text-xs font-bold text-[#0E2A5C]">Карта расположения СТО · г. Полоцк</span>
+</div>
+</div>
+<!-- Map Location Pin 1 -->
+<div class="relative z-10 self-start ml-12 bg-white px-3.5 py-2 rounded-xl shadow-md border border-[#E1E5EC] flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container animate-ping"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container absolute"></span>
+<div class="ml-2">
+<p class="font-headline-sm text-xs font-bold text-[#0E2A5C]">ул. Гагарина, 83</p>
+</div>
+</div>
+<!-- Map Location Pin 2 -->
+<div class="relative z-10 self-end mr-8 bg-white px-3.5 py-2 rounded-xl shadow-md border border-[#E1E5EC] flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<div>
+<p class="font-headline-sm text-xs font-bold text-[#0E2A5C]">ул. Дзержинского, 103</p>
+</div>
+</div>
+<!-- Footer Map Notice -->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FOOTER (Shared Component Anchor) -->
+<footer class="bg-inverse-surface text-white border-t border-secondary">
+<div class="w-full px-6 md:px-12 py-16 max-w-7xl mx-auto flex flex-col gap-10">
+<!-- Top Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+<!-- Col 1: Logo & Overview (col-span-4) -->
+<div class="lg:col-span-4">
+<div class="flex items-center gap-3 mb-4">
+<div class="relative w-9 h-9 flex items-center justify-center">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<polygon fill="#F5B700" points="50,4 93,27 93,73 50,96 7,73 7,27" stroke="#0E2A5C" stroke-width="4"></polygon>
+</svg>
+<span class="absolute font-headline-sm font-extrabold text-[#0E2A5C] text-xs"><span style="white-space:nowrap">R-M</span></span>
+</div>
+<span class="font-headline-md text-xl font-bold text-inverse-on-surface">Автосервис <span style="white-space:nowrap">R-M</span></span>
+</div>
+<p class="font-body-sm text-sm text-slate-300 leading-relaxed mb-4 max-w-sm">СТО «<span style="white-space:nowrap">R-M</span> СЕРВИС» в Полоцке: кузовной ремонт и покраска, обслуживание и ремонт автомобилей.</p>
+<a class="font-title-md text-sm font-bold text-primary-fixed hover:text-white transition-colors" href="tel:+375297147257">
+            <span style="white-space:nowrap">+375 (29) 714-72-57</span>
+          </a>
+</div>
+<!-- Col 2: Services (col-span-3) -->
+<div class="lg:col-span-3">
+<h4 class="font-title-md text-sm font-bold text-white uppercase tracking-wider mb-4">Услуги</h4>
+<ul class="space-y-2 text-sm text-slate-300 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#services">Кузовной ремонт</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Покраска автомобиля</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Замена масла и фильтров</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Развал-схождение 3D Bosch</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Шиномонтаж и балансировка</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Автоэлектрика и диагностика</a></li>
+</ul>
+</div>
+<!-- Col 3: For Clients (col-span-3) -->
+<div class="lg:col-span-3">
+<h4 class="font-title-md text-sm font-bold text-white uppercase tracking-wider mb-4">Клиентам</h4>
+<ul class="space-y-2 text-sm text-slate-300 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#prices">Цены</a></li>
+<li><a class="hover:text-white transition-colors" href="#booking">Онлайн-запись</a></li>
+<li><a class="hover:text-white transition-colors" href="#services">Статьи</a></li>
+<li><a class="hover:text-white transition-colors" href="#prices">Прейскурант</a></li>
+</ul>
+</div>
+<!-- Col 4: Center Details (col-span-2) -->
+<div class="lg:col-span-2">
+<h4 class="font-title-md text-sm font-bold text-white uppercase tracking-wider mb-4">Компания</h4>
+<ul class="space-y-2 text-sm text-slate-300 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#why-us">Наши специалисты</a></li>
+<li><a class="hover:text-white transition-colors" href="#contacts">Адреса цехов</a></li>
+<li><a class="hover:text-white transition-colors" href="#contacts">Контакты</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Политика конфиденциальности</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="border-t border-slate-700/60 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4"><p>© 2026 СТО «<span style="white-space:nowrap">R-M</span> СЕРВИС», г. Полоцк. Все права защищены.</p></div>
+</div>
+</footer>
+<!-- Light micro-interaction logic for address selection in booking form -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const addressContainer = document.getElementById('address-selector');
+      if (addressContainer) {
+        const buttons = addressContainer.querySelectorAll('button');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+              b.className = 'border border-[#E1E5EC] <span style="white-space:nowrap">p-3</span> rounded-lg text-sm text-[#5B6475] font-medium text-left hover:border-[#0E2A5C] transition-colors';
+              const icon = b.querySelector('.material-symbols-outlined');
+              if (icon) icon.remove();
+            });
+            btn.className = 'border-2 border-primary-container bg-red-50/50 <span style="white-space:nowrap">p-3</span> rounded-lg flex items-center justify-between text-sm font-bold text-[#0E2A5C] text-left';
+            const icon = document.createElement('span');
+            icon.className = 'material-symbols-outlined text-primary-container text-lg';
+            icon.innerText = 'check_circle';
+            btn.appendChild(icon);
+          });
+        });
+      }
+    });
+  </script>
+</body></html>

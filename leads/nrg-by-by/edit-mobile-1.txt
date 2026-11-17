@@ -1,0 +1,5 @@
+Fix text only. Keep the layout, colors, fonts (Unbounded headings, Manrope body), photos, sticky bottom bar and style exactly as is.
+
+1. Section "Услуги СТО": remove the small lime badge "10 баз" next to the heading.
+2. Hero facts row: third card text "на работы и узлы" → "на работы и запчасти".
+3. Header logo icon: replace the fan/propeller icon with a simple stylized pair of wings in electric blue (same as the desktop logo mark).

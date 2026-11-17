@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "https://www.mebreshenie.by",
+  "finalUrl": "https://www.mebreshenie.by/",
+  "httpStatus": 200,
+  "lastModified": "",
+  "server": "nginx/1.30.6",
+  "loadMs": 3587,
+  "bytes": 4149016,
+  "requests": 121,
+  "viewportMeta": "width=device-width, initial-scale=1, maximum-scale=1",
+  "generator": "",
+  "cms": [],
+  "jquery": "2.0.3",
+  "legacy": {
+    "tables": 0,
+    "nestedTables": 0,
+    "layoutTables": 0,
+    "fontTags": 0,
+    "centerTags": 0,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 9
+  },
+  "copyrightYears": [],
+  "contentWidth": 1440,
+  "docHeight": 4372,
+  "bodyFont": "\"Open Sans\", sans-serif",
+  "mobile": {
+    "viewportMeta": "width=device-width, initial-scale=1, maximum-scale=1",
+    "innerWidth": 390,
+    "screenWidth": 390,
+    "scrollWidth": 390,
+    "scale": 1,
+    "smallTextRatio": 0,
+    "smallTapRatio": 0,
+    "overflow": [],
+    "brokenImages": 0,
+    "docHeight": 9031
+  },
+  "brokenImages": 0,
+  "consoleErrors": [
+    "TypeError: $(...).ajaxForm is not a function",
+    "requestStorageAccess: Permission denied."
+  ],
+  "complexity": [
+    "калькулятор",
+    "карта"
+  ],
+  "score": 0,
+  "reasons": []
+}

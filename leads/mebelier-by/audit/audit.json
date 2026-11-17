@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "https://mebelier.by",
+  "finalUrl": "https://mebelier.by/",
+  "httpStatus": 200,
+  "lastModified": "",
+  "server": "nginx",
+  "loadMs": 1616,
+  "bytes": 324920,
+  "requests": 128,
+  "viewportMeta": "",
+  "generator": "",
+  "cms": [],
+  "jquery": "1.4.3",
+  "legacy": {
+    "tables": 1,
+    "nestedTables": 0,
+    "layoutTables": 0,
+    "fontTags": 1,
+    "centerTags": 1,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 44
+  },
+  "copyrightYears": [],
+  "contentWidth": 860,
+  "docHeight": 1605,
+  "bodyFont": "Tahoma, Arial, Helvetica, sans-serif",
+  "mobile": {
+    "viewportMeta": "",
+    "innerWidth": 983,
+    "screenWidth": 390,
+    "scrollWidth": 983,
+    "scale": 0.3967446592065107,
+    "smallTextRatio": 1,
+    "smallTapRatio": 0.16326530612244897,
+    "overflow": [],
+    "brokenImages": 0,
+    "docHeight": 2126
+  },
+  "brokenImages": 0,
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Mixed Content: The page at 'https://mebelier.by/kontakt.php' was loaded over HTTPS, but requested an insecure script 'http://maps.google.com/maps?file=api&v=2&sensor=true&key=ABQIAAAA93XOj2AiBTz0jBXf2",
+    "ReferenceError: GBrowserIsCompatible is not defined",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "complexity": [
+    "корзина / оформление заказа"
+  ],
+  "score": 51,
+  "reasons": [
+    "Нет мобильной версии: сайт на телефоне показывается уменьшенной копией десктопа",
+    "На телефоне 100% текста мельче 12px — читать невозможно без зума",
+    "Узкая фиксированная вёрстка 860px — на современных мониторах по бокам пустота",
+    "Очень старый jQuery 1.4.3",
+    "Ошибки JavaScript в консоли: 8"
+  ]
+}

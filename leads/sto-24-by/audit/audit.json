@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "https://sto-24.by",
+  "finalUrl": "https://sto-24.by/",
+  "httpStatus": 200,
+  "lastModified": "",
+  "server": "nginx/1.30.6",
+  "loadMs": 25719,
+  "bytes": 5162728,
+  "requests": 199,
+  "viewportMeta": "width=device-width, initial-scale=1.0",
+  "generator": "",
+  "cms": [],
+  "jquery": "1.7.2",
+  "legacy": {
+    "tables": 0,
+    "nestedTables": 0,
+    "layoutTables": 0,
+    "fontTags": 0,
+    "centerTags": 0,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 25
+  },
+  "copyrightYears": [],
+  "contentWidth": 1440,
+  "docHeight": 2043,
+  "bodyFont": "Arial, Helvetica, sans-serif",
+  "mobile": {
+    "viewportMeta": "width=device-width, initial-scale=1.0",
+    "innerWidth": 390,
+    "screenWidth": 390,
+    "scrollWidth": 390,
+    "scale": 1,
+    "smallTextRatio": 0,
+    "smallTapRatio": 0.2,
+    "overflow": [],
+    "brokenImages": 0,
+    "docHeight": 4302
+  },
+  "brokenImages": 0,
+  "consoleErrors": [
+    "TypeError: $(...).stick_in_parent is not a function",
+    "Failed to load resource: net::ERR_CONNECTION_RESET",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TIMED_OUT"
+  ],
+  "complexity": [],
+  "score": 13,
+  "reasons": [
+    "Очень старый jQuery 1.7.2",
+    "Медленная загрузка: 25.7 с",
+    "Ошибки JavaScript в консоли: 4"
+  ]
+}

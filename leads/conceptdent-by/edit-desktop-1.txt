@@ -1,0 +1,16 @@
+Fix only these points, keep the layout, colors, fonts, photos and all other content exactly as is:
+
+1) Header: the phone "+375 (29) 196-61-93" must be on ONE line, no wrapping (make the menu items slightly smaller / tighter spacing if needed; "Галерея улыбок" and "Стоматологический туризм" each on one line too). Logo wordmark "Concept Dent" on one line.
+
+2) Footer: remove the invented license text everywhere — delete "Лицензия МЗ РБ № 02040/8412" in the footer description and in the bottom copyright line. Bottom line must be exactly "© 2026 Concept Dent. Стоматология в Могилёве". Remove the green text "Clean clinic, fresh mint" in the bottom-right corner. In the footer menu remove the link "Лицензии и сертификаты".
+
+3) Contacts map: remove the text "Координаты: 53.9011, 30.3344" (keep the pin and labels).
+
+4) Remove invented texts:
+ - In section "Что мы делаем" delete the right-side text "Современные протоколы лечения и цифровое планирование без боли и избыточных манипуляций".
+ - In section "Концепция" replace the paragraph under the quote with: "Наша концепция довольно проста: никогда не делать того, чего можно не делать вовсе."
+ - In "Как проходит лечение" delete the small grey descriptions under all 4 steps (keep only step titles) and replace the subtitle with "От первого звонка до здоровой улыбки".
+
+5) Request form: date field placeholder must be "ДД.ММ.ГГГГ" (not mm/dd/yyyy).
+
+6) Photos repeat: the same smiling woman appears 3 times. Replace the photo in the 4th service card "Отбеливание" with a close-up of a young woman with a bright natural smile (different person, dark hair), and the 4th photo in "Галерея улыбок" with a smiling senior man around 60 with natural teeth (different person). Real photos, no text inside images.

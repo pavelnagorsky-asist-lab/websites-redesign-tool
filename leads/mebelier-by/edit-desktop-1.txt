@@ -1,0 +1,15 @@
+Fix only these points, keep the layout, colors, fonts and all other content exactly as is:
+
+1) Header: phone "+375 (29) 620-67-69" must be on ONE line, no wrapping (make menu items slightly tighter if needed).
+
+2) Hero image: remove the caption strip under the photo ("ИНДИВИДУАЛЬНЫЙ ПРОЕКТ · ТРАВЕРТИН И МАССИВ ДУБА" / "Гомель") completely — just the photo with a thin frame.
+
+3) Photos must not repeat. Replace these images with new distinct real-looking interior photos (bright daylight, no text, no logos):
+ - Catalog card "Мебель для кухни": a different light kitchen — L-shaped kitchen with matte sand-beige handleless fronts, oak open shelves and light stone countertop.
+ - Catalog card "Прихожие": compact hallway with built-in oak wardrobe, bench with shoe storage and a mirror.
+ - Catalog card "Корпусная мебель": modern bright office interior with light oak desks, cabinets and shelving (no workshop, no machines).
+ - "Только наши работы" gallery: replace the workshop/CNC photo (second row, middle) with a kids' room with built-in light wardrobe and desk; caption "Детская со встроенным шкафом и рабочим местом". Replace the last photo (second row, right) with a kitchen with aluminium-frame glass wall cabinets and warm grey fronts; caption "Кухня с алюминиевыми фасадами со стеклом".
+
+4) Section "Своё производство": remove the caption strip under the workshop photo ("ЧПУ РАСКРОЙ И КРОМКООБЛИЦОВКА" / "Цех в Гомеле") and remove the link "Запросить экскурсию на производство".
+
+5) Footer: remove the second copyright line "© 2025 МЕБЕЛЬЕР. Архитектурное мебельное ателье, Гомель. Все права защищены." — keep only "© 2026 ООО «Мебельер», УНП 490556422, г. Гомель". Make footer menu links readable (light ivory #E9E2D7 instead of very dim grey).

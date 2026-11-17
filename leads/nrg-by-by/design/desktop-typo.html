@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Автоцентр NRG — Орша</title>
+<!-- Google Fonts: Unbounded, Manrope, Space Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Unbounded:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#dae0f2",
+            "inverse-surface": "#e1e2ea",
+            "on-surface": "#e1e2ea",
+            "surface-bright": "#36393f",
+            "surface-variant": "#32353b",
+            "on-primary": "#293500",
+            "on-primary-fixed": "#171e00",
+            "primary": "#fdffe8",
+            "tertiary-fixed-dim": "#c0c6d8",
+            "surface-container-lowest": "#0b0e13",
+            "on-surface-variant": "#c5c9ae",
+            "surface-container-highest": "#32353b",
+            "error": "#ffb4ab",
+            "on-secondary-fixed": "#001b3d",
+            "on-primary-container": "#566b00",
+            "on-tertiary-container": "#5c6372",
+            "background": "#111319",
+            "surface": "#111319",
+            "primary-fixed-dim": "#afd505",
+            "on-error-container": "#ffdad6",
+            "outline": "#8f937a",
+            "tertiary": "#fefcff",
+            "surface-container-low": "#191c21",
+            "on-secondary-container": "#002957",
+            "secondary-container": "#3c90ff",
+            "on-background": "#e1e2ea",
+            "surface-dim": "#111319",
+            "surface-container-high": "#272a30",
+            "on-tertiary": "#2a313e",
+            "on-tertiary-fixed-variant": "#404755",
+            "secondary": "#a9c7ff",
+            "tertiary-fixed": "#dce2f4",
+            "primary-fixed": "#caf233",
+            "on-primary-fixed-variant": "#3d4c00",
+            "primary-container": "#c8f031",
+            "inverse-on-surface": "#2e3036",
+            "on-error": "#690005",
+            "error-container": "#93000a",
+            "outline-variant": "#454934",
+            "surface-container": "#1d2025",
+            "on-secondary": "#003063",
+            "secondary-fixed-dim": "#a9c7ff",
+            "secondary-fixed": "#d6e3ff",
+            "on-secondary-fixed-variant": "#00468c",
+            "on-tertiary-fixed": "#151c28",
+            "surface-tint": "#afd505",
+            "inverse-primary": "#526600"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "margin": "3rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope", "sans-serif"],
+            "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "label-numeric": ["Space Grotesk", "sans-serif"],
+            "title-md": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "label-caps": ["Manrope", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"],
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "unbounded": ["Unbounded", "sans-serif"]
+          },
+          "fontSize": {
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "label-numeric": ["16px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Technical Grid Lines & Precision Elements */
+    .tech-border {
+      border: 1px solid #2A3342;
+    }
+    .tech-border-b {
+      border-bottom: 1px solid #2A3342;
+    }
+    .tech-border-t {
+      border-top: 1px solid #2A3342;
+    }
+    .tech-border-l {
+      border-left: 1px solid #2A3342;
+    }
+    .tech-border-r {
+      border-right: 1px solid #2A3342;
+    }
+    .tech-bg-base {
+      background-color: #0B0E13;
+    }
+    .tech-bg-panel {
+      background-color: #151A22;
+    }
+    .tech-bg-card {
+      background-color: #1C2330;
+    }
+    .text-electric-blue {
+      color: #2F8CFF;
+    }
+    .border-electric-blue {
+      border-color: #2F8CFF;
+    }
+    .bg-electric-blue {
+      background-color: #2F8CFF;
+    }
+    .shadow-blue-glow {
+      box-shadow: 0 0 24px rgba(47, 140, 255, 0.25);
+    }
+    .radius-10 {
+      border-radius: 10px;
+    }
+    /* Technical 45-degree micro-hatching background */
+    .bg-diagonal-hatch {
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(42, 51, 66, 0.15) 0,
+        rgba(42, 51, 66, 0.15) 1px,
+        transparent 0,
+        transparent 16px
+      );
+    }
+  </style>
+</head>
+<body class="tech-bg-base text-[#F4F6FA] font-body-md antialiased selection:bg-primary-container selection:text-surface-container-lowest min-h-screen flex flex-col">
+<!-- =========================================================================
+       1) HEADER (TopNavBar Anchor Implementation)
+       ========================================================================= -->
+<header class="docked full-width top-0 sticky z-50 tech-bg-panel border-b border-[#2A3342] shadow-2xl">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<!-- Stylized Wings Mark in Electric Blue -->
+<div class="w-9 h-9 rounded-lg flex items-center justify-center bg-[#1C2330] border border-electric-blue text-electric-blue transition-transform group-hover:scale-105">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M2 17l5-5 4 4 8-10-3 12-7-3-7 2z"></path>
+<path d="M6 14l3-3"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-unbounded font-bold text-xl tracking-wider text-[#F4F6FA] leading-none">NRG</span>
+<span class="font-label-caps text-label-caps tracking-widest text-[#9AA4B2] mt-0.5">АВТОЦЕНТР · ОРША</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-label-caps text-label-caps uppercase text-primary-container border-b-2 border-primary-container pb-1 font-bold" href="#services">Услуги</a>
+<a class="font-label-caps text-label-caps uppercase text-[#9AA4B2] hover:text-[#F4F6FA] transition-colors" href="#tow">Эвакуатор</a>
+<a class="font-label-caps text-label-caps uppercase text-[#9AA4B2] hover:text-[#F4F6FA] transition-colors" href="#wash">Мойка</a>
+<a class="font-label-caps text-label-caps uppercase text-[#9AA4B2] hover:text-[#F4F6FA] transition-colors" href="#parts">Запчасти</a>
+<a class="font-label-caps text-label-caps uppercase text-[#9AA4B2] hover:text-[#F4F6FA] transition-colors" href="#services">Продажа авто</a>
+<a class="font-label-caps text-label-caps uppercase text-[#9AA4B2] hover:text-[#F4F6FA] transition-colors" href="#contacts">Контакты</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<!-- Working Hours Badge -->
+<div class="hidden xl:flex items-center gap-2 px-3 py-1.5 radius-10 tech-bg-card border border-[#2A3342] text-xs font-body-sm text-[#9AA4B2]" style="white-space: nowrap; padding-left: 0.5rem; padding-right: 0.5rem;">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Ежедневно 8:00–20:00</span>
+</div>
+<!-- Phone Click-to-Call -->
+<a class="hidden sm:flex items-center gap-2 text-sm font-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container transition-colors" href="tel:+375296457911" style="white-space: nowrap;">
+<span class="material-symbols-outlined text-electric-blue text-[18px]">call</span>
+          <span style="white-space:nowrap">+375 (29) 645-79-11</span>
+        </a>
+<!-- Primary CTA Button -->
+<a class="bg-primary-container text-surface-container-lowest font-unbounded text-xs font-bold uppercase px-4 py-2.5 radius-10 hover:bg-[#D7F558] active:scale-[0.98] transition-all flex items-center gap-2" href="#booking">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Записаться</span>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- =========================================================================
+         2) HERO SECTION
+         ========================================================================= -->
+<section class="relative tech-bg-base overflow-hidden border-b border-[#2A3342]">
+<div class="max-w-7xl mx-auto px-6 py-12 md:py-20 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column Content -->
+<div class="lg:col-span-7 flex flex-col z-10">
+<!-- Tag -->
+<div class="inline-flex items-center gap-2 w-max px-3.5 py-1.5 radius-10 border border-electric-blue bg-[#1C2330] mb-6">
+<span class="w-2 h-2 rounded-full bg-electric-blue animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase text-electric-blue font-bold tracking-wider">Орша · с 2005 года</span>
+</div>
+<!-- H1 Heading -->
+<h1 class="font-unbounded font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight text-[#F4F6FA] mb-6">
+              Автоцентр NRG — ремонт, эвакуатор, мойка и запчасти в одном месте
+            </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-[#9AA4B2] mb-8 max-w-2xl">
+              Ремонт и диагностика автомобилей, развал-схождение HOFMANN, Common Rail центр, мойка и химчистка, магазин-склад автозапчастей. Ул. 1 Мая, 62 — ежедневно с 8:00 до 20:00.
+            </p>
+<!-- Buttons Row -->
+<div class="flex flex-wrap items-center gap-4 mb-12">
+<a class="bg-primary-container text-surface-container-lowest font-unbounded text-xs sm:text-sm font-bold uppercase px-6 py-4 radius-10 hover:bg-[#D7F558] active:scale-[0.98] transition-all text-center" href="#booking">
+                Записаться на ремонт
+              </a>
+<a class="inline-flex items-center justify-center gap-2.5 border border-electric-blue text-[#F4F6FA] font-body-md font-semibold px-6 py-4 radius-10 bg-[#1C2330] hover:bg-electric-blue hover:text-surface-container-lowest active:scale-[0.98] transition-all text-center" href="tel:+375298191130">
+<span class="material-symbols-outlined text-electric-blue group-hover:text-surface-container-lowest text-xl">call</span>
+<span>Вызвать эвакуатор 24/7</span>
+</a>
+</div>
+<!-- 3 Facts Strip with Hairline Dividers -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-[#2A3342]">
+<div class="flex items-center gap-3">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<div>
+<div class="font-label-numeric text-label-numeric text-[#F4F6FA]">С 2005 года</div>
+<div class="font-body-sm text-body-sm text-[#9AA4B2]">в Орше</div>
+</div>
+</div>
+<div class="flex items-center gap-3 sm:border-l sm:border-[#2A3342] sm:pl-6">
+<span class="w-1.5 h-6 bg-electric-blue rounded-sm"></span>
+<div>
+<div class="font-label-numeric text-label-numeric text-[#F4F6FA]">Более 100</div>
+<div class="font-body-sm text-body-sm text-[#9AA4B2]">услуг на СТО</div>
+</div>
+</div>
+<div class="flex items-center gap-3 sm:border-l sm:border-[#2A3342] sm:pl-6">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<div>
+<div class="font-label-numeric text-label-numeric text-[#F4F6FA]">Гарантия</div>
+<div class="font-body-sm text-body-sm text-[#9AA4B2]">на работы и запчасти</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Photo with Gradient Fade -->
+<div class="lg:col-span-5 relative">
+<div class="relative radius-10 overflow-hidden border border-[#2A3342] shadow-2xl group">
+<img alt="NRG Service Station Bay" class="w-full h-[380px] sm:h-[460px] object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMOdIamYUFW0rKLXFMRzTjdcWokP7uBeIsKTpnBo4PtSnAOEW_ygDk2iodIpX4hLMOgkDn4XHyKDZNtKknppHouknLUNKqLS8-6XGokYTyLpBWoDaFaIXPfGhvuQtsdj0tex67jJ3QiRzkby-13cB8LOdbgYxEZApgRuqqSSL3NClyEKdvaSKQHee8BqMm_nfWKV4-PBspVy7jdHiB1To3_o-5ziTb66QxfNOyiraWY6tVF0G3E5UC5xbLj8VNC7u4e_2cQc7mRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0B0E13] via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 radius-10 tech-bg-panel/90 border border-[#2A3342] backdrop-blur-sm flex items-center justify-between">
+<div>
+<p class="font-body-sm text-body-sm text-[#9AA4B2]">Автоцентр NRG</p>
+<p class="font-unbounded font-bold text-sm text-[#F4F6FA]">ул. 1 Мая, 62</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         3) SECTION: 4 НАПРАВЛЕНИЯ АВТОЦЕНТРА
+         ========================================================================= -->
+<section class="py-16 md:py-24 tech-bg-panel border-b border-[#2A3342]" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span class="font-label-caps text-label-caps uppercase text-primary-container tracking-wider">КОМПЛЕКСНЫЙ ПОДХОД</span>
+</div>
+<h2 class="font-unbounded font-bold text-2xl md:text-3xl text-[#F4F6FA]">4 направления автоцентра</h2>
+</div>
+<p class="font-body-md text-body-md text-[#9AA4B2] max-w-md">СТО, эвакуатор, мойка и запчасти на одной территории — г. Орша, ул. 1 Мая, 62</p>
+</div>
+<!-- 4 Large Tall Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 01: СТО -->
+<div class="tech-bg-card radius-10 border border-[#2A3342] overflow-hidden flex flex-col justify-between hover:border-primary-container transition-colors group">
+<div>
+<div class="relative h-48 overflow-hidden border-b border-[#2A3342]">
+<img alt="СТО NRG Орша" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMOdIamYUFW0rKLXFMRzTjdcWokP7uBeIsKTpnBo4PtSnAOEW_ygDk2iodIpX4hLMOgkDn4XHyKDZNtKknppHouknLUNKqLS8-6XGokYTyLpBWoDaFaIXPfGhvuQtsdj0tex67jJ3QiRzkby-13cB8LOdbgYxEZApgRuqqSSL3NClyEKdvaSKQHee8BqMm_nfWKV4-PBspVy7jdHiB1To3_o-5ziTb66QxfNOyiraWY6tVF0G3E5UC5xbLj8VNC7u4e_2cQc7mRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C2330] via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 bg-[#0B0E13]/80 px-3 py-1 radius-10 border border-[#2A3342] text-primary-container font-unbounded text-sm font-bold">
+                  01
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-unbounded font-bold text-lg text-[#F4F6FA] mb-3">01 СТО</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2] mb-6">
+                  Любой ремонт и диагностика: двигатель и КПП, подвеска, ГРМ, автоэлектрика, кондиционеры
+                </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="block font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container mb-4" href="tel:+375295192727">
+                <span style="white-space:nowrap">+375 (29) 519-27-27</span>
+              </a>
+<a class="w-full block text-center bg-primary-container text-surface-container-lowest font-unbounded text-xs font-bold uppercase py-3 radius-10 hover:bg-[#D7F558] transition-all" href="#booking">
+                Записаться
+              </a>
+</div>
+</div>
+<!-- Card 02: Эвакуатор (Special Highlight) -->
+<div class="tech-bg-card radius-10 border-2 border-electric-blue shadow-blue-glow overflow-hidden flex flex-col justify-between relative group">
+<div class="absolute top-3 right-3 z-10 bg-electric-blue text-surface-container-lowest font-label-caps text-label-caps font-bold px-2.5 py-1 radius-10">
+              Круглосуточно
+            </div>
+<div>
+<div class="relative h-48 overflow-hidden border-b border-[#2A3342]">
+<img alt="Эвакуатор NRG 24/7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBna5ZEp3IkoDRhwtsubh5XrTT4Nz2neB6CfEkFWX5XwEeIItT21Waevn6mJ1RqTAWF8iDUqXfcVkuR3b6uu2Hp8Bc5kOxe1cms-WQyvfHjIU1BvRpT8rh173jh5K753GRBgefrw5AHx0wyLENktYfjlUyC4JpLIuMpLrmbiWOaOEaf5v31rFu1h_TcNFNlLl41QX64ERck2C8DJQ97u8EgrROq1w662EWSq9rDHII3M4PaJ4H4VhFWJVVLsMSI78P0viS-LuBmw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C2330] via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 bg-[#0B0E13]/80 px-3 py-1 radius-10 border border-[#2A3342] text-primary-container font-unbounded text-sm font-bold">
+                  02
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-unbounded font-bold text-lg text-[#F4F6FA] mb-3">02 Эвакуатор</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2] mb-6">
+                  Эвакуация автомобилей по всей Беларуси и ближнему зарубежью
+                </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="block font-label-numeric text-label-numeric font-bold text-electric-blue hover:underline mb-4" href="tel:+375298191130">
+                <span style="white-space:nowrap">+375 (29) 819-11-30</span>
+              </a>
+<a class="w-full block text-center bg-electric-blue text-surface-container-lowest font-unbounded text-xs font-bold uppercase py-3 radius-10 hover:opacity-90 transition-all" href="tel:+375298191130">
+                Вызвать
+              </a>
+</div>
+</div>
+<!-- Card 03: Мойка и химчистка -->
+<div class="tech-bg-card radius-10 border border-[#2A3342] overflow-hidden flex flex-col justify-between hover:border-primary-container transition-colors group">
+<div>
+<div class="relative h-48 overflow-hidden border-b border-[#2A3342]">
+<img alt="Мойка и химчистка NRG" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP67FzlvLaTSdmkIv_7vNdFBbgHKuoQrwxZ-pWIvDocn7A0GQn4yVCmSlG4cQo80MR-pZTdt6klLv-Mdnoejz2JOI-JSyUdC_TOHCdujbkqbeSfbWmQBwiHcDfG9CjPOfm2NJG0zlreE6_sHviCocFElSlp91FuX5tqR7Yk-Fj4Cd1JRVYSgo7wqI3et6bEn2tWkVYeq63rjUP3p9XQ588hmyTlEOG6KEE9qq1XUjIk8WEQB7SQZOOSAacLqF1NS3j6h6DOFWKNQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C2330] via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 bg-[#0B0E13]/80 px-3 py-1 radius-10 border border-[#2A3342] text-primary-container font-unbounded text-sm font-bold">
+                  03
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-unbounded font-bold text-lg text-[#F4F6FA] mb-3">03 Мойка и химчистка</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2] mb-6">
+                  Мойка автомобилей и химчистка салона по предварительной записи
+                </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="block font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container mb-4" href="tel:+375297874247">
+                <span style="white-space:nowrap">+375 (29) 787-42-47</span>
+              </a>
+<a class="w-full block text-center bg-primary-container text-surface-container-lowest font-unbounded text-xs font-bold uppercase py-3 radius-10 hover:bg-[#D7F558] transition-all" href="#booking">
+                Записаться
+              </a>
+</div>
+</div>
+<!-- Card 04: Запчасти -->
+<div class="tech-bg-card radius-10 border border-[#2A3342] overflow-hidden flex flex-col justify-between hover:border-primary-container transition-colors group">
+<div>
+<div class="relative h-48 overflow-hidden border-b border-[#2A3342]">
+<img alt="Магазин-склад запчастей NRG" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRBSlEa6HcFy3iLkFA8cMwEoYGi2DY7N1NSa6KlYdVuP-U1yGkoLMmVO45kmUtvmD3511nzRlvkXllTtTCwqiaxKBOl58orb_v450hOQSjjmq3-2NWdf2lZuGf588hHqory3Gs65mFaJ0VxCREKJozTs9ArTbI-VI3KE6NDVt3ZwitWxWj3uwJkPi3hZUmzEkptFKyW3rRFiAQSANBCArHlfYLj4y1NDyGUmSsyAAJeD_YgwF67O9OjWiATgp9cqqDTBG1ksNtww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1C2330] via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 bg-[#0B0E13]/80 px-3 py-1 radius-10 border border-[#2A3342] text-primary-container font-unbounded text-sm font-bold">
+                  04
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-unbounded font-bold text-lg text-[#F4F6FA] mb-3">04 Запчасти</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2] mb-6">
+                  Магазин-склад автозапчастей с сертификатами качества и доставкой по городу
+                </p>
+</div>
+</div>
+<div class="p-6 pt-0">
+<a class="block font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container mb-4" href="tel:+375295603911">
+                <span style="white-space:nowrap">+375 (29) 560-39-11</span>
+              </a>
+<a class="w-full block text-center bg-primary-container text-surface-container-lowest font-unbounded text-xs font-bold uppercase py-3 radius-10 hover:bg-[#D7F558] transition-all" href="#booking">
+                Подобрать
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         4) SECTION: УСЛУГИ СТО (16 Grid Tiles)
+         ========================================================================= -->
+<section class="py-16 md:py-24 tech-bg-base border-b border-[#2A3342]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column -->
+<div class="lg:col-span-4 sticky top-28">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-2.5 h-1 bg-electric-blue"></span>
+<span class="font-label-caps text-label-caps uppercase text-electric-blue font-bold">СЛЕСАРНЫЙ ЦЕХ</span>
+</div>
+<h2 class="font-unbounded font-bold text-2xl md:text-3xl text-[#F4F6FA] mb-4">Услуги СТО</h2>
+<p class="font-body-lg text-body-lg text-[#9AA4B2] mb-6">
+              Более ста услуг по ремонту и обслуживанию автомобилей
+            </p>
+<a class="inline-flex items-center gap-2 font-unbounded text-xs uppercase font-bold text-primary-container hover:underline group" href="#booking">
+<span>Все услуги</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<!-- Mini Spec Box -->
+<div class="mt-10 p-5 radius-10 tech-bg-panel border border-[#2A3342]">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-electric-blue">build_circle</span>
+<span class="font-unbounded text-xs font-bold text-[#F4F6FA]">Развал-схождение HOFMANN</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#9AA4B2]">Компьютерная диагностика и COMMON RAIL Центр — на месте</p>
+</div>
+</div>
+<!-- Right Column: 4x4 Grid (16 Tiles) -->
+<div class="lg:col-span-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+<!-- 1 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Компьютерная диагностика</span>
+</div>
+<!-- 2 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">COMMON RAIL Центр</span>
+</div>
+<!-- 3 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"></circle><path d="M12 2v20M2 12h20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Развал-схождение HOFMANN</span>
+</div>
+<!-- 4 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Ремонт подвески</span>
+</div>
+<!-- 5 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Замена ГРМ</span>
+</div>
+<!-- 6 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Ремонт двигателя и КПП</span>
+</div>
+<!-- 7 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Автоэлектрик</span>
+</div>
+<!-- 8 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Стартеры и генераторы</span>
+</div>
+<!-- 9 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Авто кондиционеры</span>
+</div>
+<!-- 10 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"></circle><circle cx="12" cy="12" r="3" stroke-width="2"></circle></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Проточка тормозных дисков</span>
+</div>
+<!-- 11 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Замена масел и тех. жидкостей</span>
+</div>
+<!-- 12 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Аргонная сварка</span>
+</div>
+<!-- 13 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><rect height="18" rx="2" stroke-width="2" width="18" x="3" y="3"></rect><line stroke-width="2" x1="3" x2="21" y1="9" y2="9"></line><line stroke-width="2" x1="9" x2="9" y1="21" y2="9"></line></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Автостекла</span>
+</div>
+<!-- 14 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-width="2"></circle><circle cx="12" cy="12" r="3" stroke-width="2"></circle></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Шиномонтаж LG</span>
+</div>
+<!-- 15 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Рукава высокого давления</span>
+</div>
+<!-- 16 -->
+<div class="tech-bg-card p-4 radius-10 border border-[#2A3342] hover:border-electric-blue transition-all group flex flex-col justify-between">
+<div class="text-electric-blue mb-3">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="font-body-md text-sm font-semibold text-[#F4F6FA]">Продажа автомобилей</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         5) TOW TRUCK BANNER (Atmospheric band)
+         ========================================================================= -->
+<section class="relative overflow-hidden border-b border-[#2A3342] bg-[#0B0E13]" id="tow">
+<div class="absolute inset-0 z-0">
+<img alt="NRG Tow Truck Highway Night" class="w-full h-full object-cover opacity-35" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBna5ZEp3IkoDRhwtsubh5XrTT4Nz2neB6CfEkFWX5XwEeIItT21Waevn6mJ1RqTAWF8iDUqXfcVkuR3b6uu2Hp8Bc5kOxe1cms-WQyvfHjIU1BvRpT8rh173jh5K753GRBgefrw5AHx0wyLENktYfjlUyC4JpLIuMpLrmbiWOaOEaf5v31rFu1h_TcNFNlLl41QX64ERck2C8DJQ97u8EgrROq1w662EWSq9rDHII3M4PaJ4H4VhFWJVVLsMSI78P0viS-LuBmw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0B0E13] via-[#0B0E13]/85 to-transparent"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-[#0B0E13]/50 to-[#0B0E13]"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-24">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 radius-10 border border-electric-blue bg-[#1C2330]/80 mb-6">
+<span class="w-2 h-2 rounded-full bg-electric-blue animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase text-electric-blue font-bold tracking-wider">Эвакуация 24/7</span>
+</div>
+<h2 class="font-unbounded font-bold text-3xl sm:text-4xl lg:text-5xl text-[#F4F6FA] mb-4">
+            Сломались в дороге?
+          </h2>
+<p class="font-body-lg text-body-lg text-[#9AA4B2] mb-8">
+            Эвакуатор NRG работает круглосуточно — по Орше, всей Беларуси и ближнему зарубежью.
+          </p>
+<div class="flex flex-col sm:flex-row sm:items-center gap-6">
+<a class="inline-flex items-center gap-3 text-2xl sm:text-3xl font-unbounded font-bold text-primary-container hover:underline group" href="tel:+375298191130" style="white-space: nowrap;">
+<span class="w-12 h-12 rounded-lg bg-[#1C2330] border border-electric-blue flex items-center justify-center text-electric-blue group-hover:bg-electric-blue group-hover:text-surface-container-lowest transition-all">
+<span class="material-symbols-outlined text-2xl">phone_in_talk</span>
+</span>
+<span><span style="white-space:nowrap">+375 (29) 819-11-30</span></span>
+</a>
+<a class="inline-flex items-center justify-center bg-primary-container text-surface-container-lowest font-unbounded text-xs sm:text-sm font-bold uppercase px-8 py-4 radius-10 hover:bg-[#D7F558] active:scale-[0.98] transition-all" href="tel:+375298191130" style="white-space: nowrap;">
+              Позвонить сейчас
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         6) SECTION: ОНЛАЙН-ЗАПИСЬ (Interactive Form)
+         ========================================================================= -->
+<section class="py-16 md:py-24 tech-bg-base border-b border-[#2A3342]" id="booking">
+<div class="max-w-7xl mx-auto px-6">
+<div class="tech-bg-panel radius-10 border border-[#2A3342] p-8 md:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Info -->
+<div class="lg:col-span-5">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2.5 h-1 bg-primary-container"></span>
+<span class="font-label-caps text-label-caps uppercase text-primary-container font-bold">БЫСТРЫЙ ВЫБОР ВРЕМЕНИ</span>
+</div>
+<h2 class="font-unbounded font-bold text-2xl md:text-3xl text-[#F4F6FA] mb-4">
+                Запишитесь без звонков
+              </h2>
+<p class="font-body-lg text-body-lg text-[#9AA4B2] mb-6">
+                Выберите направление и удобное время — заявка сразу придёт администратору в Telegram, он перезвонит и подтвердит запись.
+              </p>
+<div class="space-y-4 pt-6 border-t border-[#2A3342]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">done_all</span>
+<span class="font-body-md text-sm text-[#F4F6FA]">Администратор перезвонит и подтвердит время</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">schedule</span>
+<span class="font-body-md text-sm text-[#F4F6FA]">Прием авто с 8:00 до 20:00 ежедневно</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">verified</span>
+<span class="font-body-md text-sm text-[#F4F6FA]">Мойка и химчистка — по предварительной записи</span>
+</div>
+</div>
+</div>
+<!-- Right Interactive Form Card -->
+<div class="lg:col-span-7">
+<div class="tech-bg-card radius-10 border border-[#2A3342] p-6 sm:p-8">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Спасибо! Заявка передана мастеру-приемщику в г. Орша.');">
+<!-- Segmented Control Tabs -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-2">Направление</label>
+<div class="grid grid-cols-3 gap-2 p-1 bg-[#151A22] radius-10 border border-[#2A3342]">
+<button class="py-2.5 px-3 radius-10 font-unbounded text-xs font-bold text-surface-container-lowest bg-primary-container transition-all" type="button">
+                        СТО
+                      </button>
+<button class="py-2.5 px-3 radius-10 font-unbounded text-xs font-bold text-[#9AA4B2] hover:text-[#F4F6FA] transition-all" type="button">
+                        Мойка
+                      </button>
+<button class="py-2.5 px-3 radius-10 font-unbounded text-xs font-bold text-[#9AA4B2] hover:text-[#F4F6FA] transition-all" type="button">
+                        Шиномонтаж
+                      </button>
+</div>
+</div>
+<!-- Service Select Field -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-2">Услуга</label>
+<select class="w-full bg-[#151A22] border border-[#2A3342] radius-10 px-4 py-3 text-[#F4F6FA] font-body-md focus:outline-none focus:border-primary-container">
+<option selected="">Компьютерная диагностика</option>
+<option>Развал-схождение HOFMANN</option>
+<option>Ремонт подвески</option>
+<option>Замена ГРМ</option>
+<option>Ремонт двигателя и КПП</option>
+<option>Авто кондиционеры</option>
+<option>Комплексная мойка и химчистка</option>
+</select>
+</div>
+<!-- Date Selector Chips -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-2">День недели</label>
+<div class="grid grid-cols-7 gap-2">
+<button class="py-2 text-center radius-10 text-xs font-bold border border-primary-container bg-[#151A22] text-primary-container" type="button">Пн</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Вт</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Ср</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Чт</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Пт</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Сб</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">Вс</button>
+</div>
+</div>
+<!-- Time Selector Chips -->
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-2">Время</label>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 text-center radius-10 text-xs font-bold border border-primary-container bg-primary-container text-surface-container-lowest" type="button">09:00</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">11:00</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">14:00</button>
+<button class="py-2 text-center radius-10 text-xs font-bold border border-[#2A3342] bg-[#151A22] text-[#9AA4B2] hover:border-primary-container hover:text-[#F4F6FA]" type="button">17:00</button>
+</div>
+</div>
+<!-- Inputs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-1">Имя</label>
+<input class="w-full bg-[#151A22] border border-[#2A3342] radius-10 px-4 py-3 text-[#F4F6FA] font-body-md focus:outline-none focus:border-primary-container" placeholder="Алексей" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-1">Телефон</label>
+<input class="w-full bg-[#151A22] border border-[#2A3342] radius-10 px-4 py-3 text-[#F4F6FA] font-body-md focus:outline-none focus:border-primary-container" placeholder="+375 (__) ___-__-__" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-1">Марка и модель авто</label>
+<input class="w-full bg-[#151A22] border border-[#2A3342] radius-10 px-4 py-3 text-[#F4F6FA] font-body-md focus:outline-none focus:border-primary-container" placeholder="Например: Audi A6 C7 2.0 TDI" required="" type="text"/>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary-container text-surface-container-lowest font-unbounded text-xs sm:text-sm font-bold uppercase py-4 radius-10 hover:bg-[#D7F558] active:scale-[0.98] transition-all" type="submit">
+                    Отправить заявку
+                  </button>
+<p class="font-body-sm text-body-sm text-center text-[#9AA4B2]">
+                    Нажимая кнопку, вы соглашаетесь на обработку персональных данных
+                  </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         7) SECTION: ПОЧЕМУ NRG (4 Clean Columns)
+         ========================================================================= -->
+<section class="py-16 md:py-24 tech-bg-panel border-b border-[#2A3342]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span class="font-label-caps text-label-caps uppercase text-primary-container tracking-wider">ФАКТЫ И СТАНДАРТЫ</span>
+</div>
+<h2 class="font-unbounded font-bold text-2xl md:text-3xl text-[#F4F6FA]">Почему NRG</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Column 1 -->
+<div class="tech-bg-card p-6 radius-10 border border-[#2A3342] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-[#151A22] border border-primary-container text-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">history</span>
+</div>
+<h3 class="font-unbounded font-bold text-base text-[#F4F6FA] mb-2">С 2005 года</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2]">Обслуживаем автомобили в Орше</p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2A3342] font-label-caps text-label-caps text-primary-container">С 2005 ГОДА</div>
+</div>
+<!-- Column 2 -->
+<div class="tech-bg-card p-6 radius-10 border border-[#2A3342] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-[#151A22] border border-primary-container text-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="font-unbounded font-bold text-base text-[#F4F6FA] mb-2">Всё в одном месте</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2]">СТО, эвакуатор, мойка, запчасти и продажа авто на ул. 1 Мая, 62</p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2A3342] font-label-caps text-label-caps text-primary-container">ЕДИНЫЙ КОМПЛЕКС</div>
+</div>
+<!-- Column 3 -->
+<div class="tech-bg-card p-6 radius-10 border border-[#2A3342] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-[#151A22] border border-primary-container text-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h3 class="font-unbounded font-bold text-base text-[#F4F6FA] mb-2">Гарантия</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2]">На выполняемые работы и запчасти, купленные у нас</p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2A3342] font-label-caps text-label-caps text-primary-container">РАБОТЫ И ЗАПЧАСТИ</div>
+</div>
+<!-- Column 4 -->
+<div class="tech-bg-card p-6 radius-10 border border-[#2A3342] flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-[#151A22] border border-primary-container text-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">alarm_on</span>
+</div>
+<h3 class="font-unbounded font-bold text-base text-[#F4F6FA] mb-2">Ежедневно</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2]">С 8:00 до 20:00 без выходных, эвакуатор — круглосуточно</p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#2A3342] font-label-caps text-label-caps text-primary-container">БЕЗ ВЫХОДНЫХ</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+         8) SECTION: КОНТАКТЫ (Address, Phones, Flat Technical Map)
+         ========================================================================= -->
+<section class="py-16 md:py-24 tech-bg-base border-b border-[#2A3342]" id="contacts">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-12">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2.5 h-1 bg-electric-blue"></span>
+<span class="font-label-caps text-label-caps uppercase text-electric-blue font-bold">ЛОКАЦИЯ И СВЯЗЬ</span>
+</div>
+<h2 class="font-unbounded font-bold text-2xl md:text-3xl text-[#F4F6FA]">Контакты</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Details & Departments -->
+<div class="lg:col-span-6 space-y-6">
+<!-- Address Card -->
+<div class="tech-bg-panel p-6 radius-10 border border-[#2A3342]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+<div>
+<h3 class="font-unbounded font-bold text-lg text-[#F4F6FA]">г. Орша, ул. 1 Мая, 62</h3>
+<p class="font-body-md text-body-md text-[#9AA4B2]">Витебская область · Ежедневно с 8:00 до 20:00</p>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-2 bg-[#1C2330] border border-[#2A3342] hover:border-primary-container text-xs font-bold uppercase radius-10 text-primary-container transition-all" href="https://yandex.by/maps" target="_blank">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>Построить маршрут</span>
+</a>
+</div>
+</div>
+<!-- Compact Table of Departments with Phones -->
+<div class="tech-bg-panel radius-10 border border-[#2A3342] overflow-hidden">
+<div class="px-6 py-3 border-b border-[#2A3342] bg-[#1C2330]">
+<span class="font-label-caps text-label-caps uppercase text-[#9AA4B2] font-bold">Телефоны отделов и подразделений</span>
+</div>
+<div class="divide-y divide-[#2A3342]">
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-body-md text-sm text-[#9AA4B2]">Автоцентр</span>
+<div class="flex items-center gap-3 font-label-numeric text-label-numeric font-bold text-[#F4F6FA]">
+<a class="hover:text-primary-container" href="tel:+375296457911"><span style="white-space:nowrap">+375 (29) 645-79-11</span></a>
+<span class="text-[#2A3342]">/</span>
+<a class="hover:text-primary-container" href="tel:+375336457911"><span style="white-space:nowrap">+375 (33) 645-79-11</span></a>
+</div>
+</div>
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-body-md text-sm text-[#9AA4B2]">Слесарный цех</span>
+<a class="font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container" href="tel:+375295192727"><span style="white-space:nowrap">+375 (29) 519-27-27</span></a>
+</div>
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-body-md text-sm text-[#9AA4B2]">Компьютерная диагностика</span>
+<a class="font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container" href="tel:+375336910911"><span style="white-space:nowrap">+375 (33) 691-09-11</span></a>
+</div>
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-body-md text-sm text-[#9AA4B2]">Магазин-склад запчастей</span>
+<a class="font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container" href="tel:+375295603911"><span style="white-space:nowrap">+375 (29) 560-39-11</span></a>
+</div>
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-body-md text-sm text-[#9AA4B2]">Мойка и химчистка</span>
+<a class="font-label-numeric text-label-numeric font-bold text-[#F4F6FA] hover:text-primary-container" href="tel:+375297874247"><span style="white-space:nowrap">+375 (29) 787-42-47</span></a>
+</div>
+<div class="px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 bg-[#1C2330]/50">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-electric-blue"></span>
+<span class="font-body-md text-sm text-electric-blue font-bold">Эвакуатор (круглосуточно)</span>
+</div>
+<a class="font-label-numeric text-label-numeric font-bold text-electric-blue hover:underline" href="tel:+375298191130"><span style="white-space:nowrap">+375 (29) 819-11-30</span></a>
+</div>
+</div>
+</div>
+<!-- Email Bar -->
+<div class="tech-bg-panel px-6 py-4 radius-10 border border-[#2A3342] flex items-center justify-between">
+<span class="font-body-md text-sm text-[#9AA4B2]">Электронная почта:</span>
+<a class="font-body-md font-bold text-[#F4F6FA] hover:text-primary-container" href="mailto:6457911@mail.ru">6457911@mail.ru</a>
+</div>
+</div>
+<!-- Right Column: Flat Minimal Dark Technical Map Placeholder -->
+<div class="lg:col-span-6 h-full min-h-[460px]">
+<div class="w-full h-full min-h-[460px] radius-10 border border-[#2A3342] tech-bg-card relative overflow-hidden bg-diagonal-hatch flex items-center justify-center">
+<!-- Map Vector Graphic Simulation (Carbon Streets) -->
+<svg class="absolute inset-0 w-full h-full opacity-40" fill="none" viewbox="0 0 600 500">
+<!-- Major highway grid lines -->
+<line stroke="#2A3342" stroke-width="6" x1="0" x2="600" y1="120" y2="120"></line>
+<line stroke="#2A3342" stroke-width="8" x1="0" x2="600" y1="280" y2="280"></line>
+<line stroke="#2A3342" stroke-width="8" x1="220" x2="220" y1="0" y2="500"></line>
+<line stroke="#2A3342" stroke-width="4" x1="420" x2="420" y1="0" y2="500"></line>
+<path d="M50 450 L300 280 L550 50" stroke="#2A3342" stroke-dasharray="10 10" stroke-width="5"></path>
+<!-- River or rail contour -->
+<path d="M0 400 Q 200 350, 350 480 T 600 420" fill="none" stroke="#151A22" stroke-width="24"></path>
+</svg>
+<!-- Central Tech Radar Circle -->
+<div class="absolute w-72 h-72 rounded-full border border-[#2A3342] opacity-40"></div>
+<div class="absolute w-44 h-44 rounded-full border border-[#2A3342] opacity-60"></div>
+<!-- Bright Lime Pin with Label -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="px-4 py-2 radius-10 bg-surface-container-lowest border border-primary-container shadow-2xl flex items-center gap-2.5 mb-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></div>
+<span class="font-unbounded font-bold text-xs text-[#F4F6FA]">NRG ул. 1 Мая, 62</span>
+</div>
+<div class="w-4 h-4 bg-primary-container rotate-45 border-2 border-surface-container-lowest -mt-3"></div>
+<div class="w-2 h-2 rounded-full bg-primary-container mt-1"></div>
+</div>
+<!-- Map Coordinate HUD -->
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- =========================================================================
+       9) FOOTER (Shared Component Alignment & Precise Tokens)
+       ========================================================================= -->
+<footer class="w-full tech-bg-base border-t border-[#2A3342]">
+<div class="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between gap-8">
+<!-- Brand & Slogan -->
+<div class="max-w-sm">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-lg flex items-center justify-center bg-[#1C2330] border border-electric-blue text-electric-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M2 17l5-5 4 4 8-10-3 12-7-3-7 2z"></path>
+<path d="M6 14l3-3"></path>
+</svg>
+</div>
+<span class="font-unbounded font-bold text-xl text-[#F4F6FA] tracking-wider">NRG Автоцентр</span>
+</div>
+<p class="font-unbounded text-xs uppercase tracking-widest text-primary-container font-semibold mb-4">
+          Управляй энергией
+        </p>
+<p class="font-body-sm text-body-sm text-[#9AA4B2]">
+          Профессиональное обслуживание, эвакуация 24/7, мойка и склад запчастей на ул. 1 Мая, 62 в г. Орша.
+        </p>
+</div>
+<!-- Links Column 1: Направления -->
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-4">Направления</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#services">СТО</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#tow">Эвакуатор</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#wash">Мойка и химчистка</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#parts">Запчасти</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#services">Продажа авто</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Клиентам -->
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-4">Клиентам</h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#booking">Онлайн-запись</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#services">Акции</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#services">Новости</a></li>
+<li><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="#contacts">Вакансии</a></li>
+</ul>
+</div>
+<!-- Direct Phones & Address -->
+<div>
+<h4 class="font-label-caps text-label-caps uppercase text-[#9AA4B2] mb-4">Телефоны</h4>
+<div class="space-y-2 font-label-numeric text-label-numeric font-bold">
+<div><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="tel:+375296457911"><span style="white-space:nowrap">+375 (29) 645-79-11</span></a></div>
+<div><a class="text-[#F4F6FA] hover:text-primary-container transition-colors" href="tel:+375336457911"><span style="white-space:nowrap">+375 (33) 645-79-11</span></a></div>
+</div>
+<div class="mt-4 pt-4 border-t border-[#2A3342]">
+<span class="font-body-sm text-body-sm text-[#9AA4B2]">Эвакуатор 24/7:</span>
+<div class="font-label-numeric font-bold text-electric-blue">
+<a class="hover:underline" href="tel:+375298191130"><span style="white-space:nowrap">+375 (29) 819-11-30</span></a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright Rule -->
+<div class="border-t border-[#2A3342] py-6">
+<div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-[#9AA4B2]">
+<p>© 2005–2026 Автоцентр NRG, г. Орша</p>
+<p>ул. 1 Мая, 62 — Ежедневно с 8:00 до 20:00</p>
+</div>
+</div>
+</footer>
+</body></html>

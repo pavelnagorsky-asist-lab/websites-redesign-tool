@@ -1,0 +1,58 @@
+{
+  "slug": "sto-24-by",
+  "company": "Автосервис 24/7",
+  "industry": "СТО / ремонт авто",
+  "city": "Орша",
+  "country": "BY",
+  "site": "https://sto-24.by",
+  "domain": "sto-24.by",
+  "contacts": {
+    "emails": [],
+    "phones": [
+      "+375 (33) 646-54-44",
+      "+375 (33) 995-10-00"
+    ],
+    "telegram": [],
+    "viber": [
+      "viber://add?number=375336465444"
+    ],
+    "whatsapp": [
+      "https://api.whatsapp.com/send?phone=375336465444"
+    ],
+    "instagram": [],
+    "vk": [],
+    "facebook": [],
+    "address": "Витебская обл., г. Орша, ул. Пограничная, 2а блок 9к218"
+  },
+  "status": "rejected",
+  "rating": {
+    "outdated": 5,
+    "potential": 6,
+    "complexity": 2
+  },
+  "problems": [],
+  "upsell": [],
+  "ideas": [],
+  "rejectReason": "Адаптивный сайт с телефоном и кнопкой звонка на первом экране — устарел умеренно",
+  "activitySignals": [],
+  "design": null,
+  "source": "WebSearch",
+  "assignee": "Pavel Nagorsky",
+  "createdAt": "2026-11-17",
+  "updatedAt": "2026-11-17",
+  "reportedAt": "",
+  "audit": {
+    "date": "2026-11-17",
+    "outdatedScore": 13,
+    "reasons": [
+      "Очень старый jQuery 1.7.2",
+      "Медленная загрузка: 25.7 с",
+      "Ошибки JavaScript в консоли: 4"
+    ],
+    "complexity": "low",
+    "complexitySignals": [],
+    "cms": [],
+    "mobileFriendly": true
+  },
+  "notes": ""
+}

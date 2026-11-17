@@ -1,0 +1,13 @@
+---
+description: Правила рабочего пространства — поиск клиентов на редизайн и концепты в Google Stitch
+alwaysApply: true
+---
+
+Это рабочее пространство агента, а не кодовый продукт. Все правила, процессы и инструменты — в `AGENTS.md` (прочитать в начале работы), пошаговые процессы — в `docs/workflows/`:
+
+- поиск лидов — `docs/workflows/find-leads.md`
+- квалификация — `docs/workflows/qualify-lead.md`
+- дизайн в Stitch — `docs/workflows/stitch-design.md`
+- общий список — `docs/workflows/report-leads.md`
+
+Главное: с компаниями не связываться; дизайн только в Google Stitch через `npx tsx scripts/stitch.ts`; 2 генерации на лид (`stitch.ts design`), правки локально в `design/*.html` + `stitch.ts push`, в проекте только 2 экрана; отвечать по-русски и коротко.

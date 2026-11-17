@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-17",
+  "requestedUrl": "https://marizhel.by",
+  "finalUrl": "https://marizhel.by/",
+  "httpStatus": 200,
+  "lastModified": "Tue, 17 Nov 2026 06:54:56 GMT",
+  "server": "nginx/1.30.6",
+  "loadMs": 1864,
+  "bytes": 3924901,
+  "requests": 348,
+  "viewportMeta": "width=device-width, initial-scale=1.0, maximum-scale=2.0",
+  "generator": "",
+  "cms": [
+    "Joomla"
+  ],
+  "jquery": "1.12.4",
+  "legacy": {
+    "tables": 3,
+    "nestedTables": 0,
+    "layoutTables": 2,
+    "fontTags": 0,
+    "centerTags": 0,
+    "marquee": 0,
+    "frames": 0,
+    "flash": 0,
+    "bgcolorAttr": 0,
+    "spacerGifs": 0,
+    "inlineStyles": 198
+  },
+  "copyrightYears": [
+    2017
+  ],
+  "contentWidth": 1440,
+  "docHeight": 1888,
+  "bodyFont": "Arial, Helvetica, sans-serif",
+  "mobile": {
+    "viewportMeta": "width=device-width, initial-scale=1.0, maximum-scale=2.0",
+    "innerWidth": 501,
+    "screenWidth": 390,
+    "scrollWidth": 501,
+    "scale": 0.7784431137724551,
+    "smallTextRatio": 0.8156648451730419,
+    "smallTapRatio": 0.36486486486486486,
+    "overflow": [],
+    "brokenImages": 0,
+    "docHeight": 4218
+  },
+  "brokenImages": 0,
+  "consoleErrors": [
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Error: reCAPTCHA has already been rendered in this element",
+    "requestStorageAccess: Permission denied.",
+    "requestStorageAccess: Permission denied.",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Error: reCAPTCHA has already been rendered in this element",
+    "requestStorageAccess: Permission denied.",
+    "requestStorageAccess: Permission denied.",
+    "requestStorageAccess: Permission denied.",
+    "requestStorageAccess: Permission denied.",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Error: reCAPTCHA has already been rendered in this element",
+    "requestStorageAccess: Permission denied.",
+    "requestStorageAccess: Permission denied."
+  ],
+  "complexity": [],
+  "score": 38,
+  "reasons": [
+    "На телефоне 82% текста мельче 12px — читать невозможно без зума",
+    "Вёрстка таблицами (технология 2000-х)",
+    "В подвале © 2017 — сайт выглядит заброшенным",
+    "Ошибки JavaScript в консоли: 14"
+  ]
+}

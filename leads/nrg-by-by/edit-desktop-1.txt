@@ -1,0 +1,10 @@
+Fix text only. Keep the layout, colors (near-black, volt lime #C8F031, electric blue #2F8CFF), fonts (Unbounded headings, Manrope body), photos and style exactly as is.
+
+1. Header: phone "+375 (29) 645-79-11" must stay on one line (no wrap) — make it nowrap, slightly reduce the "Ежедневно 8:00–20:00" badge so it fits on one line too.
+2. Hero photo overlay card: replace "Слесарный & Диагностический цех" with "Автоцентр NRG" and remove the "АКТИВНО" badge.
+3. Section "4 направления автоцентра": right subtitle → "СТО, эвакуатор, мойка и запчасти на одной территории — г. Орша, ул. 1 Мая, 62".
+4. Section "Услуги СТО": in the small card under "Все услуги" replace title with "Развал-схождение HOFMANN" and text with "Компьютерная диагностика и COMMON RAIL Центр — на месте" (remove any mention of Bosch, 3D stand and dealer equipment).
+5. Tow truck banner: the big phone "+375 (29) 819-11-30" must be on one line (nowrap), make the "Позвонить сейчас" button text on one line.
+6. Booking section left list: "Подтверждение за 5 минут" → "Администратор перезвонит и подтвердит время"; "Фиксация стоимости до начала работ" → "Мойка и химчистка — по предварительной записи"; keep "Приём авто с 8:00 до 20:00 ежедневно".
+7. Section "Почему NRG": small lime labels at card bottoms: "20+ ЛЕТ ОПЫТА" → "С 2005 ГОДА"; "ОФИЦИАЛЬНО" → "РАБОТЫ И ЗАПЧАСТИ".
+8. Contacts map: remove the label "ORSHA SECTOR A-1" and the GPS coordinates line at the bottom; keep only the pin with "NRG ул. 1 Мая, 62".
