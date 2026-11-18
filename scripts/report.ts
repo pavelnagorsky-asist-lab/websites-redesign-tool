@@ -47,7 +47,7 @@ const bullets = (a: string[]) => a.map((x) => `• ${x}`).join('\n');
 
 const header = [
   '№', 'Компания', 'Сфера', 'Город', 'Сайт', 'Email', 'Телефон', 'Мессенджеры / соцсети',
-  'Проблемы текущего сайта', 'Редизайн (Stitch)', 'Доп. функционал', 'Идеи', 'Админка', 'Contact info (для таблицы)', 'Исполнитель', 'Внесён',
+  'Проблемы текущего сайта', 'Редизайн (Stitch)', 'Доп. функционал', 'Идеи', 'CMS', 'Contact info (для таблицы)', 'Исполнитель', 'Внесён',
 ];
 const row = (l: Lead, i: number) => [
   String(i + 1),
@@ -81,7 +81,7 @@ const card = (l: Lead, i: number) =>
     `### ${i + 1}. ${l.company} — ${l.industry}${l.city ? `, ${l.city}` : ''}`,
     `**Сайт:** ${l.site}  `,
     `**Редизайн:** ${l.design?.url ?? '—'}  `,
-    `**Админка:** ${l.admin || '—'}  `,
+    `**CMS:** ${l.admin || '—'}  `,
     `**Контакты:** ${[...l.contacts.phones, ...l.contacts.emails].join(', ') || '—'}`,
     messengers(l) ? messengers(l).split('\n').map((x) => `- ${x}`).join('\n') : '',
     `**Проблемы сайта:**\n${l.problems.map((x) => `- ${x}`).join('\n')}`,
