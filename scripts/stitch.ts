@@ -4,8 +4,11 @@
  * npx tsx scripts/stitch.ts design <slug> [--redo]
  *   — из leads/<slug>/prompt-desktop.txt и prompt-mobile.txt: новый публичный проект, генерация DESKTOP, затем MOBILE
  *     в том же стиле (4–10 мин). Скачивает HTML в design/desktop.html, mobile.html и превью design/*-view-N.jpg,
- *     пишет design-блок в lead.json. При обрыве генерации проект удаляется (обрывок виден клиенту) — запустить снова.
- *     --redo: удалить текущий проект лида и сделать заново (только если концепт не годится целиком).
+ *     пишет design-блок в lead.json, в конце проверяет публичную ссылку (verify).
+ *     Если Stitch отказал сразу (service unavailable / 5xx) — сам повторяет до 3 раз. Если упал mobile при готовом
+ *     desktop — проект сохраняется (design/stitch-partial.json), повторный запуск design продолжит с mobile.
+ *     Если упал первый экран — пустой проект удаляется (обрывок был бы виден клиенту), запустить снова.
+ *     --redo: удалить текущий (или незаконченный) проект лида и сделать заново (только если концепт не годится целиком).
  * npx tsx scripts/stitch.ts push <slug>
  *   — типографика + рендер design/desktop.html и mobile.html → залить в те же экраны Stitch (без генераций),
  *     обновить превью, проверить публичную ссылку (verify).
@@ -23,6 +26,8 @@ import { launchBrowser } from './lib/browser.ts';
 import { bareProjectId, bareScreenId, stitchCall, stitchCallLong } from './lib/stitch.ts';
 
 const MODEL = 'GEMINI_3_8_FLASH';
+const GEN_TRIES = 3; // попыток генерации одного экрана, если Stitch отказал сразу (service unavailable / 5xx)
+const RETRY_DELAY_S = 90;
 const DEVICES = [
   { device: 'DESKTOP', key: 'desktop', title: 'Главная', width: 1280 },
   { device: 'MOBILE', key: 'mobile', title: 'Главная (мобильная)', width: 390 },
@@ -128,30 +133,70 @@ async function design(slug: string, redo: boolean) {
     delete lead.design;
     writeLead(slug, lead);
   }
-  const p = bareProjectId((await stitchCall('create_project', { title: `${lead.company} — концепт редизайна` })).name);
-  await stitchCall('update_project', { name: `projects/${p}`, visibility: 'PUBLIC', updateMask: ['visibility'] });
-  console.log(`проект ${p}`);
+  // Незаконченный проект прошлого запуска (desktop готов, mobile упал) — продолжить с того же места
+  const partialFile = path.join(designDir(slug), 'stitch-partial.json');
+  let partial: { projectId: string; screens: any[]; designSystem?: string } | undefined = fs.existsSync(partialFile)
+    ? JSON.parse(fs.readFileSync(partialFile, 'utf8'))
+    : undefined;
+  if (partial && redo) {
+    await stitchCall('delete_project', { name: `projects/${partial.projectId}` }).catch(() => {});
+    console.log(`незаконченный проект ${partial.projectId} удалён`);
+    partial = undefined;
+  }
+  if (partial) {
+    const ok = await stitchCall('get_project', { name: `projects/${partial.projectId}` }).then(() => true, () => false);
+    if (!ok) partial = undefined;
+  }
+  let p: string;
+  if (partial) {
+    p = partial.projectId;
+    console.log(`продолжаю проект ${p}: готово ${partial.screens.map((s) => s.device).join(', ')}`);
+  } else {
+    p = bareProjectId((await stitchCall('create_project', { title: `${lead.company} — концепт редизайна` })).name);
+    await stitchCall('update_project', { name: `projects/${p}`, visibility: 'PUBLIC', updateMask: ['visibility'] });
+    console.log(`проект ${p}`);
+  }
+  const screens: any[] = partial?.screens ?? [];
+  let designSystem: string | undefined = partial?.designSystem;
+  const savePartial = () => fs.writeFileSync(partialFile, JSON.stringify({ projectId: p, screens, designSystem }, null, 2));
 
-  const screens: any[] = [];
-  let designSystem: string | undefined;
   for (const [i, { device, key, title }] of DEVICES.entries()) {
+    if (screens.some((s) => s.device === device)) continue;
     const a: Record<string, unknown> = { projectId: p, deviceType: device, modelId: MODEL, prompt: prompts[i] };
     if (designSystem) a.designSystem = designSystem;
     const t0 = Date.now();
     let g;
-    try {
-      g = parseGeneration(slug, key, await stitchCallLong('generate_screen_from_text', a));
-    } catch (e) {
-      // оборванная генерация оставляет в проекте экран-обрывок, удалить его нельзя — выбрасываем проект целиком
-      await stitchCall('delete_project', { name: `projects/${p}` }).catch(() => {});
-      throw new Error(`генерация ${device} оборвалась (${(e as Error).message}); проект ${p} удалён — запустить design снова`);
+    for (let attempt = 1; ; attempt++) {
+      try {
+        g = parseGeneration(slug, key, await stitchCallLong('generate_screen_from_text', a));
+        break;
+      } catch (e) {
+        const msg = (e as Error).message;
+        // Stitch отказал сразу («service unavailable», 5xx): экран не создан — подождать и повторить в том же проекте
+        const refused = /unavailable|HTTP 5\d\d|RESOURCE_EXHAUSTED|try again/i.test(msg);
+        if (refused && attempt < GEN_TRIES) {
+          console.log(`⚠ ${device}: ${msg.slice(0, 120)} — повтор ${attempt + 1}/${GEN_TRIES} через ${RETRY_DELAY_S} с`);
+          await new Promise((r) => setTimeout(r, RETRY_DELAY_S * 1000));
+          continue;
+        }
+        if (screens.length) {
+          // готовые экраны не выбрасываем: следующий запуск design продолжит с этого устройства
+          savePartial();
+          throw new Error(`генерация ${device} не удалась (${msg}); проект ${p} сохранён с готовым ${screens.map((s) => s.device).join(', ')} — запустить design снова позже, продолжит с ${device}`);
+        }
+        // в пустом проекте мог остаться экран-обрывок, удалить его нельзя — выбрасываем проект целиком
+        await stitchCall('delete_project', { name: `projects/${p}` }).catch(() => {});
+        throw new Error(`генерация ${device} не удалась (${msg}); проект ${p} удалён — запустить design снова`);
+      }
     }
     if (g.screens.length !== 1) console.log(`⚠ ${device}: Stitch вернул экранов ${g.screens.length} — проверить verify`);
     if (!g.screens[0]) throw new Error(`генерация ${device} не вернула экран (ответ: design/stitch-${key}.json)`);
     designSystem ??= g.designSystem;
     screens.push({ id: g.screens[0], device, title, file: `${key}.png` });
+    savePartial();
     console.log(`✓ ${device} ${g.screens[0]} (${Math.round((Date.now() - t0) / 1000)} с)${g.text ? `\n  Stitch: ${g.text.slice(0, 400)}` : ''}`);
   }
+  screens.sort((x, y) => DEVICES.findIndex((d) => d.device === x.device) - DEVICES.findIndex((d) => d.device === y.device));
   lead.design = {
     tool: 'stitch',
     projectId: p,
@@ -162,7 +207,9 @@ async function design(slug: string, redo: boolean) {
     date: new Date().toISOString().slice(0, 10),
   };
   writeLead(slug, lead);
+  fs.rmSync(partialFile, { force: true });
   await pull(slug);
+  await verify([slug]); // ровно 2 экрана: после сбоев в проекте мог остаться лишний экран
   console.log(`✓ ${lead.design.url}\nДальше: проверить превью, править design/desktop.html и mobile.html, затем stitch.ts push ${slug}`);
 }
 
