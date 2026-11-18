@@ -22,6 +22,11 @@ export function validateLead(l: Lead): string[] {
     if (l.rating.outdated == null || l.rating.potential == null || l.rating.complexity == null)
       e.push('не заполнен rating (outdated/potential/complexity)');
     if (l.problems.length < 2) e.push('опишите минимум 2 проблемы сайта (problems)');
+    if (!/^(нет|\?|да: \S.*)$/.test(l.admin?.trim() ?? ''))
+      e.push('admin: нужна ли CMS — «нет» | «да: галерея, цены» | «?» (docs/criteria.md §5)');
+    if (!l.contactInfo?.trim()) e.push('нет contactInfo — основные контакты для общей таблицы (docs/criteria.md §6)');
+    else if (/https?:|instagram|vk\.com|t\.me\/|ул\.|\n|;/i.test(l.contactInfo))
+      e.push('contactInfo: только телефоны и email одной строкой через запятую');
     const c = l.contacts;
     if (!c.phones.length && !c.emails.length && !c.telegram.length && !c.viber.length)
       e.push('нет ни одного контакта');

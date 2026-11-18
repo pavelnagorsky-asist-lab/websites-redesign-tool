@@ -80,6 +80,10 @@ export interface Lead {
   upsell: string[];
   /** Прочие идеи */
   ideas: string[];
+  /** Нужна ли клиенту CMS: "нет" | "да: галерея, цены" | "?" (docs/criteria.md). В общей таблице — колонка «Админка» */
+  admin?: string;
+  /** Основные контакты для общей таблицы (колонка «Contact info»): телефоны и email через запятую, без соцсетей и адресов (docs/criteria.md) */
+  contactInfo?: string;
   rejectReason: string;
   activitySignals: string[];
   design: Design | null;

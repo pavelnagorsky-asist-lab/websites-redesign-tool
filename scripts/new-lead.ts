@@ -56,6 +56,8 @@ const lead: Lead = {
   problems: [],
   upsell: [],
   ideas: [],
+  admin: '',
+  contactInfo: '',
   rejectReason: '',
   activitySignals: [],
   design: null,
