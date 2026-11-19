@@ -7,7 +7,8 @@
  *     пишет design-блок в lead.json, в конце проверяет публичную ссылку (verify).
  *     Если Stitch отказал сразу (service unavailable / 5xx) — сам повторяет до 3 раз. Если упал mobile при готовом
  *     desktop — проект сохраняется (design/stitch-partial.json), повторный запуск design продолжит с mobile.
- *     Если упал первый экран — пустой проект удаляется (обрывок был бы виден клиенту), запустить снова.
+ *     Если связь оборвалась (socket hang up) — до 10 мин ищет дорисованный Stitch экран в проекте и продолжает с ним.
+ *     Если экран так и не появился и он первый — пустой проект удаляется (обрывок был бы виден клиенту), запустить снова.
  *     --redo: удалить текущий (или незаконченный) проект лида и сделать заново (только если концепт не годится целиком).
  * npx tsx scripts/stitch.ts push <slug>
  *   — типографика + рендер design/desktop.html и mobile.html → залить в те же экраны Stitch (без генераций),
@@ -98,6 +99,45 @@ async function render(browser: any, slug: string, key: string, html: string, wid
   }
 }
 
+/** ID всех экранов проекта. API (list_screens) их не отдаёт — берём из ответов страницы проекта в браузере. */
+async function projectScreenIds(p: string): Promise<string[]> {
+  const browser = await launchBrowser();
+  const ids = new Set<string>();
+  try {
+    const page = await browser.newPage({ viewport: { width: 1600, height: 1000 } });
+    page.on('response', async (r: any) => {
+      if (!r.url().includes('batchexecute')) return;
+      const t: string = await r.text().catch(() => '');
+      for (const m of t.matchAll(/screens\/([0-9a-f]{32})/g)) ids.add(m[1]);
+    });
+    await page.goto(`https://stitch.withgoogle.com/projects/${p}`, { waitUntil: 'networkidle', timeout: 90000 }).catch(() => {});
+    await page.waitForTimeout(15000);
+  } finally {
+    await browser.close();
+  }
+  return [...ids];
+}
+
+/**
+ * Связь оборвалась во время генерации, но Stitch мог дорисовать экран на сервере.
+ * Каждые 30 с (до 10 мин) ищем в проекте новый экран нужного устройства.
+ */
+async function recoverScreen(p: string, device: string, known: string[]): Promise<{ id: string; designSystem?: string } | undefined> {
+  for (let i = 1; i <= 20; i++) {
+    for (const id of await projectScreenIds(p)) {
+      if (known.includes(id)) continue;
+      const info = await stitchCall('get_screen', { name: screenName(p, id) }).catch(() => undefined);
+      if (info?.deviceType === device && info?.htmlCode?.name) {
+        const ds = await stitchCall('list_design_systems', { projectId: p }).catch(() => undefined);
+        return { id, designSystem: ds?.designSystems?.[0]?.name };
+      }
+    }
+    console.log(`  … ${device}: экрана пока нет (проверка ${i}/20)`);
+    await new Promise((r) => setTimeout(r, 30000));
+  }
+  return undefined;
+}
+
 const screenHeight = (info: any, width: number) => Math.round((Number(info.height) * width) / Number(info.width)) || 900;
 
 /** Скачать HTML экранов из Stitch в design/ + превью. */
@@ -178,6 +218,15 @@ async function design(slug: string, redo: boolean) {
           console.log(`⚠ ${device}: ${msg.slice(0, 120)} — повтор ${attempt + 1}/${GEN_TRIES} через ${RETRY_DELAY_S} с`);
           await new Promise((r) => setTimeout(r, RETRY_DELAY_S * 1000));
           continue;
+        }
+        if (!refused) {
+          // обрыв связи (socket hang up и т.п.): генерация могла завершиться на сервере — забрать экран, а не выбрасывать
+          console.log(`⚠ ${device}: ${msg.slice(0, 120)} — ищу экран в проекте до 10 мин`);
+          const rec = await recoverScreen(p, device, screens.map((s) => s.id));
+          if (rec) {
+            g = { screens: [rec.id], designSystem: rec.designSystem, text: '' };
+            break;
+          }
         }
         if (screens.length) {
           // готовые экраны не выбрасываем: следующий запуск design продолжит с этого устройства
